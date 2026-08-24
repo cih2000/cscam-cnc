@@ -1,0 +1,2544 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CSCAM CNC | 산업용 CNC 컨트롤러 &amp; 자동화 모션제어기</title>
+<meta content="CSCAM은 CPACK, 800S, HX2.0/3.0, HX-Lite 등 최대 32축 완전 동기·보간 제어가 가능한 CNC 컨트롤러와 서보/스텝 모터·드라이브, EtherCAT IO 모듈을 제공합니다." name="description"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="family-bar">
+<div class="family-bar-inner">
+<span class="family-bar-label">CSCAM CNC 사업부</span>
+<nav class="family-bar-nav">
+<a class="active" href="index.html">CNC Controller</a>
+<a href="../cscam-lms/index.html">LMS Solution</a>
+<span class="disabled">Software</span>
+</nav>
+</div>
+</div>
+<header class="site-header">
+<div class="container">
+<a class="logo" href="index.html"><small>씨에스캠주식회사</small><div class="logo-title">CNC &amp; MOTION</div></a>
+<nav class="gnb">
+<a data-nav-target="cnc-controller" href="#cnc-controller">CNC 제어기</a>
+<a data-nav-target="motion-controller" href="#motion-controller">모션 제어기</a>
+<a data-nav-target="servo-drive" href="#servo-drive">서보모터/드라이브</a>
+<a data-nav-target="stepmotor-drive" href="#stepmotor-drive">스텝모터/드라이브</a>
+<a data-nav-target="ethercat-io" href="#ethercat-io">EtherCAT IO 모듈</a>
+<a href="resources.html">기술자료실</a>
+</nav>
+<div class="lang-switch"><a class="active" href="index.html">KO</a><span class="lang-sep">/</span><a href="en/index.html">EN</a></div>
+<button aria-label="메뉴 열기" class="nav-toggle"><span></span><span></span><span></span></button>
+</div>
+</header>
+<div class="header-spacer"></div>
+<!-- HERO -->
+<section class="hero">
+<div class="hero-bg"></div>
+<div class="hero-grid-overlay">
+<div class="hero-scanline"></div>
+</div>
+<div class="hero-scrim"></div>
+<div class="container">
+<div class="hero-badge"><span>CNC &amp; MOTION CONTROL TECHNOLOGY</span> 다축 제어의 두 가지 축</div>
+<div class="hero-kicker">CPACK · 800S · HX2.0/3.0 · HX-Lite</div>
+<div class="hero-row">
+<div class="hero-inner">
+<h1>최고의 <em>공작기계 CNC</em>와<br/>자동화 <em>모션제어기</em>를<br/>제공합니다</h1>
+<p class="lede">최대 32축까지 완전 동기·보간 제어와 최대 1024 IO 접점으로, 커스텀 자동화 설비의 두뇌 역할을 합니다.</p>
+<div class="hero-links">
+<a class="hero-link" href="#cnc-controller">
+<span class="dot"></span>
+<div>
+<b>CNC 제어기</b>
+<small>CPACK · 800S · HX2.0/3.0 · HX-Lite 자세히 보기</small>
+</div>
+</a>
+<a class="hero-link" href="#motion-controller">
+<span class="dot"></span>
+<div>
+<b>모션 제어기</b>
+<small>900d · 900A · GX-Series 자세히 보기</small>
+</div>
+</a>
+</div>
+</div>
+<div class="hero-video">
+<video autoplay="" loop="" muted="" playsinline="" poster="assets/img/hero-video-poster.jpg">
+<source src="assets/video/hero-kf5600-wave.mp4" type="video/mp4">
+</source></video>
+<div class="hero-video-cap">KF5600 · Wave 고속가공</div>
+</div>
+</div>
+<div class="hero-clients">
+<div class="hero-clients-label">주요 고객사</div>
+<div class="client-marquee-wrap">
+<div class="client-marquee-track">
+<div class="client-logo-card"><img alt="KCNC" src="assets/img/clients/kcnc.png"/></div>
+<div class="client-logo-card"><img alt="화천기계" src="assets/img/clients/hwacheon.png"/></div>
+<div class="client-logo-card"><img alt="한국기계연구원" src="assets/img/clients/kimm.png"/></div>
+<div class="client-logo-card"><img alt="한국생산기술연구원" src="assets/img/clients/kitech.png"/></div>
+<div class="client-logo-card"><img alt="아름덴티스트리" src="assets/img/clients/arum.png"/></div>
+<div class="client-logo-card"><img alt="디오에프로보틱스" src="assets/img/clients/dof.png"/></div>
+<div class="client-logo-card"><img alt="마닉스" src="assets/img/clients/manix.png"/></div>
+<div class="client-logo-card"><img alt="경원엔지니어링" src="assets/img/clients/kyungwon.png"/></div>
+<div class="client-logo-card"><img alt="로보슨" src="assets/img/clients/robotson.png"/></div>
+<div class="client-logo-card"><img alt="케이엔케이" src="assets/img/clients/knk.png"/></div>
+<div class="client-logo-card"><img alt="아이뷰코리아" src="assets/img/clients/iviewkorea.png"/></div>
+<div class="client-logo-card"><img alt="신우NC테크" src="assets/img/clients/shinwoo.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="assets/img/clients/kcnc.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="assets/img/clients/hwacheon.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="assets/img/clients/kimm.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="assets/img/clients/kitech.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="assets/img/clients/arum.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="assets/img/clients/dof.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="assets/img/clients/manix.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="assets/img/clients/kyungwon.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="assets/img/clients/robotson.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="assets/img/clients/knk.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="assets/img/clients/iviewkorea.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="assets/img/clients/shinwoo.png"/></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 01. 사업 소개 -->
+<section class="section compact-y">
+<div class="container">
+<div class="section-head">
+<div class="eyebrow">01 / 사업 소개</div>
+<div class="section-badge">CONTROL SYSTEM</div>
+<h2 class="section-title">정밀 제어기술로<br/>공작기계와 자동화 설비를 완성합니다</h2>
+<p class="section-desc">CSCAM은 CNC 컨트롤러부터 모션 제어기, 서보/스텝 드라이브, EtherCAT IO 모듈까지 — 공작기계와 자동화 설비에 필요한 제어 시스템을 하나의 라인업으로 제공합니다. 아래에서 두 가지 핵심 축을 먼저 소개합니다.</p>
+</div>
+<div class="intro-grid">
+<a class="intro-card" href="#cnc-controller">
+<div class="row-top">
+<span class="num-chip">01</span>
+<span class="meta">MULTI-AXIS CONTROLLER</span>
+</div>
+<h3>CNC 제어기</h3>
+<div class="sub">CPACK · 800S · HX2.0/3.0 · HX-Lite</div>
+<p>최대 32축 완전 동기·보간 제어와 최대 1024 IO 접점을 지원하는 다축 CNC 컨트롤러 라인업입니다. 커스텀 자동화 설비부터 3·5축 머시닝센터, 터닝센터, 절단기까지 폭넓게 대응하며, 합리적인 가격의 경제형 모델부터 글로벌 기술 수준의 5축 컨트롤러까지 용도와 규모에 맞춰 선택할 수 있습니다.</p>
+<span class="go">CNC 제어기 자세히 보기 →</span>
+</a>
+<a class="intro-card" href="#motion-controller">
+<div class="row-top">
+<span class="num-chip">02</span>
+<span class="meta">MOTION &amp; PAC CONTROLLER</span>
+</div>
+<h3>모션 제어기</h3>
+<div class="sub">900d · 900A · GX-Series</div>
+<p>CNC 제어기와 스텝 드라이브를 하나로 통합한 900d, 리눅스 기반의 보안형 펄스 인터페이스 900A, 모션제어와 PLC 시퀀스 제어를 결합한 GX-Series까지 — 대량생산 전용기 제작부터 복잡한 자동화 시스템 설계까지 최적의 경제성과 확장성을 제공합니다.</p>
+<span class="go">모션 제어기 자세히 보기 →</span>
+</a>
+</div>
+</div>
+</section>
+<!-- WHY CSCAM -->
+<section class="section compact-y alt">
+<div class="container">
+<div class="section-head">
+<div class="eyebrow">Why CSCAM CNC</div>
+<h2 class="section-title">왜 CSCAM CNC를 선택해야 할까요</h2>
+<p class="section-desc">기술력과 노하우, 그리고 하나로 완결되는 라인업 — CSCAM CNC의 차별점입니다.</p>
+</div>
+<div class="strength-grid">
+<div class="strength-card">
+<span class="num-chip">01</span>
+<h3>국내 최고 수준의 CNC·모션 통합 제어기술</h3>
+<p>CNC 제어기부터 모션 제어기까지 하나의 기술 기반 위에서 자체 개발·공급하며, 다년간 축적된 노하우로 국내 최고 수준의 공작기계·자동화 설비 제어기술을 제공합니다.</p>
+</div>
+<div class="strength-card">
+<span class="num-chip">02</span>
+<h3>덴탈머신 제어기로 탁월한 선택</h3>
+<p>정밀 절삭이 요구되는 덴탈 밀링머신 등 초정밀 가공 설비에도 탁월한 선택입니다.</p>
+</div>
+<div class="strength-card">
+<span class="num-chip">03</span>
+<h3>동시 5축가공 기능</h3>
+<p>5축 동시 제어로 복잡한 형상도 한 번에 가공하는 정밀 CNC 컨트롤러를 제공합니다.</p>
+</div>
+<div class="strength-card">
+<span class="num-chip">04</span>
+<h3>M.AX(제조인공지능전환) 전문기업 인증 획득(2026.8)</h3>
+<p>가공 정밀도를 높이는 AI 기반 실시간 보정 기능을 개발 중이며, M.AX 전문기업 인증을 획득한 신뢰할 수 있는 기술력을 갖추고 있습니다.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 02. CNC 제어기 -->
+<section class="cat-section" data-section="cnc-controller" id="cnc-controller">
+<div class="container">
+<div class="cat-head">
+<div>
+<div class="eyebrow">02 / CNC 제어기</div>
+<h2 class="section-title">CPACK · 800S · HX2.0/3.0 · HX-Lite</h2>
+</div>
+<p class="section-desc">최대 32축 완전 동기·보간 제어와 최대 1024 IO 접점, 용도와 규모에 맞는 CNC 컨트롤러를 선택하세요.</p>
+</div>
+<div class="spec-grid">
+<div class="spec-card">
+<div class="thumb"><span class="tag">Modular</span><img alt="CPACK" src="assets/img/card-cpack.jpg"/></div>
+<div class="body">
+<h3>CPACK</h3>
+<p><strong>32축까지 흔들림 없이, 자동화의 중심에 서는 다축 제어기.</strong><br/>최대 32축 완전 동기·보간 제어와 최대 1024 IO 접점으로, 커스텀 자동화 설비의 두뇌 역할을 합니다.</p>
+</div>
+<div class="actions">
+<a href="#cpack-detail">자세히 보기</a>
+<a class="primary" href="#cpack-detail-contact">문의하기</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">Compact</span><img alt="800S package" src="assets/img/card-800spkg.jpg"/></div>
+<div class="body">
+<h3>800S package</h3>
+<p><strong>CNC 시스템 통째로, 최고성능·최저가격의 완결형 패키지.</strong><br/>3축 밀링 구성을 한 번에 제공해 셋업이 쉽고, 타의 추종을 불허하는 가격경쟁력을 갖췄습니다.</p>
+</div>
+<div class="actions">
+<a href="#800s-package-detail">자세히 보기</a>
+<a class="primary" href="#800s-package-detail-contact">문의하기</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">Performance</span><img alt="800S-5AX" src="assets/img/card-800s5ax.jpg"/></div>
+<div class="body">
+<h3>800S-5AX</h3>
+<p><strong>5축 가공의 정답, 20년 노하우가 만든 800S-5AX.</strong><br/>세계 수준의 5축 동시 가공 성능을 자랑하며, 복잡 형상 가공 현장에서 축적된 기술력을 증명합니다.</p>
+</div>
+<div class="actions">
+<a href="#800s-5ax-detail">자세히 보기</a>
+<a class="primary" href="#800s-5ax-detail-contact">문의하기</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">All-in-one</span><img alt="HX2.0 series" src="assets/img/card-hx20.jpg"/></div>
+<div class="body">
+<h3>HX2.0 series</h3>
+<p><strong>머시닝·터닝·절단, 어떤 공정에도 최적화된 만능 제어기.</strong><br/>머시닝센터, 터닝센터, 절단기까지 — 공정을 가리지 않는 범용성으로 현장의 표준이 됩니다.</p>
+</div>
+<div class="actions">
+<a href="#hx20-detail">자세히 보기</a>
+<a class="primary" href="#hx20-detail-contact">문의하기</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">Economic</span><img alt="HX-Lite" src="assets/img/card-hxlite.jpg"/></div>
+<div class="body">
+<h3>HX-Lite</h3>
+<p><strong>국내에서 가장 많이 선택한 이유, 경제형 CNC의 기준.</strong><br/>PCI 카드 타입의 합리적인 가격에 4축 전용 정밀 제어(±10V, 16bit)를 담아 누적 판매 1위를 지켜왔습니다.</p>
+</div>
+<div class="actions">
+<a href="#hx-lite-detail">자세히 보기</a>
+<a class="primary" href="#hx-lite-detail-contact">문의하기</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="product-inline-wrap" id="cpack-detail">
+<section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="CPACK" src="assets/img/cpack.jpg"/></div>
+<div>
+<span class="chip">CNC 제어기 · 02</span>
+<h1>CPACK : 자동화 장비에 강력한 다축 모션제어기</h1>
+<p class="lede">고객 맞춤형 CNC / 자동화 장비에도 강력한 다축 제어기입니다.</p>
+<ul class="bullets">
+<li>고객 맞춤형 CNC / 자동화 장비에도 강력한 다축 제어기</li>
+<li>최대 32축 완전 동기 / 보간 제어 가능</li>
+<li>최대 1024 IO 접점 제공 (32/64점 단위 확장 가능)</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">02-1 / CPACK — 시스템 구성</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">CPACK 시스템 구성</div>
+<div class="panel-body"><img alt="CPACK 시스템 구성" src="assets/img/cpack-config.jpg"/></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>CPACK 구성 및 특징</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>강력한 다축 모션제어기 기능 제공</span></li>
+<li><span class="li-num">02</span><span>PC기반 모션제어 SW 통해 최저비용으로 고성능 제어기능 제공</span></li>
+<li><span class="li-num">03</span><span>고객의 응용 프로그램을 구동하기 위하여 추가적인 HW 불필요 (고객의 PC에서 구현한 GUI로 운용 가능)</span></li>
+<li><span class="li-num">04</span><span>PLC 내장되어 별도의 IO카드가 불필요함</span></li>
+<li><span class="li-num">05</span><span>범용 C 언어로 Windows기반의 Host 프로그래밍 가능하며, 이를 지원하는 강력한 API를 제공</span></li>
+<li><span class="li-num">06</span><span>자체 리얼타임 시스템을 내장하고 있어, 빠르고 정확한 동작을 수행</span></li>
+<li><span class="li-num">07</span><span>최적의 가격으로 최고의 성능과 최적의 확장성을 제공</span></li>
+</ul>
+<a class="video-link" href="https://youtu.be/yg_B1ODVCD8?t=438" rel="noopener" target="_blank">
+<span class="play-ico">▶</span>CPACK 배선 동영상<span class="yt-badge"><svg fill="currentColor" viewbox="0 0 24 17"><path d="M23.5 2.5a3 3 0 0 0-2.1-2.1C19.5 0 12 0 12 0S4.5 0 2.6.4A3 3 0 0 0 .5 2.5 31 31 0 0 0 0 8.5a31 31 0 0 0 .5 6 3 3 0 0 0 2.1 2.1C4.5 17 12 17 12 17s7.5 0 9.4-.4a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-6 31 31 0 0 0-.5-6zM9.5 12V5l6.3 3.5z"></path></svg>YouTube</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="detail-block">
+<div class="container">
+<div class="eyebrow">02-2 / CPACK — 응용 분야</div>
+<h2 class="section-title" style="font-size:26px;margin-top:10px;">CPACK 응용 사례</h2>
+<div style="margin-top:32px;">
+<div class="app-card">
+<div class="app-card-img"><img alt="CPACK 응용 I : 자동화 공정라인 적용 예" src="assets/img/cpack-app1.jpg"/></div>
+<div class="app-card-text">
+<div class="tagline">APPLICATION 01</div>
+<h4>CPACK 응용 Ⅰ : 자동화 공정라인 적용 예</h4>
+<ul class="dash">
+<li>OLED 공정 장비의 제어기로 활용 가능</li>
+<li>비젼 얼라인 및 검사 기능 프로그램 가능</li>
+<li>각 스테이지당 축수 확장 6축 단위, IO 확장 32/32 단위로 확장 가능</li>
+</ul>
+</div>
+</div>
+<div class="app-card reverse">
+<div class="app-card-img"><img alt="CPACK 응용 II : 글라스 연삭장비 멀티 스테이지" src="assets/img/cpack-app2.jpg"/></div>
+<div class="app-card-text">
+<div class="tagline">APPLICATION 02</div>
+<h4>CPACK 응용 Ⅱ : 글라스 연삭장비 멀티 스테이지</h4>
+<ul class="dash">
+<li>Multi-stage로 배분하여 생산성을 향상 시키기 위한 구성</li>
+<li>소재 얼라인 Vision 적용</li>
+<li>최대 32축 완전 동기/보간 제어</li>
+<li>최대 1024 IO 접점 제공함</li>
+<li>공유메모리 직접 접근하여 고속 Host 제어기 TCP/IP 통신 지원</li>
+<li>Windows기반의 Host 프로그래밍을 위한 API 제공</li>
+</ul>
+</div>
+</div>
+<div class="app-card">
+<div class="app-card-img"><img alt="CPACK 응용 III : 비접촉 X-ray 박막 두께측정기 제어 시스템" src="assets/img/cpack-app3.jpg"/></div>
+<div class="app-card-text">
+<div class="tagline">APPLICATION 03</div>
+<h4>CPACK 응용 Ⅲ : 비접촉 X-ray 박막 두께측정기 제어 시스템</h4>
+<ul class="dash">
+<li>FPCB 자재 Prealign - Loading - 측정 Stage - Unloading 일괄처리 자동화 장비</li>
+<li>비젼 얼라인 및 비접촉 X-ray 검사 시스템과 연동 가능</li>
+<li>Dual 화면으로 비젼 얼라인/측정 검사 진행상황을 한 눈에 볼 수 있음</li>
+<li>총 6축 서보, 5 stepping 모터, 64/64 IO</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="product-inline-cta" id="cpack-detail-contact">
+<div class="container">
+<div class="detail-cta">
+<div>
+<h3>CPACK 도입 문의</h3>
+<p>구성 및 견적이 필요하시면 CNC 제어기 라인업 전체를 함께 확인해보세요.</p>
+</div>
+<div class="detail-cta-actions">
+<a class="btn btn-ghost" href="#cnc-controller">CNC 제어기 목록으로</a>
+<a class="btn btn-ghost" href="resources.html?q=cpack">관련 자료 다운로드</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="product-inline-wrap" id="800s-package-detail">
+<section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="800S package" src="assets/img/800spkg.jpg"/></div>
+<div>
+<span class="chip">CNC 제어기 · 02</span>
+<h1>800S package</h1>
+<p class="lede">최고성능, 최저가격의 CNC! 800S 패키지.</p>
+<ul class="bullets">
+<li>최고성능, 최저가격의 CNC! 800S 패키지</li>
+<li>3축 밀링을 구성할 수 있는 CNC 시스템을 패키지로 제공</li>
+<li>타의 추종을 불허하는 가격경쟁력과 쉬운 셋업</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">02-1 / 800S package — 구성</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">800S 패키지 구성</div>
+<div class="panel-body"><img alt="800S 패키지 구성" src="assets/img/800spkg-config.jpg"/></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>800S 패키지 특징</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>CSCAM EtherCAT 네트워크 서보드라이브 채용</span></li>
+<li><span class="li-num">02</span><span>Look ahead 선독블럭 기본 100블럭(Max. 1000 블록)</span></li>
+<li><span class="li-num">03</span><span>고속가공 기능 기본제공(G10.3)</span></li>
+<li><span class="li-num">04</span><span>위치제어 주기 최소 0.5msec</span></li>
+<li><span class="li-num">05</span><span>공간절약형 콤팩트한 MDI와 키보드 유닛(세로형, 가로형)</span></li>
+<li><span class="li-num">06</span><span>원하는 모든 주변기기와 연결성 확보</span></li>
+<li><span class="li-num">07</span><span>OP 판넬용 EDIO 72/46 제공</span></li>
+</ul>
+<a class="video-link" href="https://youtu.be/yg_B1ODVCD8?t=19" rel="noopener" target="_blank">
+<span class="play-ico">▶</span>800S 배선 동영상<span class="yt-badge"><svg fill="currentColor" viewbox="0 0 24 17"><path d="M23.5 2.5a3 3 0 0 0-2.1-2.1C19.5 0 12 0 12 0S4.5 0 2.6.4A3 3 0 0 0 .5 2.5 31 31 0 0 0 0 8.5a31 31 0 0 0 .5 6 3 3 0 0 0 2.1 2.1C4.5 17 12 17 12 17s7.5 0 9.4-.4a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-6 31 31 0 0 0-.5-6zM9.5 12V5l6.3 3.5z"></path></svg>YouTube</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="detail-block">
+<div class="container">
+<div class="eyebrow">02-2 / 800S package — 적용장비</div>
+<h2 class="section-title" style="font-size:26px;margin-top:10px;">800S 패키지 적용장비</h2>
+<div class="equip-grid" style="margin-top:32px;">
+<div class="equip-item">
+<div class="thumb"><img alt="핸드폰 프레임 가공기" src="assets/img/800spkg-app1.jpg"/></div>
+<span>핸드폰 프레임 가공기</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="5축 Smart Center" src="assets/img/800spkg-app2.jpg"/></div>
+<span>5축 Smart Center</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="5축 타이어몰드 가공기" src="assets/img/800spkg-app3.jpg"/></div>
+<span>5축 타이어몰드 가공기</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="간단밀(H사)" src="assets/img/800spkg-app4.jpg"/></div>
+<span>간단밀(H사)</span>
+</div>
+</div>
+</div>
+</section>
+<div class="product-inline-cta" id="800s-package-detail-contact">
+<div class="container">
+<div class="detail-cta">
+<div>
+<h3>800S package 도입 문의</h3>
+<p>구성 및 견적이 필요하시면 CNC 제어기 라인업 전체를 함께 확인해보세요.</p>
+</div>
+<div class="detail-cta-actions">
+<a class="btn btn-ghost" href="#cnc-controller">CNC 제어기 목록으로</a>
+<a class="btn btn-ghost" href="resources.html?q=800s-package">관련 자료 다운로드</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="product-inline-wrap" id="800s-5ax-detail">
+<section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="800S-5AX" src="assets/img/800s5ax.jpg"/></div>
+<div>
+<span class="chip">CNC 제어기 · 02</span>
+<h1>800S-5AX</h1>
+<p class="lede">글로벌 기술 수준의 5축 CNC 컨트롤러.</p>
+<ul class="bullets">
+<li>글로벌 기술 수준의 5축 CNC 컨트롤러 800S-5AX</li>
+<li>20년 이상의 5축 가공기 제조 및 운영 노하우가 고스란히 녹아든 5축 CNC 컨트롤러</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">02-1 / 800S-5AX — 동시 5축 고속가공기능</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">800S-5AX 시스템 구성</div>
+<div class="panel-body"><img alt="800S-5AX 시스템 구성" src="assets/img/800s5ax-diagram.jpg"/></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>800S-5AX 구성 및 특징</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>동시 5축 고속가공 지원</span></li>
+<li><span class="li-num">02</span><span>선단제어(TCP) 기능 지원</span></li>
+<li><span class="li-num">03</span><span>Look ahead 기능 포함 : 선독블럭 기본 100블럭(Max. 1000 블록)</span></li>
+<li><span class="li-num">04</span><span>위치제어 주기 최소 0.5msec</span></li>
+<li><span class="li-num">05</span><span>코너 자동 감속기능, S자 가감속, R 구간의 절삭속도 제한 기능</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="detail-block">
+<div class="container">
+<div class="eyebrow">02-2 / 800S-5AX — 응용 사례</div>
+<h2 class="section-title" style="font-size:26px;margin-top:10px;">800S-5AX 응용 사례</h2>
+<div style="margin-top:32px;">
+<div class="app-card">
+<div class="app-card-img"><img alt="800S-5AX 응용 사례" src="assets/img/800s5ax-cases.jpg"/></div>
+<div class="app-card-text">
+<div class="tagline">APPLICATION 01</div>
+<h4>800S-5AX 동시 5축 고속가공기능</h4>
+<ul class="dash">
+<li>직선축 3축(X,Y,Z)과 회전축 2개(AC)를 사용하여 하나의 Work 셋업으로 더욱 폭넓은 영역 가공 가능</li>
+<li>3+2축 가공과 동시 5축가공으로 기존 3축 M/C로 할 수 없는 언더컷 가공 가능하며 가공시간 단축</li>
+<li>한번의 척킹으로 가공을 완료할 수 있어 공정을 축약하고, 자유곡면이나 언더컷이 많은 제품일수록 효과적</li>
+<li>공구 옆날 가공경로 생성하여 가공면 품질향상 가능</li>
+<li>공구선단점 제어(TCP 제어), 고속 스무딩 TCP</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="product-inline-cta" id="800s-5ax-detail-contact">
+<div class="container">
+<div class="detail-cta">
+<div>
+<h3>800S-5AX 도입 문의</h3>
+<p>구성 및 견적이 필요하시면 CNC 제어기 라인업 전체를 함께 확인해보세요.</p>
+</div>
+<div class="detail-cta-actions">
+<a class="btn btn-ghost" href="#cnc-controller">CNC 제어기 목록으로</a>
+<a class="btn btn-ghost" href="resources.html?q=800s-5ax">관련 자료 다운로드</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="product-inline-wrap" id="hx20-detail">
+<section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="HX2.0 series" src="assets/img/hx20.jpg"/></div>
+<div>
+<span class="chip">CNC 제어기 · 02</span>
+<h1>HX2.0 series</h1>
+<p class="lede">머시닝센터 / 터닝센터 / 절단기에 최적화된 제어기.</p>
+<ul class="bullets">
+<li>머시닝센터 / 터닝센터 / 절단기에 최적화된 제어기</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">02-1 / HX2.0 — 구성 및 특징</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">HX2.0 구성</div>
+<div class="panel-body"><img alt="HX2.0 구성" src="assets/img/hx20-config.jpg"/></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>HX2.0 특징</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>HX2.0은 밀링, 선삭, 연삭, 태핑가공이 포함된 고정밀 자동화 장비에 최적화된 CNC 시스템입니다</span></li>
+<li><span class="li-num">02</span><span>HX2.0 ST/MC 등의 MDI구성으로 사용자의 요구사항을 즉각적으로 충족할 수 있습니다</span></li>
+</ul>
+<a class="video-link" href="https://youtu.be/yg_B1ODVCD8?t=89" rel="noopener" target="_blank">
+<span class="play-ico">▶</span>HX2.0 배선 동영상<span class="yt-badge"><svg fill="currentColor" viewbox="0 0 24 17"><path d="M23.5 2.5a3 3 0 0 0-2.1-2.1C19.5 0 12 0 12 0S4.5 0 2.6.4A3 3 0 0 0 .5 2.5 31 31 0 0 0 0 8.5a31 31 0 0 0 .5 6 3 3 0 0 0 2.1 2.1C4.5 17 12 17 12 17s7.5 0 9.4-.4a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-6 31 31 0 0 0-.5-6zM9.5 12V5l6.3 3.5z"></path></svg>YouTube</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="detail-block">
+<div class="container">
+<div class="eyebrow">02-2 / HX2.0 — 응용장비</div>
+<h2 class="section-title" style="font-size:26px;margin-top:10px;">HX2.0 응용장비</h2>
+<div class="equip-grid" style="margin-top:32px;">
+<div class="equip-item">
+<div class="thumb"><img alt="Machining center" src="assets/img/hx20-app1.jpg"/></div>
+<span>Machining center</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Mill-turn lathe" src="assets/img/hx20-app2.jpg"/></div>
+<span>Mill-turn lathe</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Laser cutting M/C" src="assets/img/hx20-app3.jpg"/></div>
+<span>Laser cutting M/C</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Wheel Flow forming" src="assets/img/hx20-app4.jpg"/></div>
+<span>Wheel Flow forming</span>
+</div>
+</div>
+</div>
+</section>
+<div class="product-inline-cta" id="hx20-detail-contact">
+<div class="container">
+<div class="detail-cta">
+<div>
+<h3>HX2.0 series 도입 문의</h3>
+<p>구성 및 견적이 필요하시면 CNC 제어기 라인업 전체를 함께 확인해보세요.</p>
+</div>
+<div class="detail-cta-actions">
+<a class="btn btn-ghost" href="#cnc-controller">CNC 제어기 목록으로</a>
+<a class="btn btn-ghost" href="resources.html?q=hx20">관련 자료 다운로드</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="product-inline-wrap" id="hx-lite-detail">
+<section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="HX-Lite" src="assets/img/hxlite.jpg"/></div>
+<div>
+<span class="chip">CNC 제어기 · 02</span>
+<h1>HX-Lite</h1>
+<p class="lede">국내에서 가장 많이 선택한 이유, 경제형 CNC의 기준.</p>
+<ul class="bullets">
+<li>최고 누적 판매량의 경제형 CNC</li>
+<li>PCI 카드 타입의 경제형 CNC</li>
+<li>4축 전용(±10V, 16bit 분해능)</li>
+<li>Analog 서보 인터페이스</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">02-1 / HX-Lite — 하드웨어</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">HX-Lite 구성</div>
+<div class="panel-body"><img alt="HX-Lite 구성" src="assets/img/hxlite-connector.jpg"/></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">HARDWARE</div>
+<h3>HX-Lite 하드웨어</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>산업용 CPU, VGA 출력(일반 LCD 모니터가능)</span></li>
+<li><span class="li-num">02</span><span>Touch Screen(USB, PS/2, Option)</span></li>
+<li><span class="li-num">03</span><span>RS-232/485, 2xSATA</span></li>
+<li><span class="li-num">04</span><span>GbE Ethernet 2 port 지원</span></li>
+</ul>
+<a class="video-link" href="https://youtu.be/ldfVp_87Peg?t=17" rel="noopener" target="_blank">
+<span class="play-ico">▶</span>HX-Lite 배선 동영상<span class="yt-badge"><svg fill="currentColor" viewbox="0 0 24 17"><path d="M23.5 2.5a3 3 0 0 0-2.1-2.1C19.5 0 12 0 12 0S4.5 0 2.6.4A3 3 0 0 0 .5 2.5 31 31 0 0 0 0 8.5a31 31 0 0 0 .5 6 3 3 0 0 0 2.1 2.1C4.5 17 12 17 12 17s7.5 0 9.4-.4a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-6 31 31 0 0 0-.5-6zM9.5 12V5l6.3 3.5z"></path></svg>YouTube</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="detail-block">
+<div class="container">
+<div class="eyebrow">02-2 / HX-Lite — Software</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-body"><img alt="고속 조각기" src="assets/img/hxlite-sw-photo.jpg"/></div>
+<p class="cap">고속 조각기</p>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">SOFTWARE</div>
+<h3>HX-Lite Software</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>OS: Windows 10 IoT 지원</span></li>
+<li><span class="li-num">02</span><span>HX-MC(밀링 조각기용), HX-TC(선반용), HX-CUT(절단기용), HX-EDM(방전기용) 지원</span></li>
+<li><span class="li-num">03</span><span>HMI Editor 로 사용자 전용 기능 및 화면 구성</span></li>
+<li><span class="li-num">04</span><span>PLC Editor 제공</span></li>
+<li><span class="li-num">05</span><span>마찰력, 백래쉬, 피치에러 보정을 통한 고정밀 제어 기능</span></li>
+<li><span class="li-num">06</span><span>다축 서보 동기 제어 기능 (Gantry, Twin table 제어)</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">02-3 / HX-Lite — 응용장비</div>
+<h2 class="section-title" style="font-size:26px;margin-top:10px;">HX-Lite 응용장비</h2>
+<div class="equip-grid" style="margin-top:32px;">
+<div class="equip-item">
+<div class="thumb"><img alt="고속 라우터" src="assets/img/hxlite-app1.jpg"/></div>
+<span>고속 라우터</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="고속 조각기" src="assets/img/hxlite-app2.jpg"/></div>
+<span>고속 조각기</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Gantry M/C" src="assets/img/hxlite-app3.jpg"/></div>
+<span>Gantry M/C</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Glass Scribing Machine" src="assets/img/hxlite-app4.jpg"/></div>
+<span>Glass Scribing Machine</span>
+</div>
+</div>
+</div>
+</section>
+<div class="product-inline-cta" id="hx-lite-detail-contact">
+<div class="container">
+<div class="detail-cta">
+<div>
+<h3>HX-Lite 도입 문의</h3>
+<p>구성 및 견적이 필요하시면 CNC 제어기 라인업 전체를 함께 확인해보세요.</p>
+</div>
+<div class="detail-cta-actions">
+<a class="btn btn-ghost" href="#cnc-controller">CNC 제어기 목록으로</a>
+<a class="btn btn-ghost" href="resources.html?q=hx-lite">관련 자료 다운로드</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 03. 모션 제어기 -->
+<section class="cat-section" data-section="motion-controller" id="motion-controller">
+<div class="container">
+<div class="cat-head">
+<div>
+<div class="eyebrow">03 / 모션 제어기</div>
+<h2 class="section-title">900d · 900A · GX-Series</h2>
+</div>
+<p class="section-desc">6축/10축 통합형부터 리눅스 기반 펄스 인터페이스, PAC형 제어기까지 다양한 자동화 현장에 대응합니다.</p>
+</div>
+<div class="spec-grid">
+<div class="spec-card">
+<div class="thumb"><span class="tag">All-in-One</span><img alt="900d" src="assets/img/card-900d.jpg"/></div>
+<div class="body">
+<h3>900d</h3>
+<p><strong>6축/10축을 하나로, 대량생산 전용기를 위한 최적의 경제성.</strong><br/>CNC 제어기와 스텝 드라이브를 하나로 통합한 기술집약형 시스템으로, 빠르고 강력한 6축 구동을 실현합니다.</p>
+</div>
+<div class="actions">
+<a href="#900d-detail">자세히 보기</a>
+<a class="primary" href="#900d-detail-contact">문의하기</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">Compact</span><img alt="900A" src="assets/img/card-900a.jpg"/></div>
+<div class="body">
+<h3>900A</h3>
+<p><strong>작은 몸집, 강한 보안 — 리눅스 기반 펄스 인터페이스 CNC.</strong><br/>컴팩트한 전용 하드웨어와 리눅스 환경 소프트웨어로 설치 공간은 줄이고 바이러스 위협은 원천 차단합니다.</p>
+</div>
+<div class="actions">
+<a href="#900a-detail">자세히 보기</a>
+<a class="primary" href="#900a-detail-contact">문의하기</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">모션 제어기</span><img alt="GX-Series" src="assets/img/card-gx.jpg"/></div>
+<div class="body">
+<h3>GX-Series</h3>
+<p><strong>모션제어와 PLC의 결합, 자동화를 다시 설계하다.</strong><br/>고정밀 모션제어 기술과 고성능 시퀀스 제어를 하나의 PAC 제어기에 담아, 복잡한 자동화 시스템도 손쉽게 프로그래밍할 수 있습니다.</p>
+</div>
+<div class="actions">
+<a href="#gx-series-detail">자세히 보기</a>
+<a class="primary" href="#gx-series-detail-contact">문의하기</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="product-inline-wrap" id="900d-detail"><section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="900d" src="assets/img/900d.jpg"/></div>
+<div>
+<span class="chip">모션 제어기 · 03</span>
+<h1>900d : 스텝 드라이브 일체형 CNC</h1>
+<p class="lede">빠르고 강력한 6축 스텝 드라이브 일체형 CNC.</p>
+<ul class="bullets">
+<li>빠르고 강력한 6축 스텝 드라이브 일체형 CNC</li>
+<li>제어기와 스텝 드라이브를 통합한 기술집약형 시스템</li>
+<li>대량생산용 전용기 제작에 최고의 경제성</li>
+</ul>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">03-1 / 900d — 구성 및 특징</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">900d 구성</div>
+<div class="panel-body"><img alt="900d 구성" src="assets/img/900d-config.jpg"/><div class="spec-links-row"><button class="spec-modal-trigger" data-modal-open="900d-detail-spec-modal-1" type="button"><span class="ico">▦</span><span>제어기와 스텝 드라이브 사양</span></button><div class="spec-modal-overlay" id="900d-detail-spec-modal-1"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">▦</span>제어기와 스텝 드라이브 사양</div>
+<div class="spec-table-grid">
+<div class="spec-group">
+<h4>Motion CPU</h4>
+<table class="spec-table">
+<tbody>
+<tr><th>CPU</th><td>Dual ARM Cortex-A15 1.5Ghz</td></tr>
+<tr><th>DISPLAY</th><td>HDMI</td></tr>
+<tr><th>USB 1</th><td>USB2.0 x 4 PORT</td></tr>
+<tr><th>USB 2</th><td>Micro USB x 1 PORT</td></tr>
+<tr><th>ETHERNET</th><td>10/100/1000 2-PORT</td></tr>
+<tr><th>FLASH MEMORY</th><td>eMMC 8GB (Option 32GB)</td></tr>
+<tr><th>MEMORY</th><td>2GB DDR3L (256M x 16)</td></tr>
+<tr><th>MICRO SD CARD</th><td>SD Card x 1EA</td></tr>
+</tbody>
+</table>
+</div>
+<div class="spec-group">
+<h4>Digital In/Out</h4>
+<table class="spec-table">
+<thead><tr><th></th><th>Input</th><th>Output</th></tr></thead>
+<tbody>
+<tr><th>입력점수</th><td>24점</td><td>24점</td></tr>
+<tr><th>절연방식</th><td>포토커플러 절연</td><td>포토커플러 비절연 / 릴레이 절연</td></tr>
+<tr><th>정격입력전압/전류</th><td>DC12 ~ 28V (리플 5% 이내)</td><td>DC12/24 (리플 5% 이내)</td></tr>
+<tr><th>On 전압/전류</th><td>DC 11.5이상 4mA</td><td>4ms이하</td></tr>
+<tr><th>Off 전압/전류</th><td>DC 6이하 / 1mA</td><td>4ms이하</td></tr>
+<tr><th>입력저항</th><td>약 4.0KΩ</td><td>릴레이 1A, TR 0.5A</td></tr>
+<tr><th>응답시간</th><td>초기값 : 4ms</td><td>초기값 : 4ms</td></tr>
+</tbody>
+</table>
+</div>
+<div class="spec-group full">
+<h4>StepSERVO</h4>
+<table class="spec-table">
+<tbody>
+<tr><th>형명</th><td>900d-IMD10 StepSERVO-2</td><td>비고</td></tr>
+<tr><th>구동 축</th><td>2축 / Bipolar 드라이브</td><td></td></tr>
+<tr><th>구동전압</th><td>+24V ~ +48V / 외부입력</td><td>코먼그라운드</td></tr>
+<tr><th>적용모터</th><td>NEMA17 / NEMA23 / Max 4A</td><td>파라미터 설정</td></tr>
+<tr><th>제어방식</th><td>Open-Loop / Closed-Loop</td><td>파라미터 설정</td></tr>
+<tr><th>엔코더</th><td>10,000ppr, 광학식</td><td>파라미터 설정</td></tr>
+<tr><th>엔코더 신호</th><td>Difference RS-422 ( A, *A, B, *B, Z, *Z )</td><td></td></tr>
+<tr><th>제어신호</th><td>STEP/DIR, CW/CCW</td><td></td></tr>
+<tr><th>I/O 신호</th><td>서보온/알람리셋/인포지션 출력/알람 출력</td><td>Internal</td></tr>
+<tr><th>상태정보(LED표시)</th><td>서보온, 인포지션, 알람출력</td><td>Internal</td></tr>
+<tr><th>통신</th><td>USB 전용 통신 ( 모니터링 )</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div></div></div></div></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>900d 특징</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>공간절약형 콤팩트 StepSERVO 전용제어기</span></li>
+<li><span class="li-num">02</span><span>응용프로그램 개발하기 위한 모션 API 라이브러리 제공</span></li>
+<li><span class="li-num">03</span><span>최대 6축 드라이브 일체형 제어기</span></li>
+<li><span class="li-num">04</span><span>NEMA17, NEMA23 스텝모터를 사용할 수 있음</span></li>
+<li><span class="li-num">05</span><span>StepSERVO 6축 드라이브 내장, SPINDLEx1, MPGx1, DIO24/24 지원</span></li>
+</ul>
+<a class="video-link" href="https://youtu.be/JBN5rlJ-f7U?t=15" rel="noopener" target="_blank">
+<span class="play-ico">▶</span>900d 배선 동영상<span class="yt-badge"><svg fill="currentColor" viewbox="0 0 24 17"><path d="M23.5 2.5a3 3 0 0 0-2.1-2.1C19.5 0 12 0 12 0S4.5 0 2.6.4A3 3 0 0 0 .5 2.5 31 31 0 0 0 0 8.5a31 31 0 0 0 .5 6 3 3 0 0 0 2.1 2.1C4.5 17 12 17 12 17s7.5 0 9.4-.4a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-6 31 31 0 0 0-.5-6zM9.5 12V5l6.3 3.5z"></path></svg>YouTube</span>
+</a>
+</div>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">03-2 / 900d — 적용장비</div>
+<h2 class="section-title" style="font-size:26px;margin-top:10px;">900d 적용장비</h2>
+<div class="equip-grid" style="margin-top:32px;">
+<div class="equip-item">
+<div class="thumb"><img alt="자동화장치" src="assets/img/900d-app1.jpg"/></div>
+<span>자동화장치</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="비젼 검사기" src="assets/img/900d-app2.jpg"/></div>
+<span>비젼 검사기</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="레이저 2D 마킹기" src="assets/img/900d-app3.jpg"/></div>
+<span>레이저 2D 마킹기</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="치아가공기" src="assets/img/900d-app4.jpg"/></div>
+<span>치아가공기</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="데스크탑로봇" src="assets/img/900d-app5.jpg"/></div>
+<span>데스크탑로봇</span>
+</div>
+</div>
+</div>
+</section><div class="product-inline-cta" id="900d-detail-contact">
+<div class="container">
+<div class="detail-cta">
+<div>
+<h3>900d 도입 문의</h3>
+<p>구성 및 견적이 필요하시면 모션 제어기 라인업 전체를 함께 확인해보세요.</p>
+</div>
+<div class="detail-cta-actions">
+<a class="btn btn-ghost" href="#motion-controller">모션 제어기 목록으로</a>
+<a class="btn btn-ghost" href="resources.html?q=900d">관련 자료 다운로드</a>
+</div>
+</div>
+</div>
+</div></div>
+<div class="product-inline-wrap" id="900a-detail"><section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="900A" src="assets/img/card-900a.jpg"/></div>
+<div>
+<span class="chip">모션 제어기 · 03</span>
+<h1>900A</h1>
+<p class="lede">작은 몸집, 강한 보안 — 리눅스 기반 펄스 인터페이스 CNC.</p>
+<ul class="bullets">
+<li>컴팩트한 전용 하드웨어와 리눅스 환경 소프트웨어로 설치 공간은 줄이고 바이러스 위협은 원천 차단합니다.</li>
+</ul>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">03-1 / 900A — 구성 및 특징</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">900A / 900A-T 구성</div>
+<div class="panel-body"><img alt="900A / 900A-T 구성" src="assets/img/900a-config.jpg"/><div class="spec-links-row"><button class="spec-modal-trigger" data-modal-open="900a-detail-spec-modal-2" type="button"><span class="ico">▦</span><span>900A / 900A-T 사양</span></button><div class="spec-modal-overlay" id="900a-detail-spec-modal-2"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">▦</span>900A / 900A-T 사양</div>
+<div class="spec-table-grid">
+<div class="spec-group">
+<h4>MOTION CPU (공통)</h4>
+<table class="spec-table">
+<tbody>
+<tr><th>CPU</th><td>Dual ARM Cortex-A15 1.5Ghz</td></tr>
+<tr><th>DISPLAY</th><td>HDMI</td></tr>
+<tr><th>USB 1</th><td>USB2.0 x 4 PORT</td></tr>
+<tr><th>USB 2</th><td>Micro USB x 1 PORT</td></tr>
+<tr><th>ETHERNET</th><td>10/100/1000 1-PORT</td></tr>
+<tr><th>FLASH MEMORY</th><td>eMMC 8GB (Option 32GB)</td></tr>
+<tr><th>MEMORY</th><td>2GB DDR3L (256M x 16)</td></tr>
+<tr><th>MICRO SD CARD</th><td>SD Card x 1EA</td></tr>
+<tr><th>INTERFACE</th><td>HSSPI (High Speed Serial Peripheral Interface)</td></tr>
+</tbody>
+</table>
+</div>
+<div class="spec-group">
+<h4>MOTION AXIS (공통)</h4>
+<table class="spec-table">
+<tbody>
+<tr><th>제어축수</th><td>1 ~ 5 AXIS</td></tr>
+<tr><th>펄스 출력 형태</th><td>1펄스 (STEP/DIR), 2펄스 (CW/CCW)</td></tr>
+<tr><th>Control voltage</th><td>24VDC ±10%, 0.8A</td></tr>
+<tr><th>Encoder</th><td>Line Driver 입력</td></tr>
+<tr><th>AXIS I/O</th><td>Servo drive ready, alarm / Servo drive s-on, alarm-reset</td></tr>
+<tr><th>Spindle Speed</th><td>±10V, 14bit Analog output</td></tr>
+<tr><th>Analog Input *</th><td>14bit 4CH (±10V)</td></tr>
+<tr><th>Analog Output *</th><td>14bit 4CH (±10V)</td></tr>
+<tr><th>LED Display</th><td>Servo on LED, Servo ready LED / Servo alarm LED, FND State display</td></tr>
+</tbody>
+</table>
+</div>
+<div class="spec-group">
+<h4>900A I/O</h4>
+<table class="spec-table">
+<tbody>
+<tr><th>Digital Input</th><td>40 Point, 24V 7mA</td></tr>
+<tr><th>Digital Output</th><td>32 Point, Transistor, 24V 0.5A</td></tr>
+</tbody>
+</table>
+</div>
+<div class="spec-group">
+<h4>900A-T I/O</h4>
+<table class="spec-table">
+<tbody>
+<tr><th>Digital Input</th><td>32 Point, 24V 7mA</td></tr>
+<tr><th>Digital Output</th><td>18 Point (Tr3/Relay15), 24V 0.5A</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div></div></div></div></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>900A 의 특징 : 펄스 인터페이스 CNC</h3>
+<p style="font-size:13.5px;color:var(--body);line-height:1.7;margin-bottom:18px;">작은 공간을 차지하도록 디자인된 전용 하드웨어와 리눅스 환경에서 동작되는 소프트웨어로 바이러스에 강한 제어기입니다.</p>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>API 제공 응용프로그램 개발하기 위한 모션 API 라이브러리를 제공</span></li>
+<li><span class="li-num">02</span><span>ALL-IN-ONE 5축 제어기 최소의 비용과 작업으로 5축 장비를 구축</span></li>
+<li><span class="li-num">03</span><span>A/D 4채널, D/A 4채널 모듈 내장</span></li>
+<li><span class="li-num">04</span><span>센서와 MULTI-INVERTER, 레이저 파워 조절 ANALOG VOLTAGE 출력기능을 구현</span></li>
+</ul>
+<a class="video-link" href="https://youtu.be/QYUK9ya0VPc?t=15" rel="noopener" target="_blank">
+<span class="play-ico">▶</span>900A 배선 동영상<span class="yt-badge"><svg fill="currentColor" viewbox="0 0 24 17"><path d="M23.5 2.5a3 3 0 0 0-2.1-2.1C19.5 0 12 0 12 0S4.5 0 2.6.4A3 3 0 0 0 .5 2.5 31 31 0 0 0 0 8.5a31 31 0 0 0 .5 6 3 3 0 0 0 2.1 2.1C4.5 17 12 17 12 17s7.5 0 9.4-.4a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-6 31 31 0 0 0-.5-6zM9.5 12V5l6.3 3.5z"></path></svg>YouTube</span>
+</a>
+</div>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">03-2 / 900A — 적용장비</div>
+<h2 class="section-title" style="font-size:26px;margin-top:10px;">900A 적용장비</h2>
+<div class="equip-grid" style="margin-top:32px;">
+<div class="equip-item">
+<div class="thumb"><img alt="데스크탑 로봇" src="assets/img/900a-app1.jpg"/></div>
+<span>데스크탑 로봇</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Dental 가공기" src="assets/img/900a-app2.jpg"/></div>
+<span>Dental 가공기</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Pick and Place" src="assets/img/900a-app3.jpg"/></div>
+<span>Pick and Place</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Glass Scribing Machine" src="assets/img/900a-app4.jpg"/></div>
+<span>Glass Scribing Machine</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="VR안경용 렌즈 씰링" src="assets/img/900a-app5.jpg"/></div>
+<span>VR안경용 렌즈 씰링</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="핸드폰 Glass 씰링" src="assets/img/900a-app6.jpg"/></div>
+<span>핸드폰 Glass 씰링</span>
+</div>
+</div>
+</div>
+</section><div class="product-inline-cta" id="900a-detail-contact">
+<div class="container">
+<div class="detail-cta">
+<div>
+<h3>900A 도입 문의</h3>
+<p>구성 및 견적이 필요하시면 모션 제어기 라인업 전체를 함께 확인해보세요.</p>
+</div>
+<div class="detail-cta-actions">
+<a class="btn btn-ghost" href="#motion-controller">모션 제어기 목록으로</a>
+<a class="btn btn-ghost" href="resources.html?q=900a">관련 자료 다운로드</a>
+</div>
+</div>
+</div>
+</div></div>
+<div class="product-inline-wrap" id="gx-series-detail"><section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="GX-Series" src="assets/img/card-gx.jpg"/></div>
+<div>
+<span class="chip">모션 제어기 · 03</span>
+<h1>GX-Series</h1>
+<p class="lede">모션제어와 PLC의 결합, 자동화를 다시 설계하다.</p>
+<ul class="bullets">
+<li>고정밀 모션제어 기술과 고성능 시퀀스 제어를 하나의 PAC 제어기에 담아, 복잡한 자동화 시스템도 손쉽게 프로그래밍할 수 있습니다.</li>
+</ul>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">03-1 / GX-Series — 구성 및 특징</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">GX-S200/S400 구성</div>
+<div class="panel-body"><img alt="GX-S200/S400 구성" src="assets/img/gx-config.jpg"/><div class="spec-links-row"><button class="spec-modal-trigger" data-modal-open="gx-series-detail-spec-modal-3" type="button"><span class="ico">▦</span><span>GX-S200, GX-S400 사양</span></button><div class="spec-modal-overlay" id="gx-series-detail-spec-modal-3"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">▦</span>GX-S200, GX-S400 사양</div>
+<div class="spec-table-grid">
+<div class="spec-group">
+<h4>GX-S200</h4>
+<table class="spec-table">
+<tbody>
+<tr><th>제어축수</th><td>2 Axis</td></tr>
+<tr><th>I/O 접점수</th><td>IN16/OUT16</td></tr>
+<tr><th>제어형태</th><td>Analog / Pulse</td></tr>
+<tr><th>USB</th><td>1 Port</td></tr>
+<tr><th>RS-232C</th><td>2 Port</td></tr>
+<tr><th>ETHERNET</th><td>1 Port</td></tr>
+<tr><th>MEMORY</th><td>4MB</td></tr>
+<tr><th>I/O 확장</th><td>시리얼 I/O IN32/OUT32</td></tr>
+<tr><th>MPG</th><td>1 Port</td></tr>
+<tr><th>입력전원</th><td>DC 24V (1.3A)</td></tr>
+</tbody>
+</table>
+</div>
+<div class="spec-group">
+<h4>GX-S400</h4>
+<table class="spec-table">
+<tbody>
+<tr><th>제어축수</th><td>4 Axis</td></tr>
+<tr><th>I/O 접점수</th><td>IN48/OUT48</td></tr>
+<tr><th>제어형태</th><td>Analog / Pulse</td></tr>
+<tr><th>USB</th><td>1 Port</td></tr>
+<tr><th>RS-232C</th><td>2 Port</td></tr>
+<tr><th>ETHERNET</th><td>1 Port</td></tr>
+<tr><th>MEMORY</th><td>4MB</td></tr>
+<tr><th>I/O 확장</th><td>시리얼 I/O IN32/OUT32</td></tr>
+<tr><th>MPG</th><td>1 Port</td></tr>
+<tr><th>입력전원</th><td>DC 24V (1.3A)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div></div></div></div></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>GX-S200/S400 특징</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>고정밀 모션제어 기술</span></li>
+<li><span class="li-num">02</span><span>고성능 PLC(시퀀스제어) 기술</span></li>
+<li><span class="li-num">03</span><span>최대 4계통제어 지원</span></li>
+<li><span class="li-num">04</span><span>모션명령어, G CODE 동시 지원</span></li>
+<li><span class="li-num">05</span><span>위치, 직선, 원호, 헬리컬 보간 기능</span></li>
+<li><span class="li-num">06</span><span>위치제어, 속도제어, 동기제어</span></li>
+<li><span class="li-num">07</span><span>MASTER-K, MELSEC 상위 통신 프로토콜 지원</span></li>
+<li><span class="li-num">08</span><span>강력한 LADDER 방식의 PLC 프로그램 지원</span></li>
+<li><span class="li-num">09</span><span>ANALOG/PULSE INTERFACE 지원</span></li>
+<li><span class="li-num">10</span><span>USB, ETHERNET, RS232C 통신</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">03-2 / GX-Series — 응용장비</div>
+<h2 class="section-title" style="font-size:26px;margin-top:10px;">GX-S200/S400 응용장비</h2>
+<div class="equip-grid" style="margin-top:32px;">
+<div class="equip-item">
+<div class="thumb"><img alt="겐트리로더" src="assets/img/gx-app1.jpg"/></div>
+<span>겐트리로더</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="델타로봇" src="assets/img/gx-app2.jpg"/></div>
+<span>델타로봇</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="직교로봇" src="assets/img/gx-app3.jpg"/></div>
+<span>직교로봇</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="디스펜서" src="assets/img/gx-app4.jpg"/></div>
+<span>디스펜서</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="스카라 로봇" src="assets/img/gx-app5.jpg"/></div>
+<span>스카라 로봇</span>
+</div>
+</div>
+</div>
+</section><div class="product-inline-cta" id="gx-series-detail-contact">
+<div class="container">
+<div class="detail-cta">
+<div>
+<h3>GX-Series 도입 문의</h3>
+<p>구성 및 견적이 필요하시면 모션 제어기 라인업 전체를 함께 확인해보세요.</p>
+</div>
+<div class="detail-cta-actions">
+<a class="btn btn-ghost" href="#motion-controller">모션 제어기 목록으로</a>
+<a class="btn btn-ghost" href="resources.html?q=gx-series">관련 자료 다운로드</a>
+</div>
+</div>
+</div>
+</div></div>
+<!-- 04. 서보모터 & 드라이브 -->
+<section class="cat-section" data-section="servo-drive" id="servo-drive">
+<div class="container">
+<div class="cat-head">
+<div>
+<div class="eyebrow">04 / 서보모터 &amp; 드라이브</div>
+<h2 class="section-title">서보 모터 &amp; 드라이브 · 단축 제어기</h2>
+</div>
+<p class="section-desc">400W부터 11kW까지, EtherCAT부터 아날로그/펄스까지 다양한 구성으로 대응하는 풀 디지털 서보 라인업입니다.</p>
+</div>
+<div class="spec-grid">
+<div class="spec-card">
+<div class="thumb"><span class="tag">서보모터/드라이브</span><img alt="서보 모터 &amp; 드라이브" src="assets/img/card-servo-drive-motor.jpg"/></div>
+<div class="body">
+<h3>서보 모터 &amp; 드라이브</h3>
+<p><strong>400W부터 11KW까지, 드라이브와 모터를 하나의 라인업으로.</strong><br/>SD Series 풀 디지털 서보드라이브와 SMG(고토크)·SMA(고회전) 서보모터까지, 어떤 부하 조건에도 최적의 조합을 찾을 수 있습니다.</p>
+</div>
+<div class="actions">
+<a href="#servo-drive-motor-detail">자세히 보기</a>
+<a class="primary" href="#servo-drive-motor-detail-contact">문의하기</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">단축 자동화</span><img alt="단축 제어기" src="assets/img/card-sdc.jpg"/></div>
+<div class="body">
+<h3>단축 제어기</h3>
+<p><strong>1축 자동화, 더 간단하고 정밀하게.</strong><br/>드라이브 내부 위치제어로 경제적인 시스템 구성이 가능하며, I/O 접점 또는 MODBUS 통신으로 상위 컨트롤러와 연동됩니다.</p>
+</div>
+<div class="actions">
+<a href="#sdc-detail">자세히 보기</a>
+<a class="primary" href="#sdc-detail-contact">문의하기</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="product-inline-wrap" id="servo-drive-motor-detail"><section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="서보 모터 &amp; 드라이브" src="assets/img/card-servo-drive-motor.jpg"/></div>
+<div>
+<span class="chip">서보모터/드라이브 · 04</span>
+<h1>서보 모터 &amp; 드라이브</h1>
+<p class="lede">400W부터 11KW까지, 드라이브와 모터를 하나의 라인업으로.</p>
+<ul class="bullets">
+<li>SMG &amp; SMA 서보모터 — 200W~7.5KW 라인업에 SMG(고토크)·SMA(고회전) 두 가지 특성을 갖춰 어떤 부하 조건에도 최적의 조합을 찾을 수 있습니다</li>
+<li>SD Series — EtherCAT은 물론 Analog·Pulse·IO·ModBUS까지 어떤 상위 제어 환경과도 자유롭게 연동되는 풀 디지털 서보드라이브</li>
+</ul>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">04-1 / 서보 모터 &amp; 드라이브 — SMG &amp; SMA 서보모터</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">SMG &amp; SMA 서보모터</div>
+<div class="panel-body"><img alt="SMG &amp; SMA 서보모터" src="assets/img/card-smgsma.jpg"/><div class="spec-links-row"><button class="spec-modal-trigger" data-modal-open="servo-drive-motor-detail-spec-modal-5" type="button"><span class="ico">▦</span><span>서보모터 사양</span></button><div class="spec-modal-overlay" id="servo-drive-motor-detail-spec-modal-5"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">▦</span>서보모터 사양</div>
+<div class="spec-table-scroll">
+<table class="spec-table narrow-th">
+<tbody>
+<tr><th>전압</th><td colspan="13" style="text-align:center;font-weight:700;background:var(--bg-alt);">220V</td></tr>
+<tr>
+<th>플랜지 규격</th>
+<td colspan="2" style="text-align:center;font-weight:700;">40</td>
+<td colspan="2" style="text-align:center;font-weight:700;">60</td>
+<td colspan="2" style="text-align:center;font-weight:700;">80</td>
+<td colspan="3" style="text-align:center;font-weight:700;">130</td>
+<td colspan="4" style="text-align:center;font-weight:700;">180</td>
+</tr>
+<tr>
+<th>드라이브형식 (SD-)</th>
+<td>04A</td><td>04A</td><td>04A</td><td>10A</td><td>10A</td><td>06A</td><td>15A</td><td>20A</td><td>20A</td><td>30A</td><td>55A</td><td>75A</td><td>110A</td>
+</tr>
+<tr>
+<th>모터형식 (SMG-/SMA-)</th>
+<td>01A□A</td><td>02A□A</td><td>04A□A</td><td>04A□SA</td><td>08A□A</td><td>05A□A</td><td>13A□A</td><td>20A□A</td><td>20A□A</td><td>30A□A</td><td>44A□A</td><td>55A□A</td><td>75A□A</td>
+</tr>
+<tr>
+<th>정격출력 (kW)</th>
+<td>0.1</td><td>0.2</td><td>0.4</td><td>0.4</td><td>0.75</td><td>0.45</td><td>1.3</td><td>2</td><td>1.8</td><td>2.9</td><td>4.4</td><td>5.5</td><td>7.5</td>
+</tr>
+<tr>
+<th>정격토크 (N·m)</th>
+<td>0.312</td><td>0.637</td><td>1.27</td><td>0.91</td><td>2.39</td><td>2.83</td><td>8.3</td><td>11.3</td><td>11.3</td><td>18.4</td><td>28.2</td><td>34.8</td><td>47.8</td>
+</tr>
+<tr>
+<th>순간최대토크 (N·m)</th>
+<td>0.1</td><td>2.23</td><td>4.46</td><td>6.69</td><td>7.16</td><td>8.7</td><td>23.0</td><td>27.6</td><td>28.4</td><td>44.7</td><td>71.0</td><td>87.3</td><td>117</td>
+</tr>
+<tr>
+<th>정격전류 (Arms)</th>
+<td>0.84</td><td>1.6</td><td>2.7</td><td>4.2</td><td>4.4</td><td>3.5</td><td>10.4</td><td>16</td><td>16.5</td><td>23.6</td><td>32.4</td><td>41.8</td><td>54.2</td>
+</tr>
+<tr>
+<th>순간최대전류 (Arms)</th>
+<td>2.9</td><td>5.8</td><td>9.3</td><td>14.9</td><td>13.4</td><td>10.5</td><td>27</td><td>42</td><td>41</td><td>54</td><td>83</td><td>108</td><td>129</td>
+</tr>
+<tr>
+<th>정격회전속도 (min⁻¹)</th>
+<td colspan="6" style="text-align:center;">3000</td>
+<td colspan="7" style="text-align:center;">1500</td>
+</tr>
+<tr>
+<th>최고회전속도 (min⁻¹)</th>
+<td colspan="6" style="text-align:center;">5000</td>
+<td colspan="7" style="text-align:center;">3000</td>
+</tr>
+<tr>
+<th>토크정수 (N·m/Arms)</th>
+<td>0.352</td><td>0.435</td><td>0.512</td><td>0.505</td><td>0.59</td><td>0.83</td><td>0.85</td><td>0.68</td><td>0.70</td><td>0.82</td><td>0.86</td><td>0.80</td><td>0.90</td>
+</tr>
+<tr>
+<th style="white-space:normal;">회전자관성모멘트*1<br/>(Kg·m²×10⁻⁴)</th>
+<td>0.0525<br/><small>(0.0739)</small></td>
+<td>0.259<br/><small>(0.323)</small></td>
+<td>0.442<br/><small>(0.506)</small></td>
+<td>0.667<br/><small>(0.744)</small></td>
+<td>0.672<br/><small>(0.86)</small></td>
+<td>7.22<br/><small>(9.3)</small></td>
+<td>20.3<br/><small>(22.4)</small></td>
+<td>26.7<br/><small>(34.2)</small></td>
+<td>31.4<br/><small>(40.0)</small></td>
+<td>45.8<br/><small>(54.3)</small></td>
+<td>67.3<br/><small>(75.7)</small></td>
+<td>88.7<br/><small>(97.3)</small></td>
+<td>126<br/><small>(133.2)</small></td>
+</tr>
+<tr>
+<th>정격파워 (kW/s)</th>
+<td>15.2</td><td>15.7</td><td>36.5</td><td>54.7</td><td>84.8</td><td>11.0</td><td>33.5</td><td>36.1</td><td>41.3</td><td>75.1</td><td>118</td><td>135</td><td>183</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="font-size:11.5px;color:var(--muted);margin-top:12px;">*1) ( ) 안의 수치는 유지브레이크 장착 모터용 값을 나타냅니다.</p>
+</div></div></div></div></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>SMG &amp; SMA 서보모터 특징</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>200W~7.5KW 라인업 구성</span></li>
+<li><span class="li-num">02</span><span>SMG — 고토크형, 저속·고부하 구동에 최적</span></li>
+<li><span class="li-num">03</span><span>SMA — 고회전형, 고속 응답이 필요한 구동에 최적</span></li>
+<li><span class="li-num">04</span><span>어떤 부하 조건에도 최적의 조합을 선택할 수 있는 두 가지 특성 라인업</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section><section class="detail-block">
+<div class="container">
+<div class="eyebrow">04-2 / 서보 모터 &amp; 드라이브 — 서보모터 제품형식</div>
+<div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">▦</span>서보모터 제품형식</div>
+<div class="partcode-row">
+<div class="partcode-item">
+<div class="code-box">SMG</div>
+<div class="connector"></div>
+<div class="code-label">시리즈명</div>
+<div class="code-desc">SMG : 고토크용<br/>SMA : 고회전용</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">04</div>
+<div class="connector"></div>
+<div class="code-label">용량</div>
+<div class="code-desc">04 : 400W<br/>08 : 750W<br/>13 : 1.3KW<br/>20 : 2.0KW<br/>30 : 3.0KW<br/>44 : 4.4KW<br/>55 : 5.5KW<br/>75 : 7.5KW</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">A</div>
+<div class="connector"></div>
+<div class="code-label">입력전압</div>
+<div class="code-desc">A : 200V<br/>B : 400V</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">A</div>
+<div class="connector"></div>
+<div class="code-label">엔코더</div>
+<div class="code-desc">A : 절대치<br/>I : 인크리멘탈</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">A</div>
+<div class="connector"></div>
+<div class="code-label">설계사양</div>
+<div class="code-desc">A : 표준<br/>E : 고정도</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">1</div>
+<div class="connector"></div>
+<div class="code-label">축단사양</div>
+<div class="code-desc">1: straight<br/>2: straight/key</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">1</div>
+<div class="connector"></div>
+<div class="code-label">브레이크사양</div>
+<div class="code-desc">1 : DC24<br/>2 : DC90</div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="detail-block">
+<div class="container">
+<div class="eyebrow">04-3 / 서보 모터 &amp; 드라이브 — SD Series</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">SD Series 서보드라이브</div>
+<div class="panel-body"><img alt="SD Series" src="assets/img/card-sdseries.jpg"/><div class="spec-links-row"><button class="spec-modal-trigger" data-modal-open="servo-drive-motor-detail-spec-modal-7" type="button"><span class="ico">▦</span><span>서보드라이브 사양</span></button><div class="spec-modal-overlay" id="servo-drive-motor-detail-spec-modal-7"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">▦</span>서보드라이브 사양</div>
+<table class="spec-table narrow-th">
+<tbody>
+<tr>
+<th>서보팩 형식 (SD-)</th>
+<td style="text-align:center;font-weight:700;background:var(--bg-alt);">04A</td>
+<td style="text-align:center;font-weight:700;background:var(--bg-alt);">10A</td>
+<td style="text-align:center;font-weight:700;background:var(--bg-alt);">15A</td>
+<td style="text-align:center;font-weight:700;background:var(--bg-alt);">20A</td>
+<td style="text-align:center;font-weight:700;background:var(--bg-alt);">30A</td>
+<td style="text-align:center;font-weight:700;background:var(--bg-alt);">55A</td>
+<td style="text-align:center;font-weight:700;background:var(--bg-alt);">75A</td>
+</tr>
+<tr>
+<th>최대 적용 모터 [KW]</th>
+<td>0.4</td><td>1</td><td>1.5</td><td>2</td><td>3</td><td>5.5</td><td>7.5</td>
+</tr>
+<tr>
+<th>정격 출력 전류 [A]</th>
+<td>3</td><td>6.5</td><td>11A</td><td>13.5</td><td>16.5</td><td>35</td><td>40</td>
+</tr>
+<tr>
+<th>최대 출력 전류 [A]</th>
+<td>9</td><td>19.5</td><td>28A</td><td>40.5</td><td>49.5</td><td>96</td><td>104</td>
+</tr>
+<tr>
+<th>회생 저항기</th>
+<td colspan="5" style="text-align:center;">내장 / 외장</td>
+<td colspan="2" style="text-align:center;">외장</td>
+</tr>
+<tr>
+<th>주 회로 [3상 : AC200V]</th>
+<td colspan="7" style="text-align:center;">AC200 ~ 230V +10~-15% 50/60Hz</td>
+</tr>
+<tr>
+<th>제어회로 [단상 : AC200V]</th>
+<td colspan="7" style="text-align:center;">AC200 ~ 230V +10~-15% 50/60Hz</td>
+</tr>
+</tbody>
+</table>
+</div></div></div><button class="spec-modal-trigger" data-modal-open="servo-drive-motor-detail-spec-modal-8" type="button"><span class="ico">▦</span><span>서보드라이브 특성</span></button><div class="spec-modal-overlay" id="servo-drive-motor-detail-spec-modal-8"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">📡</span>서보드라이브 특성</div>
+<table class="spec-table narrow-th">
+<thead>
+<tr><th>분류</th><th>항목</th><th>사양</th></tr>
+</thead>
+<tbody>
+<tr style="background:var(--bg-alt);">
+<th rowspan="2">주전원 회로</th>
+<td>입력전압주파수</td>
+<td>3상 200V ~230V, 50/60HZ</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<td>허용전압 변동율</td>
+<td>+10% ~ -15%이내</td>
+</tr>
+<tr>
+<th rowspan="2">제어회로 전원</th>
+<td>입력전압</td>
+<td>단상 200V ~230V, 50/60HZ</td>
+</tr>
+<tr>
+<td>허용전압 변동율</td>
+<td>±15% 이내</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<th rowspan="4">검출기</th>
+<td>검출기 형식</td>
+<td>인크리멘탈 2000~6000[ppr] 15선식, 19bit BiSS 엔코더, 1Vpp sin/cos 엔코더</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<td>출력신호 형식</td>
+<td>Differential Line Driver 출력.</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<td>검출기 정도</td>
+<td>1회전당 524,288(19bits 엔코더 기준)</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<td>검출기 전원</td>
+<td>DC 5V, Max0.3[A]</td>
+</tr>
+<tr>
+<th rowspan="3">구동방식</th>
+<td>구동방식</td>
+<td>정현파 PWM 제어 (IGBT사용)</td>
+</tr>
+<tr>
+<td>GATE 회로</td>
+<td>1ED020I12-F2 (Max 2.0A)</td>
+</tr>
+<tr>
+<td>보호기능</td>
+<td>UVLO(Under voltage Lockout), Ready, Short Circuit Clamping, Active Miller Clamp, Desaturation Protection, Fault Signal</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<th rowspan="4">속도제어 사양</th>
+<td>주파수 응답특성</td>
+<td>최대 1KHz이상</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<td>속도지령입력</td>
+<td>DC0V~±10V, 최대속도 파라메타 조정가능), EtherCAT속도지령</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<td>속도변동율</td>
+<td>±0.01[%], 부하변동 0~100%</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<td>가감속 시간</td>
+<td>직선 또는 S자 가감속</td>
+</tr>
+<tr>
+<th rowspan="3">위치제어 사양</th>
+<td>위치입력주파수</td>
+<td>1Mpps, 라인드라이브</td>
+</tr>
+<tr>
+<td>위치입력종류(펄스)</td>
+<td>방향+펄스, 정회전 펄스+역회전 펄스</td>
+</tr>
+<tr>
+<td>위치입력 형태</td>
+<td>Line Driver 방식 (RS422)</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<th rowspan="3">토크제어 사양</th>
+<td>토크지령입력</td>
+<td>DC0V~±10V, 최대속도 파라메타 조정가능)</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<td>반복 정밀도</td>
+<td>±1[%]이내</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<td>토크제한속도지령</td>
+<td>DC0V~±10V, 최대속도 파라메타 조정가능)</td>
+</tr>
+<tr>
+<th rowspan="4">내장기능</th>
+<td>보호기능</td>
+<td>과전류, 회생과전압, 과부하, 엔코더 이상, 주전원이상, 과열, 회생과다, 과속도, IGBT FAULT, 부족전압</td>
+</tr>
+<tr>
+<td>회생저항</td>
+<td>기본 내장, 외장(별치)</td>
+</tr>
+<tr>
+<td>USB 통신</td>
+<td>PC USB통신 지원 (파라메타 및 변수 모니터링)</td>
+</tr>
+<tr>
+<td>온도검출</td>
+<td>모터 온도, IGBT온도, PCB온도 검출</td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>SD Series 특징</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>400W부터 11KW까지, 하나의 플랫폼으로 완성하는 풀 디지털 서보</span></li>
+<li><span class="li-num">02</span><span>EtherCAT 통신 지원 — 상위 제어기와의 완전 동기·보간 제어</span></li>
+<li><span class="li-num">03</span><span>Analog·Pulse·IO·ModBUS 등 다양한 상위 제어 환경과 자유롭게 연동</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">04-4 / 서보 모터 &amp; 드라이브 — 서보드라이브 제품형식</div>
+<div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">▦</span>서보드라이브 제품형식</div>
+<div class="partcode-row">
+<div class="partcode-item">
+<div class="code-box">SD</div>
+<div class="connector"></div>
+<div class="code-label">시리즈명</div>
+<div class="code-desc">서보 시리즈</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">04</div>
+<div class="connector"></div>
+<div class="code-label">용량</div>
+<div class="code-desc">04 : 400W<br/>10 : 1.0KW<br/>15 : 1.5KW<br/>20 : 2.0KW<br/>30 : 3.0KW<br/>55 : 5.5KW<br/>75 : 7.5KW</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">A</div>
+<div class="connector"></div>
+<div class="code-label">입력전압</div>
+<div class="code-desc">A : 200V<br/>B : 400V</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">C</div>
+<div class="connector"></div>
+<div class="code-label">엔코더</div>
+<div class="code-desc">A : Quadrature<br/>D : Serial<br/>C : Serial (BiSS)<br/>D : Serial (Sanyo)<br/>E : Serial (Nikon)</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">A</div>
+<div class="connector"></div>
+<div class="code-label">통신사양</div>
+<div class="code-desc">A : Analog<br/>E : EtherCAT<br/>C : 위치결정형</div>
+</div>
+</div>
+</div>
+</div>
+</section><div class="product-inline-cta" id="servo-drive-motor-detail-contact">
+<div class="container">
+<div class="detail-cta">
+<div>
+<h3>서보 모터 &amp; 드라이브 도입 문의</h3>
+<p>구성 및 견적이 필요하시면 서보모터/드라이브 라인업 전체를 함께 확인해보세요.</p>
+</div>
+<div class="detail-cta-actions">
+<a class="btn btn-ghost" href="#servo-drive">서보모터/드라이브 목록으로</a>
+<a class="btn btn-ghost" href="resources.html?q=servo-drive-motor">관련 자료 다운로드</a>
+</div>
+</div>
+</div>
+</div></div>
+<div class="product-inline-wrap" id="sdc-detail"><section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="단축 제어기" src="assets/img/card-sdc.jpg"/></div>
+<div>
+<span class="chip">서보모터/드라이브 · 04</span>
+<h1>단축 제어기</h1>
+<p class="lede">1축 자동화, 더 간단하고 정밀하게.</p>
+<ul class="bullets">
+<li>드라이브 내부 위치제어로 경제적인 시스템 구성이 가능하며, I/O 접점 또는 MODBUS 통신으로 상위 컨트롤러와 연동됩니다.</li>
+</ul>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">04-1 / 단축 제어기 — 구성 및 특징</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">단축제어기 구성</div>
+<div class="panel-body"><img alt="단축제어기 구성" src="assets/img/sdc-config.jpg"/></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>단축 제어기 특징</h3>
+<p style="font-size:13.5px;color:var(--body);line-height:1.7;margin-bottom:14px;">SDC SERIES는 모션 컨트롤러 없이 다양한 모션제어와 위치제어가 가능합니다.</p>
+<p style="font-size:13.5px;color:var(--body);line-height:1.7;margin-bottom:14px;">드라이브 내부에서 위치제어를 수행하므로 경제적인 제어시스템 구성이 가능합니다.</p>
+<p style="font-size:13.5px;color:var(--body);line-height:1.7;margin-bottom:18px;">I/O 접점만으로 제어가 가능하고, MODBUS 통신으로 상위 컨트롤러(PLC등)와 연결하여 제어할 수 있습니다.</p>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>0.2KW ~ 3KW Servo Drive</span></li>
+<li><span class="li-num">02</span><span>19/16 I/O, 접점 제어 방식</span></li>
+<li><span class="li-num">03</span><span>정밀 위치제어 및 속도제어</span></li>
+<li><span class="li-num">04</span><span>원점설정, 정방향/역방향 JOG 운전</span></li>
+<li><span class="li-num">05</span><span>등분할 운전, 미세단위 운전</span></li>
+<li><span class="li-num">06</span><span>회전 좌표계 근거리 운전</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section><section class="detail-block">
+<div class="container">
+<div class="eyebrow">04-2 / 단축 제어기 — 적용 분야</div>
+<h2 class="section-title" style="font-size:26px;margin-top:10px;">단축 제어기 적용 분야</h2>
+<div class="equip-grid cols-6" style="margin-top:32px;">
+<div class="equip-item">
+<div class="thumb"><img alt="서보프레스" src="assets/img/sdc-app1.jpg"/></div>
+<span>서보프레스</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="컨베이어 이송" src="assets/img/sdc-app2.jpg"/></div>
+<span>컨베이어 이송</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="터렛" src="assets/img/sdc-app3.jpg"/></div>
+<span>터렛</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="인덱스" src="assets/img/sdc-app4.jpg"/></div>
+<span>인덱스</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="패킷 핸들러" src="assets/img/sdc-app5.jpg"/></div>
+<span>패킷 핸들러</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Roller, Feeder" src="assets/img/sdc-app6.jpg"/></div>
+<span>Roller, Feeder</span>
+</div>
+</div>
+</div>
+</section><div class="product-inline-cta" id="sdc-detail-contact">
+<div class="container">
+<div class="detail-cta">
+<div>
+<h3>단축 제어기 도입 문의</h3>
+<p>구성 및 견적이 필요하시면 서보모터/드라이브 라인업 전체를 함께 확인해보세요.</p>
+</div>
+<div class="detail-cta-actions">
+<a class="btn btn-ghost" href="#servo-drive">서보모터/드라이브 목록으로</a>
+<a class="btn btn-ghost" href="resources.html?q=sdc">관련 자료 다운로드</a>
+</div>
+</div>
+</div>
+</div></div>
+<!-- 05. 스텝모터 & 드라이브 -->
+<section class="cat-section" data-section="stepmotor-drive" id="stepmotor-drive">
+<div class="container">
+<div class="cat-head">
+<div>
+<div class="eyebrow">05 / 스텝모터 &amp; 드라이브</div>
+<h2 class="section-title">StepServo Motor &amp; Drive</h2>
+</div>
+<p class="section-desc">스텝모터의 경제성에 서보의 정밀도를 더한 하이브리드 구동 솔루션입니다.</p>
+</div>
+<div class="spec-grid">
+<div class="spec-card">
+<div class="thumb"><span class="tag">스텝모터/드라이브</span><img alt="StepServo Motor &amp; Drive" src="assets/img/card-stepservo.jpg"/></div>
+<div class="body">
+<h3>StepServo Motor &amp; Drive</h3>
+<p><strong>스텝모터의 경제성에 서보의 정밀도를 더하다.</strong><br/>+24V~+48V DC 파워로 구동되며, 고정밀 엔코더가 위치 오차를 실시간으로 보정해 안정적인 정밀 제어를 보장합니다.</p>
+</div>
+<div class="actions">
+<a href="#stepservo-detail">자세히 보기</a>
+<a class="primary" href="#stepservo-detail-contact">문의하기</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">Active Motion</span><img alt="ACTIMO" src="assets/img/card-actimo.jpg"/></div>
+<div class="body">
+<h3>ACTIMO</h3>
+<p><strong>StepServo 단축제어기, Teaching Pendant.</strong><br/>티칭펜던트로 손쉽게 셋업하는 단축제어기로, 유공압 실린더를 전동 실린더로 1:1 대체할 수 있으며 ACTIMO Setup SW로 모든 셋업을 지원합니다.</p>
+</div>
+<div class="actions">
+<a href="#actimo-detail">자세히 보기</a>
+<a class="primary" href="#actimo-detail-contact">문의하기</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="product-inline-wrap" id="stepservo-detail"><section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="StepServo Motor &amp; Drive" src="assets/img/card-stepservo.jpg"/></div>
+<div>
+<span class="chip">스텝모터/드라이브 · 05</span>
+<h1>StepServo Motor &amp; Drive</h1>
+<p class="lede">스텝모터의 경제성에 서보의 정밀도를 더하다.</p>
+<ul class="bullets">
+<li>+24V~+48V DC 파워로 구동되며, 고정밀 엔코더가 위치 오차를 실시간으로 보정해 안정적인 정밀 제어를 보장합니다.</li>
+</ul>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">05-1 / StepServo Motor &amp; Drive — 구성 및 특징</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">StepSERVO Motor &amp; Drive 구성</div>
+<div class="panel-body"><img alt="StepSERVO Motor &amp; Drive 구성" src="assets/img/stepservo-config.jpg"/><div class="spec-links-row"><button class="spec-modal-trigger" data-modal-open="stepservo-detail-spec-modal-10" type="button"><span class="ico">▦</span><span>StepSERVO Motor 사양</span></button><div class="spec-modal-overlay" id="stepservo-detail-spec-modal-10"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">▦</span>StepSERVO Motor 사양</div>
+<div class="spec-table-scroll">
+<table class="spec-table">
+<thead>
+<tr><th>□</th><th>모터 품명</th><th>Current Phase</th><th>Resistance Phase</th><th>Inductance Phase</th><th>Holding Torque</th><th>Rotor Inertia</th><th style="width:200px;">드라이브 품명</th></tr>
+</thead>
+<tbody>
+<tr style="background:var(--bg-alt);">
+<th rowspan="3">□28</th>
+<td>28HS-0932A</td><td>0.95 A</td><td>2.45 Ω</td><td>2.50 mH</td><td>0.07 N.m</td><td>9 g-cm²</td>
+<td rowspan="3" style="width:200px;text-align:center;">Pulse, Modbus, CANopen,<br/>EtherCAT, EtherNET/IP, ACTIMO</td>
+</tr>
+<tr style="background:var(--bg-alt);"><td>28HS-0945A</td><td>0.95 A</td><td>3.75 Ω</td><td>4.30 mH</td><td>0.12 N.m</td><td>12 g-cm²</td></tr>
+<tr style="background:var(--bg-alt);"><td>28HS-0952A</td><td>0.95 A</td><td>4.40 Ω</td><td>5.75 mH</td><td>0.16 N.m</td><td>18 g-cm²</td></tr>
+<tr>
+<th rowspan="2">□35</th>
+<td>35HS-0828A</td><td>0.80 A</td><td>2.25 Ω</td><td>1.60 mH</td><td>0.13 N.m</td><td>12 g-cm²</td>
+<td rowspan="2" style="width:200px;text-align:center;">Pulse, Modbus, CANopen,<br/>EtherCAT, EtherNET/IP, ACTIMO</td>
+</tr>
+<tr><td>35HS-0836A</td><td>0.80 A</td><td>2.20 Ω</td><td>2.70 mH</td><td>0.23 N.m</td><td>20 g-cm²</td></tr>
+<tr style="background:var(--bg-alt);">
+<th rowspan="4">□42</th>
+<td>42HS-1235A</td><td>1.20 A</td><td>2.80 Ω</td><td>5.40 mH</td><td>0.32 N.m</td><td>40 g-cm²</td>
+<td rowspan="4" style="width:200px;text-align:center;">Pulse, Modbus, CANopen,<br/>EtherCAT, EtherNET/IP, ACTIMO</td>
+</tr>
+<tr style="background:var(--bg-alt);"><td>42HS-1241A</td><td>1.20 A</td><td>3.60 Ω</td><td>7.20 mH</td><td>0.44 N.m</td><td>60 g-cm²</td></tr>
+<tr style="background:var(--bg-alt);"><td>42HS-1249A</td><td>1.20 A</td><td>3.60 Ω</td><td>8.00 mH</td><td>0.50 N.m</td><td>77 g-cm²</td></tr>
+<tr style="background:var(--bg-alt);"><td>42HS-1261A</td><td>1.20 A</td><td>6.00 Ω</td><td>15.60 mH</td><td>0.65 N.m</td><td>115 g-cm²</td></tr>
+<tr>
+<th rowspan="3">□56</th>
+<td>56HS-3041A</td><td>3.00 A</td><td>0.50 Ω</td><td>1.00 mH</td><td>0.60 N.m</td><td>170 g-cm²</td>
+<td rowspan="3" style="width:200px;text-align:center;">Pulse, Modbus, CANopen,<br/>EtherCAT, EtherNET/IP, ACTIMO</td>
+</tr>
+<tr><td>56HS-3052A</td><td>3.00 A</td><td>0.54 Ω</td><td>2.00 mH</td><td>1.00 N.m</td><td>290 g-cm²</td></tr>
+<tr><td>56HS-3076A</td><td>3.00 A</td><td>0.88 Ω</td><td>4.00 mH</td><td>1.50 N.m</td><td>520 g-cm²</td></tr>
+<tr style="background:var(--bg-alt);">
+<th rowspan="3">□60</th>
+<td>60HS-4045A</td><td>4.00 A</td><td>0.80 Ω</td><td>1.60 mH</td><td>0.75 N.m</td><td>200 g-cm²</td>
+<td rowspan="3" style="width:200px;text-align:center;">Pulse, Modbus, CANopen,<br/>EtherCAT, EtherNET/IP, ACTIMO</td>
+</tr>
+<tr style="background:var(--bg-alt);"><td>60HS-4056A</td><td>4.00 A</td><td>0.80 Ω</td><td>2.40 mH</td><td>1.10 N.m</td><td>300 g-cm²</td></tr>
+<tr style="background:var(--bg-alt);"><td>60HS-4088A</td><td>4.00 A</td><td>0.80 Ω</td><td>3.50 mH</td><td>2.70 N.m</td><td>860 g-cm²</td></tr>
+<tr>
+<th rowspan="3">□86</th>
+<td>86HS-6078A</td><td>6.00 A</td><td>0.25 Ω</td><td>2.66 mH</td><td>4.50 N.m</td><td>1800 g-cm²</td>
+<td rowspan="3" style="width:200px;text-align:center;">Pulse, Modbus, CANopen,<br/>EtherCAT, EtherNET/IP, ACTIMO</td>
+</tr>
+<tr><td>86HS-60118A</td><td>6.00 A</td><td>0.44 Ω</td><td>5.00 mH</td><td>8.50 N.m</td><td>3600 g-cm²</td></tr>
+<tr><td>86HS-60158A</td><td>6.00 A</td><td>0.62 Ω</td><td>7.40 mH</td><td>12.0 N.m</td><td>5400 g-cm²</td></tr>
+</tbody>
+</table>
+</div>
+</div></div></div><button class="spec-modal-trigger" data-modal-open="stepservo-detail-spec-modal-12" type="button"><span class="ico">▦</span><span>StepSERVO Drive 사양</span></button><div class="spec-modal-overlay" id="stepservo-detail-spec-modal-12"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">▦</span>StepSERVO Drive 사양</div>
+<div class="spec-table-scroll">
+<table class="spec-table">
+<thead>
+<tr><th colspan="2">적용모터</th><th>□28mm</th><th>□35mm</th><th>□42mm</th><th>□56mm</th><th>□60mm</th><th>□86mm</th></tr>
+</thead>
+<tbody>
+<tr>
+<th colspan="2">드라이브 형식</th>
+<td colspan="6">StepSERVO-EtherCAT / Pulse / Modbus / CANopen / EterNet/IP / ACTIMO</td>
+</tr>
+<tr>
+<th colspan="2">입력전압</th>
+<td colspan="6">24VDC ~ 48VDC±10%,</td>
+</tr>
+<tr>
+<th colspan="2">제어방식</th>
+<td colspan="6">Closed-Loop 제어, Open-Loop 제어 (32bit ARM core)</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<th colspan="2">제어모드</th>
+<td>EtherCAT Mode<br/>Pulse Mode<br/>EtherNet/IP Mode</td>
+<td colspan="3">Modbus-RTU Mode<br/>CANopen Mode</td>
+<td colspan="2">ACTIMO Mode</td>
+</tr>
+<tr>
+<th colspan="2">다축제어</th>
+<td></td>
+<td colspan="3">Daisy Chain 연결방식으로 네트워크 구성</td>
+<td colspan="2">Daisy Chain 연결 방식으로 네트워크 구성 (16축 구동 가능)</td>
+</tr>
+<tr>
+<th colspan="2">포지션 테이블</th>
+<td></td>
+<td colspan="3">e3PLC를 이용한 모션 프로그램 작성으로 운전 가능 (WAIT / CAL / TEST / JUMP)</td>
+<td colspan="2">255개의 포지션 테이블 지정 가능</td>
+</tr>
+<tr>
+<th colspan="2">아날로그 입력</th>
+<td></td>
+<td colspan="3">12bit, ±10V / 0~10V / 1~5V 아날로그 전압입력, SW에 의한 아날로그 설정 변경</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<th colspan="2">소비전력</th>
+<td colspan="6">최대 600mA (모터사용전류 제외) / ACTIMO : 최대 450mA (모터사용전류 제외)</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<th rowspan="3">사용환경</th>
+<td style="white-space:nowrap;">온도</td>
+<td colspan="6">운전 : 5~40℃, 보관 : 0~55℃</td>
+</tr>
+<tr style="background:var(--bg-alt);"><td style="white-space:nowrap;">습도</td><td colspan="6">운전 : 35~85%RH (결로가 없을 것), 보존 : 10~90%RH (결로가 없을 것)</td></tr>
+<tr style="background:var(--bg-alt);"><td style="white-space:nowrap;">진동</td><td colspan="6">0.5G</td></tr>
+<tr>
+<th rowspan="9">기능</th>
+<td style="white-space:nowrap;">엔코더</td>
+<td colspan="6">10,000 / 회전당, 20,000 / 회전당, 40,000 (option)/ 회전당</td>
+</tr>
+<tr><td style="white-space:nowrap;">분해능</td><td colspan="6">2000, 3200, 5000, 6400, 10000, 12800, 25000, 25600, 50000 (SW 설정)</td></tr>
+<tr><td style="white-space:nowrap;">회전속도</td><td colspan="6">Max. 3,000 rpm</td></tr>
+<tr><td style="white-space:nowrap;">보호기능</td><td colspan="6">위치 추종이상, 모터 접속 이상, 모터전압 이상, 입력전압 이상, 과전류 이상, 과부하 이상, 온도 이상</td></tr>
+<tr><td style="white-space:nowrap;">상태표시</td><td colspan="6">전원, 서보-온, 인포지션, 알람</td></tr>
+<tr>
+<td rowspan="3" style="white-space:nowrap;">파라미터 설정</td>
+<td colspan="6">SW 설정 (USB)</td>
+</tr>
+<tr><td colspan="6">펄스 입력 방식 : 1 펄스 (DIR / PULSE), 2 펄스 (CW / CCW) 설정 (USB)</td></tr>
+<tr><td colspan="6">속도 / 위치 명령 : 1펄스열 (Differential) 입력 (DIR / PULSE), (CW / CCW)</td></tr>
+<tr><td></td><td colspan="6">인포지션 설정, 게인 설정, 전자기어비 설정, 회전방향설정, 내부운전 등</td></tr>
+<tr style="background:var(--bg-alt);">
+<th rowspan="2">I/O 신호</th>
+<td style="white-space:nowrap;">입력신호 기능</td>
+<td colspan="6">EtherCAT / EtherNet/IP : 고정입력 3점 (LIMIT+, LIMIT-, ORIGIN), 가변 입력 5점 (포토커플러 절연 입력) / Pulse : 1 펄스열 입력 (DIR / PULSE), SERVO-ON, ALARM-RESET (포토 커플러 절연 방식) / Modbus / CANopen : 고정입력 3점 (LIMIT+, LIMIT-, ORIGIN), 가변 입력 8점 (포토커플러 절연 입력) / ACTIMO : 고정입력 2점 (LIMIT+, LIMIT-), 가변 입력 18점 (포토커플러 절연 입력)</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<td style="white-space:nowrap;">출력신호 기능</td>
+<td colspan="6">EtherCAT / EtherNet/IP : 가변 출력 4점 (포토커플러 절연 출력), Brake 출력 / Pulse : 인포지션 출력, 드라이브 알람 출력, 엔코다 출력 (A+, A-, B+, B-, Z+, Z-) (RS-422 라인드라이브 출력) ※ 절대치 엔코다를 사용할 경우 엔코다 출력 기능은 지원되지 않습니다 / Modbus / CANopen : 가변 출력 9점 (포토커플러 절연 출력), Brake 출력 / ACTIMO : 가변 출력 10점 (포토커플러 절연 출력)</td>
+</tr>
+<tr>
+<th colspan="2">원점복귀</th>
+<td colspan="6">LIMIT(±), Homing Offset, Homing speed, Homing Preset 기능 (ORIGIN / Z-ENC 지원예정)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div></div></div></div></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>StepSERVO Motor &amp; Drive 특징</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>DC 파워 +24V ~ +48V 사용</span></li>
+<li><span class="li-num">02</span><span>Open-Loop / Closed-Loop 두가지 방식으로 사용 가능</span></li>
+<li><span class="li-num">03</span><span>모터에 장착된 고정도 엔코더를 통해 현재의 위치를 파악함으로 탈조 현상이 없음</span></li>
+<li><span class="li-num">04</span><span>엔코더 피드백으로 항상 현재 위치를 체크하여 최적의 위치보정</span></li>
+<li><span class="li-num">05</span><span>손쉬운 게인 조정으로 저강성 부하에서도 최적 성능 발휘</span></li>
+<li><span class="li-num">06</span><span>부하 시 자동으로 전류를 조절하여 모터효율을 극대화</span></li>
+<li><span class="li-num">07</span><span>열 손실을 최대 80%까지 감소시켜 장비감도와 신뢰성을 향상</span></li>
+<li><span class="li-num">08</span><span>과전압, 과전류, 과온도, 상쇼트 검출</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section><section class="detail-block alt"><div class="container"><div class="eyebrow">05-2 / StepServo Motor &amp; Drive — StepSERVO Motor 품명</div><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">▦</span>StepSERVO Motor 품명</div>
+<div class="partcode-row">
+<div class="partcode-item">
+<div class="code-box">StepSERVO</div>
+<div class="connector"></div>
+<div class="code-label">Drive Series 명</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">56</div>
+<div class="connector"></div>
+<div class="code-label">모터 FLANGE</div>
+<div class="code-desc">28 : 28mm(11H)<br/>35 : 35mm(14H)<br/>42 : 42mm(17H)<br/>56 : 56mm(23H)<br/>60 : 60mm(24H)<br/>86 : 86mm(34H)</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">HS</div>
+<div class="connector"></div>
+<div class="code-label">모터 형명</div>
+<div class="code-desc">HS : Hybrid Stepper</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">30</div>
+<div class="connector"></div>
+<div class="code-label">모터 전류</div>
+<div class="code-desc">08 : 0.8A<br/>09 : 0.9A<br/>12 : 1.2A<br/>30 : 3.0A<br/>40 : 4.0A<br/>60 : 6.0A</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">41</div>
+<div class="connector"></div>
+<div class="code-label">모터 길이 (엔코더 제외)</div>
+<div class="code-desc">28 : 모터 길이<br/>36 : 모터 길이<br/>45 : 모터 길이<br/>52 : 모터 길이<br/>118 : 모터 길이</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">A</div>
+<div class="connector"></div>
+<div class="code-label">엔코더 분해능</div>
+<div class="code-desc">A : 10,000 / 회전<br/>B : 16,000 / 회전<br/>C : 17Bit ABS<br/>D : 40,000 / 회전<br/>E : 4,000 / 회전</div>
+</div>
+</div>
+</div></div></section><section class="detail-block alt"><div class="container"><div class="eyebrow">05-3 / StepServo Motor &amp; Drive — StepSERVO Drive 품명</div><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">▦</span>StepSERVO Drive 품명</div>
+<div class="partcode-row">
+<div class="partcode-item">
+<div class="code-box">StepSERVO</div>
+<div class="connector"></div>
+<div class="code-label">Drive Series 명</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">EtherCAT</div>
+<div class="connector"></div>
+<div class="code-label">드라이브 타입</div>
+<div class="code-desc">EtherCAT<br/>Pulse<br/>Modbus<br/>EtherNET<br/>CANopen</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">42</div>
+<div class="connector"></div>
+<div class="code-label">모터 FLANGE</div>
+<div class="code-desc">28각<br/>35각<br/>42각<br/>56각<br/>60각<br/>86각</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">ST</div>
+<div class="connector"></div>
+<div class="code-label">Drive 종류</div>
+<div class="code-desc">Mini<br/>ST (표준)</div>
+</div>
+</div>
+<div style="margin-top:32px;">
+<img alt="StepSERVO ST / StepSERVO mini" src="assets/img/stepservo-drive-types.jpg" style="max-width:66%;height:auto;margin-left:auto;"/>
+</div>
+</div></div></section><div class="product-inline-cta" id="stepservo-detail-contact">
+<div class="container">
+<div class="detail-cta">
+<div>
+<h3>StepServo Motor &amp; Drive 도입 문의</h3>
+<p>구성 및 견적이 필요하시면 스텝모터/드라이브 라인업 전체를 함께 확인해보세요.</p>
+</div>
+<div class="detail-cta-actions">
+<a class="btn btn-ghost" href="#stepmotor-drive">스텝모터/드라이브 목록으로</a>
+<a class="btn btn-ghost" href="resources.html?q=stepservo">관련 자료 다운로드</a>
+</div>
+</div>
+</div>
+</div></div>
+<div class="product-inline-wrap" id="actimo-detail"><section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="ACTIMO" src="assets/img/card-actimo.jpg"/></div>
+<div>
+<span class="chip">스텝모터/드라이브 · 05</span>
+<h1>ACTIMO</h1>
+<p class="lede">StepServo 단축제어기, Teaching Pendant.</p>
+<ul class="bullets">
+<li>티칭펜던트 활용 단축제어기</li>
+<li>유공압 실린더를 전동 실린더로 1:1 대체 가능</li>
+<li>ACTIMO Setup SW로 단축제어기 모든 셋업 지원</li>
+</ul>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">05-1 / ACTIMO — 구성 및 특징</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">ACTIMO 시스템 구성</div>
+<div class="panel-body"><img alt="ACTIMO 시스템 구성" src="assets/img/actimo-config.jpg"/></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>ACTIMO 특징</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>티칭펜던트 활용 단축제어기</span></li>
+<li><span class="li-num">02</span><span>한 손에 잡히는 티칭 펜던트로 현장에서 위치 티칭/시운전 가능</span></li>
+<li><span class="li-num">03</span><span>유공압 실린더를 전동 실린더로 1:1 대체 가능</span></li>
+<li><span class="li-num">04</span><span>ACTIMO Setup SW로 단축제어기 모든 셋업 지원</span></li>
+<li><span class="li-num">05</span><span>StepSERVO, BLDCservo 드라이브 여러대 동시연결 가능</span></li>
+<li><span class="li-num">06</span><span>RS-485통신으로 최대 16축까지 연결 가능</span></li>
+<li><span class="li-num">07</span><span>제어 변수(파라미터, ACTION Table, 튜닝값)를 파일로 관리</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section><section class="detail-block">
+<div class="container">
+<div class="eyebrow">05-2 / ACTIMO — PROGRAM</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">ACTIMO PROGRAM</div>
+<div class="panel-body"><img alt="ACTIMO PROGRAM" src="assets/img/actimo-program.jpg"/></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">SOFTWARE</div>
+<h3>ACTIMO Motion Table 기능</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>Action List 255 Points로 충분한 용량 확보</span></li>
+<li><span class="li-num">02</span><span>외부 DIO 접점 (In 20/Out 12)으로 상위 PLC 연결</span></li>
+<li><span class="li-num">03</span><span>외부 버튼입력으로 동작 지령 및 분기(Goto) 가능</span></li>
+<li><span class="li-num">04</span><span>특정 Action List 도달 후 출력접점으로 상태 보고(Output) 가능</span></li>
+<li><span class="li-num">05</span><span>임의원점 설정, 부하원점 설정 기능으로 유사 실린더 동작지원</span></li>
+<li><span class="li-num">06</span><span>토크모드 동작 지원</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section><div class="product-inline-cta" id="actimo-detail-contact">
+<div class="container">
+<div class="detail-cta">
+<div>
+<h3>ACTIMO 도입 문의</h3>
+<p>구성 및 견적이 필요하시면 스텝모터/드라이브 라인업 전체를 함께 확인해보세요.</p>
+</div>
+<div class="detail-cta-actions">
+<a class="btn btn-ghost" href="#stepmotor-drive">스텝모터/드라이브 목록으로</a>
+<a class="btn btn-ghost" href="resources.html?q=actimo">관련 자료 다운로드</a>
+</div>
+</div>
+</div>
+</div></div>
+<!-- 06. EtherCAT IO 모듈 -->
+<section class="cat-section" data-section="ethercat-io" id="ethercat-io">
+<div class="container">
+<div class="cat-head">
+<div>
+<div class="eyebrow">06 / EtherCAT IO 모듈</div>
+<h2 class="section-title">EtherCAT IO 모듈</h2>
+</div>
+<p class="section-desc">CNC 제어기·모션 제어기와 함께 구성하는 입출력 확장 모듈 라인업입니다. IO 접점 확장, 아날로그 인터페이스, 휴대용 MPG까지 필요한 구성을 자유롭게 조합할 수 있습니다.</p>
+</div>
+<div class="spec-grid">
+<div class="spec-card">
+<div class="thumb"><span class="tag">OP용 IO 모듈</span><img alt="EDIO 72/46 입출력 모듈" src="assets/img/card-edio7246.jpg"/></div>
+<div class="body">
+<h3>EDIO 72/46 입출력 모듈</h3>
+<p><strong>Operation Panel 용, 입력 72점·출력 46점.</strong><br/>EtherCAT 기반으로 간편하게 연결되며, 스핀들·MPG·엔코더 포트가 내장되어 다양한 어플리케이션에 사용할 수 있습니다.</p>
+</div>
+<div class="actions">
+<a href="#edio7246-detail">자세히 보기</a>
+<a class="primary" href="#edio7246-detail-contact">문의하기</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">커넥터 타입 IO 모듈</span><img alt="EDIO 64/64, 32/32 입출력 모듈" src="assets/img/card-edio6432.jpg"/></div>
+<div class="body">
+<h3>EDIO 64/64, 32/32 입출력 모듈</h3>
+<p><strong>커넥터 케이블 타입, 32/32 단위로 확장.</strong><br/>입출력 접점을 16점 단위 COM으로 구성하며, 필요한 접점 수에 맞춰 32/32 단위로 자유롭게 확장할 수 있습니다.</p>
+</div>
+<div class="actions">
+<a href="#edio6432-detail">자세히 보기</a>
+<a class="primary" href="#edio6432-detail-contact">문의하기</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">Y단자 직결 IO모듈</span><img alt="EDIO IN32, OUT32, EDIO IN16/OUT16 입출력 모듈" src="assets/img/card-edioinout.jpg"/></div>
+<div class="body">
+<h3>EDIO IN32, OUT32, IN16/OUT16 모듈</h3>
+<p><strong>Y단자 직결 타입, 입력·출력 개별 선택.</strong><br/>입력 전용(IN32), 출력 전용(OUT32), 입출력 혼합(IN16/OUT16) 중 필요에 따라 선택해 구성할 수 있습니다.</p>
+</div>
+<div class="actions">
+<a href="#edio-inout-detail">자세히 보기</a>
+<a class="primary" href="#edio-inout-detail-contact">문의하기</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">서보축 인터페이스 모듈</span><img alt="AIB 3.0 인터페이스 모듈" src="assets/img/card-aib30.jpg"/></div>
+<div class="body">
+<h3>AIB 3.0 인터페이스 모듈</h3>
+<p><strong>기존 드라이브의 EtherCAT I/F 전환용.</strong><br/>서보 축 인터페이스 포트를 6축용·3축용으로 제공하며, 아날로그·펄스 타입 MPG 포트를 모듈 하단에 지원합니다.</p>
+</div>
+<div class="actions">
+<a href="#aib30-detail">자세히 보기</a>
+<a class="primary" href="#aib30-detail-contact">문의하기</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">포터블</span><img alt="Portable MPG" src="assets/img/card-portablempg.jpg"/></div>
+<div class="body">
+<h3>Portable MPG</h3>
+<p><strong>컴팩트하고 견고한 휴대용 수동 펄스 발생기.</strong><br/>완벽한 밀폐구조로 노이즈에 강하며, EMG Switch 기본 장착에 JOG Switch를 옵션으로 선택할 수 있습니다.</p>
+</div>
+<div class="actions">
+<a href="#portablempg-detail">자세히 보기</a>
+<a class="primary" href="#portablempg-detail-contact">문의하기</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="product-inline-wrap" id="edio7246-detail"><section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="EDIO 72/46 입출력 모듈" src="assets/img/card-edio7246.jpg"/></div>
+<div>
+<span class="chip">EtherCAT IO 모듈 · 06</span>
+<h1>EDIO 72/46 입출력 모듈</h1>
+<p class="lede">Operation Panel 용, 입력 72점·출력 46점.</p>
+<ul class="bullets">
+<li>EtherCAT 기반으로 간편하게 연결되며, 스핀들·MPG·엔코더 포트가 내장되어 다양한 어플리케이션에 사용할 수 있습니다.</li>
+</ul>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">06-1 / EDIO 72/46 — 연결 포트 상세 및 사양</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">EDIO 72/46 연결 포트 상세</div>
+<div class="panel-body"><img alt="EDIO 72/46 연결 포트 상세" src="assets/img/edio7246-diagram.jpg"/><div class="spec-links-row"><button class="spec-modal-trigger" data-modal-open="edio7246-detail-spec-modal-13" type="button"><span class="ico">▦</span><span>사양</span></button><div class="spec-modal-overlay" id="edio7246-detail-spec-modal-13"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="spec-table-grid">
+<div class="spec-group">
+<h4>EDIO 72/46 사양</h4>
+<table class="spec-table narrow-th">
+<tbody>
+<tr><th>이름</th><td>EDIO72/46</td></tr>
+<tr><th>입력 (72점)</th><td>1번, 2번 포트 40Pin 히로세 커넥터</td></tr>
+<tr><th>출력 (46점)</th><td>3번 포트 50Pin 히로세 커넥터</td></tr>
+<tr><th>전원</th><td>DC24V, 0.7A</td></tr>
+<tr><th>외형치수</th><td>W : 178mm   H : 225mm   D : 40mm</td></tr>
+</tbody>
+</table>
+</div>
+<div class="spec-group">
+<h4>EDIO 72/46 포트</h4>
+<table class="spec-table narrow-th">
+<thead>
+<tr><th>번호</th><th>구성</th><th>비고</th></tr>
+</thead>
+<tbody>
+<tr style="background:var(--bg-alt);"><th>1</th><td>입력(36점), HIF3BA-40PA-2.54DSA</td><td>40P 히로세 커넥터</td></tr>
+<tr style="background:var(--bg-alt);"><th>2</th><td>입력(36점), HIF3BA-40PA-2.54DSA</td><td>40P 히로세 커넥터</td></tr>
+<tr style="background:var(--bg-alt);"><th>3</th><td>출력(46점), HIF3BA-50PA-2.54DSA</td><td>50P 히로세 커넥터</td></tr>
+<tr><th>4</th><td>EtherCAT IN Port</td><td>—</td></tr>
+<tr><th>5</th><td>EtherCAT OUT Port</td><td>—</td></tr>
+<tr><th>6</th><td>Power, DC24V, 0.7A</td><td>22 AWG 이상</td></tr>
+<tr><th>7</th><td>Spindle DAC, D-sub 9Pin Female</td><td>Cable : D-SUB 9 Male</td></tr>
+<tr><th>8</th><td>Spindle Encoder, D-sub 9Pin Male</td><td>Cable : D-SUB 9 Female</td></tr>
+<tr><th>9</th><td>MPG Port1, D-sub 9Pin Male</td><td>Cable : D-SUB 9 Female</td></tr>
+<tr><th>10</th><td>MPG Port2, D-sub 9Pin Male</td><td>Cable : D-SUB 9 Female</td></tr>
+<tr><th>11</th><td>MPG Port3, D-sub 9Pin Male</td><td>Cable : D-SUB 9 Female</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div></div></div></div></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>EDIO 72/46 특징</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>EtherCAT 기반이며 쉽고 간편하게 연결할 수 있으며, 여러 기능 모듈들과 혼합하여 자유롭게 사용할 수 있습니다</span></li>
+<li><span class="li-num">02</span><span>입력 72 접점, 출력 46 접점으로 이루어져 있으며 8접점 단위로 COM이 구성됩니다</span></li>
+<li><span class="li-num">03</span><span>입력은 양방향(N24/P24), 출력은 단방향(N24)으로 선택하여 사용할 수 있습니다</span></li>
+<li><span class="li-num">04</span><span>스핀들 출력 포트, MPG 출력 포트, 엔코더 입력 포트가 내장되어 있어 다양한 어플리케이션에 사용 가능합니다</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section><div class="product-inline-cta" id="edio7246-detail-contact">
+<div class="container">
+<div class="detail-cta">
+<div>
+<h3>EDIO 72/46 도입 문의</h3>
+<p>구성 및 견적이 필요하시면 EtherCAT IO 모듈 라인업 전체를 함께 확인해보세요.</p>
+</div>
+<div class="detail-cta-actions">
+<a class="btn btn-ghost" href="#ethercat-io">EtherCAT IO 모듈 목록으로</a>
+<a class="btn btn-ghost" href="resources.html?q=edio7246">관련 자료 다운로드</a>
+</div>
+</div>
+</div>
+</div></div>
+<div class="product-inline-wrap" id="edio6432-detail"><section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="EDIO 64/64, 32/32 입출력 모듈" src="assets/img/card-edio6432.jpg"/></div>
+<div>
+<span class="chip">EtherCAT IO 모듈 · 06</span>
+<h1>EDIO 64/64, 32/32 입출력 모듈</h1>
+<p class="lede">커넥터 케이블 타입, 32/32 단위로 확장.</p>
+<ul class="bullets">
+<li>입출력 접점을 16점 단위 COM으로 구성하며, 필요한 접점 수에 맞춰 32/32 단위로 자유롭게 확장할 수 있습니다.</li>
+</ul>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">06-1 / EDIO 64/64, 32/32 — 연결 포트 상세 및 사양</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">EDIO 64/64, 32/32 연결 포트 상세</div>
+<div class="panel-body"><img alt="EDIO 64/64, 32/32 연결 포트 상세" src="assets/img/edio6432-diagram.jpg"/><div class="spec-links-row"><button class="spec-modal-trigger" data-modal-open="edio6432-detail-spec-modal-14" type="button"><span class="ico">▦</span><span>사양</span></button><div class="spec-modal-overlay" id="edio6432-detail-spec-modal-14"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="spec-table-grid">
+<div class="spec-group">
+<h4>EDIO 64/64, 32/32 사양</h4>
+<table class="spec-table narrow-th">
+<tbody>
+<tr><th>이름</th><td>CPACK DIO-64/64  /  CPACK DIO-32/32</td></tr>
+<tr><th>모듈 ID (32점)</th><td>입력(32점), 출력(32점)</td></tr>
+<tr><th>모듈 ID (64점)</th><td>입력(64점), 출력(64점)</td></tr>
+<tr><th>전원</th><td>DC24V, 0.7A</td></tr>
+<tr><th>외형치수</th><td>W : 40mm   H : 212mm   D : 144.4mm</td></tr>
+</tbody>
+</table>
+</div>
+<div class="spec-group">
+<h4>EDIO 64/64, 32/32 포트</h4>
+<table class="spec-table narrow-th">
+<thead>
+<tr><th>항목</th><th>구성</th><th>비고</th></tr>
+</thead>
+<tbody>
+<tr style="background:var(--bg-alt);"><th>입출력 (32/32)</th><td>1열 2Port (INPUT x1 / OUTPUT y1)</td><td>—</td></tr>
+<tr style="background:var(--bg-alt);"><th>입출력 (64/64)</th><td>2열 4Port (INPUT x1,x2 / OUTPUT y1,y2)</td><td>—</td></tr>
+<tr><th>EtherCAT Port</th><td>IN Port</td><td>J1</td></tr>
+<tr><th>EtherCAT Port</th><td>OUT Port</td><td>J2</td></tr>
+<tr><th>전원부</th><td>DC24V, 0.7A</td><td>하단부</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div></div></div></div></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>EDIO 64/64, 32/32 특징</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>EtherCAT 기반이며 쉽고 간편하게 연결할 수 있으며, 여러 기능 모듈들과 혼합하여 자유롭게 사용할 수 있습니다</span></li>
+<li><span class="li-num">02</span><span>EDIO 64/64는 입력 64 접점·출력 64 접점, EDIO 32/32는 입력 32 접점·출력 32 접점입니다</span></li>
+<li><span class="li-num">03</span><span>16접점 단위로 COM이 이루어지며, 입력은 양방향(N24/P24), 출력은 단방향(N24)으로 선택하여 사용할 수 있습니다</span></li>
+<li><span class="li-num">04</span><span>IO 확장은 32/32 단위로 확장 가능합니다</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section><div class="product-inline-cta" id="edio6432-detail-contact">
+<div class="container">
+<div class="detail-cta">
+<div>
+<h3>EDIO 64/64, 32/32 도입 문의</h3>
+<p>구성 및 견적이 필요하시면 EtherCAT IO 모듈 라인업 전체를 함께 확인해보세요.</p>
+</div>
+<div class="detail-cta-actions">
+<a class="btn btn-ghost" href="#ethercat-io">EtherCAT IO 모듈 목록으로</a>
+<a class="btn btn-ghost" href="resources.html?q=edio6432">관련 자료 다운로드</a>
+</div>
+</div>
+</div>
+</div></div>
+<div class="product-inline-wrap" id="edio-inout-detail"><section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="EDIO IN32, OUT32, IN16/OUT16 모듈" src="assets/img/card-edioinout.jpg"/></div>
+<div>
+<span class="chip">EtherCAT IO 모듈 · 06</span>
+<h1>EDIO IN32, OUT32, IN16/OUT16 모듈</h1>
+<p class="lede">Y단자 직결 타입, 입력·출력 개별 선택.</p>
+<ul class="bullets">
+<li>입력 전용(IN32), 출력 전용(OUT32), 입출력 혼합(IN16/OUT16) 중 필요에 따라 선택해 구성할 수 있습니다.</li>
+</ul>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">06-1 / EDIO IN32, OUT32, IN16/OUT16 — 연결 포트 상세 및 사양</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">EDIO IN32, OUT32, IN16/OUT16 연결 포트 상세</div>
+<div class="panel-body"><img alt="EDIO IN32, OUT32, IN16/OUT16 연결 포트 상세" src="assets/img/edioinout-diagram.jpg"/><div class="spec-links-row"><button class="spec-modal-trigger" data-modal-open="edio-inout-detail-spec-modal-15" type="button"><span class="ico">▦</span><span>사양</span></button><div class="spec-modal-overlay" id="edio-inout-detail-spec-modal-15"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="spec-table-grid">
+<div class="spec-group">
+<h4>EDIO IN32, OUT32, IN16/OUT16 사양</h4>
+<table class="spec-table narrow-th">
+<tbody>
+<tr><th>이름</th><td>EDIO-IN32  /  EDIO-OUT32  /  EDIO-IN16/OUT16</td></tr>
+<tr><th>모듈 ID (IN32)</th><td>입력(32점)</td></tr>
+<tr><th>모듈 ID (OUT32)</th><td>출력(32점)</td></tr>
+<tr><th>모듈 ID (IN16/OUT16)</th><td>입력(16점), 출력(16점)</td></tr>
+<tr><th>전원</th><td>DC24V, 0.7A</td></tr>
+<tr><th>부착</th><td>찬넬타입</td></tr>
+<tr><th>외형치수</th><td>W : 190.6mm   D : 50mm   H : 42.8mm</td></tr>
+</tbody>
+</table>
+</div>
+<div class="spec-group">
+<h4>EDIO IN32, OUT32, IN16/OUT16 포트</h4>
+<table class="spec-table narrow-th">
+<thead>
+<tr><th>항목</th><th>구성</th><th>비고</th></tr>
+</thead>
+<tbody>
+<tr style="background:var(--bg-alt);"><th>로터리스위치</th><td>어드레스 번지 설정</td><td>—</td></tr>
+<tr style="background:var(--bg-alt);"><th>단자대</th><td>전원부 및 입출력</td><td>—</td></tr>
+<tr><th>EtherCAT Port</th><td>IN Port</td><td>—</td></tr>
+<tr><th>EtherCAT Port</th><td>OUT Port</td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div></div></div></div></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>EDIO IN32, OUT32, IN16/OUT16 특징</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>EtherCAT 기반이며 쉽고 간편하게 연결할 수 있으며, 여러 기능 모듈들과 혼합하여 자유롭게 사용할 수 있습니다</span></li>
+<li><span class="li-num">02</span><span>EDIO IN32는 입력 32접점, EDIO OUT32는 출력 32접점, EDIO IN16/OUT16은 입력 16접점·출력 16접점입니다</span></li>
+<li><span class="li-num">03</span><span>16접점 단위로 COM이 이루어지며, 입력은 양방향(N24/P24), 출력은 단방향(N24)으로 선택하여 사용할 수 있습니다</span></li>
+<li><span class="li-num">04</span><span>IO 확장은 입력/출력 필요에 따라 선택 가능합니다</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section><div class="product-inline-cta" id="edio-inout-detail-contact">
+<div class="container">
+<div class="detail-cta">
+<div>
+<h3>EDIO IN32, OUT32, IN16/OUT16 도입 문의</h3>
+<p>구성 및 견적이 필요하시면 EtherCAT IO 모듈 라인업 전체를 함께 확인해보세요.</p>
+</div>
+<div class="detail-cta-actions">
+<a class="btn btn-ghost" href="#ethercat-io">EtherCAT IO 모듈 목록으로</a>
+<a class="btn btn-ghost" href="resources.html?q=edio-inout">관련 자료 다운로드</a>
+</div>
+</div>
+</div>
+</div></div>
+<div class="product-inline-wrap" id="aib30-detail"><section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="AIB 3.0 인터페이스 모듈" src="assets/img/card-aib30.jpg"/></div>
+<div>
+<span class="chip">EtherCAT IO 모듈 · 06</span>
+<h1>AIB 3.0 인터페이스 모듈</h1>
+<p class="lede">기존 드라이브의 EtherCAT I/F 전환용.</p>
+<ul class="bullets">
+<li>서보 축 인터페이스 포트를 6축용·3축용으로 제공하며, 아날로그·펄스 타입 MPG 포트를 모듈 하단에 지원합니다.</li>
+</ul>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">06-1 / AIB 3.0 — 연결 포트 상세 및 사양</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">AIB 3.0 연결 포트 상세</div>
+<div class="panel-body"><img alt="AIB 3.0 연결 포트 상세" src="assets/img/aib30-diagram.jpg"/><div class="spec-links-row"><button class="spec-modal-trigger" data-modal-open="aib30-detail-spec-modal-16" type="button"><span class="ico">▦</span><span>사양</span></button><div class="spec-modal-overlay" id="aib30-detail-spec-modal-16"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="spec-table-grid">
+<div class="spec-group">
+<h4>AIB 3.0 사양</h4>
+<table class="spec-table narrow-th">
+<tbody>
+<tr><th>이름</th><td>AIB3.0_6축용  /  AIB3.0_3축용</td></tr>
+<tr><th>모듈 ID (아날로그 타입)</th><td>CPACK AIB3.0A – 6축  /  CPACK AIB3.0A – 3축</td></tr>
+<tr><th>모듈 ID (펄스 타입)</th><td>CPACK AIB3.0P – 6축  /  CPACK AIB3.0P – 3축</td></tr>
+<tr><th>전원</th><td>DC24V, 0.7A</td></tr>
+<tr><th>외형치수</th><td>W : 46mm   H : 212mm   D : 144.4mm</td></tr>
+</tbody>
+</table>
+</div>
+<div class="spec-group">
+<h4>AIB 3.0 포트</h4>
+<table class="spec-table narrow-th">
+<thead>
+<tr><th>항목</th><th>구성</th><th>비고</th></tr>
+</thead>
+<tbody>
+<tr style="background:var(--bg-alt);"><th>축 포트 (3축용)</th><td>1열 3Port, 총 3개</td><td>HONDA MR-20S</td></tr>
+<tr style="background:var(--bg-alt);"><th>축 포트 (6축용)</th><td>2열 3Port, 총 6개</td><td>HONDA MR-20S</td></tr>
+<tr><th>EtherCAT Port</th><td>IN1 Port</td><td>—</td></tr>
+<tr><th>EtherCAT Port</th><td>OUT1 Port</td><td>—</td></tr>
+<tr><th>MPG Port</th><td>MPG</td><td>HONDA MR-20S</td></tr>
+<tr><th>전원부</th><td>DC24V, 0.7A</td><td>하단부</td></tr>
+<tr><th>스핀들 Port</th><td>INVERTER 제어출력 : -10V ~ +10V</td><td>하단부</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div></div></div></div></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>AIB 3.0 특징</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>EtherCAT 기반이며 쉽고 간편하게 연결할 수 있으며, 여러 기능 모듈들과 혼합하여 자유롭게 사용할 수 있습니다</span></li>
+<li><span class="li-num">02</span><span>서보 축을 인터페이스 하기 위한 포트는 모듈별로 6축용, 3축용으로 준비되어 있습니다</span></li>
+<li><span class="li-num">03</span><span>1번 포트는 오른쪽 상단에 있으며 아래로 2, 3번 포트가 되고, 왼쪽 상단부터 아래로 4, 5, 6포트가 됩니다</span></li>
+<li><span class="li-num">04</span><span>MPG 포트는 AIB3.0 하단에 위치하며, 모듈 ID에 따라 아날로그 타입과 펄스 타입으로 구분됩니다</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section><div class="product-inline-cta" id="aib30-detail-contact">
+<div class="container">
+<div class="detail-cta">
+<div>
+<h3>AIB 3.0 도입 문의</h3>
+<p>구성 및 견적이 필요하시면 EtherCAT IO 모듈 라인업 전체를 함께 확인해보세요.</p>
+</div>
+<div class="detail-cta-actions">
+<a class="btn btn-ghost" href="#ethercat-io">EtherCAT IO 모듈 목록으로</a>
+<a class="btn btn-ghost" href="resources.html?q=aib30">관련 자료 다운로드</a>
+</div>
+</div>
+</div>
+</div></div>
+<div class="product-inline-wrap" id="portablempg-detail"><section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="Portable MPG" src="assets/img/card-portablempg.jpg"/></div>
+<div>
+<span class="chip">EtherCAT IO 모듈 · 06</span>
+<h1>Portable MPG</h1>
+<p class="lede">컴팩트하고 견고한 휴대용 수동 펄스 발생기.</p>
+<ul class="bullets">
+<li>완벽한 밀폐구조로 노이즈에 강하며, EMG Switch 기본 장착에 JOG Switch를 옵션으로 선택할 수 있습니다.</li>
+</ul>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">06-1 / Portable MPG — 상세 및 사양</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">Portable MPG 상세</div>
+<div class="panel-body"><img alt="Portable MPG 상세" src="assets/img/portablempg-diagram.jpg"/><div class="spec-links-row"><button class="spec-modal-trigger" data-modal-open="portablempg-detail-spec-modal-17" type="button"><span class="ico">▦</span><span>사양</span></button><div class="spec-modal-overlay" id="portablempg-detail-spec-modal-17"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="spec-table-grid">
+<div class="spec-group">
+<h4>Portable MPG 사양</h4>
+<table class="spec-table narrow-th">
+<tbody>
+<tr><th>I/O 전원</th><td>24V</td></tr>
+<tr><th>무게</th><td>380g</td></tr>
+<tr><th>케이블 길이</th><td>1.5m</td></tr>
+<tr><th>외형치수</th><td>W : 46mm   H : 212mm   D : 144.4mm</td></tr>
+</tbody>
+</table>
+</div>
+<div class="spec-group">
+<h4>Portable MPG 3종 비교</h4>
+<table class="spec-table narrow-th">
+<thead>
+<tr><th>항목</th><th>CSMPG-5SV-A</th><th>CSMPG-5SV-B</th><th>CSMPG-5SV-C</th></tr>
+</thead>
+<tbody>
+<tr style="background:var(--bg-alt);"><th>AXIS</th><td>OFF, X, Y, Z, 4th, 5th<br/>(최대 5축)</td><td>OFF, X, Y, Z, 4th, 5th, 6th<br/>(최대 6축)</td><td>OFF, X, Y, Z, 4th, 5th, 6th<br/>(최대 6축)</td></tr>
+<tr style="background:var(--bg-alt);"><th>Multiple</th><td>×1, ×10, ×100</td><td>×1, ×10, ×100</td><td>×1, ×10, ×100</td></tr>
+<tr><th>Pulse Signal Type</th><td>A, A/, B, B/</td><td>A, A/, B, B/</td><td>A, A/, B, B/</td></tr>
+<tr><th>Signal Type</th><td>BCD Type</td><td>Direct Type</td><td>Direct Type</td></tr>
+<tr style="background:var(--bg-alt);"><th>EMG Switch</th><td style="text-align:center;">O</td><td style="text-align:center;">O</td><td style="text-align:center;">O</td></tr>
+<tr style="background:var(--bg-alt);"><th>JOG Switch</th><td style="text-align:center;">X</td><td style="text-align:center;">O</td><td style="text-align:center;">X</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div></div></div></div></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>Portable MPG 특징</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>컴팩트한 구조로 내구성이 뛰어나고 무게가 가벼워 편안하게 작동할 수 있습니다</span></li>
+<li><span class="li-num">02</span><span>완벽한 밀폐구조로 되어 있으며 케이블 길이를 선택 사용 가능합니다</span></li>
+<li><span class="li-num">03</span><span>전용 홀더를 공급하여 사용 편의성을 높였고, 노이즈에 강하게 설계되어 어떤 환경에서도 높은 조작성과 품질을 제공합니다</span></li>
+<li><span class="li-num">04</span><span>EMG Switch가 기본 장착되어 있으며 JOG Switch를 옵션으로 선택하여 사용할 수 있습니다</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section><div class="product-inline-cta" id="portablempg-detail-contact">
+<div class="container">
+<div class="detail-cta">
+<div>
+<h3>Portable MPG 도입 문의</h3>
+<p>구성 및 견적이 필요하시면 EtherCAT IO 모듈 라인업 전체를 함께 확인해보세요.</p>
+</div>
+<div class="detail-cta-actions">
+<a class="btn btn-ghost" href="#ethercat-io">EtherCAT IO 모듈 목록으로</a>
+<a class="btn btn-ghost" href="resources.html?q=portablempg">관련 자료 다운로드</a>
+</div>
+</div>
+</div>
+</div></div>
+<!-- CLIENTS -->
+<section class="section compact-y">
+<div class="container">
+<div class="section-head">
+<div class="eyebrow">Trusted By</div>
+<h2 class="section-title">주요 고객사</h2>
+<p class="section-desc">국내 유수의 기계 제조사와 연구기관이 CSCAM CNC와 함께합니다.</p>
+</div>
+<div class="client-static-grid">
+<div class="client-logo-card"><img alt="KCNC" src="assets/img/clients/kcnc.png"/><span class="cname">KCNC</span><span class="cindustry">제어시스템 · Control Systems</span></div>
+<div class="client-logo-card"><img alt="화천기계" src="assets/img/clients/hwacheon.png"/><span class="cname">화천기계</span><span class="cindustry">공작기계 · Machine Tools</span></div>
+<div class="client-logo-card"><img alt="한국기계연구원" src="assets/img/clients/kimm.png"/><span class="cname">KIMM</span><span class="cindustry">한국기계연구원</span></div>
+<div class="client-logo-card"><img alt="한국생산기술연구원" src="assets/img/clients/kitech.png"/><span class="cname">KITECH</span><span class="cindustry">한국생산기술연구원</span></div>
+<div class="client-logo-card"><img alt="아름덴티스트리" src="assets/img/clients/arum.png"/><span class="cname">아름덴티스트리</span><span class="cindustry">디지털 덴티스트리</span></div>
+<div class="client-logo-card"><img alt="디오에프로보틱스" src="assets/img/clients/dof.png"/><span class="cname">디오에프로보틱스</span><span class="cindustry">로보틱스</span></div>
+<div class="client-logo-card"><img alt="마닉스" src="assets/img/clients/manix.png"/><span class="cname">마닉스</span><span class="cindustry">정밀 공작기계</span></div>
+<div class="client-logo-card"><img alt="경원엔지니어링" src="assets/img/clients/kyungwon.png"/><span class="cname">경원엔지니어링</span><span class="cindustry">자동화 설비</span></div>
+<div class="client-logo-card"><img alt="로보슨" src="assets/img/clients/robotson.png"/><span class="cname">로보슨</span><span class="cindustry">로봇 자동화</span></div>
+<div class="client-logo-card"><img alt="케이엔케이" src="assets/img/clients/knk.png"/><span class="cname">케이엔케이</span><span class="cindustry">자동화 시스템</span></div>
+<div class="client-logo-card"><img alt="아이뷰코리아" src="assets/img/clients/iviewkorea.png"/><span class="cname">아이뷰코리아</span><span class="cindustry">산업용 디스플레이</span></div>
+<div class="client-logo-card"><img alt="신우NC테크" src="assets/img/clients/shinwoo.png"/><span class="cname">신우NC테크</span><span class="cindustry">CNC 라우터</span></div>
+</div>
+</div>
+</section>
+<!-- CATALOG CTA -->
+<section class="section compact-y alt">
+<div class="container">
+<div class="catalog-cta">
+<div>
+<h3>전 제품 스펙을 한 번에 확인하세요</h3>
+<p>CSCAM CNC 종합 카탈로그를 PDF로 바로 받아보시거나, 기술자료실에서 제품별 매뉴얼과 도면을 찾아보세요.</p>
+</div>
+<div class="catalog-cta-actions">
+<a class="btn btn-primary" href="assets/docs/cscam-cnc-catalog.pdf" rel="noopener" target="_blank">카탈로그 PDF 다운로드</a>
+<a class="btn btn-outline" href="resources.html">기술자료실 바로가기</a>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTACT -->
+<section class="contact-band" id="contact">
+<div class="container">
+<div class="contact-grid">
+<div class="contact-info-col">
+<div class="eyebrow on-dark">07 / Contact</div>
+<h2 class="section-title" style="color:#fff;">제품(견적) 문의처</h2>
+<p class="section-desc" style="color:#b8c4d9;">CNC 제어기·모션 제어기 구성 및 견적이 필요하시면 아래 연락처로 문의해 주세요.</p>
+<div class="contact-item">
+<div class="k">상담 전화</div>
+<div class="v">031-737-7600</div>
+</div>
+<div class="contact-item">
+<div class="k">E-mail</div>
+<div class="v small">info_CNC@cscam.co.kr</div>
+</div>
+<div class="contact-item">
+<div class="k">CNC사업부</div>
+<div class="v small">성남시 중원구 사기막골로 124 Skn테크노파크 비즈동 509호</div>
+</div>
+</div>
+<div class="map-card">
+<iframe allowfullscreen="" class="map-embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=%EA%B2%BD%EA%B8%B0%EB%8F%84+%EC%84%B1%EB%82%A8%EC%8B%9C+%EC%A4%91%EC%9B%90%EA%B5%AC+%EC%82%AC%EA%B8%B0%EB%A7%89%EA%B3%A8%EB%A1%9C+124&amp;output=embed" title="CNC사업부 지도"></iframe>
+<div class="map-label">
+<strong>CNC사업부 (경기 성남시)</strong>
+<span class="addr">성남시 중원구 사기막골로 124 Skn테크노파크 비즈동 509호</span>
+          Tel: 031-737-7600 · Fax: 031-737-2911
+        </div>
+</div>
+</div>
+</div>
+</section>
+<footer class="site-footer">
+<div class="container">
+<div class="foot-top">
+<div class="foot-logo">CS<span>CAM</span> CNC</div>
+<nav class="foot-links">
+<a href="#cnc-controller">CNC 제어기</a>
+<a href="#motion-controller">모션 제어기</a>
+<a href="#servo-drive">서보모터/드라이브</a>
+<a href="#stepmotor-drive">스텝모터/드라이브</a>
+<a href="#ethercat-io">EtherCAT IO 모듈</a>
+<a href="resources.html">기술자료실</a>
+</nav>
+</div>
+<div class="foot-contact">
+<p><strong>본사</strong> 광주 광산구 평동산단로 239-15 <span class="sep">·</span> 전화 : 062-946-1900 <span class="sep">·</span> 팩스 : 062-946-1901 <span class="sep">·</span> 이메일 : info@cscam.co.kr</p>
+<p><strong>CNC사업부</strong> 성남시 중원구 사기막골로 124 Skn테크노파크 비즈동 509호 <span class="sep">·</span> 전화 : 031-737-7600 <span class="sep">·</span> 팩스 : 031-737-2911 <span class="sep">·</span> 이메일 : info_CNC@cscam.co.kr</p>
+<p class="foot-biz">사업자등록번호 : 220-81-79319</p>
+</div>
+<div class="foot-copy">Copyright © 2024 씨에스캠(주). All Rights Reserved. <span class="credit">Desigend by WebSite.co.kr</span></div>
+</div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
