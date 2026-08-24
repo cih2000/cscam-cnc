@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StepServo Motor &amp; Drive | 스텝모터/드라이브 | CSCAM CNC</title>
+<meta name="description" content="StepServo Motor &amp; Drive — 스텝모터의 경제성에 서보의 정밀도를 더하다. 상세 콘텐츠 준비 중입니다.">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="family-bar">
+  <div class="family-bar-inner">
+    <span class="family-bar-label">CSCAM CNC 사업부</span>
+    <nav class="family-bar-nav">
+      <a href="../index.html" class="active">CNC Controller</a>
+      <a href="../../cscam-lms/index.html">LMS Solution</a>
+      <span class="disabled">Software</span>
+    </nav>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="logo"><small>씨에스캠주식회사</small><div class="logo-title">CNC &amp; MOTION</div></a>
+    <nav class="gnb">
+      <a href="../index.html#cnc-controller">CNC 제어기</a>
+      <a href="../index.html#motion-controller">모션 제어기</a>
+      <a href="../index.html#servo-drive">서보모터/드라이브</a>
+      <a href="../index.html#stepmotor-drive" class="active">스텝모터/드라이브</a>
+      <a href="../index.html#ethercat-io">EtherCAT IO 모듈</a>
+      <a href="../resources.html">기술자료실</a>
+    </nav>
+    <div class="lang-switch"><a href="stepservo.html" class="active">KO</a><span class="lang-sep">/</span><a href="../en/products/stepservo.html">EN</a></div>
+    <button class="nav-toggle" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="detail-hero">
+  <div class="container grid">
+    <div class="photo-frame"><img src="../assets/img/card-stepservo.jpg" alt="StepServo Motor &amp; Drive"></div>
+    <div>
+      <span class="chip">스텝모터/드라이브 · 05</span>
+      <h1>StepServo Motor &amp; Drive</h1>
+      <p class="lede">스텝모터의 경제성에 서보의 정밀도를 더하다.</p>
+      <ul class="bullets">
+        <li>+24V~+48V DC 파워로 구동되며, 고정밀 엔코더가 위치 오차를 실시간으로 보정해 안정적인 정밀 제어를 보장합니다.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="breadcrumb">
+  <div class="container"><a href="../index.html">홈</a><span class="sep">/</span><a href="../index.html#stepmotor-drive">스텝모터/드라이브</a><span class="sep">/</span><span class="current">StepServo Motor &amp; Drive</span></div>
+</div>
+
+<section class="detail-block alt">
+  <div class="container">
+    <div class="eyebrow">05-1 / StepServo Motor &amp; Drive — 구성 및 특징</div>
+    <div class="split" style="margin-top:16px;">
+      <div class="split-media">
+        <div class="panel-head">StepSERVO Motor &amp; Drive 구성</div>
+        <div class="panel-body"><img src="../assets/img/stepservo-config.jpg" alt="StepSERVO Motor &amp; Drive 구성"></div>
+      </div>
+      <div class="split-text">
+        <div class="panel-head-plain">FEATURES</div>
+        <h3>StepSERVO Motor &amp; Drive 특징</h3>
+        <ul class="feature-list">
+          <li><span class="li-num">01</span><span>DC 파워 +24V ~ +48V 사용</span></li>
+          <li><span class="li-num">02</span><span>Open-Loop / Closed-Loop 두가지 방식으로 사용 가능</span></li>
+          <li><span class="li-num">03</span><span>모터에 장착된 고정도 엔코더를 통해 현재의 위치를 파악함으로 탈조 현상이 없음</span></li>
+          <li><span class="li-num">04</span><span>엔코더 피드백으로 항상 현재 위치를 체크하여 최적의 위치보정</span></li>
+          <li><span class="li-num">05</span><span>손쉬운 게인 조정으로 저강성 부하에서도 최적 성능 발휘</span></li>
+          <li><span class="li-num">06</span><span>부하 시 자동으로 전류를 조절하여 모터효율을 극대화</span></li>
+          <li><span class="li-num">07</span><span>열 손실을 최대 80%까지 감소시켜 장비감도와 신뢰성을 향상</span></li>
+          <li><span class="li-num">08</span><span>과전압, 과전류, 과온도, 상쇼트 검출</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="detail-block">
+  <div class="container">
+    <div class="eyebrow">05-2 / StepServo Motor &amp; Drive — 품명</div>
+    <div class="spec-table-wrap" style="margin-top:16px;">
+      <div class="stw-title"><span class="ico">&#9638;</span>StepSERVO Motor 품명</div>
+      <div class="partcode-row">
+        <div class="partcode-item">
+          <div class="code-box">StepSERVO</div>
+          <div class="connector"></div>
+          <div class="code-label">Drive Series 명</div>
+        </div>
+        <div class="partcode-item">
+          <div class="code-box">56</div>
+          <div class="connector"></div>
+          <div class="code-label">모터 FLANGE</div>
+          <div class="code-desc">28 : 28mm(11H)<br>35 : 35mm(14H)<br>42 : 42mm(17H)<br>56 : 56mm(23H)<br>60 : 60mm(24H)<br>86 : 86mm(34H)</div>
+        </div>
+        <div class="partcode-item">
+          <div class="code-box">HS</div>
+          <div class="connector"></div>
+          <div class="code-label">모터 형명</div>
+          <div class="code-desc">HS : Hybrid Stepper</div>
+        </div>
+        <div class="partcode-item">
+          <div class="code-box">30</div>
+          <div class="connector"></div>
+          <div class="code-label">모터 전류</div>
+          <div class="code-desc">08 : 0.8A<br>09 : 0.9A<br>12 : 1.2A<br>30 : 3.0A<br>40 : 4.0A<br>60 : 6.0A</div>
+        </div>
+        <div class="partcode-item">
+          <div class="code-box">41</div>
+          <div class="connector"></div>
+          <div class="code-label">모터 길이 (엔코더 제외)</div>
+          <div class="code-desc">28 : 모터 길이<br>36 : 모터 길이<br>45 : 모터 길이<br>52 : 모터 길이<br>118 : 모터 길이</div>
+        </div>
+        <div class="partcode-item">
+          <div class="code-box">A</div>
+          <div class="connector"></div>
+          <div class="code-label">엔코더 분해능</div>
+          <div class="code-desc">A : 10,000 / 회전<br>B : 16,000 / 회전<br>C : 17Bit ABS<br>D : 40,000 / 회전<br>E : 4,000 / 회전</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="detail-block alt">
+  <div class="container">
+    <div class="eyebrow">05-3 / StepServo Motor &amp; Drive — 사양</div>
+    <div class="spec-table-wrap" style="margin-top:16px;">
+      <div class="stw-title"><span class="ico">&#9638;</span>StepSERVO Motor 사양</div>
+      <div class="spec-table-scroll">
+        <table class="spec-table">
+          <thead>
+            <tr><th>&#9633;</th><th>모터 품명</th><th>Current Phase</th><th>Resistance Phase</th><th>Inductance Phase</th><th>Holding Torque</th><th>Rotor Inertia</th><th style="width:200px;">드라이브 품명</th></tr>
+          </thead>
+          <tbody>
+            <tr style="background:var(--bg-alt);">
+              <th rowspan="3">&#9633;28</th>
+              <td>28HS-0932A</td><td>0.95 A</td><td>2.45 &#8486;</td><td>2.50 mH</td><td>0.07 N.m</td><td>9 g-cm&sup2;</td>
+              <td rowspan="3" style="width:200px;text-align:center;">Pulse, Modbus, CANopen,<br>EtherCAT, EtherNET/IP, ACTIMO</td>
+            </tr>
+            <tr style="background:var(--bg-alt);"><td>28HS-0945A</td><td>0.95 A</td><td>3.75 &#8486;</td><td>4.30 mH</td><td>0.12 N.m</td><td>12 g-cm&sup2;</td></tr>
+            <tr style="background:var(--bg-alt);"><td>28HS-0952A</td><td>0.95 A</td><td>4.40 &#8486;</td><td>5.75 mH</td><td>0.16 N.m</td><td>18 g-cm&sup2;</td></tr>
+
+            <tr>
+              <th rowspan="2">&#9633;35</th>
+              <td>35HS-0828A</td><td>0.80 A</td><td>2.25 &#8486;</td><td>1.60 mH</td><td>0.13 N.m</td><td>12 g-cm&sup2;</td>
+              <td rowspan="2" style="width:200px;text-align:center;">Pulse, Modbus, CANopen,<br>EtherCAT, EtherNET/IP, ACTIMO</td>
+            </tr>
+            <tr><td>35HS-0836A</td><td>0.80 A</td><td>2.20 &#8486;</td><td>2.70 mH</td><td>0.23 N.m</td><td>20 g-cm&sup2;</td></tr>
+
+            <tr style="background:var(--bg-alt);">
+              <th rowspan="4">&#9633;42</th>
+              <td>42HS-1235A</td><td>1.20 A</td><td>2.80 &#8486;</td><td>5.40 mH</td><td>0.32 N.m</td><td>40 g-cm&sup2;</td>
+              <td rowspan="4" style="width:200px;text-align:center;">Pulse, Modbus, CANopen,<br>EtherCAT, EtherNET/IP, ACTIMO</td>
+            </tr>
+            <tr style="background:var(--bg-alt);"><td>42HS-1241A</td><td>1.20 A</td><td>3.60 &#8486;</td><td>7.20 mH</td><td>0.44 N.m</td><td>60 g-cm&sup2;</td></tr>
+            <tr style="background:var(--bg-alt);"><td>42HS-1249A</td><td>1.20 A</td><td>3.60 &#8486;</td><td>8.00 mH</td><td>0.50 N.m</td><td>77 g-cm&sup2;</td></tr>
+            <tr style="background:var(--bg-alt);"><td>42HS-1261A</td><td>1.20 A</td><td>6.00 &#8486;</td><td>15.60 mH</td><td>0.65 N.m</td><td>115 g-cm&sup2;</td></tr>
+
+            <tr>
+              <th rowspan="3">&#9633;56</th>
+              <td>56HS-3041A</td><td>3.00 A</td><td>0.50 &#8486;</td><td>1.00 mH</td><td>0.60 N.m</td><td>170 g-cm&sup2;</td>
+              <td rowspan="3" style="width:200px;text-align:center;">Pulse, Modbus, CANopen,<br>EtherCAT, EtherNET/IP, ACTIMO</td>
+            </tr>
+            <tr><td>56HS-3052A</td><td>3.00 A</td><td>0.54 &#8486;</td><td>2.00 mH</td><td>1.00 N.m</td><td>290 g-cm&sup2;</td></tr>
+            <tr><td>56HS-3076A</td><td>3.00 A</td><td>0.88 &#8486;</td><td>4.00 mH</td><td>1.50 N.m</td><td>520 g-cm&sup2;</td></tr>
+
+            <tr style="background:var(--bg-alt);">
+              <th rowspan="3">&#9633;60</th>
+              <td>60HS-4045A</td><td>4.00 A</td><td>0.80 &#8486;</td><td>1.60 mH</td><td>0.75 N.m</td><td>200 g-cm&sup2;</td>
+              <td rowspan="3" style="width:200px;text-align:center;">Pulse, Modbus, CANopen,<br>EtherCAT, EtherNET/IP, ACTIMO</td>
+            </tr>
+            <tr style="background:var(--bg-alt);"><td>60HS-4056A</td><td>4.00 A</td><td>0.80 &#8486;</td><td>2.40 mH</td><td>1.10 N.m</td><td>300 g-cm&sup2;</td></tr>
+            <tr style="background:var(--bg-alt);"><td>60HS-4088A</td><td>4.00 A</td><td>0.80 &#8486;</td><td>3.50 mH</td><td>2.70 N.m</td><td>860 g-cm&sup2;</td></tr>
+
+            <tr>
+              <th rowspan="3">&#9633;86</th>
+              <td>86HS-6078A</td><td>6.00 A</td><td>0.25 &#8486;</td><td>2.66 mH</td><td>4.50 N.m</td><td>1800 g-cm&sup2;</td>
+              <td rowspan="3" style="width:200px;text-align:center;">Pulse, Modbus, CANopen,<br>EtherCAT, EtherNET/IP, ACTIMO</td>
+            </tr>
+            <tr><td>86HS-60118A</td><td>6.00 A</td><td>0.44 &#8486;</td><td>5.00 mH</td><td>8.50 N.m</td><td>3600 g-cm&sup2;</td></tr>
+            <tr><td>86HS-60158A</td><td>6.00 A</td><td>0.62 &#8486;</td><td>7.40 mH</td><td>12.0 N.m</td><td>5400 g-cm&sup2;</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="detail-block">
+  <div class="container">
+    <div class="eyebrow">05-4 / StepServo Motor &amp; Drive — StepSERVO Drive 품명</div>
+    <div class="spec-table-wrap" style="margin-top:16px;">
+      <div class="stw-title"><span class="ico">&#9638;</span>StepSERVO Drive 품명</div>
+      <div class="partcode-row">
+        <div class="partcode-item">
+          <div class="code-box">StepSERVO</div>
+          <div class="connector"></div>
+          <div class="code-label">Drive Series 명</div>
+        </div>
+        <div class="partcode-item">
+          <div class="code-box">EtherCAT</div>
+          <div class="connector"></div>
+          <div class="code-label">드라이브 타입</div>
+          <div class="code-desc">EtherCAT<br>Pulse<br>Modbus<br>EtherNET<br>CANopen</div>
+        </div>
+        <div class="partcode-item">
+          <div class="code-box">42</div>
+          <div class="connector"></div>
+          <div class="code-label">모터 FLANGE</div>
+          <div class="code-desc">28각<br>35각<br>42각<br>56각<br>60각<br>86각</div>
+        </div>
+        <div class="partcode-item">
+          <div class="code-box">ST</div>
+          <div class="connector"></div>
+          <div class="code-label">Drive 종류</div>
+          <div class="code-desc">Mini<br>ST (표준)</div>
+        </div>
+      </div>
+      <div style="margin-top:32px;">
+        <img src="../assets/img/stepservo-drive-types.jpg" alt="StepSERVO ST / StepSERVO mini" style="max-width:66%;height:auto;margin-left:auto;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="detail-block alt">
+  <div class="container">
+    <div class="eyebrow">05-5 / StepServo Motor &amp; Drive — StepSERVO Drive 사양</div>
+    <div class="spec-table-wrap" style="margin-top:16px;">
+      <div class="stw-title"><span class="ico">&#9638;</span>StepSERVO Drive 사양</div>
+      <div class="spec-table-scroll">
+        <table class="spec-table">
+          <thead>
+            <tr><th colspan="2">적용모터</th><th>&#9633;28mm</th><th>&#9633;35mm</th><th>&#9633;42mm</th><th>&#9633;56mm</th><th>&#9633;60mm</th><th>&#9633;86mm</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th colspan="2">드라이브 형식</th>
+              <td colspan="6">StepSERVO-EtherCAT / Pulse / Modbus / CANopen / EterNet/IP / ACTIMO</td>
+            </tr>
+            <tr>
+              <th colspan="2">입력전압</th>
+              <td colspan="6">24VDC ~ 48VDC&plusmn;10%,</td>
+            </tr>
+            <tr>
+              <th colspan="2">제어방식</th>
+              <td colspan="6">Closed-Loop 제어, Open-Loop 제어 (32bit ARM core)</td>
+            </tr>
+            <tr style="background:var(--bg-alt);">
+              <th colspan="2">제어모드</th>
+              <td>EtherCAT Mode<br>Pulse Mode<br>EtherNet/IP Mode</td>
+              <td colspan="3">Modbus-RTU Mode<br>CANopen Mode</td>
+              <td colspan="2">ACTIMO Mode</td>
+            </tr>
+            <tr>
+              <th colspan="2">다축제어</th>
+              <td></td>
+              <td colspan="3">Daisy Chain 연결방식으로 네트워크 구성</td>
+              <td colspan="2">Daisy Chain 연결 방식으로 네트워크 구성 (16축 구동 가능)</td>
+            </tr>
+            <tr>
+              <th colspan="2">포지션 테이블</th>
+              <td></td>
+              <td colspan="3">e3PLC를 이용한 모션 프로그램 작성으로 운전 가능 (WAIT / CAL / TEST / JUMP)</td>
+              <td colspan="2">255개의 포지션 테이블 지정 가능</td>
+            </tr>
+            <tr>
+              <th colspan="2">아날로그 입력</th>
+              <td></td>
+              <td colspan="3">12bit, &plusmn;10V / 0~10V / 1~5V 아날로그 전압입력, SW에 의한 아날로그 설정 변경</td>
+              <td colspan="2"></td>
+            </tr>
+            <tr>
+              <th colspan="2">소비전력</th>
+              <td colspan="6">최대 600mA (모터사용전류 제외) / ACTIMO : 최대 450mA (모터사용전류 제외)</td>
+            </tr>
+            <tr style="background:var(--bg-alt);">
+              <th rowspan="3">사용환경</th>
+              <td style="white-space:nowrap;">온도</td>
+              <td colspan="6">운전 : 5~40&#8451;, 보관 : 0~55&#8451;</td>
+            </tr>
+            <tr style="background:var(--bg-alt);"><td style="white-space:nowrap;">습도</td><td colspan="6">운전 : 35~85%RH (결로가 없을 것), 보존 : 10~90%RH (결로가 없을 것)</td></tr>
+            <tr style="background:var(--bg-alt);"><td style="white-space:nowrap;">진동</td><td colspan="6">0.5G</td></tr>
+            <tr>
+              <th rowspan="9">기능</th>
+              <td style="white-space:nowrap;">엔코더</td>
+              <td colspan="6">10,000 / 회전당, 20,000 / 회전당, 40,000 (option)/ 회전당</td>
+            </tr>
+            <tr><td style="white-space:nowrap;">분해능</td><td colspan="6">2000, 3200, 5000, 6400, 10000, 12800, 25000, 25600, 50000 (SW 설정)</td></tr>
+            <tr><td style="white-space:nowrap;">회전속도</td><td colspan="6">Max. 3,000 rpm</td></tr>
+            <tr><td style="white-space:nowrap;">보호기능</td><td colspan="6">위치 추종이상, 모터 접속 이상, 모터전압 이상, 입력전압 이상, 과전류 이상, 과부하 이상, 온도 이상</td></tr>
+            <tr><td style="white-space:nowrap;">상태표시</td><td colspan="6">전원, 서보-온, 인포지션, 알람</td></tr>
+            <tr>
+              <td rowspan="3" style="white-space:nowrap;">파라미터 설정</td>
+              <td colspan="6">SW 설정 (USB)</td>
+            </tr>
+            <tr><td colspan="6">펄스 입력 방식 : 1 펄스 (DIR / PULSE), 2 펄스 (CW / CCW) 설정 (USB)</td></tr>
+            <tr><td colspan="6">속도 / 위치 명령 : 1펄스열 (Differential) 입력 (DIR / PULSE), (CW / CCW)</td></tr>
+            <tr><td></td><td colspan="6">인포지션 설정, 게인 설정, 전자기어비 설정, 회전방향설정, 내부운전 등</td></tr>
+            <tr style="background:var(--bg-alt);">
+              <th rowspan="2">I/O 신호</th>
+              <td style="white-space:nowrap;">입력신호 기능</td>
+              <td colspan="6">EtherCAT / EtherNet/IP : 고정입력 3점 (LIMIT+, LIMIT-, ORIGIN), 가변 입력 5점 (포토커플러 절연 입력) / Pulse : 1 펄스열 입력 (DIR / PULSE), SERVO-ON, ALARM-RESET (포토 커플러 절연 방식) / Modbus / CANopen : 고정입력 3점 (LIMIT+, LIMIT-, ORIGIN), 가변 입력 8점 (포토커플러 절연 입력) / ACTIMO : 고정입력 2점 (LIMIT+, LIMIT-), 가변 입력 18점 (포토커플러 절연 입력)</td>
+            </tr>
+            <tr style="background:var(--bg-alt);">
+              <td style="white-space:nowrap;">출력신호 기능</td>
+              <td colspan="6">EtherCAT / EtherNet/IP : 가변 출력 4점 (포토커플러 절연 출력), Brake 출력 / Pulse : 인포지션 출력, 드라이브 알람 출력, 엔코다 출력 (A+, A-, B+, B-, Z+, Z-) (RS-422 라인드라이브 출력) &#8251; 절대치 엔코다를 사용할 경우 엔코다 출력 기능은 지원되지 않습니다 / Modbus / CANopen : 가변 출력 9점 (포토커플러 절연 출력), Brake 출력 / ACTIMO : 가변 출력 10점 (포토커플러 절연 출력)</td>
+            </tr>
+            <tr>
+              <th colspan="2">원점복귀</th>
+              <td colspan="6">LIMIT(&plusmn;), Homing Offset, Homing speed, Homing Preset 기능 (ORIGIN / Z-ENC 지원예정)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="contact">
+  <div class="container">
+    <div class="detail-cta">
+      <div>
+        <h3>StepServo Motor &amp; Drive 도입 문의</h3>
+        <p>구성 및 견적이 필요하시면 스텝모터/드라이브 라인업 전체를 함께 확인해보세요.</p>
+      </div>
+      <div class="detail-cta-actions">
+        <a href="../index.html#stepmotor-drive" class="btn btn-ghost">스텝모터/드라이브 목록으로</a>
+        <a href="../resources.html?q=stepservo" class="btn btn-ghost">관련 자료 다운로드</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-top">
+      <div class="foot-logo">CS<span>CAM</span> CNC</div>
+      <nav class="foot-links">
+        <a href="../index.html#cnc-controller">CNC 제어기</a>
+        <a href="../index.html#motion-controller">모션 제어기</a>
+        <a href="../index.html#servo-drive">서보모터/드라이브</a>
+        <a href="../index.html#stepmotor-drive">스텝모터/드라이브</a>
+        <a href="../index.html#ethercat-io">EtherCAT IO 모듈</a>
+        <a href="../resources.html">기술자료실</a>
+      </nav>
+    </div>
+    <div class="foot-contact">
+      <p><strong>본사</strong> 광주 광산구 평동산단로 239-15 <span class="sep">&middot;</span> 전화 : 062-946-1900 <span class="sep">&middot;</span> 팩스 : 062-946-1901 <span class="sep">&middot;</span> 이메일 : info@cscam.co.kr</p>
+      <p><strong>CNC사업부</strong> 성남시 중원구 사기막골로 124 Skn테크노파크 비즈동 509호 <span class="sep">&middot;</span> 전화 : 031-737-7600 <span class="sep">&middot;</span> 팩스 : 031-737-2911 <span class="sep">&middot;</span> 이메일 : info_CNC@cscam.co.kr</p>
+      <p class="foot-biz">사업자등록번호 : 220-81-79319</p>
+    </div>
+    <div class="foot-copy">Copyright &copy; 2024 씨에스캠(주). All Rights Reserved. <span class="credit">Desigend by WebSite.co.kr</span></div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

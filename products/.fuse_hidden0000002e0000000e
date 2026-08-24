@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>서보 모터 &amp; 드라이브 | 서보모터/드라이브 | CSCAM CNC</title>
+<meta name="description" content="서보 모터 &amp; 드라이브 — SD Series 풀 디지털 서보드라이브와 SMG&amp;SMA 서보모터 라인업.">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="family-bar">
+  <div class="family-bar-inner">
+    <span class="family-bar-label">CSCAM CNC 사업부</span>
+    <nav class="family-bar-nav">
+      <a href="../index.html" class="active">CNC Controller</a>
+      <a href="../../cscam-lms/index.html">LMS Solution</a>
+      <span class="disabled">Software</span>
+    </nav>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="logo"><small>씨에스캠주식회사</small><div class="logo-title">CNC &amp; MOTION</div></a>
+    <nav class="gnb">
+      <a href="../index.html#cnc-controller">CNC 제어기</a>
+      <a href="../index.html#motion-controller">모션 제어기</a>
+      <a href="../index.html#servo-drive" class="active">서보모터/드라이브</a>
+      <a href="../index.html#stepmotor-drive">스텝모터/드라이브</a>
+      <a href="../index.html#ethercat-io">EtherCAT IO 모듈</a>
+      <a href="../resources.html">기술자료실</a>
+    </nav>
+    <div class="lang-switch"><a href="servo-drive-motor.html" class="active">KO</a><span class="lang-sep">/</span><a href="../en/products/servo-drive-motor.html">EN</a></div>
+    <button class="nav-toggle" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="detail-hero">
+  <div class="container grid">
+    <div class="photo-frame"><img src="../assets/img/card-servo-drive-motor.jpg" alt="서보 모터 & 드라이브"></div>
+    <div>
+      <span class="chip">서보모터/드라이브 · 04</span>
+      <h1>서보 모터 &amp; 드라이브</h1>
+      <p class="lede">400W부터 11KW까지, 드라이브와 모터를 하나의 라인업으로.</p>
+      <ul class="bullets">
+        <li>SMG &amp; SMA 서보모터 — 200W~7.5KW 라인업에 SMG(고토크)·SMA(고회전) 두 가지 특성을 갖춰 어떤 부하 조건에도 최적의 조합을 찾을 수 있습니다</li>
+        <li>SD Series — EtherCAT은 물론 Analog·Pulse·IO·ModBUS까지 어떤 상위 제어 환경과도 자유롭게 연동되는 풀 디지털 서보드라이브</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="breadcrumb">
+  <div class="container"><a href="../index.html">홈</a><span class="sep">/</span><a href="../index.html#servo-drive">서보모터/드라이브</a><span class="sep">/</span><span class="current">서보 모터 &amp; 드라이브</span></div>
+</div>
+
+
+<section class="detail-block alt">
+  <div class="container">
+    <div class="eyebrow">04-1 / 서보 모터 &amp; 드라이브 — SMG &amp; SMA 서보모터</div>
+    <div class="split" style="margin-top:16px;">
+      <div class="split-media">
+        <div class="panel-head">SMG &amp; SMA 서보모터</div>
+        <div class="panel-body"><img src="../assets/img/card-smgsma.jpg" alt="SMG & SMA 서보모터"></div>
+      </div>
+      <div class="split-text">
+        <div class="panel-head-plain">FEATURES</div>
+        <h3>SMG &amp; SMA 서보모터 특징</h3>
+        <ul class="feature-list">
+          <li><span class="li-num">01</span><span>200W~7.5KW 라인업 구성</span></li>
+          <li><span class="li-num">02</span><span>SMG — 고토크형, 저속·고부하 구동에 최적</span></li>
+          <li><span class="li-num">03</span><span>SMA — 고회전형, 고속 응답이 필요한 구동에 최적</span></li>
+          <li><span class="li-num">04</span><span>어떤 부하 조건에도 최적의 조합을 선택할 수 있는 두 가지 특성 라인업</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="detail-block">
+  <div class="container">
+    <div class="eyebrow">04-2 / 서보 모터 &amp; 드라이브 — 서보모터 제품형식</div>
+    <div class="spec-table-wrap" style="margin-top:16px;">
+      <div class="stw-title"><span class="ico">&#9638;</span>서보모터 제품형식</div>
+      <div class="partcode-row">
+        <div class="partcode-item">
+          <div class="code-box">SMG</div>
+          <div class="connector"></div>
+          <div class="code-label">시리즈명</div>
+          <div class="code-desc">SMG : 고토크용<br>SMA : 고회전용</div>
+        </div>
+        <div class="partcode-item">
+          <div class="code-box">04</div>
+          <div class="connector"></div>
+          <div class="code-label">용량</div>
+          <div class="code-desc">04 : 400W<br>08 : 750W<br>13 : 1.3KW<br>20 : 2.0KW<br>30 : 3.0KW<br>44 : 4.4KW<br>55 : 5.5KW<br>75 : 7.5KW</div>
+        </div>
+        <div class="partcode-item">
+          <div class="code-box">A</div>
+          <div class="connector"></div>
+          <div class="code-label">입력전압</div>
+          <div class="code-desc">A : 200V<br>B : 400V</div>
+        </div>
+        <div class="partcode-item">
+          <div class="code-box">A</div>
+          <div class="connector"></div>
+          <div class="code-label">엔코더</div>
+          <div class="code-desc">A : 절대치<br>I : 인크리멘탈</div>
+        </div>
+        <div class="partcode-item">
+          <div class="code-box">A</div>
+          <div class="connector"></div>
+          <div class="code-label">설계사양</div>
+          <div class="code-desc">A : 표준<br>E : 고정도</div>
+        </div>
+        <div class="partcode-item">
+          <div class="code-box">1</div>
+          <div class="connector"></div>
+          <div class="code-label">축단사양</div>
+          <div class="code-desc">1: straight<br>2: straight/key</div>
+        </div>
+        <div class="partcode-item">
+          <div class="code-box">1</div>
+          <div class="connector"></div>
+          <div class="code-label">브레이크사양</div>
+          <div class="code-desc">1 : DC24<br>2 : DC90</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="detail-block alt">
+  <div class="container">
+    <div class="eyebrow">04-3 / 서보 모터 &amp; 드라이브 — 서보모터 사양</div>
+    <div class="spec-table-wrap" style="margin-top:16px;">
+      <div class="stw-title"><span class="ico">&#9638;</span>서보모터 사양</div>
+      <div class="spec-table-scroll">
+        <table class="spec-table narrow-th">
+          <tbody>
+            <tr><th>전압</th><td colspan="13" style="text-align:center;font-weight:700;background:var(--bg-alt);">220V</td></tr>
+            <tr>
+              <th>플랜지 규격</th>
+              <td colspan="2" style="text-align:center;font-weight:700;">40</td>
+              <td colspan="2" style="text-align:center;font-weight:700;">60</td>
+              <td colspan="2" style="text-align:center;font-weight:700;">80</td>
+              <td colspan="3" style="text-align:center;font-weight:700;">130</td>
+              <td colspan="4" style="text-align:center;font-weight:700;">180</td>
+            </tr>
+            <tr>
+              <th>드라이브형식 (SD-)</th>
+              <td>04A</td><td>04A</td><td>04A</td><td>10A</td><td>10A</td><td>06A</td><td>15A</td><td>20A</td><td>20A</td><td>30A</td><td>55A</td><td>75A</td><td>110A</td>
+            </tr>
+            <tr>
+              <th>모터형식 (SMG-/SMA-)</th>
+              <td>01A&#9633;A</td><td>02A&#9633;A</td><td>04A&#9633;A</td><td>04A&#9633;SA</td><td>08A&#9633;A</td><td>05A&#9633;A</td><td>13A&#9633;A</td><td>20A&#9633;A</td><td>20A&#9633;A</td><td>30A&#9633;A</td><td>44A&#9633;A</td><td>55A&#9633;A</td><td>75A&#9633;A</td>
+            </tr>
+            <tr>
+              <th>정격출력 (kW)</th>
+              <td>0.1</td><td>0.2</td><td>0.4</td><td>0.4</td><td>0.75</td><td>0.45</td><td>1.3</td><td>2</td><td>1.8</td><td>2.9</td><td>4.4</td><td>5.5</td><td>7.5</td>
+            </tr>
+            <tr>
+              <th>정격토크 (N&middot;m)</th>
+              <td>0.312</td><td>0.637</td><td>1.27</td><td>0.91</td><td>2.39</td><td>2.83</td><td>8.3</td><td>11.3</td><td>11.3</td><td>18.4</td><td>28.2</td><td>34.8</td><td>47.8</td>
+            </tr>
+            <tr>
+              <th>순간최대토크 (N&middot;m)</th>
+              <td>0.1</td><td>2.23</td><td>4.46</td><td>6.69</td><td>7.16</td><td>8.7</td><td>23.0</td><td>27.6</td><td>28.4</td><td>44.7</td><td>71.0</td><td>87.3</td><td>117</td>
+            </tr>
+            <tr>
+              <th>정격전류 (Arms)</th>
+              <td>0.84</td><td>1.6</td><td>2.7</td><td>4.2</td><td>4.4</td><td>3.5</td><td>10.4</td><td>16</td><td>16.5</td><td>23.6</td><td>32.4</td><td>41.8</td><td>54.2</td>
+            </tr>
+            <tr>
+              <th>순간최대전류 (Arms)</th>
+              <td>2.9</td><td>5.8</td><td>9.3</td><td>14.9</td><td>13.4</td><td>10.5</td><td>27</td><td>42</td><td>41</td><td>54</td><td>83</td><td>108</td><td>129</td>
+            </tr>
+            <tr>
+              <th>정격회전속도 (min&#8315;&sup1;)</th>
+              <td colspan="6" style="text-align:center;">3000</td>
+              <td colspan="7" style="text-align:center;">1500</td>
+            </tr>
+            <tr>
+              <th>최고회전속도 (min&#8315;&sup1;)</th>
+              <td colspan="6" style="text-align:center;">5000</td>
+              <td colspan="7" style="text-align:center;">3000</td>
+            </tr>
+            <tr>
+              <th>토크정수 (N&middot;m/Arms)</th>
+              <td>0.352</td><td>0.435</td><td>0.512</td><td>0.505</td><td>0.59</td><td>0.83</td><td>0.85</td><td>0.68</td><td>0.70</td><td>0.82</td><td>0.86</td><td>0.80</td><td>0.90</td>
+            </tr>
+            <tr>
+              <th style="white-space:normal;">회전자관성모멘트*1<br>(Kg&middot;m&sup2;&times;10&#8315;&#8308;)</th>
+              <td>0.0525<br><small>(0.0739)</small></td>
+              <td>0.259<br><small>(0.323)</small></td>
+              <td>0.442<br><small>(0.506)</small></td>
+              <td>0.667<br><small>(0.744)</small></td>
+              <td>0.672<br><small>(0.86)</small></td>
+              <td>7.22<br><small>(9.3)</small></td>
+              <td>20.3<br><small>(22.4)</small></td>
+              <td>26.7<br><small>(34.2)</small></td>
+              <td>31.4<br><small>(40.0)</small></td>
+              <td>45.8<br><small>(54.3)</small></td>
+              <td>67.3<br><small>(75.7)</small></td>
+              <td>88.7<br><small>(97.3)</small></td>
+              <td>126<br><small>(133.2)</small></td>
+            </tr>
+            <tr>
+              <th>정격파워 (kW/s)</th>
+              <td>15.2</td><td>15.7</td><td>36.5</td><td>54.7</td><td>84.8</td><td>11.0</td><td>33.5</td><td>36.1</td><td>41.3</td><td>75.1</td><td>118</td><td>135</td><td>183</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:11.5px;color:var(--muted);margin-top:12px;">*1) ( ) 안의 수치는 유지브레이크 장착 모터용 값을 나타냅니다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="detail-block">
+  <div class="container">
+    <div class="eyebrow">04-4 / 서보 모터 &amp; 드라이브 — SD Series</div>
+    <div class="split" style="margin-top:16px;">
+      <div class="split-media">
+        <div class="panel-head">SD Series 서보드라이브</div>
+        <div class="panel-body"><img src="../assets/img/card-sdseries.jpg" alt="SD Series"></div>
+      </div>
+      <div class="split-text">
+        <div class="panel-head-plain">FEATURES</div>
+        <h3>SD Series 특징</h3>
+        <ul class="feature-list">
+          <li><span class="li-num">01</span><span>400W부터 11KW까지, 하나의 플랫폼으로 완성하는 풀 디지털 서보</span></li>
+          <li><span class="li-num">02</span><span>EtherCAT 통신 지원 — 상위 제어기와의 완전 동기·보간 제어</span></li>
+          <li><span class="li-num">03</span><span>Analog·Pulse·IO·ModBUS 등 다양한 상위 제어 환경과 자유롭게 연동</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="detail-block alt">
+  <div class="container">
+    <div class="eyebrow">04-5 / 서보 모터 &amp; 드라이브 — 서보드라이브 제품형식</div>
+    <div class="spec-table-wrap" style="margin-top:16px;">
+      <div class="stw-title"><span class="ico">&#9638;</span>서보드라이브 제품형식</div>
+      <div class="partcode-row">
+        <div class="partcode-item">
+          <div class="code-box">SD</div>
+          <div class="connector"></div>
+          <div class="code-label">시리즈명</div>
+          <div class="code-desc">서보 시리즈</div>
+        </div>
+        <div class="partcode-item">
+          <div class="code-box">04</div>
+          <div class="connector"></div>
+          <div class="code-label">용량</div>
+          <div class="code-desc">04 : 400W<br>10 : 1.0KW<br>15 : 1.5KW<br>20 : 2.0KW<br>30 : 3.0KW<br>55 : 5.5KW<br>75 : 7.5KW</div>
+        </div>
+        <div class="partcode-item">
+          <div class="code-box">A</div>
+          <div class="connector"></div>
+          <div class="code-label">입력전압</div>
+          <div class="code-desc">A : 200V<br>B : 400V</div>
+        </div>
+        <div class="partcode-item">
+          <div class="code-box">C</div>
+          <div class="connector"></div>
+          <div class="code-label">엔코더</div>
+          <div class="code-desc">A : Quadrature<br>D : Serial<br>C : Serial (BiSS)<br>D : Serial (Sanyo)<br>E : Serial (Nikon)</div>
+        </div>
+        <div class="partcode-item">
+          <div class="code-box">A</div>
+          <div class="connector"></div>
+          <div class="code-label">통신사양</div>
+          <div class="code-desc">A : Analog<br>E : EtherCAT<br>C : 위치결정형</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="detail-block">
+  <div class="container">
+    <div class="eyebrow">04-6 / 서보 모터 &amp; 드라이브 — 서보드라이브 사양</div>
+    <div class="spec-table-wrap" style="margin-top:16px;">
+      <div class="stw-title"><span class="ico">&#9638;</span>서보드라이브 사양</div>
+      <table class="spec-table narrow-th">
+        <tbody>
+          <tr>
+            <th>서보팩 형식 (SD-)</th>
+            <td style="text-align:center;font-weight:700;background:var(--bg-alt);">04A</td>
+            <td style="text-align:center;font-weight:700;background:var(--bg-alt);">10A</td>
+            <td style="text-align:center;font-weight:700;background:var(--bg-alt);">15A</td>
+            <td style="text-align:center;font-weight:700;background:var(--bg-alt);">20A</td>
+            <td style="text-align:center;font-weight:700;background:var(--bg-alt);">30A</td>
+            <td style="text-align:center;font-weight:700;background:var(--bg-alt);">55A</td>
+            <td style="text-align:center;font-weight:700;background:var(--bg-alt);">75A</td>
+          </tr>
+          <tr>
+            <th>최대 적용 모터 [KW]</th>
+            <td>0.4</td><td>1</td><td>1.5</td><td>2</td><td>3</td><td>5.5</td><td>7.5</td>
+          </tr>
+          <tr>
+            <th>정격 출력 전류 [A]</th>
+            <td>3</td><td>6.5</td><td>11A</td><td>13.5</td><td>16.5</td><td>35</td><td>40</td>
+          </tr>
+          <tr>
+            <th>최대 출력 전류 [A]</th>
+            <td>9</td><td>19.5</td><td>28A</td><td>40.5</td><td>49.5</td><td>96</td><td>104</td>
+          </tr>
+          <tr>
+            <th>회생 저항기</th>
+            <td colspan="5" style="text-align:center;">내장 / 외장</td>
+            <td colspan="2" style="text-align:center;">외장</td>
+          </tr>
+          <tr>
+            <th>주 회로 [3상 : AC200V]</th>
+            <td colspan="7" style="text-align:center;">AC200 ~ 230V +10~-15% 50/60Hz</td>
+          </tr>
+          <tr>
+            <th>제어회로 [단상 : AC200V]</th>
+            <td colspan="7" style="text-align:center;">AC200 ~ 230V +10~-15% 50/60Hz</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="detail-block alt">
+  <div class="container">
+    <div class="eyebrow">04-7 / 서보 모터 &amp; 드라이브 — 서보드라이브 특성</div>
+    <div class="spec-table-wrap" style="margin-top:16px;">
+      <div class="stw-title"><span class="ico">&#128225;</span>서보드라이브 특성</div>
+      <table class="spec-table narrow-th">
+        <thead>
+          <tr><th>분류</th><th>항목</th><th>사양</th></tr>
+        </thead>
+        <tbody>
+          <tr style="background:var(--bg-alt);">
+            <th rowspan="2">주전원 회로</th>
+            <td>입력전압주파수</td>
+            <td>3상 200V ~230V, 50/60HZ</td>
+          </tr>
+          <tr style="background:var(--bg-alt);">
+            <td>허용전압 변동율</td>
+            <td>+10% ~ -15%이내</td>
+          </tr>
+          <tr>
+            <th rowspan="2">제어회로 전원</th>
+            <td>입력전압</td>
+            <td>단상 200V ~230V, 50/60HZ</td>
+          </tr>
+          <tr>
+            <td>허용전압 변동율</td>
+            <td>&plusmn;15% 이내</td>
+          </tr>
+          <tr style="background:var(--bg-alt);">
+            <th rowspan="4">검출기</th>
+            <td>검출기 형식</td>
+            <td>인크리멘탈 2000~6000[ppr] 15선식, 19bit BiSS 엔코더, 1Vpp sin/cos 엔코더</td>
+          </tr>
+          <tr style="background:var(--bg-alt);">
+            <td>출력신호 형식</td>
+            <td>Differential Line Driver 출력.</td>
+          </tr>
+          <tr style="background:var(--bg-alt);">
+            <td>검출기 정도</td>
+            <td>1회전당 524,288(19bits 엔코더 기준)</td>
+          </tr>
+          <tr style="background:var(--bg-alt);">
+            <td>검출기 전원</td>
+            <td>DC 5V, Max0.3[A]</td>
+          </tr>
+          <tr>
+            <th rowspan="3">구동방식</th>
+            <td>구동방식</td>
+            <td>정현파 PWM 제어 (IGBT사용)</td>
+          </tr>
+          <tr>
+            <td>GATE 회로</td>
+            <td>1ED020I12-F2 (Max 2.0A)</td>
+          </tr>
+          <tr>
+            <td>보호기능</td>
+            <td>UVLO(Under voltage Lockout), Ready, Short Circuit Clamping, Active Miller Clamp, Desaturation Protection, Fault Signal</td>
+          </tr>
+          <tr style="background:var(--bg-alt);">
+            <th rowspan="4">속도제어 사양</th>
+            <td>주파수 응답특성</td>
+            <td>최대 1KHz이상</td>
+          </tr>
+          <tr style="background:var(--bg-alt);">
+            <td>속도지령입력</td>
+            <td>DC0V~&plusmn;10V, 최대속도 파라메타 조정가능), EtherCAT속도지령</td>
+          </tr>
+          <tr style="background:var(--bg-alt);">
+            <td>속도변동율</td>
+            <td>&plusmn;0.01[%], 부하변동 0~100%</td>
+          </tr>
+          <tr style="background:var(--bg-alt);">
+            <td>가감속 시간</td>
+            <td>직선 또는 S자 가감속</td>
+          </tr>
+          <tr>
+            <th rowspan="3">위치제어 사양</th>
+            <td>위치입력주파수</td>
+            <td>1Mpps, 라인드라이브</td>
+          </tr>
+          <tr>
+            <td>위치입력종류(펄스)</td>
+            <td>방향+펄스, 정회전 펄스+역회전 펄스</td>
+          </tr>
+          <tr>
+            <td>위치입력 형태</td>
+            <td>Line Driver 방식 (RS422)</td>
+          </tr>
+          <tr style="background:var(--bg-alt);">
+            <th rowspan="3">토크제어 사양</th>
+            <td>토크지령입력</td>
+            <td>DC0V~&plusmn;10V, 최대속도 파라메타 조정가능)</td>
+          </tr>
+          <tr style="background:var(--bg-alt);">
+            <td>반복 정밀도</td>
+            <td>&plusmn;1[%]이내</td>
+          </tr>
+          <tr style="background:var(--bg-alt);">
+            <td>토크제한속도지령</td>
+            <td>DC0V~&plusmn;10V, 최대속도 파라메타 조정가능)</td>
+          </tr>
+          <tr>
+            <th rowspan="4">내장기능</th>
+            <td>보호기능</td>
+            <td>과전류, 회생과전압, 과부하, 엔코더 이상, 주전원이상, 과열, 회생과다, 과속도, IGBT FAULT, 부족전압</td>
+          </tr>
+          <tr>
+            <td>회생저항</td>
+            <td>기본 내장, 외장(별치)</td>
+          </tr>
+          <tr>
+            <td>USB 통신</td>
+            <td>PC USB통신 지원 (파라메타 및 변수 모니터링)</td>
+          </tr>
+          <tr>
+            <td>온도검출</td>
+            <td>모터 온도, IGBT온도, PCB온도 검출</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="contact">
+  <div class="container">
+    <div class="detail-cta">
+      <div>
+        <h3>서보 모터 &amp; 드라이브 도입 문의</h3>
+        <p>구성 및 견적이 필요하시면 서보모터/드라이브 라인업 전체를 함께 확인해보세요.</p>
+      </div>
+      <div class="detail-cta-actions">
+        <a href="../index.html#servo-drive" class="btn btn-ghost">서보모터/드라이브 목록으로</a>
+        <a href="../resources.html?q=servo-drive-motor" class="btn btn-ghost">관련 자료 다운로드</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-top">
+      <div class="foot-logo">CS<span>CAM</span> CNC</div>
+      <nav class="foot-links">
+        <a href="../index.html#cnc-controller">CNC 제어기</a>
+        <a href="../index.html#motion-controller">모션 제어기</a>
+        <a href="../index.html#servo-drive">서보모터/드라이브</a>
+        <a href="../index.html#stepmotor-drive">스텝모터/드라이브</a>
+        <a href="../index.html#ethercat-io">EtherCAT IO 모듈</a>
+        <a href="../resources.html">기술자료실</a>
+      </nav>
+    </div>
+    <div class="foot-contact">
+      <p><strong>본사</strong> 광주 광산구 평동산단로 239-15 <span class="sep">&middot;</span> 전화 : 062-946-1900 <span class="sep">&middot;</span> 팩스 : 062-946-1901 <span class="sep">&middot;</span> 이메일 : info@cscam.co.kr</p>
+      <p><strong>CNC사업부</strong> 성남시 중원구 사기막골로 124 Skn테크노파크 비즈동 509호 <span class="sep">&middot;</span> 전화 : 031-737-7600 <span class="sep">&middot;</span> 팩스 : 031-737-2911 <span class="sep">&middot;</span> 이메일 : info_CNC@cscam.co.kr</p>
+      <p class="foot-biz">사업자등록번호 : 220-81-79319</p>
+    </div>
+    <div class="foot-copy">Copyright &copy; 2024 씨에스캠(주). All Rights Reserved. <span class="credit">Desigend by WebSite.co.kr</span></div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technical Resources | CSCAM CNC</title>
+<meta name="description" content="CSCAM CNC Technical Resources — search and download catalogs, manuals, drawings, videos, and operating software by product.">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="family-bar">
+  <div class="family-bar-inner">
+    <span class="family-bar-label">CSCAM CNC Division</span>
+    <nav class="family-bar-nav">
+      <a href="index.html" class="active">CNC Controller</a>
+      <a href="../../cscam-lms/en/index.html">LMS Solution</a>
+      <span class="disabled">Software</span>
+    </nav>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><small>CSCAM Co., Ltd.</small><div class="logo-title">CNC &amp; MOTION</div></a>
+    <nav class="gnb">
+      <a href="../index.html#cnc-controller">CNC Controllers</a>
+      <a href="../index.html#motion-controller">Motion Controllers</a>
+      <a href="../index.html#servo-drive">Servo Motor/Drive</a>
+      <a href="../index.html#stepmotor-drive">Step Motor/Drive</a>
+      <a href="../index.html#ethercat-io">EtherCAT IO Modules</a>
+      <a href="resources.html" class="active">Resources</a>
+    </nav>
+    <div class="lang-switch"><a href="../resources.html">KO</a><span class="lang-sep">/</span><a href="resources.html" class="active">EN</a></div>
+    <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="header-spacer"></div>
+
+<section class="detail-hero" id="resources-hero">
+  <div class="container">
+    <span class="chip">Technical Resources</span>
+    <h1>Find catalogs, manuals, drawings,<br>and videos by product</h1>
+    <p class="lede">Search and download technical resources for the entire CSCAM CNC lineup — from CNC controllers to EtherCAT IO modules — all in one place.</p>
+  </div>
+</section>
+
+<div class="breadcrumb">
+  <div class="container"><a href="../index.html">Home</a><span class="sep">/</span><span class="current">Technical Resources</span></div>
+</div>
+
+<section class="section compact-y" data-resources-root data-lang="en" data-doc-base="../">
+  <div class="container">
+    <div class="resources-toolbar">
+      <div class="resources-tabs" data-tabs></div>
+      <div class="resources-search">
+        <input type="text" data-search placeholder="Search by product or document name (e.g. CPACK, 800S)">
+      </div>
+    </div>
+    <div class="resources-count" data-count></div>
+    <div class="resource-list" data-list></div>
+  </div>
+</section>
+
+<section class="section alt" id="contact">
+  <div class="container">
+    <div class="detail-cta">
+      <div>
+        <h3>Can't find what you're looking for?</h3>
+        <p>Contact the CNC Division and we'll help you locate the resource you need.</p>
+      </div>
+      <a href="../index.html#contact" class="btn btn-ghost">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-top">
+      <div class="foot-logo">CS<span>CAM</span> CNC</div>
+      <nav class="foot-links">
+        <a href="../index.html#cnc-controller">CNC Controllers</a>
+        <a href="../index.html#motion-controller">Motion Controllers</a>
+        <a href="../index.html#servo-drive">Servo Motor/Drive</a>
+        <a href="../index.html#stepmotor-drive">Step Motor/Drive</a>
+        <a href="../index.html#ethercat-io">EtherCAT IO Modules</a>
+        <a href="resources.html">Resources</a>
+      </nav>
+    </div>
+    <div class="foot-contact">
+      <p><strong>Head Office</strong> 239-15, Pyeongdong-sandan-ro, Gwangsan-gu, Gwangju, Korea <span class="sep">&middot;</span> Tel : 062-946-1900 <span class="sep">&middot;</span> Fax : 062-946-1901 <span class="sep">&middot;</span> Email : info@cscam.co.kr</p>
+      <p><strong>CNC Division</strong> 509, Biz-dong, SKn Technopark, 124 Sagimakgol-ro, Jungwon-gu, Seongnam-si, Korea <span class="sep">&middot;</span> Tel : 031-737-7600 <span class="sep">&middot;</span> Fax : 031-737-2911 <span class="sep">&middot;</span> Email : info_CNC@cscam.co.kr</p>
+      <p class="foot-biz">Business Registration No. : 220-81-79319</p>
+    </div>
+    <div class="foot-copy">Copyright &copy; 2024 CSCAM Co., Ltd. All Rights Reserved. <span class="credit">Designed by WebSite.co.kr</span></div>
+  </div>
+</footer>
+
+<script src="../assets/js/resources-data.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/resources.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMG &amp; SMA Servo Motors | Servo Motor/Drive | CSCAM CNC</title>
+<meta name="description" content="SMG &amp; SMA Servo Motors &mdash; High-torque and high-speed, choose the servo motor that fits your application.">
+<link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+<div class="family-bar">
+  <div class="family-bar-inner">
+    <span class="family-bar-label">CSCAM CNC Division</span>
+    <nav class="family-bar-nav">
+      <a href="../index.html" class="active">CNC Controller</a>
+      <a href="../../../cscam-lms/en/index.html">LMS Solution</a>
+      <span class="disabled">Software</span>
+    </nav>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="logo"><small>CSCAM Co., Ltd.</small><div class="logo-title">CNC &amp; MOTION</div></a>
+    <nav class="gnb">
+      <a href="../../index.html#cnc-controller">CNC Controllers</a>
+      <a href="../../index.html#motion-controller">Motion Controllers</a>
+      <a href="../../index.html#servo-drive" class="active">Servo Motor/Drive</a>
+      <a href="../../index.html#stepmotor-drive">Step Motor/Drive</a>
+      <a href="../../index.html#ethercat-io">EtherCAT IO Modules</a>
+      <a href="../../resources.html">Resources</a>
+    </nav>
+    <div class="lang-switch"><a href="../../products/smg-sma.html">KO</a><span class="lang-sep">/</span><a href="smg-sma.html" class="active">EN</a></div>
+    <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="detail-hero">
+  <div class="container grid">
+    <div class="photo-frame"><img src="../../assets/img/card-smgsma.jpg" alt="SMG &amp; SMA Servo Motors"></div>
+    <div>
+      <span class="chip">Servo Motor/Drive &middot; 04</span>
+      <h1>SMG &amp; SMA Servo Motors</h1>
+      <p class="lede">High-torque and high-speed &mdash; choose the servo motor that fits your application.</p>
+      <ul class="bullets">
+        <li>A 200W to 7.5kW lineup featuring both SMG (high-torque) and SMA (high-speed) characteristics, so you can find the optimal combination for any load condition.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="breadcrumb">
+  <div class="container"><a href="../../index.html">Home</a><span class="sep">/</span><a href="../../index.html#servo-drive">Servo Motor/Drive</a><span class="sep">/</span><span class="current">SMG &amp; SMA Servo Motors</span></div>
+</div>
+
+<section class="stub-block">
+  <div class="container">
+    <div class="stub-icon">&hellip;</div>
+    <h2>Detailed Content Coming Soon</h2>
+    <p>Detailed specifications, configuration diagrams, and application examples for the SMG &amp; SMA servo motors will be added in a future update.</p>
+    <a href="../../index.html#servo-drive" class="btn btn-primary">Back to Servo Motor/Drive</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-top">
+      <div class="foot-logo">CS<span>CAM</span> CNC</div>
+      <nav class="foot-links">
+        <a href="../../index.html#cnc-controller">CNC Controllers</a>
+        <a href="../../index.html#motion-controller">Motion Controllers</a>
+        <a href="../../index.html#servo-drive">Servo Motor/Drive</a>
+        <a href="../../index.html#stepmotor-drive">Step Motor/Drive</a>
+        <a href="../../index.html#ethercat-io">EtherCAT IO Modules</a>
+        <a href="../../resources.html">Resources</a>
+      </nav>
+    </div>
+    <div class="foot-contact">
+      <p><strong>Head Office</strong> 239-15, Pyeongdong-sandan-ro, Gwangsan-gu, Gwangju, Korea <span class="sep">&middot;</span> Tel : 062-946-1900 <span class="sep">&middot;</span> Fax : 062-946-1901 <span class="sep">&middot;</span> Email : info@cscam.co.kr</p>
+      <p><strong>CNC Division</strong> 509, Biz-dong, SKn Technopark, 124 Sagimakgol-ro, Jungwon-gu, Seongnam-si, Korea <span class="sep">&middot;</span> Tel : 031-737-7600 <span class="sep">&middot;</span> Fax : 031-737-2911 <span class="sep">&middot;</span> Email : info_CNC@cscam.co.kr</p>
+      <p class="foot-biz">Business Registration No. : 220-81-79319</p>
+    </div>
+    <div class="foot-copy">Copyright &copy; 2024 CSCAM Co., Ltd. All Rights Reserved. <span class="credit">Designed by WebSite.co.kr</span></div>
+  </div>
+</footer>
+
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>

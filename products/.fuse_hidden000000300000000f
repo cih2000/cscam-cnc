@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMG &amp; SMA 서보모터 | 서보모터/드라이브 | CSCAM CNC</title>
+<meta name="description" content="SMG &amp; SMA 서보모터 — 고토크와 고회전, 용도에 맞게 고르는 서보모터. 상세 콘텐츠 준비 중입니다.">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="family-bar">
+  <div class="family-bar-inner">
+    <span class="family-bar-label">CSCAM CNC 사업부</span>
+    <nav class="family-bar-nav">
+      <a href="../index.html" class="active">CNC Controller</a>
+      <a href="../../cscam-lms/index.html">LMS Solution</a>
+      <span class="disabled">Software</span>
+    </nav>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="logo"><small>씨에스캠주식회사</small><div class="logo-title">CNC &amp; MOTION</div></a>
+    <nav class="gnb">
+      <a href="../index.html#cnc-controller">CNC 제어기</a>
+      <a href="../index.html#motion-controller">모션 제어기</a>
+      <a href="../index.html#servo-drive" class="active">서보모터/드라이브</a>
+      <a href="../index.html#stepmotor-drive">스텝모터/드라이브</a>
+      <a href="../index.html#ethercat-io">EtherCAT IO 모듈</a>
+      <a href="../resources.html">기술자료실</a>
+    </nav>
+    <div class="lang-switch"><a href="smg-sma.html" class="active">KO</a><span class="lang-sep">/</span><a href="../en/products/smg-sma.html">EN</a></div>
+    <button class="nav-toggle" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="detail-hero">
+  <div class="container grid">
+    <div class="photo-frame"><img src="../assets/img/card-smgsma.jpg" alt="SMG &amp; SMA 서보모터"></div>
+    <div>
+      <span class="chip">서보모터/드라이브 · 04</span>
+      <h1>SMG &amp; SMA 서보모터</h1>
+      <p class="lede">고토크와 고회전, 용도에 맞게 고르는 서보모터.</p>
+      <ul class="bullets">
+        <li>200W~7.5KW 라인업에 SMG(고토크)·SMA(고회전) 두 가지 특성을 갖춰 어떤 부하 조건에도 최적의 조합을 찾을 수 있습니다.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="breadcrumb">
+  <div class="container"><a href="../index.html">홈</a><span class="sep">/</span><a href="../index.html#servo-drive">서보모터/드라이브</a><span class="sep">/</span><span class="current">SMG &amp; SMA 서보모터</span></div>
+</div>
+
+<section class="stub-block">
+  <div class="container">
+    <div class="stub-icon">&hellip;</div>
+    <h2>상세 콘텐츠 준비 중입니다</h2>
+    <p>SMG &amp; SMA 서보모터의 상세 사양, 구성도, 적용 사례는 추후 업데이트될 예정입니다.</p>
+    <a href="../index.html#servo-drive" class="btn btn-primary">서보모터/드라이브 목록으로</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-top">
+      <div class="foot-logo">CS<span>CAM</span> CNC</div>
+      <nav class="foot-links">
+        <a href="../index.html#cnc-controller">CNC 제어기</a>
+        <a href="../index.html#motion-controller">모션 제어기</a>
+        <a href="../index.html#servo-drive">서보모터/드라이브</a>
+        <a href="../index.html#stepmotor-drive">스텝모터/드라이브</a>
+        <a href="../index.html#ethercat-io">EtherCAT IO 모듈</a>
+        <a href="../resources.html">기술자료실</a>
+      </nav>
+    </div>
+    <div class="foot-contact">
+      <p><strong>본사</strong> 광주 광산구 평동산단로 239-15 <span class="sep">&middot;</span> 전화 : 062-946-1900 <span class="sep">&middot;</span> 팩스 : 062-946-1901 <span class="sep">&middot;</span> 이메일 : info@cscam.co.kr</p>
+      <p><strong>CNC사업부</strong> 성남시 중원구 사기막골로 124 Skn테크노파크 비즈동 509호 <span class="sep">&middot;</span> 전화 : 031-737-7600 <span class="sep">&middot;</span> 팩스 : 031-737-2911 <span class="sep">&middot;</span> 이메일 : info_CNC@cscam.co.kr</p>
+      <p class="foot-biz">사업자등록번호 : 220-81-79319</p>
+    </div>
+    <div class="foot-copy">Copyright &copy; 2024 씨에스캠(주). All Rights Reserved. <span class="credit">Desigend by WebSite.co.kr</span></div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

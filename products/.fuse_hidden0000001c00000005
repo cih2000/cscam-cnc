@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACTIMO | 스텝모터/드라이브 | CSCAM CNC</title>
+<meta name="description" content="ACTIMO — StepServo 단축제어기, Teaching Pendant. 상세 콘텐츠 준비 중입니다.">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="family-bar">
+  <div class="family-bar-inner">
+    <span class="family-bar-label">CSCAM CNC 사업부</span>
+    <nav class="family-bar-nav">
+      <a href="../index.html" class="active">CNC Controller</a>
+      <a href="../../cscam-lms/index.html">LMS Solution</a>
+      <span class="disabled">Software</span>
+    </nav>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="logo"><small>씨에스캠주식회사</small><div class="logo-title">CNC &amp; MOTION</div></a>
+    <nav class="gnb">
+      <a href="../index.html#cnc-controller">CNC 제어기</a>
+      <a href="../index.html#motion-controller">모션 제어기</a>
+      <a href="../index.html#servo-drive">서보모터/드라이브</a>
+      <a href="../index.html#stepmotor-drive" class="active">스텝모터/드라이브</a>
+      <a href="../index.html#ethercat-io">EtherCAT IO 모듈</a>
+      <a href="../resources.html">기술자료실</a>
+    </nav>
+    <div class="lang-switch"><a href="actimo.html" class="active">KO</a><span class="lang-sep">/</span><a href="../en/products/actimo.html">EN</a></div>
+    <button class="nav-toggle" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="detail-hero">
+  <div class="container grid">
+    <div class="photo-frame"><img src="../assets/img/card-actimo.jpg" alt="ACTIMO"></div>
+    <div>
+      <span class="chip">스텝모터/드라이브 · 05</span>
+      <h1>ACTIMO</h1>
+      <p class="lede">StepServo 단축제어기, Teaching Pendant.</p>
+      <ul class="bullets">
+        <li>티칭펜던트 활용 단축제어기</li>
+        <li>유공압 실린더를 전동 실린더로 1:1 대체 가능</li>
+        <li>ACTIMO Setup SW로 단축제어기 모든 셋업 지원</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="breadcrumb">
+  <div class="container"><a href="../index.html">홈</a><span class="sep">/</span><a href="../index.html#stepmotor-drive">스텝모터/드라이브</a><span class="sep">/</span><span class="current">ACTIMO</span></div>
+</div>
+
+<section class="detail-block alt">
+  <div class="container">
+    <div class="eyebrow">05-1 / ACTIMO — 구성 및 특징</div>
+    <div class="split" style="margin-top:16px;">
+      <div class="split-media">
+        <div class="panel-head">ACTIMO 시스템 구성</div>
+        <div class="panel-body"><img src="../assets/img/actimo-config.jpg" alt="ACTIMO 시스템 구성"></div>
+      </div>
+      <div class="split-text">
+        <div class="panel-head-plain">FEATURES</div>
+        <h3>ACTIMO 특징</h3>
+        <ul class="feature-list">
+          <li><span class="li-num">01</span><span>티칭펜던트 활용 단축제어기</span></li>
+          <li><span class="li-num">02</span><span>한 손에 잡히는 티칭 펜던트로 현장에서 위치 티칭/시운전 가능</span></li>
+          <li><span class="li-num">03</span><span>유공압 실린더를 전동 실린더로 1:1 대체 가능</span></li>
+          <li><span class="li-num">04</span><span>ACTIMO Setup SW로 단축제어기 모든 셋업 지원</span></li>
+          <li><span class="li-num">05</span><span>StepSERVO, BLDCservo 드라이브 여러대 동시연결 가능</span></li>
+          <li><span class="li-num">06</span><span>RS-485통신으로 최대 16축까지 연결 가능</span></li>
+          <li><span class="li-num">07</span><span>제어 변수(파라미터, ACTION Table, 튜닝값)를 파일로 관리</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="detail-block">
+  <div class="container">
+    <div class="eyebrow">05-2 / ACTIMO — PROGRAM</div>
+    <div class="split" style="margin-top:16px;">
+      <div class="split-media">
+        <div class="panel-head">ACTIMO PROGRAM</div>
+        <div class="panel-body"><img src="../assets/img/actimo-program.jpg" alt="ACTIMO PROGRAM"></div>
+      </div>
+      <div class="split-text">
+        <div class="panel-head-plain">SOFTWARE</div>
+        <h3>ACTIMO Motion Table 기능</h3>
+        <ul class="feature-list">
+          <li><span class="li-num">01</span><span>Action List 255 Points로 충분한 용량 확보</span></li>
+          <li><span class="li-num">02</span><span>외부 DIO 접점 (In 20/Out 12)으로 상위 PLC 연결</span></li>
+          <li><span class="li-num">03</span><span>외부 버튼입력으로 동작 지령 및 분기(Goto) 가능</span></li>
+          <li><span class="li-num">04</span><span>특정 Action List 도달 후 출력접점으로 상태 보고(Output) 가능</span></li>
+          <li><span class="li-num">05</span><span>임의원점 설정, 부하원점 설정 기능으로 유사 실린더 동작지원</span></li>
+          <li><span class="li-num">06</span><span>토크모드 동작 지원</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container">
+    <div class="detail-cta">
+      <div>
+        <h3>ACTIMO 도입 문의</h3>
+        <p>구성 및 견적이 필요하시면 스텝모터/드라이브 라인업 전체를 함께 확인해보세요.</p>
+      </div>
+      <div class="detail-cta-actions">
+        <a href="../index.html#stepmotor-drive" class="btn btn-ghost">스텝모터/드라이브 목록으로</a>
+        <a href="../resources.html?q=actimo" class="btn btn-ghost">관련 자료 다운로드</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-top">
+      <div class="foot-logo">CS<span>CAM</span> CNC</div>
+      <nav class="foot-links">
+        <a href="../index.html#cnc-controller">CNC 제어기</a>
+        <a href="../index.html#motion-controller">모션 제어기</a>
+        <a href="../index.html#servo-drive">서보모터/드라이브</a>
+        <a href="../index.html#stepmotor-drive">스텝모터/드라이브</a>
+        <a href="../index.html#ethercat-io">EtherCAT IO 모듈</a>
+        <a href="../resources.html">기술자료실</a>
+      </nav>
+    </div>
+    <div class="foot-contact">
+      <p><strong>본사</strong> 광주 광산구 평동산단로 239-15 <span class="sep">&middot;</span> 전화 : 062-946-1900 <span class="sep">&middot;</span> 팩스 : 062-946-1901 <span class="sep">&middot;</span> 이메일 : info@cscam.co.kr</p>
+      <p><strong>CNC사업부</strong> 성남시 중원구 사기막골로 124 Skn테크노파크 비즈동 509호 <span class="sep">&middot;</span> 전화 : 031-737-7600 <span class="sep">&middot;</span> 팩스 : 031-737-2911 <span class="sep">&middot;</span> 이메일 : info_CNC@cscam.co.kr</p>
+      <p class="foot-biz">사업자등록번호 : 220-81-79319</p>
+    </div>
+    <div class="foot-copy">Copyright &copy; 2024 씨에스캠(주). All Rights Reserved. <span class="credit">Desigend by WebSite.co.kr</span></div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
