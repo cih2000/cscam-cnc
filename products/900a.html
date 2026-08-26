@@ -215,16 +215,19 @@
 <script>
 (function(){
   window.cscamLocalNavFix = true;
-  if (location.protocol !== "file:") return;
+  var isLocal = location.protocol === "file:";
+  var isGhPages = location.hostname === "cih2000.github.io";
+  if (!isLocal && !isGhPages) return;
   var map = {
-    "https://lms.cscam.co.kr/": "../../cscam-lms/index.html",
-    "https://3dp.cscam.co.kr/": "../../cscam-3dp/index.html",
-    "https://laser.cscam.co.kr/": "../../cscam-engraving/index.html",
-    "https://marking.cscam.co.kr/": "../../cscam-marking/index.html"
+    "https://lms.cscam.co.kr/": { local: "../../cscam-lms/index.html", gh: "https://cih2000.github.io/cscam-lms/index.html" },
+    "https://3dp.cscam.co.kr/": { local: "../../cscam-3dp/index.html", gh: "https://cih2000.github.io/cscam-3dp/index.html" },
+    "https://laser.cscam.co.kr/": { local: "../../cscam-engraving/index.html", gh: "https://cih2000.github.io/cscam-engraving/index.html" },
+    "https://marking.cscam.co.kr/": { local: "../../cscam-marking/index.html", gh: "https://cih2000.github.io/cscam-marking/index.html" }
   };
   document.querySelectorAll(".family-bar-nav a, .drawer a").forEach(function(a){
     var href = a.getAttribute("href");
-    if (map[href]) a.setAttribute("href", map[href]);
+    var entry = map[href];
+    if (entry) a.setAttribute("href", isLocal ? entry.local : entry.gh);
   });
 })();
 </script>

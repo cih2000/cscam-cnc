@@ -146,16 +146,19 @@
 <script>
 (function(){
   window.cscamLocalNavFix = true;
-  if (location.protocol !== "file:") return;
+  var isLocal = location.protocol === "file:";
+  var isGhPages = location.hostname === "cih2000.github.io";
+  if (!isLocal && !isGhPages) return;
   var map = {
-    "https://lms.cscam.co.kr/en/index.html": "../../../cscam-lms/en/index.html",
-    "https://3dp.cscam.co.kr/?lang=en": "../../../cscam-3dp/index.html?lang=en",
-    "https://laser.cscam.co.kr/?lang=en": "../../../cscam-engraving/index.html?lang=en",
-    "https://marking.cscam.co.kr/?lang=en": "../../../cscam-marking/index.html?lang=en"
+    "https://lms.cscam.co.kr/en/index.html": { local: "../../../cscam-lms/en/index.html", gh: "https://cih2000.github.io/cscam-lms/en/index.html" },
+    "https://3dp.cscam.co.kr/?lang=en": { local: "../../../cscam-3dp/index.html?lang=en", gh: "https://cih2000.github.io/cscam-3dp/index.html?lang=en" },
+    "https://laser.cscam.co.kr/?lang=en": { local: "../../../cscam-engraving/index.html?lang=en", gh: "https://cih2000.github.io/cscam-engraving/index.html?lang=en" },
+    "https://marking.cscam.co.kr/?lang=en": { local: "../../../cscam-marking/index.html?lang=en", gh: "https://cih2000.github.io/cscam-marking/index.html?lang=en" }
   };
   document.querySelectorAll(".family-bar-nav a, .drawer a").forEach(function(a){
     var href = a.getAttribute("href");
-    if (map[href]) a.setAttribute("href", map[href]);
+    var entry = map[href];
+    if (entry) a.setAttribute("href", isLocal ? entry.local : entry.gh);
   });
 })();
 </script>
