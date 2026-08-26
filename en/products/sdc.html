@@ -14,10 +14,10 @@
     <span class="family-bar-label">CSCAM CNC Division</span>
     <nav class="family-bar-nav">
       <a href="../index.html" class="active">CNC Controller</a>
-      <a href="../../../cscam-lms/en/index.html">LMS Solution</a>
-      <a href="../../../cscam-3dp/index.html?lang=en">3D Printer</a>
-      <a href="../../../cscam-engraving/index.html?lang=en">Laser Patterning</a>
-      <a href="../../../cscam-marking/index.html?lang=en">Marking Machine</a>
+      <a href="https://lms.cscam.co.kr/en/index.html">LMS Solution</a>
+      <a href="https://3dp.cscam.co.kr/?lang=en">3D Printer</a>
+      <a href="https://laser.cscam.co.kr/?lang=en">Laser Patterning</a>
+      <a href="https://marking.cscam.co.kr/?lang=en">Marking Machine</a>
     </nav>
   </div>
 </div>
@@ -152,5 +152,21 @@
 </footer>
 
 <script src="../../assets/js/main.js"></script>
+<script>
+(function(){
+  window.cscamLocalNavFix = true;
+  if (location.protocol !== "file:") return;
+  var map = {
+    "https://lms.cscam.co.kr/en/index.html": "../../../cscam-lms/en/index.html",
+    "https://3dp.cscam.co.kr/?lang=en": "../../../cscam-3dp/index.html?lang=en",
+    "https://laser.cscam.co.kr/?lang=en": "../../../cscam-engraving/index.html?lang=en",
+    "https://marking.cscam.co.kr/?lang=en": "../../../cscam-marking/index.html?lang=en"
+  };
+  document.querySelectorAll(".family-bar-nav a, .drawer a").forEach(function(a){
+    var href = a.getAttribute("href");
+    if (map[href]) a.setAttribute("href", map[href]);
+  });
+})();
+</script>
 </body>
 </html>
