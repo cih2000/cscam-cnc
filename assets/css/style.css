@@ -465,7 +465,7 @@ h1, h2, h3, h4, h5, p { margin: 0; }
 
 /* ---------------- Product detail hero ---------------- */
 .detail-hero { background: var(--blue-050); color: var(--ink); padding: 130px 0 60px; position: relative; overflow: hidden; }
-.detail-hero.inline { padding: 48px 0 40px; }
+.detail-hero.inline { padding: 24px 0 20px; }
 .product-inline-wrap { border-top: 1px solid var(--border); }
 .product-inline-wrap .detail-block { padding: 32px 0; }
 .product-inline-cta { padding: 24px 0; background: var(--bg-alt); border-bottom: 1px solid var(--border); }
