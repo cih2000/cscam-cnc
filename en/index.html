@@ -31,7 +31,7 @@
 <a data-nav-target="ethercat-io" href="#ethercat-io">EtherCAT IO Modules</a>
 <a href="resources.html">Resources</a>
 </nav>
-<div class="header-right"><div class="header-utility"><div class="brand-wordmark"><b>CS</b><span>CAM</span></div><div class="brand-divider"></div><div class="lang-switch"><a href="../index.html">KO</a><span class="lang-sep">/</span><a class="active" href="index.html">EN</a></div></div><button aria-label="Open menu" class="nav-toggle"><span></span><span></span><span></span></button></div>
+<div class="header-right"><div class="header-utility"><a class="brand-wordmark-link" href="https://cscam.co.kr/en/index.html" aria-label="CSCAM Corporate Home"><div class="brand-wordmark"><b>CS</b><span>CAM</span></div></a><div class="brand-divider"></div><div class="lang-switch"><a href="../index.html">KO</a><span class="lang-sep">/</span><a class="active" href="index.html">EN</a></div></div><button aria-label="Open menu" class="nav-toggle"><span></span><span></span><span></span></button></div>
 </div>
 </header>
 <div class="header-spacer"></div>
@@ -2545,9 +2545,10 @@
     "https://lms.cscam.co.kr/en/index.html": { local: "../../cscam-lms/en/index.html", gh: "https://cih2000.github.io/cscam-lms/en/index.html" },
     "https://3dp.cscam.co.kr/?lang=en": { local: "../../cscam-3dp/index.html?lang=en", gh: "https://cih2000.github.io/cscam-3dp/index.html?lang=en" },
     "https://laser.cscam.co.kr/?lang=en": { local: "../../cscam-engraving/index.html?lang=en", gh: "https://cih2000.github.io/cscam-engraving/index.html?lang=en" },
-    "https://marking.cscam.co.kr/?lang=en": { local: "../../cscam-marking/index.html?lang=en", gh: "https://cih2000.github.io/cscam-marking/index.html?lang=en" }
+    "https://marking.cscam.co.kr/?lang=en": { local: "../../cscam-marking/index.html?lang=en", gh: "https://cih2000.github.io/cscam-marking/index.html?lang=en" },
+    "https://cscam.co.kr/en/index.html": { local: "../../cscam-hub/en/index.html", gh: "https://cih2000.github.io/cscam-hub/en/index.html" }
   };
-  document.querySelectorAll(".family-bar-nav a, .drawer a").forEach(function(a){
+  document.querySelectorAll(".family-bar-nav a, .drawer a, .brand-wordmark-link").forEach(function(a){
     var href = a.getAttribute("href");
     var entry = map[href];
     if (entry) a.setAttribute("href", isLocal ? entry.local : entry.gh);
