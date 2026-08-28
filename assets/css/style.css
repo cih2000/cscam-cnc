@@ -464,7 +464,7 @@ h1, h2, h3, h4, h5, p { margin: 0; }
 .diagram-frame img { margin: 0 auto; }
 
 /* ---------------- Product detail hero ---------------- */
-.detail-hero { background: var(--navy); color: var(--white); padding: 130px 0 60px; position: relative; overflow: hidden; }
+.detail-hero { background: var(--blue-050); color: var(--ink); padding: 130px 0 60px; position: relative; overflow: hidden; }
 .detail-hero.inline { padding: 48px 0 40px; }
 .product-inline-wrap { border-top: 1px solid var(--border); }
 .product-inline-wrap .detail-block { padding: 32px 0; }
@@ -472,18 +472,18 @@ h1, h2, h3, h4, h5, p { margin: 0; }
 .detail-hero .grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px; align-items: center; position: relative; z-index: 1; }
 .detail-hero .chip {
   display: inline-block; font-family: "JetBrains Mono", monospace; font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
-  font-weight: 700; color: #cfe8ff; background: rgba(127,196,255,.12); border: 1px solid rgba(127,196,255,.35);
+  font-weight: 700; color: var(--blue); background: #fff; border: 1px solid var(--blue-100);
   padding: 5px 12px; border-radius: 3px; margin-bottom: 18px;
 }
-.detail-hero h1 { font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: clamp(24px, 3vw, 34px); line-height: 1.25; margin-bottom: 14px; letter-spacing: -.01em; }
-.detail-hero .lede { color: #b8c4d9; font-size: 15px; margin-bottom: 20px; line-height: 1.7; }
+.detail-hero h1 { font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: clamp(24px, 3vw, 34px); line-height: 1.25; margin-bottom: 14px; letter-spacing: -.01em; color: var(--ink); }
+.detail-hero .lede { color: var(--muted); font-size: 15px; margin-bottom: 20px; line-height: 1.7; }
 .detail-hero ul.bullets { display: flex; flex-direction: column; gap: 10px; }
-.detail-hero ul.bullets li { position: relative; padding-left: 20px; font-size: 13.5px; color: rgba(255,255,255,.85); }
-.detail-hero ul.bullets li::before { content: ""; position: absolute; left: 0; top: 7px; width: 6px; height: 6px; border-radius: 50%; background: var(--blue-sky); }
+.detail-hero ul.bullets li { position: relative; padding-left: 20px; font-size: 13.5px; color: #333; }
+.detail-hero ul.bullets li::before { content: ""; position: absolute; left: 0; top: 7px; width: 6px; height: 6px; border-radius: 50%; background: var(--blue); }
 .detail-hero .photo-frame {
-  background: var(--white); border: 1px solid rgba(255,255,255,.14); border-radius: var(--radius-md);
+  background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-md);
   padding: 24px; display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 24px 60px rgba(0,0,0,.4);
+  box-shadow: 0 16px 40px rgba(13,30,61,.1);
 }
 .detail-hero .photo-frame img { max-height: 320px; object-fit: contain; mix-blend-mode: multiply; }
 
