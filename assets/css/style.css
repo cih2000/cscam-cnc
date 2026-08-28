@@ -323,8 +323,11 @@ h1, h2, h3, h4, h5, p { margin: 0; }
 .intro-card .go { font-size: 13px; font-weight: 700; color: var(--blue); margin-top: auto; }
 
 /* ---------------- Strengths / Clients / Catalog CTA ---------------- */
-.strength-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-.strength-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 26px 24px; }
+.strength-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(5, auto); gap: 20px; }
+.strength-card {
+  background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 26px 24px;
+  display: grid; grid-template-rows: subgrid; grid-row: span 5;
+}
 .strength-card .num-chip {
   display: inline-block; font-family: "JetBrains Mono", monospace; font-size: 10px; letter-spacing: .14em; font-weight: 700;
   background: var(--blue-050); color: var(--blue); padding: 4px 10px; border-radius: var(--radius-sm); margin-bottom: 14px;
@@ -335,8 +338,12 @@ h1, h2, h3, h4, h5, p { margin: 0; }
   color: #b45309; background: #fef3c7; border: 1px solid #fde68a; padding: 2px 7px; border-radius: 999px; margin-left: 6px; vertical-align: middle;
 }
 .strength-card p { font-size: 13px; color: var(--body); line-height: 1.7; }
+.strength-card .strength-photo {
+  display: block; width: 100%; aspect-ratio: 4/3.3; object-fit: cover;
+  border-radius: var(--radius-md); margin-top: 18px; align-self: start;
+}
 .strength-card .cert-view-link {
-  display: inline-flex; align-items: center; gap: 6px; margin-top: 14px;
+  display: inline-flex; align-items: center; gap: 6px; vertical-align: middle; margin-left: 10px;
   font-family: "JetBrains Mono", monospace; font-size: 11.5px; font-weight: 700; letter-spacing: .03em;
   color: var(--blue); border: 1px solid var(--blue-100); background: var(--blue-050);
   padding: 6px 12px; border-radius: 999px; transition: all .2s ease;
