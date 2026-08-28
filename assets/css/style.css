@@ -183,11 +183,11 @@ h1, h2, h3, h4, h5, p { margin: 0; }
   overflow: hidden;
 }
 .hero-bg {
-  position: absolute; inset: 0; z-index: 0;
-  background-image: url("../img/hero-full.jpg");
+  position: absolute; inset: -3%; z-index: 0;
+  background-image: url("../img/hero-factory-new.jpg");
   background-size: cover;
-  background-position: center;
-  opacity: .55;
+  background-position: center 35%;
+  opacity: 1;
 }
 .hero-grid-overlay {
   position: absolute; inset: -40px; z-index: 1; opacity: .35;
@@ -204,7 +204,7 @@ h1, h2, h3, h4, h5, p { margin: 0; }
 @keyframes scan { 0%, 100% { left: 8%; } 50% { left: 90%; } }
 .hero-scrim {
   position: absolute; inset: 0; z-index: 2;
-  background: linear-gradient(100deg, rgba(13,30,61,.94) 0%, rgba(13,30,61,.82) 45%, rgba(13,30,61,.55) 75%, rgba(13,30,61,.3) 100%);
+  background: linear-gradient(100deg, rgba(13,30,61,.93) 0%, rgba(13,30,61,.68) 38%, rgba(13,30,61,.32) 65%, rgba(13,30,61,.06) 100%);
 }
 .hero .container { position: relative; z-index: 3; width: 100%; padding-top: 60px; padding-bottom: 60px; }
 .hero-row { display: flex; align-items: flex-start; gap: 6px; }
