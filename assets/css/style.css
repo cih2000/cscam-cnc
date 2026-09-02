@@ -520,12 +520,19 @@ h1, h2, h3, h4, h5, p { margin: 0; }
 .split-media .panel-body { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 22px; gap: 14px; }
 .split-media img { width: 100%; height: 100%; object-fit: contain; }
 .split-media img[src$="hxlite-connector.jpg"] { width: 90%; height: 90%; }
+.split-media img[src$="hxlite-app1.jpg"] { width: 70%; height: 70%; }
 .split-media .cap { margin-top: 10px; font-size: 12.5px; font-weight: 700; color: var(--muted); text-align: center; padding-bottom: 16px; }
 
 .spec-links-row { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; width: 100%; }
 .spec-links-row .spec-modal-trigger { margin-top: 0; font-size: 12px; padding: 8px 14px; }
 
 .split-text { display: flex; flex-direction: column; }
+.split-text-intro { margin-bottom: 26px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+.split-text-intro h1 { font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: clamp(22px, 2.6vw, 30px); line-height: 1.25; margin-bottom: 12px; letter-spacing: -.01em; color: var(--ink); }
+.split-text-intro .lede { color: var(--muted); font-size: 15px; margin-bottom: 16px; line-height: 1.7; }
+.split-text-intro ul.bullets { display: flex; flex-direction: column; gap: 10px; }
+.split-text-intro ul.bullets li { position: relative; padding-left: 20px; font-size: 13.5px; color: #333; }
+.split-text-intro ul.bullets li::before { content: ""; position: absolute; left: 0; top: 7px; width: 6px; height: 6px; border-radius: 50%; background: var(--blue); }
 .split-text .panel-head-plain {
   font-family: "JetBrains Mono", monospace; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--blue);
   font-weight: 700; margin-bottom: 10px;
