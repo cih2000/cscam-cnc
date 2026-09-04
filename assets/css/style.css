@@ -263,10 +263,10 @@ h1, h2, h3, h4, h5, p { margin: 0; }
   font-family: "JetBrains Mono", monospace; font-size: 10.5px; letter-spacing: .05em; color: #cfe8ff;
   background: linear-gradient(0deg, rgba(13,30,61,.85), transparent);
 }
-.hero-visual { position: relative; z-index: 3; align-self: start; min-width: 0; }
+.hero-visual { position: relative; z-index: 3; align-self: start; min-width: 0; margin-top: -83px; }
 .hero-visual-inner {
   margin-left: 100px;
-  width: calc(130% - 130px);
+  width: calc(72.8% - 72.8px);
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: 0 24px 60px rgba(0,0,0,.5);
