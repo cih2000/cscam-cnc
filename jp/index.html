@@ -1,0 +1,2324 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CSCAM CNC | 産業用CNCコントローラ&自動化モーションコントローラ</title>
+<meta content="CSCAM は最大32軸の完全同期・補間制御に対応したCNCコントローラ——CPACK、800S、HX2.0/3.0、HX-Lite——およびサーボ/ステップモーター&ドライブ、EtherCAT IOモジュールを提供します。" name="description"/>
+<link href="../assets/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="family-bar">
+<div class="family-bar-inner">
+<span class="family-bar-label">CSCAM CNC事業部</span>
+<nav class="family-bar-nav">
+<a class="active" href="index.html">CNC Controller</a>
+<a href="https://lms.cscam.co.kr/jp/index.html">LMS Solution</a>
+<a href="https://3dp.cscam.co.kr/?lang=jp">3D Printer</a>
+<a href="https://laser.cscam.co.kr/?lang=jp">Laser Patterning</a>
+<a href="https://marking.cscam.co.kr/?lang=jp">Marking Machine</a>
+<a href="https://sw.cscam.co.kr/?lang=jp">SW Solution</a>
+</nav>
+</div>
+</div>
+<header class="site-header">
+<div class="container">
+<a class="logo" href="index.html"><small>CSCAM Co., Ltd.</small><div class="logo-title">CNC &amp; MOTION</div></a>
+<nav class="gnb">
+<a data-nav-target="cnc-controller" href="#cnc-controller">CNCコントローラ</a>
+<a data-nav-target="motion-controller" href="#motion-controller">モーションコントローラ</a>
+<a data-nav-target="servo-drive" href="#servo-drive">サーボモーター/ドライブ</a>
+<a data-nav-target="stepmotor-drive" href="#stepmotor-drive">ステップモーター/ドライブ</a>
+<a data-nav-target="ethercat-io" href="#ethercat-io">EtherCAT IOモジュール</a>
+<a href="resources.html">技術資料</a>
+</nav>
+<div class="header-right"><div class="header-utility"><a class="brand-wordmark-link" href="https://cscam.co.kr/jp/index.html" aria-label="CSCAM Corporate Home"><div class="brand-wordmark"><b>CS</b><span>CAM</span></div></a><div class="brand-divider"></div><div class="lang-switch"><a href="../index.html">KO</a><span class="lang-sep">/</span><a href="../en/index.html">EN</a><span class="lang-sep">/</span><a href="../zh/index.html">CH</a><span class="lang-sep">/</span><a href="index.html" class="active">JP</a></div></div><button aria-label="Open menu" class="nav-toggle"><span></span><span></span><span></span></button></div>
+</div>
+</header>
+<div class="header-spacer"></div>
+<!-- HERO -->
+<section class="hero">
+<div class="hero-bg"></div>
+<div class="hero-grid-overlay">
+<div class="hero-scanline"></div>
+</div>
+<div class="hero-scrim"></div>
+<div class="container">
+<div class="hero-badge"><span>CNC &amp; MOTION CONTROL TECHNOLOGY</span>多軸制御の二本柱</div>
+<div class="hero-kicker">CPACK · 800S · HX2.0/3.0 · HX-Lite</div>
+<div class="hero-row">
+<div class="hero-inner">
+<h1>工作機械には最高峰の<em>CNCコントローラ</em><br/>自動化には最先端の<br/><em>モーションコントローラ</em></h1>
+<p class="lede">最大32軸の完全同期・補間制御、最大1,024のI/Oポイントで、カスタム自動化設備の頭脳となります。</p>
+<div class="hero-links">
+<a class="hero-link" href="#cnc-controller">
+<span class="dot"></span>
+<div>
+<b>CNCコントローラ</b>
+<small>CPACK・800S・HX2.0/3.0・HX-Liteを見る</small>
+</div>
+</a>
+<a class="hero-link" href="#motion-controller">
+<span class="dot"></span>
+<div>
+<b>モーションコントローラ</b>
+<small>900d・900A・GX-Seriesを見る</small>
+</div>
+</a>
+<a class="hero-link" href="#servo-drive">
+<span class="dot"></span>
+<div>
+<b>サーボ&ステップモーター/ドライブ</b>
+<small>SD Series・StepServoを見る</small>
+</div>
+</a>
+<a class="hero-link" href="#ethercat-io">
+<span class="dot"></span>
+<div>
+<b>EtherCAT IOモジュール</b>
+<small>EDIO 72/46など製品を見る</small>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="hero-clients">
+<div class="hero-clients-label">主要顧客</div>
+<div class="client-marquee-wrap">
+<div class="client-marquee-track">
+<div class="client-logo-card"><img alt="KCNC" src="../assets/img/clients/kcnc.png"/></div>
+<div class="client-logo-card"><img alt="Hwacheon Machinery" src="../assets/img/clients/hwacheon.png"/></div>
+<div class="client-logo-card"><img alt="KIMM" src="../assets/img/clients/kimm.png"/></div>
+<div class="client-logo-card"><img alt="KITECH" src="../assets/img/clients/kitech.png"/></div>
+<div class="client-logo-card"><img alt="Arum Dentistry" src="../assets/img/clients/arum.png"/></div>
+<div class="client-logo-card"><img alt="DOF Robotics" src="../assets/img/clients/dof.png"/></div>
+<div class="client-logo-card"><img alt="MANIX" src="../assets/img/clients/manix.png"/></div>
+<div class="client-logo-card"><img alt="Kyungwon Engineering" src="../assets/img/clients/kyungwon.png"/></div>
+<div class="client-logo-card"><img alt="Robotson" src="../assets/img/clients/robotson.png"/></div>
+<div class="client-logo-card"><img alt="KNK" src="../assets/img/clients/knk.png"/></div>
+<div class="client-logo-card"><img alt="iViewKorea" src="../assets/img/clients/iviewkorea.png"/></div>
+<div class="client-logo-card"><img alt="Shinwoo NC Tech" src="../assets/img/clients/shinwoo.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="../assets/img/clients/kcnc.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="../assets/img/clients/hwacheon.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="../assets/img/clients/kimm.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="../assets/img/clients/kitech.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="../assets/img/clients/arum.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="../assets/img/clients/dof.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="../assets/img/clients/manix.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="../assets/img/clients/kyungwon.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="../assets/img/clients/robotson.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="../assets/img/clients/knk.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="../assets/img/clients/iviewkorea.png"/></div>
+<div aria-hidden="true" class="client-logo-card"><img alt="" src="../assets/img/clients/shinwoo.png"/></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 01. About Our Business -->
+<section class="section compact-y">
+<div class="container">
+<div class="section-head">
+<div class="eyebrow">01 / 事業概要</div>
+<div class="section-badge">CONTROL SYSTEM</div>
+<h2 class="section-title">精密制御技術で<br/>工作機械と自動化設備を完成させる</h2>
+<p class="section-desc">CNCコントローラからモーションコントローラ、サーボ/ステップドライブ、EtherCAT IOモジュールまで — CSCAMは工作機械と自動化設備に必要な制御システム製品ラインを総合的に提供します。以下では2つの中核事業をご紹介します。</p>
+</div>
+<div class="intro-grid">
+<a class="intro-card" href="#cnc-controller">
+<div class="row-top">
+<span class="num-chip">01</span>
+<span class="meta">MULTI-AXIS CONTROLLER</span>
+</div>
+<h3>CNCコントローラ</h3>
+<div class="sub">CPACK · 800S · HX2.0/3.0 · HX-Lite</div>
+<p>最大32軸の完全同期・補間制御、最大1,024のI/Oポイントに対応する多軸CNCコントローラ製品群です。カスタム自動化設備から3軸/5軸マシニングセンタ、旋盤、切断機まで幅広く対応 — エントリー向けの経済モデルから世界競争力を備えた5軸コントローラまで、用途と規模に合わせて最適な機種をお選びいただけます。</p>
+<span class="go">CNCコントローラを見る →</span>
+</a>
+<a class="intro-card" href="#motion-controller">
+<div class="row-top">
+<span class="num-chip">02</span>
+<span class="meta">MOTION &amp; PAC CONTROLLER</span>
+</div>
+<h3>モーションコントローラ</h3>
+<div class="sub">900d · 900A · GX-Series</div>
+<p>CNCコントローラとステップドライブを一体化した900dから、Linuxベースの安全パルスインターフェース900A、モーション制御とPLCシーケンス制御を融合したGXシリーズまで — 専用量産設備から複雑な自動化システム設計まで、最適なコストパフォーマンスと拡張性を実現します。</p>
+<span class="go">モーションコントローラを見る →</span>
+</a>
+</div>
+</div>
+</section>
+<!-- WHY CSCAM -->
+<section class="section compact-y alt">
+<div class="container">
+<div class="section-head">
+<div class="eyebrow">Why CSCAM CNC</div>
+<h2 class="section-title">CSCAM — 製造業のAI転換をリードする制御プラットフォーム企業へ</h2>
+<p class="section-desc">技術力、蓄積された経験、そして充実した製品ラインアップ — それがCSCAM CNCの違いです。</p>
+</div>
+<div class="strength-grid">
+<div class="strength-card">
+<span class="num-chip">01</span>
+<h3>韓国トップクラスのCNC・モーション制御統合技術</h3>
+<p>CNCコントローラからモーションコントローラまで、同一の技術基盤で自社開発・供給 — 長年蓄積したノウハウで工作機械と自動化設備に最高水準の制御技術を提供します。</p>
+<img class="strength-photo" src="../assets/img/why-cnc-motion.jpg" alt="CNC controller integrated with servo motors and drives"/>
+</div>
+<div class="strength-card">
+<span class="num-chip">02</span>
+<h3>歯科加工機コントローラの最適解</h3>
+<p>ジルコニア、セラミック、チタン合金など硬質材料の精密切削が求められる歯科ミーリングマシンなどの超精密設備にも最適です。</p>
+<img class="strength-photo" src="../assets/img/why-dental.jpg" alt="Precision dental milling machine"/>
+</div>
+<div class="strength-card">
+<span class="num-chip">03</span>
+<h3>5軸同時加工</h3>
+<p>ツールセンターポイント制御(TCP)と高速スムージング処理を組み合わせた5軸同時制御で、複雑形状のワンプロセス加工を実現する精密CNCコントローラです。</p>
+<img class="strength-photo" src="../assets/img/why-5axis.jpg" alt="Simultaneous 5-axis machining with TCP control"/>
+</div>
+<div class="strength-card">
+<span class="num-chip">04</span>
+<h3>M.AX(製造AI転換)専門企業認証取得(2026年8月)<a class="cert-view-link" href="../assets/docs/max-certificate.pdf" target="_blank" rel="noopener">認証書を見る →</a></h3>
+<p>加工精度向上のためAIベースのリアルタイム補正機能を開発中で、M.AX認証専門企業としての技術力を裏付けています。</p>
+<img class="strength-photo" src="../assets/img/why-max-ai.jpg" alt="AI real-time compensation, M.AX certified"/>
+</div>
+</div>
+</div>
+</section>
+<!-- 02. CNC Controllers -->
+<section class="cat-section" data-section="cnc-controller" id="cnc-controller">
+<div class="container">
+<div class="cat-head">
+<div>
+<div class="eyebrow">02 / CNCコントローラ</div>
+<h2 class="section-title">CPACK · 800S · HX2.0/3.0 · HX-Lite</h2>
+</div>
+<p class="section-desc">最大32軸の完全同期・補間制御、最大1,024のI/Oポイント — お客様の用途と規模に合ったCNCコントローラをお選びください。</p>
+</div>
+<div class="spec-grid">
+<div class="spec-card">
+<div class="thumb"><span class="tag">モジュール型</span><img alt="CPACK" src="../assets/img/card-cpack.jpg"/></div>
+<div class="body">
+<h3>CPACK</h3>
+<p><strong>盤石の32軸制御 — 自動化設備の中核となる多軸コントローラ。</strong><br/>最大32軸の完全同期・補間制御、最大1,024のI/Oポイントで、カスタム自動化設備の頭脳となります。</p>
+</div>
+<div class="actions">
+<a href="#cpack-detail">詳細を見る</a>
+<a class="primary" href="#cpack-detail-contact">お問い合わせ</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">コンパクト型</span><img alt="800S package" src="../assets/img/card-800spkg.jpg"/></div>
+<div class="body">
+<h3>800S package</h3>
+<p><strong>オールインワンCNCシステムパッケージ — 最小コストで最高性能を実現。</strong><br/>これ一台で完全な3軸ミーリング構成を実現。設置が簡単で価格競争力に優れています。</p>
+</div>
+<div class="actions">
+<a href="#800s-package-detail">詳細を見る</a>
+<a class="primary" href="#800s-package-detail-contact">お問い合わせ</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">高性能</span><img alt="800S-5AX" src="../assets/img/card-800s5ax.jpg"/></div>
+<div class="body">
+<h3>800S-5AX</h3>
+<p><strong>5軸加工の答え — 20年の技術の蓄積が詰まった800S-5AX。</strong><br/>世界水準の5軸同時加工性能を実現し、長年にわたり複雑形状加工の現場で実証されています。</p>
+</div>
+<div class="actions">
+<a href="#800s-5ax-detail">詳細を見る</a>
+<a class="primary" href="#800s-5ax-detail-contact">お問い合わせ</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">オールラウンド型</span><img alt="HX2.0 series" src="../assets/img/card-hx20.jpg"/></div>
+<div class="body">
+<h3>HX2.0 series</h3>
+<p><strong>ミーリング、旋削、切断 — 各工程に最適化されたオールラウンドコントローラ。</strong><br/>マシニングセンタから旋盤、切断機まで対応可能 — 工程を問わない汎用性で現場標準となっています。</p>
+</div>
+<div class="actions">
+<a href="#hx20-detail">詳細を見る</a>
+<a class="primary" href="#hx20-detail-contact">お問い合わせ</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">経済型</span><img alt="HX-Lite" src="../assets/img/card-hxlite.jpg"/></div>
+<div class="body">
+<h3>HX-Lite</h3>
+<p><strong>韓国売上No.1のCNCコントローラ — 経済型CNCの代名詞。</strong><br/>PCIカード型コントローラで、手頃な価格ながら高精度な4軸制御(±10V、16bit)を実現。同クラスのベストセラー機種です。</p>
+</div>
+<div class="actions">
+<a href="#hx-lite-detail">詳細を見る</a>
+<a class="primary" href="#hx-lite-detail-contact">お問い合わせ</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="product-inline-wrap" id="cpack-detail">
+<section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="CPACK: A Powerful Multi-Axis Motion Controller for Automation Equipment" src="../assets/img/cpack.png"/></div>
+<div>
+
+<h1>CPACK:自動化設備向け強力な多軸モーションコントローラ</h1>
+<p class="lede">カスタムCNC・自動化設備向けの強力な多軸コントローラ。</p>
+<ul class="bullets">
+<li>カスタムCNC・自動化設備向けの強力な多軸コントローラ</li>
+<li>最大32軸完全同期/補間制御</li>
+<li>最大1,024 I/Oポイント(32/64ポイント単位で拡張可能)</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">02-1 / CPACK — システム構成</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">CPACK システム構成</div>
+<div class="panel-body"><img alt="CPACK System Configuration" src="../assets/img/cpack-config.jpg"/></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>CPACK 構成と特徴</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>強力な多軸モーションコントローラ機能</span></li>
+<li><span class="li-num">02</span><span>PCベースのモーション制御ソフトウェアで、最小コストで高性能制御を実現</span></li>
+<li><span class="li-num">03</span><span>追加ハードウェア不要でお客様アプリケーションを実行 — お客様自作のPCベースGUIで操作可能</span></li>
+<li><span class="li-num">04</span><span>PLC内蔵で別途I/Oカード不要</span></li>
+<li><span class="li-num">05</span><span>Windowsベースの標準Cホストプログラミングに対応し、強力なAPIを提供</span></li>
+<li><span class="li-num">06</span><span>リアルタイムシステム内蔵で高速かつ正確な動作を保証</span></li>
+<li><span class="li-num">07</span><span>最適な価格で最高の性能と拡張性を実現</span></li>
+</ul>
+<a class="video-link" href="https://youtu.be/yg_B1ODVCD8?t=438" rel="noopener" target="_blank">
+<span class="play-ico">▶</span>CPACK配線動画<span class="yt-badge"><svg fill="currentColor" viewbox="0 0 24 17"><path d="M23.5 2.5a3 3 0 0 0-2.1-2.1C19.5 0 12 0 12 0S4.5 0 2.6.4A3 3 0 0 0 .5 2.5 31 31 0 0 0 0 8.5a31 31 0 0 0 .5 6 3 3 0 0 0 2.1 2.1C4.5 17 12 17 12 17s7.5 0 9.4-.4a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-6 31 31 0 0 0-.5-6zM9.5 12V5l6.3 3.5z"></path></svg>YouTube</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="detail-block">
+<div class="container">
+<div class="eyebrow">02-2 / CPACK — 応用事例</div>
+<h2 class="section-title" style="font-size:26px;margin-top:10px;">CPACK 応用事例</h2>
+<div style="margin-top:32px;">
+<div class="app-card">
+<div class="app-card-img"><img alt="CPACK Application I: Automated Process Line Example" src="../assets/img/cpack-app1.jpg"/></div>
+<div class="app-card-text">
+<div class="tagline">APPLICATION 01</div>
+<h4>CPACK応用事例1:自動化プロセスラインの例</h4>
+<ul class="dash">
+<li>OLED工程設備のコントローラとして使用可能</li>
+<li>プログラム可能なビジョンアライメント・検査機能に対応</li>
+<li>各ステーションごとに6軸単位で軸数拡張可能、I/Oは32/32単位で拡張可能</li>
+</ul>
+</div>
+</div>
+<div class="app-card reverse">
+<div class="app-card-img"><img alt="CPACK Application II: Multi-Stage Glass Grinding Equipment" src="../assets/img/cpack-app2.jpg"/></div>
+<div class="app-card-text">
+<div class="tagline">APPLICATION 02</div>
+<h4>CPACK応用事例2:マルチステーション式ガラス研磨設備</h4>
+<ul class="dash">
+<li>マルチステーション構成で生産効率を向上</li>
+<li>ビジョンベースの部材アライメントを適用</li>
+<li>最大32軸完全同期/補間制御</li>
+<li>最大1,024のI/Oポイントを提供</li>
+<li>直接メモリアクセスにより上位コントローラとの高速TCP/IP通信に対応</li>
+<li>Windowsベースのホストプログラミング用APIを提供</li>
+</ul>
+</div>
+</div>
+<div class="app-card">
+<div class="app-card-img"><img alt="CPACK Application III: Non-Contact X-ray Thin-Film Thickness Gauge Control System" src="../assets/img/cpack-app3.jpg"/></div>
+<div class="app-card-text">
+<div class="tagline">APPLICATION 03</div>
+<h4>CPACK応用事例3:非接触X線膜厚測定制御システム</h4>
+<ul class="dash">
+<li>FPCB部材の予備アライメント、ローディング、測定工程、アンローディングまで全工程を一貫処理する全自動設備</li>
+<li>ビジョンアライメント及び非接触X線検査システムとの連携が可能</li>
+<li>デュアルディスプレイでビジョンアライメントと検査進捗を一目で確認可能</li>
+<li>サーボ軸6軸、ステッピングモーター5基、I/O合計64/64</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div>
+<div class="product-inline-wrap" id="800s-package-detail">
+<section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="800S package" src="../assets/img/800spkg.png"/></div>
+<div>
+
+<h1>800S package</h1>
+<p class="lede">最小コストで最高性能を実現 — 800S package。</p>
+<ul class="bullets">
+<li>最小コストで最高性能を実現 — 800S package</li>
+<li>3軸ミーリング構成を組むための完全なCNCシステムパッケージ</li>
+<li>他に類を見ない価格競争力と簡単な設置</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">02-1 / 800S package — 構成</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">800S Package 構成</div>
+<div class="panel-body"><img alt="800S Package Configuration" src="../assets/img/800spkg-config.jpg"/></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>800S Package 特徴</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>CSCAM EtherCATネットワークサーボドライブを採用</span></li>
+<li><span class="li-num">02</span><span>標準で100ブロック先読み対応(最大1,000ブロック)</span></li>
+<li><span class="li-num">03</span><span>高速加工機能(G10.3)を標準搭載</span></li>
+<li><span class="li-num">04</span><span>最小位置制御周期0.5ms</span></li>
+<li><span class="li-num">05</span><span>省スペースのコンパクトMDI&キーボードユニット(縦型・横型2タイプ)</span></li>
+<li><span class="li-num">06</span><span>必要な各種周辺機器を接続可能</span></li>
+<li><span class="li-num">07</span><span>操作パネルにEDIO 72/46を搭載</span></li>
+</ul>
+<a class="video-link" href="https://youtu.be/yg_B1ODVCD8?t=19" rel="noopener" target="_blank">
+<span class="play-ico">▶</span>800S配線動画<span class="yt-badge"><svg fill="currentColor" viewbox="0 0 24 17"><path d="M23.5 2.5a3 3 0 0 0-2.1-2.1C19.5 0 12 0 12 0S4.5 0 2.6.4A3 3 0 0 0 .5 2.5 31 31 0 0 0 0 8.5a31 31 0 0 0 .5 6 3 3 0 0 0 2.1 2.1C4.5 17 12 17 12 17s7.5 0 9.4-.4a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-6 31 31 0 0 0-.5-6zM9.5 12V5l6.3 3.5z"></path></svg>YouTube</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="detail-block">
+<div class="container">
+<div class="eyebrow">02-2 / 800S package — 応用事例</div>
+<h2 class="section-title" style="font-size:26px;margin-top:10px;">800S Package 応用事例</h2>
+<div class="equip-grid" style="margin-top:32px;">
+<div class="equip-item">
+<div class="thumb"><img alt="Phone Frame Machining Center" src="../assets/img/800spkg-app1.jpg"/></div>
+<span>携帯電話フレーム加工機</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="5-Axis Smart Center" src="../assets/img/800spkg-app2.jpg"/></div>
+<span>5軸インテリジェント加工機</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="5-Axis Tire Mold Machining Center" src="../assets/img/800spkg-app3.jpg"/></div>
+<span>5軸タイヤ金型加工機</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Simple Mill (Company H)" src="../assets/img/800spkg-app4.jpg"/></div>
+<span>簡易フライス盤(H社)</span>
+</div>
+</div>
+</div>
+</section>
+
+</div>
+<div class="product-inline-wrap" id="800s-5ax-detail">
+<section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="800S-5AX" src="../assets/img/800s5ax.png"/></div>
+<div>
+
+<h1>800S-5AX</h1>
+<p class="lede">世界競争力を備えた5軸CNCコントローラ。</p>
+<ul class="bullets">
+<li>800S-5AX、世界競争力を備えた5軸CNCコントローラ</li>
+<li>20年以上の5軸工作機械製造・運用経験を凝縮した5軸CNCコントローラ</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">02-1 / 800S-5AX — 5軸同時高速加工</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">800S-5AX システム構成</div>
+<div class="panel-body"><img alt="800S-5AX System Configuration" src="../assets/img/800s5ax-diagram.jpg"/></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>800S-5AX 構成と特徴</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>5軸同時高速加工に対応</span></li>
+<li><span class="li-num">02</span><span>ツールセンターポイント(TCP)制御に対応</span></li>
+<li><span class="li-num">03</span><span>先読み機能内蔵:標準100ブロック先読み(最大1,000ブロック)</span></li>
+<li><span class="li-num">04</span><span>最小位置制御周期0.5ms</span></li>
+<li><span class="li-num">05</span><span>自動コーナー減速、S字加減速、R部切削速度制限</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="detail-block">
+<div class="container">
+<div class="eyebrow">02-2 / 800S-5AX — 応用事例</div>
+<h2 class="section-title" style="font-size:26px;margin-top:10px;">800S-5AX 応用事例</h2>
+<div style="margin-top:32px;">
+<div class="app-card">
+<div class="app-card-img"><img alt="800S-5AX Application Examples" src="../assets/img/800s5ax-cases.jpg"/></div>
+<div class="app-card-text">
+<div class="tagline">APPLICATION 01</div>
+<h4>800S-5AX 5軸同時高速加工</h4>
+<ul class="dash">
+<li>3つの直線軸(X、Y、Z)と2つの回転軸(A、C)を活用し、一度の段取りでより広い加工範囲をカバー</li>
+<li>3+2軸及び5軸同時加工により、従来の3軸マシニングセンタでは不可能なアンダーカット加工を実現し、加工時間も短縮</li>
+<li>ワンチャッキング加工で工程を短縮 — 自由曲面や広範囲のアンダーカット部品に特に有効</li>
+<li>工具側面の切削経路を生成し、加工面品質を向上</li>
+<li>ツールセンターポイント制御(TCP制御)、高速スムーズTCP</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div>
+<div class="product-inline-wrap" id="hx20-detail">
+<section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="HX2.0 series" src="../assets/img/hx20.png"/></div>
+<div>
+
+<h1>HX2.0 series</h1>
+<p class="lede">マシニングセンタ/旋盤/切断機に最適化されたコントローラ。</p>
+<ul class="bullets">
+<li>マシニングセンタ/旋盤/切断機に最適化されたコントローラ</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">02-1 / HX2.0 — 構成と特徴</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">HX2.0 構成</div>
+<div class="panel-body"><img alt="HX2.0 Configuration" src="../assets/img/hx20-config.jpg"/></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>HX2.0 特徴</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>HX2.0はミーリング、旋削、研削、タッピングなど高精度自動化設備向けに最適化されたCNCシステムです</span></li>
+<li><span class="li-num">02</span><span>HX2.0 ST/MC等のMDI構成でお客様のニーズに即対応</span></li>
+</ul>
+<a class="video-link" href="https://youtu.be/yg_B1ODVCD8?t=89" rel="noopener" target="_blank">
+<span class="play-ico">▶</span>HX2.0配線動画<span class="yt-badge"><svg fill="currentColor" viewbox="0 0 24 17"><path d="M23.5 2.5a3 3 0 0 0-2.1-2.1C19.5 0 12 0 12 0S4.5 0 2.6.4A3 3 0 0 0 .5 2.5 31 31 0 0 0 0 8.5a31 31 0 0 0 .5 6 3 3 0 0 0 2.1 2.1C4.5 17 12 17 12 17s7.5 0 9.4-.4a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-6 31 31 0 0 0-.5-6zM9.5 12V5l6.3 3.5z"></path></svg>YouTube</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="detail-block">
+<div class="container">
+<div class="eyebrow">02-2 / HX2.0 — 応用事例</div>
+<h2 class="section-title" style="font-size:26px;margin-top:10px;">HX2.0 応用事例</h2>
+<div class="equip-grid" style="margin-top:32px;">
+<div class="equip-item">
+<div class="thumb"><img alt="Machining center" src="../assets/img/hx20-app1.jpg"/></div>
+<span>マシニングセンタ</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Mill-turn lathe" src="../assets/img/hx20-app2.jpg"/></div>
+<span>複合旋盤</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Laser cutting M/C" src="../assets/img/hx20-app3.jpg"/></div>
+<span>レーザー切断機</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Wheel Flow forming" src="../assets/img/hx20-app4.jpg"/></div>
+<span>ホイールスピニング成形機</span>
+</div>
+</div>
+</div>
+</section>
+
+</div>
+<div class="product-inline-wrap" id="hx-lite-detail">
+<section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="HX-Lite" src="../assets/img/hxlite.png"/></div>
+<div>
+
+<h1>HX-Lite</h1>
+<p class="lede">韓国売上No.1のCNCコントローラ — 経済型CNCの代名詞。</p>
+<ul class="bullets">
+<li>累計販売数No.1の経済型CNC</li>
+<li>PCIカード型経済型CNC</li>
+<li>専用4軸制御(±10V、16bit分解能)</li>
+<li>アナログサーボインターフェース</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">02-1 / HX-Lite — ハードウェア</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">HX-Lite 構成</div>
+<div class="panel-body"><img alt="HX-Lite Configuration" src="../assets/img/hxlite-connector.jpg"/></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">HARDWARE</div>
+<h3>HX-Lite ハードウェア</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>産業用CPU、VGA出力(標準LCDモニター対応)</span></li>
+<li><span class="li-num">02</span><span>タッチパネル(USB、PS/2選択可)</span></li>
+<li><span class="li-num">03</span><span>RS-232/485、SATA 2ポート</span></li>
+<li><span class="li-num">04</span><span>GbEイーサネットポート2口対応</span></li>
+</ul>
+<a class="video-link" href="https://youtu.be/ldfVp_87Peg?t=17" rel="noopener" target="_blank">
+<span class="play-ico">▶</span>HX-Lite配線動画<span class="yt-badge"><svg fill="currentColor" viewbox="0 0 24 17"><path d="M23.5 2.5a3 3 0 0 0-2.1-2.1C19.5 0 12 0 12 0S4.5 0 2.6.4A3 3 0 0 0 .5 2.5 31 31 0 0 0 0 8.5a31 31 0 0 0 .5 6 3 3 0 0 0 2.1 2.1C4.5 17 12 17 12 17s7.5 0 9.4-.4a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-6 31 31 0 0 0-.5-6zM9.5 12V5l6.3 3.5z"></path></svg>YouTube</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="detail-block">
+<div class="container">
+<div class="eyebrow">02-2 / HX-Lite — ソフトウェア</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media" style="align-self:start;">
+<div class="panel-body"><img alt="High-Speed Router" src="../assets/img/hxlite-app1.jpg"/></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">SOFTWARE</div>
+<h3>HX-Lite ソフトウェア</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>OS:Windows 10 IoT対応</span></li>
+<li><span class="li-num">02</span><span>HX-MC(ミーリング/彫刻用)、HX-TC(旋盤用)、HX-CUT(切断機用)、HX-EDM(放電加工機用)に対応</span></li>
+<li><span class="li-num">03</span><span>HMIエディタでカスタム機能・画面レイアウトに対応</span></li>
+<li><span class="li-num">04</span><span>PLCエディタ内蔵</span></li>
+<li><span class="li-num">05</span><span>摩擦、バックラッシ、ピッチ誤差補正による高精度制御</span></li>
+<li><span class="li-num">06</span><span>多軸サーボ同期制御(ガントリー、デュアルテーブル制御)</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">02-3 / HX-Lite — 応用事例</div>
+<h2 class="section-title" style="font-size:26px;margin-top:10px;">HX-Lite 応用事例</h2>
+<div class="equip-grid" style="margin-top:32px;">
+<div class="equip-item">
+<div class="thumb"><img alt="High-Speed Router" src="../assets/img/hxlite-app1.jpg"/></div>
+<span>高速彫刻機</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="High-Speed Engraving Machine" src="../assets/img/hxlite-app2.jpg"/></div>
+<span>高速刻印機</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Gantry M/C" src="../assets/img/hxlite-app3.jpg"/></div>
+<span>ガントリー加工機</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Glass Scribing Machine" src="../assets/img/hxlite-app4.jpg"/></div>
+<span>ガラススクライビングマシン</span>
+</div>
+</div>
+</div>
+</section>
+
+</div>
+<!-- 03. Motion Controllers -->
+<section class="cat-section" data-section="motion-controller" id="motion-controller">
+<div class="container">
+<div class="cat-head">
+<div>
+<div class="eyebrow">03 / モーションコントローラ</div>
+<h2 class="section-title">900d · 900A · GX-Series</h2>
+</div>
+<p class="section-desc">6/10軸一体型モデルからLinuxベースのパルスインターフェース、PAC型コントローラまで — 多様な自動化環境のニーズに対応。</p>
+</div>
+<div class="spec-grid">
+<div class="spec-card">
+<div class="thumb"><span class="tag">一体型</span><img alt="900d" src="../assets/img/card-900d.jpg"/></div>
+<div class="body">
+<h3>900d</h3>
+<p><strong>6/10軸一体型 — 専用量産設備に最適なコストパフォーマンス。</strong><br/>CNCコントローラとステップドライブを一体化した高密度システムで、6軸を高速かつ強力に駆動。</p>
+</div>
+<div class="actions">
+<a href="#900d-detail">詳細を見る</a>
+<a class="primary" href="#900d-detail-contact">お問い合わせ</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">コンパクト型</span><img alt="900A" src="../assets/img/card-900a.jpg"/></div>
+<div class="body">
+<h3>900A</h3>
+<p><strong>コンパクトかつ安全 — Linuxベースのパルスインターフェースコントローラ。</strong><br/>コンパクトな専用ハードウェアとLinuxシステムソフトウェアで、設置スペースを最小化しつつウイルスの脅威を根本から遮断。</p>
+</div>
+<div class="actions">
+<a href="#900a-detail">詳細を見る</a>
+<a class="primary" href="#900a-detail-contact">お問い合わせ</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">モーションコントローラ</span><img alt="GX-Series" src="../assets/img/card-gx.jpg"/></div>
+<div class="body">
+<h3>GX-Series</h3>
+<p><strong>モーション制御とPLCの融合 — 自動化を再定義。</strong><br/>高精度モーション制御と高性能シーケンス制御を単一のPACコントローラに統合し、複雑な自動化システムでも容易にプログラミング可能。</p>
+</div>
+<div class="actions">
+<a href="#gx-series-detail">詳細を見る</a>
+<a class="primary" href="#gx-series-detail-contact">お問い合わせ</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="product-inline-wrap" id="900d-detail"><section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="900d: A Step-Drive-Integrated CNC" src="../assets/img/900d.png"/></div>
+<div>
+
+<h1>900d:ステップドライブ一体型CNC</h1>
+<p class="lede">高速かつ強力な6軸ステップドライブ一体型CNC。</p>
+<ul class="bullets">
+<li>高速かつ強力な6軸ステップドライブ一体型CNC</li>
+<li>コントローラとステップドライブを一体化した高密度システム</li>
+<li>専用量産設備に最適なコストパフォーマンス</li>
+</ul>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">03-1 / 900d — 構成と特徴</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">900d 構成</div>
+<div class="panel-body"><img alt="900d Configuration" src="../assets/img/900d-config.jpg"/><div class="spec-links-row"><button class="spec-modal-trigger" data-modal-open="900d-detail-spec-modal-1" type="button"><span class="ico">▦</span><span>コントローラ&ステップドライブ仕様</span></button><div class="spec-modal-overlay" id="900d-detail-spec-modal-1"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">▦</span>コントローラ&ステップドライブ仕様</div>
+<div class="spec-table-grid">
+<div class="spec-group">
+<h4>Motion CPU</h4>
+<table class="spec-table">
+<tbody>
+<tr><th>CPU</th><td>Dual ARM Cortex-A15 1.5Ghz</td></tr>
+<tr><th>DISPLAY</th><td>HDMI</td></tr>
+<tr><th>USB 1</th><td>USB2.0 x 4 PORT</td></tr>
+<tr><th>USB 2</th><td>Micro USB x 1 PORT</td></tr>
+<tr><th>ETHERNET</th><td>10/100/1000 2-PORT</td></tr>
+<tr><th>FLASH MEMORY</th><td>eMMC 8GB (Option 32GB)</td></tr>
+<tr><th>MEMORY</th><td>2GB DDR3L (256M x 16)</td></tr>
+<tr><th>MICRO SD CARD</th><td>SD Card x 1EA</td></tr>
+</tbody>
+</table>
+</div>
+<div class="spec-group">
+<h4>デジタル入出力</h4>
+<table class="spec-table">
+<thead><tr><th></th><th>入力</th><th>出力</th></tr></thead>
+<tbody>
+<tr><th>ポイント数</th><td>24 points</td><td>24 points</td></tr>
+<tr><th>絶縁方式</th><td>フォトカプラ絶縁</td><td>フォトカプラ非絶縁 / リレー絶縁</td></tr>
+<tr><th>定格入力電圧/電流</th><td>DC12–28V(リプル5%以内)</td><td>DC12/24(リプル5%以内)</td></tr>
+<tr><th>ON電圧/電流</th><td>DC 11.5V以上、4mA</td><td>4ms以下</td></tr>
+<tr><th>OFF電圧/電流</th><td>DC 6V以下 / 1mA</td><td>4ms以下</td></tr>
+<tr><th>入力抵抗</th><td>約4.0kΩ</td><td>リレー1A、TR 0.5A</td></tr>
+<tr><th>応答時間</th><td>標準:4ms</td><td>標準:4ms</td></tr>
+</tbody>
+</table>
+</div>
+<div class="spec-group full">
+<h4>StepSERVO</h4>
+<table class="spec-table">
+<tbody>
+<tr><th>型式</th><td>900d-IMD10 StepSERVO-2</td><td>備考</td></tr>
+<tr><th>駆動軸数</th><td>2軸 / バイポーラ駆動</td><td></td></tr>
+<tr><th>駆動電圧</th><td>+24V ~ +48V / 外部入力</td><td>共通接地</td></tr>
+<tr><th>対応モーター</th><td>NEMA17 / NEMA23 / 最大4A</td><td>パラメータ設定</td></tr>
+<tr><th>制御方式</th><td>開ループ / 閉ループ</td><td>パラメータ設定</td></tr>
+<tr><th>エンコーダ</th><td>10,000ppr、光学式</td><td>パラメータ設定</td></tr>
+<tr><th>エンコーダ信号</th><td>差動RS-422(A、*A、B、*B、Z、*Z)</td><td></td></tr>
+<tr><th>制御信号</th><td>STEP/DIR,CW/CCW</td><td></td></tr>
+<tr><th>I/O信号</th><td>サーボON / アラームリセット / 位置決め完了出力 / アラーム出力</td><td>内部</td></tr>
+<tr><th>ステータス表示(LED)</th><td>サーボON、位置決め完了、アラーム出力</td><td>内部</td></tr>
+<tr><th>通信</th><td>専用USB通信(モニタリング)</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div></div></div></div></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>900d 特徴</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>StepSERVO専用の省スペースコンパクトコントローラ</span></li>
+<li><span class="li-num">02</span><span>Motion APIライブラリでアプリケーション開発をサポート</span></li>
+<li><span class="li-num">03</span><span>最大6軸駆動一体型コントローラ</span></li>
+<li><span class="li-num">04</span><span>NEMA17及びNEMA23ステッピングモーターに対応</span></li>
+<li><span class="li-num">05</span><span>StepSERVO 6軸ドライブを内蔵し、SPINDLE×1、MPG×1、DIO 24/24に対応</span></li>
+</ul>
+<a class="video-link" href="https://youtu.be/JBN5rlJ-f7U?t=15" rel="noopener" target="_blank">
+<span class="play-ico">▶</span>900d配線動画<span class="yt-badge"><svg fill="currentColor" viewbox="0 0 24 17"><path d="M23.5 2.5a3 3 0 0 0-2.1-2.1C19.5 0 12 0 12 0S4.5 0 2.6.4A3 3 0 0 0 .5 2.5 31 31 0 0 0 0 8.5a31 31 0 0 0 .5 6 3 3 0 0 0 2.1 2.1C4.5 17 12 17 12 17s7.5 0 9.4-.4a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-6 31 31 0 0 0-.5-6zM9.5 12V5l6.3 3.5z"></path></svg>YouTube</span>
+</a>
+</div>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">03-2 / 900d — 応用事例</div>
+<h2 class="section-title" style="font-size:26px;margin-top:10px;">900d 応用事例</h2>
+<div class="equip-grid" style="margin-top:32px;">
+<div class="equip-item">
+<div class="thumb"><img alt="Automation Equipment" src="../assets/img/900d-app1.jpg"/></div>
+<span>自動化設備</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Laser 2D Marking Machine" src="../assets/img/900d-app3.jpg"/></div>
+<span>レーザー2次元マーキング機</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Dental Milling Machine" src="../assets/img/900d-app4.jpg"/></div>
+<span>歯科ミーリングマシン</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Desktop Robot" src="../assets/img/900d-app5.jpg"/></div>
+<span>デスクトップロボット</span>
+</div>
+</div>
+</div>
+</section></div>
+<div class="product-inline-wrap" id="900a-detail"><section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="900A" src="../assets/img/card-900a.png"/></div>
+<div>
+
+<h1>900A</h1>
+<p class="lede">コンパクトかつ安全 — Linuxベースのパルスインターフェースコントローラ。</p>
+<ul class="bullets">
+<li>コンパクトな専用ハードウェアとLinuxシステムソフトウェアで、設置スペースを最小化しつつウイルスの脅威を根本から遮断。</li>
+</ul>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">03-1 / 900A — 構成と特徴</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">900A / 900A-T 構成</div>
+<div class="panel-body"><img alt="900A / 900A-T Configuration" src="../assets/img/900a-config.jpg"/><div class="spec-links-row"><button class="spec-modal-trigger" data-modal-open="900a-detail-spec-modal-2" type="button"><span class="ico">▦</span><span>900A / 900A-T 仕様</span></button><div class="spec-modal-overlay" id="900a-detail-spec-modal-2"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">▦</span>900A / 900A-T 仕様</div>
+<div class="spec-table-grid">
+<div class="spec-group">
+<h4>MOTION CPU (Common)</h4>
+<table class="spec-table">
+<tbody>
+<tr><th>CPU</th><td>Dual ARM Cortex-A15 1.5Ghz</td></tr>
+<tr><th>DISPLAY</th><td>HDMI</td></tr>
+<tr><th>USB 1</th><td>USB2.0 x 4 PORT</td></tr>
+<tr><th>USB 2</th><td>Micro USB x 1 PORT</td></tr>
+<tr><th>ETHERNET</th><td>10/100/1000 1-PORT</td></tr>
+<tr><th>FLASH MEMORY</th><td>eMMC 8GB (Option 32GB)</td></tr>
+<tr><th>MEMORY</th><td>2GB DDR3L (256M x 16)</td></tr>
+<tr><th>MICRO SD CARD</th><td>SD Card x 1EA</td></tr>
+<tr><th>INTERFACE</th><td>HSSPI(高速シリアルペリフェラルインターフェース)</td></tr>
+</tbody>
+</table>
+</div>
+<div class="spec-group">
+<h4>MOTION AXIS (Common)</h4>
+<table class="spec-table">
+<tbody>
+<tr><th>制御軸数</th><td>1 ~ 5 AXIS</td></tr>
+<tr><th>パルス出力方式</th><td>1パルス(STEP/DIR)、2パルス(CW/CCW)</td></tr>
+<tr><th>制御電圧</th><td>24VDC ±10%,0.8A</td></tr>
+<tr><th>エンコーダ</th><td>ラインドライバ入力</td></tr>
+<tr><th>軸I/O</th><td>サーボドライブレディ、アラーム / サーボドライブS-ON、アラームリセット</td></tr>
+<tr><th>主軸回転数</th><td>±10V、14bitアナログ出力</td></tr>
+<tr><th>アナログ入力 *</th><td>14bit 4ch(±10V)</td></tr>
+<tr><th>アナログ出力 *</th><td>14bit 4ch(±10V)</td></tr>
+<tr><th>LED表示</th><td>サーボON LED、サーボレディLED / サーボアラームLED、FNDステータス表示</td></tr>
+</tbody>
+</table>
+</div>
+<div class="spec-group">
+<h4>900A I/O</h4>
+<table class="spec-table">
+<tbody>
+<tr><th>デジタル入力</th><td>40点、24V 7mA</td></tr>
+<tr><th>デジタル出力</th><td>32点、トランジスタ、24V 0.5A</td></tr>
+</tbody>
+</table>
+</div>
+<div class="spec-group">
+<h4>900A-T I/O</h4>
+<table class="spec-table">
+<tbody>
+<tr><th>デジタル入力</th><td>32点、24V 7mA</td></tr>
+<tr><th>デジタル出力</th><td>18点(トランジスタ3/リレー15)、24V 0.5A</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div></div></div></div></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>900A 特徴:パルスインターフェースCNC</h3>
+<p style="font-size:13.5px;color:var(--body);line-height:1.7;margin-bottom:18px;">コンパクトな専用ハードウェアで設置面積を最小化し、Linux環境で動作するウイルス耐性コントローラです。</p>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>Motion APIライブラリでアプリケーション開発をサポート</span></li>
+<li><span class="li-num">02</span><span>一体型5軸コントローラ — 最小コストと最小工数で5軸設備を構築</span></li>
+<li><span class="li-num">03</span><span>4チャンネルA/D、4チャンネルD/Aモジュールを内蔵</span></li>
+<li><span class="li-num">04</span><span>センサー、複数インバータ、レーザー出力制御用のアナログ電圧出力に対応</span></li>
+</ul>
+<a class="video-link" href="https://youtu.be/QYUK9ya0VPc?t=15" rel="noopener" target="_blank">
+<span class="play-ico">▶</span>900A配線動画<span class="yt-badge"><svg fill="currentColor" viewbox="0 0 24 17"><path d="M23.5 2.5a3 3 0 0 0-2.1-2.1C19.5 0 12 0 12 0S4.5 0 2.6.4A3 3 0 0 0 .5 2.5 31 31 0 0 0 0 8.5a31 31 0 0 0 .5 6 3 3 0 0 0 2.1 2.1C4.5 17 12 17 12 17s7.5 0 9.4-.4a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-6 31 31 0 0 0-.5-6zM9.5 12V5l6.3 3.5z"></path></svg>YouTube</span>
+</a>
+</div>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">03-2 / 900A — 応用事例</div>
+<h2 class="section-title" style="font-size:26px;margin-top:10px;">900A 応用事例</h2>
+<div class="equip-grid" style="margin-top:32px;">
+<div class="equip-item">
+<div class="thumb"><img alt="Desktop Robot" src="../assets/img/900a-app1.jpg"/></div>
+<span>デスクトップロボット</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Dental Milling Machine" src="../assets/img/900a-app2.jpg"/></div>
+<span>歯科ミーリングマシン</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Pick and Place" src="../assets/img/900a-app3.jpg"/></div>
+<span>ピック&プレース設備</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Glass Scribing Machine" src="../assets/img/900a-app4.jpg"/></div>
+<span>ガラススクライビングマシン</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="VR Glasses Lens Sealing" src="../assets/img/900a-app5.jpg"/></div>
+<span>VRゴーグルレンズ組立</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Phone Glass Sealing" src="../assets/img/900a-app6.jpg"/></div>
+<span>携帯電話ガラス組立</span>
+</div>
+</div>
+</div>
+</section></div>
+<div class="product-inline-wrap" id="gx-series-detail"><section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="GX-Series" src="../assets/img/card-gx.png"/></div>
+<div>
+
+<h1>GX-Series</h1>
+<p class="lede">モーション制御とPLCの融合 — 自動化を再定義。</p>
+<ul class="bullets">
+<li>高精度モーション制御と高性能シーケンス制御を単一のPACコントローラに統合し、複雑な自動化システムでも容易にプログラミング可能。</li>
+</ul>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">03-1 / GX-Series — 構成と特徴</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">GX-S200/S400 構成</div>
+<div class="panel-body"><img alt="GX-S200/S400 Configuration" src="../assets/img/gx-config.jpg"/><div class="spec-links-row"><button class="spec-modal-trigger" data-modal-open="gx-series-detail-spec-modal-3" type="button"><span class="ico">▦</span><span>GX-S200、GX-S400 仕様</span></button><div class="spec-modal-overlay" id="gx-series-detail-spec-modal-3"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">▦</span>GX-S200、GX-S400 仕様</div>
+<div class="spec-table-grid">
+<div class="spec-group">
+<h4>GX-S200</h4>
+<table class="spec-table">
+<tbody>
+<tr><th>制御軸数</th><td>2 Axis</td></tr>
+<tr><th>I/Oポイント数</th><td>IN16/OUT16</td></tr>
+<tr><th>制御方式</th><td>アナログ / パルス</td></tr>
+<tr><th>USB</th><td>1 Port</td></tr>
+<tr><th>RS-232C</th><td>2 Port</td></tr>
+<tr><th>ETHERNET</th><td>1 Port</td></tr>
+<tr><th>MEMORY</th><td>4MB</td></tr>
+<tr><th>I/O拡張</th><td>Serial I/O IN32/OUT32</td></tr>
+<tr><th>MPG</th><td>1 Port</td></tr>
+<tr><th>入力電源</th><td>DC 24V (1.3A)</td></tr>
+</tbody>
+</table>
+</div>
+<div class="spec-group">
+<h4>GX-S400</h4>
+<table class="spec-table">
+<tbody>
+<tr><th>制御軸数</th><td>4 Axis</td></tr>
+<tr><th>I/Oポイント数</th><td>IN48/OUT48</td></tr>
+<tr><th>制御方式</th><td>アナログ / パルス</td></tr>
+<tr><th>USB</th><td>1 Port</td></tr>
+<tr><th>RS-232C</th><td>2 Port</td></tr>
+<tr><th>ETHERNET</th><td>1 Port</td></tr>
+<tr><th>MEMORY</th><td>4MB</td></tr>
+<tr><th>I/O拡張</th><td>Serial I/O IN32/OUT32</td></tr>
+<tr><th>MPG</th><td>1 Port</td></tr>
+<tr><th>入力電源</th><td>DC 24V (1.3A)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div></div></div></div></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>GX-S200/S400 特徴</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>高精度モーション制御技術</span></li>
+<li><span class="li-num">02</span><span>高性能PLC(シーケンス制御)技術</span></li>
+<li><span class="li-num">03</span><span>最大4系統の制御システムに対応</span></li>
+<li><span class="li-num">04</span><span>モーション指令とGコードの両方に対応</span></li>
+<li><span class="li-num">05</span><span>位置決め、直線、円弧及びヘリカル補間</span></li>
+<li><span class="li-num">06</span><span>位置制御、速度制御、同期制御</span></li>
+<li><span class="li-num">07</span><span>MASTER-K及びMELSEC上位通信プロトコルに対応</span></li>
+<li><span class="li-num">08</span><span>強力なラダーPLCプログラミングに対応</span></li>
+<li><span class="li-num">09</span><span>アナログ/パルスインターフェースに対応</span></li>
+<li><span class="li-num">10</span><span>USB、イーサネット、RS-232C通信</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">03-2 / GX-Series — 応用事例</div>
+<h2 class="section-title" style="font-size:26px;margin-top:10px;">GX-S200/S400 応用事例</h2>
+<div class="equip-grid" style="margin-top:32px;">
+<div class="equip-item">
+<div class="thumb"><img alt="Gantry Loader" src="../assets/img/gx-app1.jpg"/></div>
+<span>ガントリーローダー</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Delta Robot" src="../assets/img/gx-app2.jpg"/></div>
+<span>デルタパラレルロボット</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Cartesian Robot" src="../assets/img/gx-app3.jpg"/></div>
+<span>直交座標ロボット</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Dispenser" src="../assets/img/gx-app4.jpg"/></div>
+<span>ディスペンサー</span>
+</div>
+</div>
+</div>
+</section></div>
+<!-- 04. Servo Motor & Drive -->
+<section class="cat-section" data-section="servo-drive" id="servo-drive">
+<div class="container">
+<div class="cat-head">
+<div>
+<div class="eyebrow">04 / サーボモーター&ドライブ</div>
+<h2 class="section-title">サーボモーター&ドライブ・単軸コントローラ</h2>
+</div>
+<p class="section-desc">400Wから11kWまで、EtherCATからアナログ/パルスまで対応する全デジタルサーボ製品ライン。</p>
+</div>
+<div class="spec-grid">
+<div class="spec-card">
+<div class="thumb"><span class="tag">サーボモーター/ドライブ</span><img alt="Servo Motor &amp; Drive" src="../assets/img/card-servo-drive-motor.jpg"/></div>
+<div class="body">
+<h3>サーボモーター&ドライブ</h3>
+<p><strong>400Wから11kWまで — ドライブとモーターのワンストップ製品ライン。</strong><br/>全デジタルサーボドライブのSDシリーズから、SMG(高トルク)とSMA(高速)サーボモーターまで、あらゆる負荷条件に最適な組み合わせを見つけられます。</p>
+</div>
+<div class="actions">
+<a href="#servo-drive-motor-detail">詳細を見る</a>
+<a class="primary" href="#servo-drive-motor-detail-contact">お問い合わせ</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">単軸自動化</span><img alt="Single-Axis Controller" src="../assets/img/card-sdc.jpg"/></div>
+<div class="body">
+<h3>単軸コントローラ</h3>
+<p><strong>よりシンプルで精密な単軸自動化。</strong><br/>ドライブに位置決め制御機能を内蔵し、コスト効率の高いシステム構成を実現。I/O接点またはMODBUS通信で上位コントローラと連携可能。</p>
+</div>
+<div class="actions">
+<a href="#sdc-detail">詳細を見る</a>
+<a class="primary" href="#sdc-detail-contact">お問い合わせ</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="product-inline-wrap" id="servo-drive-motor-detail"><section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="Servo Motor &amp; Drive" src="../assets/img/card-servo-drive-motor.png"/></div>
+<div>
+
+<h1>サーボモーター&ドライブ</h1>
+<p class="lede">400Wから11kWまで — ドライブとモーターのワンストップ製品ライン。</p>
+<ul class="bullets">
+<li>SMG・SMAサーボモーター — 200Wから7.5kWまで対応、SMG(高トルク)とSMA(高速)の両特性で、あらゆる負荷条件に最適な組み合わせを実現</li>
+<li>SDシリーズ — 全デジタルサーボドライブで、EtherCAT、アナログ、パルス、I/O、MODBUSなどあらゆる上位制御環境と自在に連携</li>
+</ul>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">04-1 / サーボモーター&ドライブ — SMG・SMAサーボモーター</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">SMG・SMAサーボモーター</div>
+<div class="panel-body"><img alt="SMG &amp; SMA Servo Motors" src="../assets/img/card-smgsma.jpg"/><div class="spec-links-row"><button class="spec-modal-trigger" data-modal-open="servo-drive-motor-detail-spec-modal-5" type="button"><span class="ico">▦</span><span>サーボモーター仕様</span></button><div class="spec-modal-overlay" id="servo-drive-motor-detail-spec-modal-5"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">▦</span>サーボモーター仕様</div>
+<div class="spec-table-scroll">
+<table class="spec-table narrow-th">
+<tbody>
+<tr><th>電圧</th><td colspan="13" style="text-align:center;font-weight:700;background:var(--bg-alt);">220V</td></tr>
+<tr>
+<th>フランジサイズ</th>
+<td colspan="2" style="text-align:center;font-weight:700;">40</td>
+<td colspan="2" style="text-align:center;font-weight:700;">60</td>
+<td colspan="2" style="text-align:center;font-weight:700;">80</td>
+<td colspan="3" style="text-align:center;font-weight:700;">130</td>
+<td colspan="4" style="text-align:center;font-weight:700;">180</td>
+</tr>
+<tr>
+<th>ドライブ型式(SD-)</th>
+<td>04A</td><td>04A</td><td>04A</td><td>10A</td><td>10A</td><td>06A</td><td>15A</td><td>20A</td><td>20A</td><td>30A</td><td>55A</td><td>75A</td><td>110A</td>
+</tr>
+<tr>
+<th>モーター型式(SMG-/SMA-)</th>
+<td>01A□A</td><td>02A□A</td><td>04A□A</td><td>04A□SA</td><td>08A□A</td><td>05A□A</td><td>13A□A</td><td>20A□A</td><td>20A□A</td><td>30A□A</td><td>44A□A</td><td>55A□A</td><td>75A□A</td>
+</tr>
+<tr>
+<th>定格出力(kW)</th>
+<td>0.1</td><td>0.2</td><td>0.4</td><td>0.4</td><td>0.75</td><td>0.45</td><td>1.3</td><td>2</td><td>1.8</td><td>2.9</td><td>4.4</td><td>5.5</td><td>7.5</td>
+</tr>
+<tr>
+<th>定格トルク(N・m)</th>
+<td>0.312</td><td>0.637</td><td>1.27</td><td>0.91</td><td>2.39</td><td>2.83</td><td>8.3</td><td>11.3</td><td>11.3</td><td>18.4</td><td>28.2</td><td>34.8</td><td>47.8</td>
+</tr>
+<tr>
+<th>瞬時最大トルク(N・m)</th>
+<td>0.1</td><td>2.23</td><td>4.46</td><td>6.69</td><td>7.16</td><td>8.7</td><td>23.0</td><td>27.6</td><td>28.4</td><td>44.7</td><td>71.0</td><td>87.3</td><td>117</td>
+</tr>
+<tr>
+<th>定格電流(Arms)</th>
+<td>0.84</td><td>1.6</td><td>2.7</td><td>4.2</td><td>4.4</td><td>3.5</td><td>10.4</td><td>16</td><td>16.5</td><td>23.6</td><td>32.4</td><td>41.8</td><td>54.2</td>
+</tr>
+<tr>
+<th>瞬時最大電流(Arms)</th>
+<td>2.9</td><td>5.8</td><td>9.3</td><td>14.9</td><td>13.4</td><td>10.5</td><td>27</td><td>42</td><td>41</td><td>54</td><td>83</td><td>108</td><td>129</td>
+</tr>
+<tr>
+<th>定格回転数(min⁻¹)</th>
+<td colspan="6" style="text-align:center;">3000</td>
+<td colspan="7" style="text-align:center;">1500</td>
+</tr>
+<tr>
+<th>最高回転数(min⁻¹)</th>
+<td colspan="6" style="text-align:center;">5000</td>
+<td colspan="7" style="text-align:center;">3000</td>
+</tr>
+<tr>
+<th>トルク定数(N・m/Arms)</th>
+<td>0.352</td><td>0.435</td><td>0.512</td><td>0.505</td><td>0.59</td><td>0.83</td><td>0.85</td><td>0.68</td><td>0.70</td><td>0.82</td><td>0.86</td><td>0.80</td><td>0.90</td>
+</tr>
+<tr>
+<th style="white-space:normal;">ロータイナーシャ*1<br/>(Kg·m²×10⁻⁴)</th>
+<td>0.0525<br/><small>(0.0739)</small></td>
+<td>0.259<br/><small>(0.323)</small></td>
+<td>0.442<br/><small>(0.506)</small></td>
+<td>0.667<br/><small>(0.744)</small></td>
+<td>0.672<br/><small>(0.86)</small></td>
+<td>7.22<br/><small>(9.3)</small></td>
+<td>20.3<br/><small>(22.4)</small></td>
+<td>26.7<br/><small>(34.2)</small></td>
+<td>31.4<br/><small>(40.0)</small></td>
+<td>45.8<br/><small>(54.3)</small></td>
+<td>67.3<br/><small>(75.7)</small></td>
+<td>88.7<br/><small>(97.3)</small></td>
+<td>126<br/><small>(133.2)</small></td>
+</tr>
+<tr>
+<th>定格出力変化率(kW/s)</th>
+<td>15.2</td><td>15.7</td><td>36.5</td><td>54.7</td><td>84.8</td><td>11.0</td><td>33.5</td><td>36.1</td><td>41.3</td><td>75.1</td><td>118</td><td>135</td><td>183</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="font-size:11.5px;color:var(--muted);margin-top:12px;">*1)括弧内はブレーキ付きモーターの数値です。</p>
+</div></div></div></div></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>SMG・SMAサーボモーター特徴</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>200Wから7.5kWまでをカバーする製品ライン</span></li>
+<li><span class="li-num">02</span><span>SMG — 高トルクタイプ、低速大負荷運転向け</span></li>
+<li><span class="li-num">03</span><span>SMA — 高速タイプ、高速応答が求められる用途向け</span></li>
+<li><span class="li-num">04</span><span>2つの独立した製品ラインから、あらゆる負荷条件に最適な組み合わせを選択可能</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section><section class="detail-block">
+<div class="container">
+<div class="eyebrow">04-2 / サーボモーター&ドライブ — サーボモーター型式表記</div>
+<div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">▦</span>サーボモーター型式表記</div>
+<div class="partcode-row">
+<div class="partcode-item">
+<div class="code-box">SMG</div>
+<div class="connector"></div>
+<div class="code-label">シリーズ</div>
+<div class="code-desc">SMG:高トルク<br/>SMA:高速</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">04</div>
+<div class="connector"></div>
+<div class="code-label">容量</div>
+<div class="code-desc">04 : 400W<br/>08 : 750W<br/>13 : 1.3KW<br/>20 : 2.0KW<br/>30 : 3.0KW<br/>44 : 4.4KW<br/>55 : 5.5KW<br/>75 : 7.5KW</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">A</div>
+<div class="connector"></div>
+<div class="code-label">入力電圧</div>
+<div class="code-desc">A : 200V<br/>B : 400V</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">A</div>
+<div class="connector"></div>
+<div class="code-label">エンコーダ</div>
+<div class="code-desc">A:アブソリュート方式<br/>I:インクリメンタル方式</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">A</div>
+<div class="connector"></div>
+<div class="code-label">設計仕様</div>
+<div class="code-desc">A:標準型<br/>E:高精度型</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">1</div>
+<div class="connector"></div>
+<div class="code-label">軸端仕様</div>
+<div class="code-desc">1:ストレート型<br/>2:ストレート型/キー溝付き</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">1</div>
+<div class="connector"></div>
+<div class="code-label">ブレーキ仕様</div>
+<div class="code-desc">1 : DC24<br/>2 : DC90</div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="detail-block">
+<div class="container">
+<div class="eyebrow">04-3 / サーボモーター&ドライブ — SDシリーズ</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">SDシリーズサーボドライブ</div>
+<div class="panel-body"><img alt="SD Series" src="../assets/img/card-sdseries.jpg"/><div class="spec-links-row"><button class="spec-modal-trigger" data-modal-open="servo-drive-motor-detail-spec-modal-7" type="button"><span class="ico">▦</span><span>サーボドライブ仕様</span></button><div class="spec-modal-overlay" id="servo-drive-motor-detail-spec-modal-7"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">▦</span>サーボドライブ仕様</div>
+<table class="spec-table narrow-th">
+<tbody>
+<tr>
+<th>サーボドライブ型式(SD-)</th>
+<td style="text-align:center;font-weight:700;background:var(--bg-alt);">04A</td>
+<td style="text-align:center;font-weight:700;background:var(--bg-alt);">10A</td>
+<td style="text-align:center;font-weight:700;background:var(--bg-alt);">15A</td>
+<td style="text-align:center;font-weight:700;background:var(--bg-alt);">20A</td>
+<td style="text-align:center;font-weight:700;background:var(--bg-alt);">30A</td>
+<td style="text-align:center;font-weight:700;background:var(--bg-alt);">55A</td>
+<td style="text-align:center;font-weight:700;background:var(--bg-alt);">75A</td>
+</tr>
+<tr>
+<th>最大適用モーター[kW]</th>
+<td>0.4</td><td>1</td><td>1.5</td><td>2</td><td>3</td><td>5.5</td><td>7.5</td>
+</tr>
+<tr>
+<th>定格出力電流[A]</th>
+<td>3</td><td>6.5</td><td>11A</td><td>13.5</td><td>16.5</td><td>35</td><td>40</td>
+</tr>
+<tr>
+<th>最大出力電流[A]</th>
+<td>9</td><td>19.5</td><td>28A</td><td>40.5</td><td>49.5</td><td>96</td><td>104</td>
+</tr>
+<tr>
+<th>回生抵抗</th>
+<td colspan="5" style="text-align:center;">内蔵 / 外付け</td>
+<td colspan="2" style="text-align:center;">外付け</td>
+</tr>
+<tr>
+<th>主回路[三相:AC200V]</th>
+<td colspan="7" style="text-align:center;">AC200 ~ 230V +10~-15% 50/60Hz</td>
+</tr>
+<tr>
+<th>制御回路[単相:AC200V]</th>
+<td colspan="7" style="text-align:center;">AC200 ~ 230V +10~-15% 50/60Hz</td>
+</tr>
+</tbody>
+</table>
+</div></div></div><button class="spec-modal-trigger" data-modal-open="servo-drive-motor-detail-spec-modal-8" type="button"><span class="ico">▦</span><span>サーボドライブ特性</span></button><div class="spec-modal-overlay" id="servo-drive-motor-detail-spec-modal-8"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">📡</span>サーボドライブ特性</div>
+<table class="spec-table narrow-th">
+<thead>
+<tr><th>分類</th><th>項目</th><th>仕様</th></tr>
+</thead>
+<tbody>
+<tr style="background:var(--bg-alt);">
+<th rowspan="2">主電源回路</th>
+<td>入力電圧/周波数</td>
+<td>三相 200V~230V、50/60Hz</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<td>許容電圧変動範囲</td>
+<td>+10% ~ -15%以内</td>
+</tr>
+<tr>
+<th rowspan="2">制御回路電源</th>
+<td>入力電圧</td>
+<td>単相 200V~230V、50/60Hz</td>
+</tr>
+<tr>
+<td>許容電圧変動範囲</td>
+<td>±15%以内</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<th rowspan="4">検出器</th>
+<td>検出器タイプ</td>
+<td>インクリメンタル2000–6000[ppr] 15線式、19bit BiSSエンコーダ、1Vpp sin/cosエンコーダ</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<td>出力信号タイプ</td>
+<td>差動ラインドライバ出力</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<td>検出分解能</td>
+<td>1回転あたり524,288(19bitエンコーダ換算)</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<td>検出器電源</td>
+<td>DC 5V、最大0.3[A]</td>
+</tr>
+<tr>
+<th rowspan="3">駆動方式</th>
+<td>駆動方式</td>
+<td>正弦波PWM制御(IGBTベース)</td>
+</tr>
+<tr>
+<td>ゲートドライブ回路</td>
+<td>1ED020I12-F2(最大2.0A)</td>
+</tr>
+<tr>
+<td>保護機能</td>
+<td>UVLO(低電圧ロックアウト)、レディ、短絡クランプ、アクティブミラークランプ、デサチュレーション保護、フォルト信号</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<th rowspan="4">速度制御仕様</th>
+<td>周波数応答</td>
+<td>最大1kHz以上</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<td>速度指令入力</td>
+<td>DC0V~±10V(最高速度はパラメータで調整可能)、EtherCAT速度指令</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<td>速度変動率</td>
+<td>±0.01[%]、負荷変動0–100%</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<td>加減速時間</td>
+<td>リニアまたはS字加減速</td>
+</tr>
+<tr>
+<th rowspan="3">位置制御仕様</th>
+<td>位置入力周波数</td>
+<td>1Mpps、ラインドライバ</td>
+</tr>
+<tr>
+<td>位置入力方式(パルス)</td>
+<td>方向+パルス、正転パルス+逆転パルス</td>
+</tr>
+<tr>
+<td>位置入力フォーマット</td>
+<td>ラインドライバ型(RS422)</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<th rowspan="3">トルク制御仕様</th>
+<td>トルク指令入力</td>
+<td>DC0V~±10V(最高速度はパラメータで調整可能)</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<td>繰り返し精度</td>
+<td>±1[%]以内</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<td>トルク制限速度指令</td>
+<td>DC0V~±10V(最高速度はパラメータで調整可能)</td>
+</tr>
+<tr>
+<th rowspan="4">内蔵保護機能</th>
+<td>保護機能</td>
+<td>過電流、回生過電圧、過負荷、エンコーダ異常、主電源異常、過熱、過回生、過速度、IGBT異常、不足電圧</td>
+</tr>
+<tr>
+<td>回生抵抗</td>
+<td>標準内蔵、外付け(独立)選択可</td>
+</tr>
+<tr>
+<td>USB通信</td>
+<td>PC USB通信対応(パラメータ・変数モニタリング)</td>
+</tr>
+<tr>
+<td>温度検出</td>
+<td>モーター温度、IGBT温度及びPCB温度を検出</td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>SDシリーズ特徴</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>400Wから11kWまでを単一プラットフォームでカバーする全デジタルサーボ</span></li>
+<li><span class="li-num">02</span><span>EtherCAT通信対応 — 上位コントローラとの完全同期/補間制御を実現</span></li>
+<li><span class="li-num">03</span><span>アナログ、パルス、I/O、MODBUSなど多様な上位制御環境に自在に統合可能</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">04-4 / サーボモーター&ドライブ — サーボドライブ型式表記</div>
+<div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">▦</span>サーボドライブ型式表記</div>
+<div class="partcode-row">
+<div class="partcode-item">
+<div class="code-box">SD</div>
+<div class="connector"></div>
+<div class="code-label">シリーズ</div>
+<div class="code-desc">サーボシリーズ</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">04</div>
+<div class="connector"></div>
+<div class="code-label">容量</div>
+<div class="code-desc">04 : 400W<br/>10 : 1.0KW<br/>15 : 1.5KW<br/>20 : 2.0KW<br/>30 : 3.0KW<br/>55 : 5.5KW<br/>75 : 7.5KW</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">A</div>
+<div class="connector"></div>
+<div class="code-label">入力電圧</div>
+<div class="code-desc">A : 200V<br/>B : 400V</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">C</div>
+<div class="connector"></div>
+<div class="code-label">エンコーダ</div>
+<div class="code-desc">A:直交式<br/>D:シリアル式<br/>C:シリアル式(BiSS)<br/>D:シリアル式(Sanyo)<br/>E:シリアル式(Nikon)</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">A</div>
+<div class="connector"></div>
+<div class="code-label">通信仕様</div>
+<div class="code-desc">A:アナログ<br/>E:EtherCAT<br/>C:位置決め型</div>
+</div>
+</div>
+</div>
+</div>
+</section></div>
+<div class="product-inline-wrap" id="sdc-detail"><section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="Single-Axis Controller" src="../assets/img/card-sdc.png"/></div>
+<div>
+
+<h1>単軸コントローラ</h1>
+<p class="lede">よりシンプルで精密な単軸自動化。</p>
+<ul class="bullets">
+<li>ドライブに位置決め制御機能を内蔵し、コスト効率の高いシステム構成を実現。I/O接点またはMODBUS通信で上位コントローラと連携可能。</li>
+</ul>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">04-1 / 単軸コントローラ — 構成と特徴</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">単軸コントローラ構成</div>
+<div class="panel-body"><img alt="Single-Axis Controller Configuration" src="../assets/img/sdc-config.jpg"/></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>単軸コントローラ特徴</h3>
+<p style="font-size:13.5px;color:var(--body);line-height:1.7;margin-bottom:14px;">SDCシリーズはモーションコントローラなしで多様なモーション・位置決め制御を実現。</p>
+<p style="font-size:13.5px;color:var(--body);line-height:1.7;margin-bottom:14px;">位置決め制御をドライブ内部で完結させ、経済的な制御システム構成が可能。</p>
+<p style="font-size:13.5px;color:var(--body);line-height:1.7;margin-bottom:18px;">I/O接点のみで制御可能、またMODBUS通信で上位コントローラ(PLC等)と連携可能。</p>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>0.2kW ~ 3kW サーボドライブ</span></li>
+<li><span class="li-num">02</span><span>19/16 I/O、接点式制御方式</span></li>
+<li><span class="li-num">03</span><span>精密位置・速度制御</span></li>
+<li><span class="li-num">04</span><span>原点設定、正逆方向JOG運転</span></li>
+<li><span class="li-num">05</span><span>等分運転、微増分運転</span></li>
+<li><span class="li-num">06</span><span>回転座標系での短距離運転</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section><section class="detail-block">
+<div class="container">
+<div class="eyebrow">04-2 / 単軸コントローラ — 応用事例</div>
+<h2 class="section-title" style="font-size:26px;margin-top:10px;">単軸コントローラ応用事例</h2>
+<div class="equip-grid cols-6" style="margin-top:32px;">
+<div class="equip-item">
+<div class="thumb"><img alt="Servo Press" src="../assets/img/sdc-app1.jpg"/></div>
+<span>サーボプレス</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Conveyor Transfer" src="../assets/img/sdc-app2.jpg"/></div>
+<span>コンベア搬送</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Turret" src="../assets/img/sdc-app3.jpg"/></div>
+<span>タレット</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Index" src="../assets/img/sdc-app4.jpg"/></div>
+<span>割り出し装置</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Packet Handler" src="../assets/img/sdc-app5.jpg"/></div>
+<span>包装処理装置</span>
+</div>
+<div class="equip-item">
+<div class="thumb"><img alt="Roller, Feeder" src="../assets/img/sdc-app6.jpg"/></div>
+<span>ローラー・送り装置</span>
+</div>
+</div>
+</div>
+</section></div>
+<!-- 05. Step Motor & Drive -->
+<section class="cat-section" data-section="stepmotor-drive" id="stepmotor-drive">
+<div class="container">
+<div class="cat-head">
+<div>
+<div class="eyebrow">05 / ステップモーター&ドライブ</div>
+<h2 class="section-title">StepServo モーター&ドライブ</h2>
+</div>
+<p class="section-desc">ステップモーターの経済性とサーボ級精度を兼ね備えたハイブリッド駆動方式。</p>
+</div>
+<div class="spec-grid">
+<div class="spec-card">
+<div class="thumb"><span class="tag">ステップモーター/ドライブ</span><img alt="StepServo Motor &amp; Drive" src="../assets/img/card-stepservo.jpg"/></div>
+<div class="body">
+<h3>StepServo モーター&ドライブ</h3>
+<p><strong>ステップモーターの経済性にサーボ級精度をプラス。</strong><br/>+24V~+48V DC電源を採用し、高精度エンコーダで位置誤差をリアルタイム補正、安定した精密制御を実現。</p>
+</div>
+<div class="actions">
+<a href="#stepservo-detail">詳細を見る</a>
+<a class="primary" href="#stepservo-detail-contact">お問い合わせ</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">能動モーション</span><img alt="ACTIMO" src="../assets/img/card-actimo.jpg"/></div>
+<div class="body">
+<h3>ACTIMO</h3>
+<p><strong>ティーチングペンダント搭載のStepServo単軸コントローラ。</strong><br/>ティーチングペンダントで簡単に設定できる単軸コントローラ。エア/油圧シリンダーを1:1で電動シリンダーに置き換え可能、ACTIMO Setupソフトウェアが設定全般をサポート。</p>
+</div>
+<div class="actions">
+<a href="#actimo-detail">詳細を見る</a>
+<a class="primary" href="#actimo-detail-contact">お問い合わせ</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="product-inline-wrap" id="stepservo-detail"><section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="StepServo Motor &amp; Drive" src="../assets/img/card-stepservo.png"/></div>
+<div>
+
+<h1>StepServo モーター&ドライブ</h1>
+<p class="lede">ステップモーターの経済性にサーボ級精度をプラス。</p>
+<ul class="bullets">
+<li>+24V~+48V DC電源を採用し、高精度エンコーダで位置誤差をリアルタイム補正、安定した精密制御を実現。</li>
+</ul>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">05-1 / StepServo モーター&ドライブ — 構成と特徴</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">StepSERVO モーター&ドライブ構成</div>
+<div class="panel-body"><img alt="StepSERVO Motor &amp; Drive Configuration" src="../assets/img/stepservo-config.jpg"/><div class="spec-links-row"><button class="spec-modal-trigger" data-modal-open="stepservo-detail-spec-modal-10" type="button"><span class="ico">▦</span><span>StepSERVO モーター仕様</span></button><div class="spec-modal-overlay" id="stepservo-detail-spec-modal-10"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">▦</span>StepSERVO モーター仕様</div>
+<div class="spec-table-scroll">
+<table class="spec-table">
+<thead>
+<tr><th>□</th><th>モーター型式</th><th>相電流</th><th>相抵抗</th><th>相インダクタンス</th><th>保持トルク</th><th>ローターイナーシャ</th><th style="width:200px;">ドライバ型式</th></tr>
+</thead>
+<tbody>
+<tr style="background:var(--bg-alt);">
+<th rowspan="3">□28</th>
+<td>28HS-0932A</td><td>0.95 A</td><td>2.45 Ω</td><td>2.50 mH</td><td>0.07 N.m</td><td>9 g-cm²</td>
+<td rowspan="3" style="width:200px;text-align:center;">Pulse, Modbus, CANopen,<br/>EtherCAT, EtherNET/IP, ACTIMO</td>
+</tr>
+<tr style="background:var(--bg-alt);"><td>28HS-0945A</td><td>0.95 A</td><td>3.75 Ω</td><td>4.30 mH</td><td>0.12 N.m</td><td>12 g-cm²</td></tr>
+<tr style="background:var(--bg-alt);"><td>28HS-0952A</td><td>0.95 A</td><td>4.40 Ω</td><td>5.75 mH</td><td>0.16 N.m</td><td>18 g-cm²</td></tr>
+<tr>
+<th rowspan="2">□35</th>
+<td>35HS-0828A</td><td>0.80 A</td><td>2.25 Ω</td><td>1.60 mH</td><td>0.13 N.m</td><td>12 g-cm²</td>
+<td rowspan="2" style="width:200px;text-align:center;">Pulse, Modbus, CANopen,<br/>EtherCAT, EtherNET/IP, ACTIMO</td>
+</tr>
+<tr><td>35HS-0836A</td><td>0.80 A</td><td>2.20 Ω</td><td>2.70 mH</td><td>0.23 N.m</td><td>20 g-cm²</td></tr>
+<tr style="background:var(--bg-alt);">
+<th rowspan="4">□42</th>
+<td>42HS-1235A</td><td>1.20 A</td><td>2.80 Ω</td><td>5.40 mH</td><td>0.32 N.m</td><td>40 g-cm²</td>
+<td rowspan="4" style="width:200px;text-align:center;">Pulse, Modbus, CANopen,<br/>EtherCAT, EtherNET/IP, ACTIMO</td>
+</tr>
+<tr style="background:var(--bg-alt);"><td>42HS-1241A</td><td>1.20 A</td><td>3.60 Ω</td><td>7.20 mH</td><td>0.44 N.m</td><td>60 g-cm²</td></tr>
+<tr style="background:var(--bg-alt);"><td>42HS-1249A</td><td>1.20 A</td><td>3.60 Ω</td><td>8.00 mH</td><td>0.50 N.m</td><td>77 g-cm²</td></tr>
+<tr style="background:var(--bg-alt);"><td>42HS-1261A</td><td>1.20 A</td><td>6.00 Ω</td><td>15.60 mH</td><td>0.65 N.m</td><td>115 g-cm²</td></tr>
+<tr>
+<th rowspan="3">□56</th>
+<td>56HS-3041A</td><td>3.00 A</td><td>0.50 Ω</td><td>1.00 mH</td><td>0.60 N.m</td><td>170 g-cm²</td>
+<td rowspan="3" style="width:200px;text-align:center;">Pulse, Modbus, CANopen,<br/>EtherCAT, EtherNET/IP, ACTIMO</td>
+</tr>
+<tr><td>56HS-3052A</td><td>3.00 A</td><td>0.54 Ω</td><td>2.00 mH</td><td>1.00 N.m</td><td>290 g-cm²</td></tr>
+<tr><td>56HS-3076A</td><td>3.00 A</td><td>0.88 Ω</td><td>4.00 mH</td><td>1.50 N.m</td><td>520 g-cm²</td></tr>
+<tr style="background:var(--bg-alt);">
+<th rowspan="3">□60</th>
+<td>60HS-4045A</td><td>4.00 A</td><td>0.80 Ω</td><td>1.60 mH</td><td>0.75 N.m</td><td>200 g-cm²</td>
+<td rowspan="3" style="width:200px;text-align:center;">Pulse, Modbus, CANopen,<br/>EtherCAT, EtherNET/IP, ACTIMO</td>
+</tr>
+<tr style="background:var(--bg-alt);"><td>60HS-4056A</td><td>4.00 A</td><td>0.80 Ω</td><td>2.40 mH</td><td>1.10 N.m</td><td>300 g-cm²</td></tr>
+<tr style="background:var(--bg-alt);"><td>60HS-4088A</td><td>4.00 A</td><td>0.80 Ω</td><td>3.50 mH</td><td>2.70 N.m</td><td>860 g-cm²</td></tr>
+<tr>
+<th rowspan="3">□86</th>
+<td>86HS-6078A</td><td>6.00 A</td><td>0.25 Ω</td><td>2.66 mH</td><td>4.50 N.m</td><td>1800 g-cm²</td>
+<td rowspan="3" style="width:200px;text-align:center;">Pulse, Modbus, CANopen,<br/>EtherCAT, EtherNET/IP, ACTIMO</td>
+</tr>
+<tr><td>86HS-60118A</td><td>6.00 A</td><td>0.44 Ω</td><td>5.00 mH</td><td>8.50 N.m</td><td>3600 g-cm²</td></tr>
+<tr><td>86HS-60158A</td><td>6.00 A</td><td>0.62 Ω</td><td>7.40 mH</td><td>12.0 N.m</td><td>5400 g-cm²</td></tr>
+</tbody>
+</table>
+</div>
+</div></div></div><button class="spec-modal-trigger" data-modal-open="stepservo-detail-spec-modal-12" type="button"><span class="ico">▦</span><span>StepSERVO ドライバ仕様</span></button><div class="spec-modal-overlay" id="stepservo-detail-spec-modal-12"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">▦</span>StepSERVO ドライバ仕様</div>
+<div class="spec-table-scroll">
+<table class="spec-table">
+<thead>
+<tr><th colspan="2">対応モーター</th><th>□28mm</th><th>□35mm</th><th>□42mm</th><th>□56mm</th><th>□60mm</th><th>□86mm</th></tr>
+</thead>
+<tbody>
+<tr>
+<th colspan="2">ドライバ型式</th>
+<td colspan="6">StepSERVO-EtherCAT / Pulse / Modbus / CANopen / EterNet/IP / ACTIMO</td>
+</tr>
+<tr>
+<th colspan="2">入力電圧</th>
+<td colspan="6">24VDC ~ 48VDC±10%,</td>
+</tr>
+<tr>
+<th colspan="2">制御方式</th>
+<td colspan="6">クローズドループ制御、オープンループ制御(32bit ARMコア)</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<th colspan="2">制御モード</th>
+<td>EtherCATモード<br/>パルスモード<br/>EtherNet/IPモード</td>
+<td colspan="3">Modbus-RTUモード<br/>CANopenモード</td>
+<td colspan="2">ACTIMOモード</td>
+</tr>
+<tr>
+<th colspan="2">多軸制御</th>
+<td></td>
+<td colspan="3">デイジーチェーン接続でネットワーク構築</td>
+<td colspan="2">デイジーチェーン接続でネットワーク構築(最大16軸)</td>
+</tr>
+<tr>
+<th colspan="2">位置テーブル</th>
+<td></td>
+<td colspan="3">e3PLCで記述したモーションプログラムで運転可能(WAIT / CAL / TEST / JUMP)</td>
+<td colspan="2">最大255個の位置テーブルエントリ</td>
+</tr>
+<tr>
+<th colspan="2">アナログ入力</th>
+<td></td>
+<td colspan="3">12bit、±10V / 0–10V / 1–5Vアナログ電圧入力、ソフトウェアでアナログ設定可能</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<th colspan="2">消費電力</th>
+<td colspan="6">最大600mA(モーター電流除く) / ACTIMO:最大450mA(モーター電流除く)</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<th rowspan="3">動作環境</th>
+<td style="white-space:nowrap;">温度</td>
+<td colspan="6">動作:5–40℃、保管:0–55℃</td>
+</tr>
+<tr style="background:var(--bg-alt);"><td style="white-space:nowrap;">湿度</td><td colspan="6">動作:35–85%RH(結露なきこと)、保管:10–90%RH(結露なきこと)</td></tr>
+<tr style="background:var(--bg-alt);"><td style="white-space:nowrap;">振動</td><td colspan="6">0.5G</td></tr>
+<tr>
+<th rowspan="9">機能</th>
+<td style="white-space:nowrap;">エンコーダ</td>
+<td colspan="6">10,000 / 回転、20,000 / 回転、40,000(オプション) / 回転</td>
+</tr>
+<tr><td style="white-space:nowrap;">分解能</td><td colspan="6">2000、3200、5000、6400、10000、12800、25000、25600、50000(ソフトウェアで設定可能)</td></tr>
+<tr><td style="white-space:nowrap;">回転数</td><td colspan="6">最大3,000 rpm</td></tr>
+<tr><td style="white-space:nowrap;">保護機能</td><td colspan="6">位置追従誤差、モーター接続異常、モーター電圧異常、入力電圧異常、過電流異常、過負荷異常、温度異常</td></tr>
+<tr><td style="white-space:nowrap;">状態表示</td><td colspan="6">電源、サーボON、位置決め完了、アラーム</td></tr>
+<tr>
+<td rowspan="3" style="white-space:nowrap;">パラメータ設定</td>
+<td colspan="6">ソフトウェア設定(USB)</td>
+</tr>
+<tr><td colspan="6">パルス入力方式:1パルス(DIR/PULSE)、2パルス(CW/CCW)設定(USB)</td></tr>
+<tr><td colspan="6">速度/位置指令:1系統差動パルス列入力(DIR/PULSE)、(CW/CCW)</td></tr>
+<tr><td></td><td colspan="6">位置決め完了設定、ゲイン設定、電子ギア比設定、回転方向設定、内部運転など</td></tr>
+<tr style="background:var(--bg-alt);">
+<th rowspan="2">I/O信号</th>
+<td style="white-space:nowrap;">入力信号機能</td>
+<td colspan="6">EtherCAT / EtherNet/IP:3個の固定入力(LIMIT+、LIMIT-、ORIGIN)、5個の設定可能入力(フォトカプラ絶縁) / Pulse:1系統パルス列入力(DIR/PULSE)、SERVO-ON、ALARM-RESET(フォトカプラ絶縁) / Modbus / CANopen:3個の固定入力(LIMIT+、LIMIT-、ORIGIN)、8個の設定可能入力(フォトカプラ絶縁) / ACTIMO:2個の固定入力(LIMIT+、LIMIT-)、18個の設定可能入力(フォトカプラ絶縁)</td>
+</tr>
+<tr style="background:var(--bg-alt);">
+<td style="white-space:nowrap;">出力信号機能</td>
+<td colspan="6">EtherCAT / EtherNet/IP:4個の設定可能出力(フォトカプラ絶縁)、ブレーキ出力 / Pulse:位置決め完了出力、ドライバアラーム出力、エンコーダ出力(A+、A-、B+、B-、Z+、Z-)(RS-422ラインドライバ出力)※アブソリュートエンコーダ使用時はエンコーダ出力非対応 / Modbus / CANopen:9個の設定可能出力(フォトカプラ絶縁)、ブレーキ出力 / ACTIMO:10個の設定可能出力(フォトカプラ絶縁)</td>
+</tr>
+<tr>
+<th colspan="2">原点復帰</th>
+<td colspan="6">LIMIT(±)、原点復帰オフセット、原点復帰速度、原点復帰プリセット機能(ORIGIN / Z-ENC対応予定)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div></div></div></div></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>StepSERVO モーター&ドライブ特徴</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>+24V ~ +48V DC電源を採用</span></li>
+<li><span class="li-num">02</span><span>オープンループまたはクローズドループモードで使用可能</span></li>
+<li><span class="li-num">03</span><span>モーター搭載の高精度エンコーダが現在位置を追跡し、脱調を防止</span></li>
+<li><span class="li-num">04</span><span>エンコーダフィードバックが現在位置を常時検出し最適な位置補正を実現</span></li>
+<li><span class="li-num">05</span><span>簡易ゲイン調整で低剛性負荷でも最適な性能を発揮</span></li>
+<li><span class="li-num">06</span><span>負荷に応じて電流を自動調整し、モーター効率を最大化</span></li>
+<li><span class="li-num">07</span><span>熱損失を最大80%低減、設備の応答性と信頼性を向上</span></li>
+<li><span class="li-num">08</span><span>過電圧、過電流、過温度及び相間短絡を検出可能</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section><section class="detail-block alt"><div class="container"><div class="eyebrow">05-2 / StepServo モーター&ドライブ — StepSERVO モーター型式表記</div><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">▦</span>StepSERVO モーター型式表記</div>
+<div class="partcode-row">
+<div class="partcode-item">
+<div class="code-box">StepSERVO</div>
+<div class="connector"></div>
+<div class="code-label">ドライバシリーズ名</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">56</div>
+<div class="connector"></div>
+<div class="code-label">モーターフランジ</div>
+<div class="code-desc">28 : 28mm(11H)<br/>35 : 35mm(14H)<br/>42 : 42mm(17H)<br/>56 : 56mm(23H)<br/>60 : 60mm(24H)<br/>86 : 86mm(34H)</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">HS</div>
+<div class="connector"></div>
+<div class="code-label">モータータイプ</div>
+<div class="code-desc">HS:ハイブリッド式ステップモーター</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">30</div>
+<div class="connector"></div>
+<div class="code-label">モーター電流</div>
+<div class="code-desc">08 : 0.8A<br/>09 : 0.9A<br/>12 : 1.2A<br/>30 : 3.0A<br/>40 : 4.0A<br/>60 : 6.0A</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">41</div>
+<div class="connector"></div>
+<div class="code-label">モーター長さ(エンコーダ除く)</div>
+<div class="code-desc">28:モーター長さ<br/>36:モーター長さ<br/>45:モーター長さ<br/>52:モーター長さ<br/>118:モーター長さ</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">A</div>
+<div class="connector"></div>
+<div class="code-label">エンコーダ分解能</div>
+<div class="code-desc">A:10,000 / 回転<br/>B:16,000 / 回転<br/>C:17bit ABS<br/>D:40,000 / 回転<br/>E:4,000 / 回転</div>
+</div>
+</div>
+</div></div></section><section class="detail-block alt"><div class="container"><div class="eyebrow">05-3 / StepServo モーター&ドライブ — StepSERVO ドライバ型式表記</div><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="stw-title"><span class="ico">▦</span>StepSERVO ドライバ型式表記</div>
+<div class="partcode-row">
+<div class="partcode-item">
+<div class="code-box">StepSERVO</div>
+<div class="connector"></div>
+<div class="code-label">ドライバシリーズ名</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">EtherCAT</div>
+<div class="connector"></div>
+<div class="code-label">ドライバタイプ</div>
+<div class="code-desc">EtherCAT<br/>Pulse<br/>Modbus<br/>EtherNET<br/>CANopen</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">42</div>
+<div class="connector"></div>
+<div class="code-label">モーターフランジ</div>
+<div class="code-desc">28mm<br/>35mm<br/>42mm<br/>56mm<br/>60mm<br/>86mm</div>
+</div>
+<div class="partcode-item">
+<div class="code-box">ST</div>
+<div class="connector"></div>
+<div class="code-label">ドライバタイプ</div>
+<div class="code-desc">Mini<br/>ST(標準型)</div>
+</div>
+</div>
+<div style="margin-top:32px;">
+<img alt="StepSERVO ST / StepSERVO mini" src="../assets/img/stepservo-drive-types.jpg" style="max-width:66%;height:auto;margin-left:auto;"/>
+</div>
+</div></div></section></div>
+<div class="product-inline-wrap" id="actimo-detail"><section class="detail-hero inline">
+<div class="container grid">
+<div class="photo-frame"><img alt="ACTIMO" src="../assets/img/card-actimo.png"/></div>
+<div>
+
+<h1>ACTIMO</h1>
+<p class="lede">ティーチングペンダント搭載のStepServo単軸コントローラ。</p>
+<ul class="bullets">
+<li>ティーチングペンダント搭載の単軸コントローラ</li>
+<li>エア/油圧シリンダーを1:1で電動シリンダーに置き換え可能</li>
+<li>ACTIMO Setupソフトウェアが単軸コントローラの設定全般をサポート</li>
+</ul>
+</div>
+</div>
+</section><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">05-1 / ACTIMO — 構成と特徴</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">ACTIMO システム構成</div>
+<div class="panel-body"><img alt="ACTIMO System Configuration" src="../assets/img/actimo-config.jpg"/></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">FEATURES</div>
+<h3>ACTIMO 特徴</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>ティーチングペンダント搭載の単軸コントローラ</span></li>
+<li><span class="li-num">02</span><span>ポケットサイズのティーチングペンダントで現場での位置ティーチングと試運転が可能</span></li>
+<li><span class="li-num">03</span><span>エア/油圧シリンダーを1:1で電動シリンダーに置き換え可能</span></li>
+<li><span class="li-num">04</span><span>ACTIMO Setupソフトウェアが単軸コントローラの設定全般をサポート</span></li>
+<li><span class="li-num">05</span><span>StepSERVO及びBLDCservoドライブを複数台同時接続可能</span></li>
+<li><span class="li-num">06</span><span>RS-485通信で最大16軸まで接続可能</span></li>
+<li><span class="li-num">07</span><span>制御変数(パラメータ、動作テーブル、校正値)をファイルで管理</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section><section class="detail-block">
+<div class="container">
+<div class="eyebrow">05-2 / ACTIMO — PROGRAM</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">ACTIMO PROGRAM</div>
+<div class="panel-body"><img alt="ACTIMO PROGRAM" src="../assets/img/actimo-program.jpg"/></div>
+</div>
+<div class="split-text">
+<div class="panel-head-plain">SOFTWARE</div>
+<h3>ACTIMO モーションテーブル機能</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>255点の動作リストで十分な容量を確保</span></li>
+<li><span class="li-num">02</span><span>外部DIO接点(入力20/出力12)で上位PLCと接続可能</span></li>
+<li><span class="li-num">03</span><span>外部ボタン入力でモーション指令と分岐(Goto)に対応</span></li>
+<li><span class="li-num">04</span><span>指定した動作リストエントリ到達後、出力接点でステータスを通知</span></li>
+<li><span class="li-num">05</span><span>任意原点と負荷原点の設定に対応、シリンダーに似た動作が可能</span></li>
+<li><span class="li-num">06</span><span>トルクモード運転に対応</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section></div>
+<!-- 06. EtherCAT IO Modules -->
+<section class="cat-section" data-section="ethercat-io" id="ethercat-io">
+<div class="container">
+<div class="cat-head">
+<div>
+<div class="eyebrow">06 / EtherCAT IOモジュール</div>
+<h2 class="section-title">EtherCAT IOモジュール</h2>
+</div>
+<p class="section-desc">CNC及びモーションコントローラと組み合わせて使用するために設計されたI/O拡張モジュール製品ライン。I/O接点拡張、アナログインターフェース、ポータブルMPGを自由に組み合わせ、多様な構成ニーズに対応。</p>
+</div>
+<div class="spec-grid">
+<div class="spec-card">
+<div class="thumb"><span class="tag">操作パネルIOモジュール</span><img alt="EDIO 72/46 I/O Module" src="../assets/img/card-edio7246.jpg"/></div>
+<div class="body">
+<h3>EDIO 72/46 I/Oモジュール</h3>
+<p><strong>操作パネル向け — 入力72点、出力46点。</strong><br/>EtherCATベースで簡単接続、主軸・MPG・エンコーダポートを内蔵し、幅広い用途に対応。</p>
+</div>
+<div class="actions">
+<a href="#edio7246-detail">詳細を見る</a>
+<a class="primary" href="#edio7246-detail-contact">お問い合わせ</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">コネクタ型IOモジュール</span><img alt="EDIO 64/64, 32/32 I/O Module" src="../assets/img/card-edio6432.jpg"/></div>
+<div class="body">
+<h3>EDIO 64/64、32/32 I/Oモジュール</h3>
+<p><strong>コネクタケーブル型、32/32単位で拡張可能。</strong><br/>I/O接点は16点1組のCOM構成で、必要な接点数に応じて32/32単位で自由に拡張可能。</p>
+</div>
+<div class="actions">
+<a href="#edio6432-detail">詳細を見る</a>
+<a class="primary" href="#edio6432-detail-contact">お問い合わせ</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">Y型端子直結IOモジュール</span><img alt="EDIO IN32, OUT32, IN16/OUT16 Module" src="../assets/img/card-edioinout.jpg"/></div>
+<div class="body">
+<h3>EDIO IN32、OUT32、IN16/OUT16モジュール</h3>
+<p><strong>Y型端子直結式、入力・出力を個別に選択可能。</strong><br/>用途に応じて純入力(IN32)、純出力(OUT32)、または入出力混合構成(IN16/OUT16)を選択可能。</p>
+</div>
+<div class="actions">
+<a href="#edio-inout-detail">詳細を見る</a>
+<a class="primary" href="#edio-inout-detail-contact">お問い合わせ</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">サーボ軸インターフェースモジュール</span><img alt="AIB 3.0 Interface Module" src="../assets/img/card-aib30.jpg"/></div>
+<div class="body">
+<h3>AIB 3.0インターフェースモジュール</h3>
+<p><strong>既存ドライブをEtherCATインターフェースに変換するためのモジュール。</strong><br/>6軸・3軸の2タイプのサーボ軸インターフェースポートを提供、モジュール底部にアナログ及びパルス式MPGポートを搭載。</p>
+</div>
+<div class="actions">
+<a href="#aib30-detail">詳細を見る</a>
+<a class="primary" href="#aib30-detail-contact">お問い合わせ</a>
+</div>
+</div>
+<div class="spec-card">
+<div class="thumb"><span class="tag">ポータブル</span><img alt="Portable MPG" src="../assets/img/card-portablempg.jpg"/></div>
+<div class="body">
+<h3>ポータブルMPG</h3>
+<p><strong>小型で堅牢な手持ち式手動パルス発生器。</strong><br/>完全密閉設計で高い耐ノイズ性能を実現、EMGスイッチを内蔵、JOGスイッチはオプション対応。</p>
+</div>
+<div class="actions">
+<a href="#portablempg-detail">詳細を見る</a>
+<a class="primary" href="#portablempg-detail-contact">お問い合わせ</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="product-inline-wrap" id="edio7246-detail"><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">06-1 / EDIO 72/46 — ポート詳細と仕様</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">EDIO 72/46 ポート詳細</div>
+<div class="panel-body"><img alt="EDIO 72/46 Port Details" src="../assets/img/edio7246-diagram.jpg"/><div class="spec-links-row"><button class="spec-modal-trigger" data-modal-open="edio7246-detail-spec-modal-13" type="button"><span class="ico">▦</span><span>仕様</span></button><div class="spec-modal-overlay" id="edio7246-detail-spec-modal-13"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="spec-table-grid">
+<div class="spec-group">
+<h4>EDIO 72/46 仕様</h4>
+<table class="spec-table narrow-th">
+<tbody>
+<tr><th>名称</th><td>EDIO72/46</td></tr>
+<tr><th>入力(72点)</th><td>ポート1、2、40ピンHiroseコネクタ</td></tr>
+<tr><th>出力(46点)</th><td>ポート3、50ピンHiroseコネクタ</td></tr>
+<tr><th>電源</th><td>DC24V, 0.7A</td></tr>
+<tr><th>サイズ</th><td>W : 178mm   H : 225mm   D : 40mm</td></tr>
+</tbody>
+</table>
+</div>
+<div class="spec-group">
+<h4>EDIO 72/46 ポート</h4>
+<table class="spec-table narrow-th">
+<thead>
+<tr><th>番号</th><th>構成</th><th>備考</th></tr>
+</thead>
+<tbody>
+<tr style="background:var(--bg-alt);"><th>1</th><td>入力(36点)、HIF3BA-40PA-2.54DSA</td><td>40P Hiroseコネクタ</td></tr>
+<tr style="background:var(--bg-alt);"><th>2</th><td>入力(36点)、HIF3BA-40PA-2.54DSA</td><td>40P Hiroseコネクタ</td></tr>
+<tr style="background:var(--bg-alt);"><th>3</th><td>出力(46点)、HIF3BA-50PA-2.54DSA</td><td>50P Hiroseコネクタ</td></tr>
+<tr><th>4</th><td>EtherCAT INポート</td><td>—</td></tr>
+<tr><th>5</th><td>EtherCAT OUTポート</td><td>—</td></tr>
+<tr><th>6</th><td>電源、DC24V、0.7A</td><td>22 AWG以上</td></tr>
+<tr><th>7</th><td>主軸DAC、D-sub 9ピンメス</td><td>ケーブル:D-SUB 9ピンオス</td></tr>
+<tr><th>8</th><td>主軸エンコーダ、D-sub 9ピンオス</td><td>ケーブル:D-SUB 9ピンメス</td></tr>
+<tr><th>9</th><td>MPGポート1、D-sub 9ピンオス</td><td>ケーブル:D-SUB 9ピンメス</td></tr>
+<tr><th>10</th><td>MPGポート2、D-sub 9ピンオス</td><td>ケーブル:D-SUB 9ピンメス</td></tr>
+<tr><th>11</th><td>MPGポート3、D-sub 9ピンオス</td><td>ケーブル:D-SUB 9ピンメス</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div></div></div></div></div>
+</div>
+<div class="split-text">
+<div class="split-text-intro">
+<h1>EDIO 72/46 IOモジュール</h1>
+<p class="lede">操作パネル向け、入力72点・出力46点。</p>
+<ul class="bullets">
+<li>EtherCATで簡単接続、主軸・MPG・エンコーダポートを内蔵し、幅広い用途に対応。</li>
+</ul>
+</div>
+<div class="panel-head-plain">FEATURES</div>
+<h3>EDIO 72/46 特徴</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>EtherCATベースで接続が簡単、他の機能モジュールと自由に組み合わせ可能</span></li>
+<li><span class="li-num">02</span><span>入力接点72点、出力接点46点、COMは8接点1組で構成</span></li>
+<li><span class="li-num">03</span><span>入力は双方向(N24/P24)選択可能、出力は単方向(N24)</span></li>
+<li><span class="li-num">04</span><span>主軸出力ポート、MPG出力ポート、エンコーダ入力ポートを内蔵し、幅広い用途に対応</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section></div>
+<div class="product-inline-wrap" id="edio6432-detail"><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">06-1 / EDIO 64/64、32/32 — ポート詳細と仕様</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">EDIO 64/64、32/32 ポート詳細</div>
+<div class="panel-body"><img alt="EDIO 64/64, 32/32 Port Details" src="../assets/img/edio6432-diagram.png"/><div class="spec-links-row"><button class="spec-modal-trigger" data-modal-open="edio6432-detail-spec-modal-14" type="button"><span class="ico">▦</span><span>仕様</span></button><div class="spec-modal-overlay" id="edio6432-detail-spec-modal-14"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="spec-table-grid">
+<div class="spec-group">
+<h4>EDIO 64/64、32/32 仕様</h4>
+<table class="spec-table narrow-th">
+<tbody>
+<tr><th>名称</th><td>CPACK DIO-64/64  /  CPACK DIO-32/32</td></tr>
+<tr><th>モジュール型式(32点)</th><td>入力(32点)、出力(32点)</td></tr>
+<tr><th>モジュール型式(64点)</th><td>入力(64点)、出力(64点)</td></tr>
+<tr><th>電源</th><td>DC24V, 0.7A</td></tr>
+<tr><th>サイズ</th><td>W : 40mm   H : 212mm   D : 144.4mm</td></tr>
+</tbody>
+</table>
+</div>
+<div class="spec-group">
+<h4>EDIO 64/64、32/32 ポート</h4>
+<table class="spec-table narrow-th">
+<thead>
+<tr><th>項目</th><th>構成</th><th>備考</th></tr>
+</thead>
+<tbody>
+<tr style="background:var(--bg-alt);"><th>I/O (32/32)</th><td>1段、2ポート(INPUT x1 / OUTPUT y1)</td><td>—</td></tr>
+<tr style="background:var(--bg-alt);"><th>I/O (64/64)</th><td>2段、4ポート(INPUT x1,x2 / OUTPUT y1,y2)</td><td>—</td></tr>
+<tr><th>EtherCATポート</th><td>INポート</td><td>J1</td></tr>
+<tr><th>EtherCATポート</th><td>OUTポート</td><td>J2</td></tr>
+<tr><th>電源部</th><td>DC24V, 0.7A</td><td>底部</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div></div></div></div></div>
+</div>
+<div class="split-text">
+<div class="split-text-intro">
+<h1>EDIO 64/64、32/32 IOモジュール</h1>
+<p class="lede">コネクタケーブル型、32/32単位で拡張可能。</p>
+<ul class="bullets">
+<li>I/O接点は16点1組のCOM構成で、必要な接点数に応じて32/32単位で自由に拡張可能。</li>
+</ul>
+</div>
+<div class="panel-head-plain">FEATURES</div>
+<h3>EDIO 64/64、32/32 特徴</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>EtherCATベースで接続が簡単、他の機能モジュールと自由に組み合わせ可能</span></li>
+<li><span class="li-num">02</span><span>EDIO 64/64は入力64点・出力64点、EDIO 32/32は入力32点・出力32点を提供</span></li>
+<li><span class="li-num">03</span><span>COMは16接点1組で構成、入力は双方向(N24/P24)選択可能、出力は単方向(N24)</span></li>
+<li><span class="li-num">04</span><span>IOは32/32単位で増設拡張可能</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section></div>
+<div class="product-inline-wrap" id="edio-inout-detail"><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">06-1 / EDIO IN32、OUT32、IN16/OUT16 — ポート詳細と仕様</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">EDIO IN32、OUT32、IN16/OUT16 ポート詳細</div>
+<div class="panel-body"><img alt="EDIO IN32, OUT32, IN16/OUT16 Port Details" src="../assets/img/edioinout-diagram.png"/><div class="spec-links-row"><button class="spec-modal-trigger" data-modal-open="edio-inout-detail-spec-modal-15" type="button"><span class="ico">▦</span><span>仕様</span></button><div class="spec-modal-overlay" id="edio-inout-detail-spec-modal-15"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="spec-table-grid">
+<div class="spec-group">
+<h4>EDIO IN32、OUT32、IN16/OUT16 仕様</h4>
+<table class="spec-table narrow-th">
+<tbody>
+<tr><th>名称</th><td>EDIO-IN32  /  EDIO-OUT32  /  EDIO-IN16/OUT16</td></tr>
+<tr><th>モジュール型式(IN32)</th><td>入力(32点)</td></tr>
+<tr><th>モジュール型式(OUT32)</th><td>出力(32点)</td></tr>
+<tr><th>モジュール型式(IN16/OUT16)</th><td>入力(16点)、出力(16点)</td></tr>
+<tr><th>電源</th><td>DC24V, 0.7A</td></tr>
+<tr><th>取付方式</th><td>DINレール式</td></tr>
+<tr><th>サイズ</th><td>W : 190.6mm   D : 50mm   H : 42.8mm</td></tr>
+</tbody>
+</table>
+</div>
+<div class="spec-group">
+<h4>EDIO IN32、OUT32、IN16/OUT16 ポート</h4>
+<table class="spec-table narrow-th">
+<thead>
+<tr><th>項目</th><th>構成</th><th>備考</th></tr>
+</thead>
+<tbody>
+<tr style="background:var(--bg-alt);"><th>ロータリースイッチ</th><td>アドレス設定</td><td>—</td></tr>
+<tr style="background:var(--bg-alt);"><th>端子台</th><td>電源とI/O</td><td>—</td></tr>
+<tr><th>EtherCATポート</th><td>INポート</td><td>—</td></tr>
+<tr><th>EtherCATポート</th><td>OUTポート</td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div></div></div></div></div>
+</div>
+<div class="split-text">
+<div class="split-text-intro">
+<h1>EDIO IN32、OUT32、IN16/OUT16 モジュール</h1>
+<p class="lede">Y型端子直結式、入力・出力を個別に選択可能。</p>
+<ul class="bullets">
+<li>用途に応じて純入力(IN32)、純出力(OUT32)、または入出力混合構成(IN16/OUT16)を選択可能。</li>
+</ul>
+</div>
+<div class="panel-head-plain">FEATURES</div>
+<h3>EDIO IN32、OUT32、IN16/OUT16 特徴</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>EtherCATベースで接続が簡単、他の機能モジュールと自由に組み合わせ可能</span></li>
+<li><span class="li-num">02</span><span>EDIO IN32は入力32点、EDIO OUT32は出力32点、EDIO IN16/OUT16は入力16点・出力16点を提供</span></li>
+<li><span class="li-num">03</span><span>COMは16接点1組で構成、入力は双方向(N24/P24)選択可能、出力は単方向(N24)</span></li>
+<li><span class="li-num">04</span><span>用途に応じて入力または出力を個別に選択可能なIO拡張</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section></div>
+<div class="product-inline-wrap" id="aib30-detail"><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">06-1 / AIB 3.0 — ポート詳細と仕様</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">AIB 3.0 ポート詳細</div>
+<div class="panel-body"><img alt="AIB 3.0 Port Details" src="../assets/img/aib30-diagram.png"/><div class="spec-links-row"><button class="spec-modal-trigger" data-modal-open="aib30-detail-spec-modal-16" type="button"><span class="ico">▦</span><span>仕様</span></button><div class="spec-modal-overlay" id="aib30-detail-spec-modal-16"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="spec-table-grid">
+<div class="spec-group">
+<h4>AIB 3.0 仕様</h4>
+<table class="spec-table narrow-th">
+<tbody>
+<tr><th>名称</th><td>AIB3.0_6-axis  /  AIB3.0_3-axis</td></tr>
+<tr><th>モジュール型式(アナログ型)</th><td>CPACK AIB3.0A – 6-axis  /  CPACK AIB3.0A – 3-axis</td></tr>
+<tr><th>モジュール型式(パルス型)</th><td>CPACK AIB3.0P – 6-axis  /  CPACK AIB3.0P – 3-axis</td></tr>
+<tr><th>電源</th><td>DC24V, 0.7A</td></tr>
+<tr><th>サイズ</th><td>W : 46mm   H : 212mm   D : 144.4mm</td></tr>
+</tbody>
+</table>
+</div>
+<div class="spec-group">
+<h4>AIB 3.0 ポート</h4>
+<table class="spec-table narrow-th">
+<thead>
+<tr><th>項目</th><th>構成</th><th>備考</th></tr>
+</thead>
+<tbody>
+<tr style="background:var(--bg-alt);"><th>軸ポート(3軸)</th><td>1段、3ポート、計3個</td><td>HONDA MR-20S</td></tr>
+<tr style="background:var(--bg-alt);"><th>軸ポート(6軸)</th><td>2段、3ポート、計6個</td><td>HONDA MR-20S</td></tr>
+<tr><th>EtherCATポート</th><td>IN1ポート</td><td>—</td></tr>
+<tr><th>EtherCATポート</th><td>OUT1ポート</td><td>—</td></tr>
+<tr><th>MPGポート</th><td>MPG</td><td>HONDA MR-20S</td></tr>
+<tr><th>電源部</th><td>DC24V, 0.7A</td><td>底部</td></tr>
+<tr><th>主軸ポート</th><td>インバータ制御出力:-10V ~ +10V</td><td>底部</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div></div></div></div></div>
+</div>
+<div class="split-text">
+<div class="split-text-intro">
+<h1>AIB 3.0インターフェースモジュール</h1>
+<p class="lede">既存ドライブをEtherCATインターフェースに変換するためのモジュール。</p>
+<ul class="bullets">
+<li>6軸・3軸のサーボ軸インターフェースポートを提供、モジュール底部にアナログ及びパルス式MPGポートを搭載。</li>
+</ul>
+</div>
+<div class="panel-head-plain">FEATURES</div>
+<h3>AIB 3.0 特徴</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>EtherCATベースで接続が簡単、他の機能モジュールと自由に組み合わせ可能</span></li>
+<li><span class="li-num">02</span><span>サーボ軸インターフェースポートは6軸・3軸の2モジュール仕様を提供</span></li>
+<li><span class="li-num">03</span><span>ポート1は右上、ポート2、3はその下に順に配置、ポート4、5、6は左側に上から順に配置</span></li>
+<li><span class="li-num">04</span><span>MPGポートはAIB3.0底部に位置、モジュール型式によりアナログ型またはパルス型</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section></div>
+<div class="product-inline-wrap" id="portablempg-detail"><section class="detail-block alt">
+<div class="container">
+<div class="eyebrow">06-1 / ポータブルMPG — 詳細と仕様</div>
+<div class="split" style="margin-top:16px;">
+<div class="split-media">
+<div class="panel-head">ポータブルMPG 詳細</div>
+<div class="panel-body"><img alt="Portable MPG Details" src="../assets/img/portablempg-diagram.png"/><div class="spec-links-row"><button class="spec-modal-trigger" data-modal-open="portablempg-detail-spec-modal-17" type="button"><span class="ico">▦</span><span>仕様</span></button><div class="spec-modal-overlay" id="portablempg-detail-spec-modal-17"><div class="spec-modal-box"><button class="spec-modal-close" data-modal-close="" type="button">×</button><div class="spec-table-wrap" style="margin-top:16px;">
+<div class="spec-table-grid">
+<div class="spec-group">
+<h4>ポータブルMPG 仕様</h4>
+<table class="spec-table narrow-th">
+<tbody>
+<tr><th>I/O電源</th><td>24V</td></tr>
+<tr><th>重量</th><td>380g</td></tr>
+<tr><th>ケーブル長</th><td>1.5m</td></tr>
+<tr><th>サイズ</th><td>W : 46mm   H : 212mm   D : 144.4mm</td></tr>
+</tbody>
+</table>
+</div>
+<div class="spec-group">
+<h4>ポータブルMPG 比較</h4>
+<table class="spec-table narrow-th">
+<thead>
+<tr><th>項目</th><th>CSMPG-5SV-A</th><th>CSMPG-5SV-B</th><th>CSMPG-5SV-C</th></tr>
+</thead>
+<tbody>
+<tr style="background:var(--bg-alt);"><th>軸</th><td>OFF, X, Y, Z, 4th, 5th<br/>(Max. 5 axes)</td><td>OFF, X, Y, Z, 4th, 5th, 6th<br/>(Max. 6 axes)</td><td>OFF, X, Y, Z, 4th, 5th, 6th<br/>(Max. 6 axes)</td></tr>
+<tr style="background:var(--bg-alt);"><th>倍率</th><td>×1, ×10, ×100</td><td>×1, ×10, ×100</td><td>×1, ×10, ×100</td></tr>
+<tr><th>パルス信号タイプ</th><td>A, A/, B, B/</td><td>A, A/, B, B/</td><td>A, A/, B, B/</td></tr>
+<tr><th>信号タイプ</th><td>BCD型</td><td>ダイレクト型</td><td>ダイレクト型</td></tr>
+<tr style="background:var(--bg-alt);"><th>EMGスイッチ</th><td style="text-align:center;">O</td><td style="text-align:center;">O</td><td style="text-align:center;">O</td></tr>
+<tr style="background:var(--bg-alt);"><th>JOGスイッチ</th><td style="text-align:center;">X</td><td style="text-align:center;">O</td><td style="text-align:center;">X</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div></div></div></div></div>
+</div>
+<div class="split-text">
+<div class="split-text-intro">
+<h1>ポータブルMPG</h1>
+<p class="lede">小型で堅牢な手持ち式手動パルス発生器。</p>
+<ul class="bullets">
+<li>完全密閉の耐ノイズ設計、EMGスイッチ標準搭載、JOGスイッチはオプション対応。</li>
+</ul>
+</div>
+<div class="panel-head-plain">FEATURES</div>
+<h3>ポータブルMPG 特徴</h3>
+<ul class="feature-list">
+<li><span class="li-num">01</span><span>小型・堅牢・軽量設計で快適な操作性</span></li>
+<li><span class="li-num">02</span><span>完全密閉構造、ケーブル長を選択可能</span></li>
+<li><span class="li-num">03</span><span>専用スタンドで使いやすさを向上、耐ノイズ設計であらゆる環境下で高い操作性と品質を確保</span></li>
+<li><span class="li-num">04</span><span>EMGスイッチ標準搭載、JOGスイッチはオプション対応</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section></div>
+<!-- CLIENTS -->
+<section class="section compact-y">
+<div class="container">
+<div class="section-head">
+<div class="eyebrow">Trusted By</div>
+<h2 class="section-title">主要顧客</h2>
+<p class="section-desc">韓国を代表する工作機械メーカー及び研究機関がCSCAM CNCと提携しています。</p>
+</div>
+<div class="client-static-grid">
+<div class="client-logo-card"><img alt="KCNC" src="../assets/img/clients/kcnc.png"/><span class="cname">KCNC</span><span class="cindustry">制御システム</span></div>
+<div class="client-logo-card"><img alt="Hwacheon Machinery" src="../assets/img/clients/hwacheon.png"/><span class="cname">Hwacheon Machinery</span><span class="cindustry">工作機械</span></div>
+<div class="client-logo-card"><img alt="KIMM" src="../assets/img/clients/kimm.png"/><span class="cname">KIMM</span><span class="cindustry">韓国機械材料研究院</span></div>
+<div class="client-logo-card"><img alt="KITECH" src="../assets/img/clients/kitech.png"/><span class="cname">KITECH</span><span class="cindustry">韓国産業技術研究院</span></div>
+<div class="client-logo-card"><img alt="Arum Dentistry" src="../assets/img/clients/arum.png"/><span class="cname">Arum Dentistry</span><span class="cindustry">デジタル歯科</span></div>
+<div class="client-logo-card"><img alt="DOF Robotics" src="../assets/img/clients/dof.png"/><span class="cname">DOF Robotics</span><span class="cindustry">ロボット</span></div>
+<div class="client-logo-card"><img alt="MANIX" src="../assets/img/clients/manix.png"/><span class="cname">MANIX</span><span class="cindustry">精密工作機械</span></div>
+<div class="client-logo-card"><img alt="Kyungwon Engineering" src="../assets/img/clients/kyungwon.png"/><span class="cname">Kyungwon Engineering</span><span class="cindustry">自動化設備</span></div>
+<div class="client-logo-card"><img alt="Robotson" src="../assets/img/clients/robotson.png"/><span class="cname">Robotson</span><span class="cindustry">ロボット自動化</span></div>
+<div class="client-logo-card"><img alt="KNK" src="../assets/img/clients/knk.png"/><span class="cname">KNK</span><span class="cindustry">自動化システム</span></div>
+<div class="client-logo-card"><img alt="iViewKorea" src="../assets/img/clients/iviewkorea.png"/><span class="cname">iViewKorea</span><span class="cindustry">産業用ディスプレイ</span></div>
+<div class="client-logo-card"><img alt="Shinwoo NC Tech" src="../assets/img/clients/shinwoo.png"/><span class="cname">Shinwoo NC Tech</span><span class="cindustry">CNC彫刻機</span></div>
+</div>
+</div>
+</section>
+<!-- CATALOG CTA -->
+<section class="section compact-y alt">
+<div class="container">
+<div class="catalog-cta">
+<div>
+<h3>製品ラインナップをワンストップで確認</h3>
+<p>CSCAM CNC製品カタログPDFをダウンロードするか、資料室で製品マニュアルと図面をご覧ください。</p>
+</div>
+<div class="catalog-cta-actions">
+<a class="btn btn-primary" href="../assets/docs/cscam-cnc-catalog.pdf" rel="noopener" target="_blank">製品カタログPDFをダウンロード</a>
+<a class="btn btn-outline" href="resources.html">資料室へ</a>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTACT -->
+<section class="contact-band" id="contact">
+<div class="container">
+<div class="contact-grid">
+<div class="contact-info-col">
+<div class="eyebrow on-dark">07 / お問い合わせ</div>
+<h2 class="section-title" style="color:#fff;">製品・お見積りお問い合わせ</h2>
+<p class="section-desc" style="color:#b8c4d9;">CNC/モーションコントローラの構成及びお見積りについては、以下の方法でご連絡ください。</p>
+<div class="contact-item">
+<div class="k">電話</div>
+<div class="v">+82-31-737-7600</div>
+</div>
+<div class="contact-item">
+<div class="k">メール</div>
+<div class="v small">info_CNC@cscam.co.kr</div>
+</div>
+<div class="contact-item">
+<div class="k">CNC事業部</div>
+<div class="v small">大韓民国京畿道城南市中院区サギマクゴル路124、SKnテクノパーク509</div>
+</div>
+</div>
+<div class="map-card">
+<iframe allowfullscreen="" class="map-embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=%EA%B2%BD%EA%B8%B0%EB%8F%84+%EC%84%B1%EB%82%A8%EC%8B%9C+%EC%A4%91%EC%9B%90%EA%B5%AC+%EC%82%AC%EA%B8%B0%EB%A7%89%EA%B3%A8%EB%A1%9C+124&amp;hl=en&amp;output=embed" title="CNC Division Map"></iframe>
+<div class="map-label">
+<strong>CNC事業部(城南、韓国)</strong>
+<span class="addr">大韓民国京畿道城南市中院区サギマクゴル路124、SKnテクノパーク509</span>
+          Tel: +82-31-737-7600 · Fax: +82-31-737-2911
+        </div>
+</div>
+</div>
+</div>
+</section>
+<footer class="site-footer">
+<div class="container">
+<div class="foot-top">
+<div class="foot-logo">CS<span>CAM</span> CNC</div>
+<nav class="foot-links">
+<a href="#cnc-controller">CNCコントローラ</a>
+<a href="#motion-controller">モーションコントローラ</a>
+<a href="#servo-drive">サーボモーター/ドライブ</a>
+<a href="#stepmotor-drive">ステップモーター/ドライブ</a>
+<a href="#ethercat-io">EtherCAT IOモジュール</a>
+<a href="resources.html">技術資料</a>
+</nav>
+</div>
+<div class="foot-contact">
+<p><strong>本社</strong> 大韓民国光州広域市光山区平洞産業団地路239-15 <span class="sep">·</span> 電話 : +82-62-946-1900 <span class="sep">·</span> FAX : +82-62-946-1901 <span class="sep">·</span> メール : info@cscam.co.kr</p>
+<p><strong>CNC事業部</strong> 大韓民国京畿道城南市中院区サギマクゴル路124、SKnテクノパーク509 <span class="sep">·</span> 電話 : +82-31-737-7600 <span class="sep">·</span> FAX : +82-31-737-2911 <span class="sep">·</span> メール : info_CNC@cscam.co.kr</p>
+<p class="foot-biz">事業者登録番号 : 220-81-79319</p>
+</div>
+<div class="foot-copy">Copyright © 2024 CSCAM Co., Ltd. All Rights Reserved. <span class="credit">Designed by WebSite.co.kr</span></div>
+</div>
+</footer>
+<script src="../assets/js/main.js"></script>
+<script>
+(function(){
+  window.cscamLocalNavFix = true;
+  var isLocal = location.protocol === "file:";
+  var isGhPages = location.hostname === "cih2000.github.io";
+  if (!isLocal && !isGhPages) return;
+  var map = {
+    "https://lms.cscam.co.kr/jp/index.html": { local: "../../cscam-lms/jp/index.html", gh: "https://cih2000.github.io/cscam-lms/jp/index.html" },
+    "https://3dp.cscam.co.kr/?lang=jp": { local: "../../cscam-3dp/index.html?lang=jp", gh: "https://cih2000.github.io/cscam-3dp/index.html?lang=jp" },
+    "https://laser.cscam.co.kr/?lang=jp": { local: "../../cscam-engraving/index.html?lang=jp", gh: "https://cih2000.github.io/cscam-engraving/index.html?lang=jp" },
+    "https://marking.cscam.co.kr/?lang=jp": { local: "../../cscam-marking/index.html?lang=jp", gh: "https://cih2000.github.io/cscam-marking/index.html?lang=jp" },
+    "https://sw.cscam.co.kr/?lang=jp": { local: "../../cscam-sw/index.html?lang=jp", gh: "https://cih2000.github.io/cscam-sw/index.html?lang=jp" },
+    "https://cscam.co.kr/jp/index.html": { local: "../../cscam-hub/jp/index.html", gh: "https://cih2000.github.io/cscam-hub/jp/index.html" }
+  };
+  document.querySelectorAll(".family-bar-nav a, .drawer a, .brand-wordmark-link").forEach(function(a){
+    var href = a.getAttribute("href");
+    var entry = map[href];
+    if (entry) a.setAttribute("href", isLocal ? entry.local : entry.gh);
+  });
+})();
+</script>
+</body>
+</html>

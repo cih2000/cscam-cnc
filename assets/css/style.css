@@ -6,7 +6,7 @@
    display type, numbered section system, spec-card product grids.
    ============================================================ */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Sans+JP:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap");
 
 :root {
   --navy: #0d1e3d;
@@ -39,7 +39,7 @@ html { scroll-behavior: smooth; }
 [id] { scroll-margin-top: calc(var(--header-h) + 32px + 20px); }
 body {
   margin: 0;
-  font-family: "Inter", "Noto Sans KR", -apple-system, sans-serif;
+  font-family: "Inter", "Noto Sans KR", "Noto Sans JP", -apple-system, sans-serif;
   color: var(--body);
   background: var(--white);
   line-height: 1.6;
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, p { margin: 0; }
 .site-header .container { display: flex; align-items: center; justify-content: space-between; width: 100%; }
 .logo { display: block; line-height: 1.25; }
 .logo small {
-  display: block; font-family: "Inter", "Noto Sans KR", sans-serif; font-size: 10px; font-weight: 500;
+  display: block; font-family: "Inter", "Noto Sans KR", "Noto Sans JP", sans-serif; font-size: 10px; font-weight: 500;
   color: var(--muted); letter-spacing: .04em; margin-bottom: 2px;
 }
 .logo .logo-title {
@@ -95,16 +95,21 @@ h1, h2, h3, h4, h5, p { margin: 0; }
   color: var(--blue);
   letter-spacing: -.01em;
 }
-.gnb { display: flex; gap: 30px; }
+.gnb { display: flex; gap: 26px; }
 .gnb a {
   color: var(--ink);
   font-size: 14px;
   font-weight: 600;
   padding: 4px 0;
   border-bottom: 2px solid transparent;
+  white-space: nowrap;
   transition: color 0.15s, border-color 0.15s;
 }
 .gnb a:hover, .gnb a.active { color: var(--blue); border-color: var(--blue); }
+/* Japanese GNB labels run wider than KO/EN/ZH at the same size; tighten
+   tracking/size/gap so the inline menu keeps fitting on one line longer. */
+html[lang="ja"] .gnb { gap: 20px; }
+html[lang="ja"] .gnb a { font-size: 13px; letter-spacing: -.03em; }
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -123,7 +128,7 @@ h1, h2, h3, h4, h5, p { margin: 0; }
 @media (max-width: 900px) { .site-header { top: 32px; } }
 .header-right { display: flex; align-items: center; gap: 14px; }
 .header-utility { display: flex; align-items: center; gap: 10px; }
-.brand-wordmark { display: flex; align-items: baseline; font-family: Verdana, "Noto Sans KR", sans-serif; font-size: 23px; color: var(--blue); }
+.brand-wordmark { display: flex; align-items: baseline; font-family: Verdana, "Noto Sans KR", "Noto Sans JP", sans-serif; font-size: 23px; color: var(--blue); }
 .brand-wordmark b { font-weight: 700; }
 .brand-wordmark span { font-weight: 400; }
 .brand-divider { width: 1px; height: 36px; background: var(--border); margin: 0 4px; }
@@ -449,7 +454,7 @@ h1, h2, h3, h4, h5, p { margin: 0; }
 /* Client logos, static (no animation) — used for the bottom "주요 고객사" section */
 .client-static-grid { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; }
 .client-static-grid .client-logo-card { flex: 0 0 auto; }
-.client-static-grid .cindustry { display: block; font-family: "Inter", "Noto Sans KR", sans-serif; font-weight: 700; font-size: 11px; color: #0891b2; letter-spacing: .01em; text-align: center; margin-top: -2px; }
+.client-static-grid .cindustry { display: block; font-family: "Inter", "Noto Sans KR", "Noto Sans JP", sans-serif; font-weight: 700; font-size: 11px; color: #0891b2; letter-spacing: .01em; text-align: center; margin-top: -2px; }
 
 /* ---------------- Category section / product spec-card grid ---------------- */
 .cat-section { padding: 56px 0; border-top: 1px solid var(--border); }
@@ -650,7 +655,7 @@ body.modal-open { overflow: hidden; }
 .equip-item:hover { border-color: var(--blue); box-shadow: var(--shadow-md); transform: translateY(-3px); }
 .equip-item .thumb { height: 130px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; }
 .equip-item .thumb img { max-width: 100%; max-height: 100%; object-fit: contain; }
-.equip-item span { font-size: 12.5px; font-weight: 600; color: var(--body); font-family: "Inter", "Noto Sans KR", sans-serif; }
+.equip-item span { font-size: 12.5px; font-weight: 600; color: var(--body); font-family: "Inter", "Noto Sans KR", "Noto Sans JP", sans-serif; }
 
 /* ---------------- CTA / stub / footer ---------------- */
 .detail-cta {
@@ -663,7 +668,7 @@ body.modal-open { overflow: hidden; }
 .btn {
   display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: var(--radius-sm);
   font-size: 13.5px; font-weight: 700; border: 1px solid transparent; cursor: pointer; transition: all .15s;
-  font-family: "Inter", "Noto Sans KR", sans-serif;
+  font-family: "Inter", "Noto Sans KR", "Noto Sans JP", sans-serif;
 }
 .btn-primary { background: var(--blue); color: var(--white); }
 .btn-primary:hover { background: var(--blue-dark); box-shadow: var(--shadow-md); }
@@ -759,6 +764,16 @@ body.modal-open { overflow: hidden; }
   .app-card-img { width: 100%; }
   .section { padding: 64px 0; }
   .detail-cta { flex-direction: column; align-items: flex-start; }
+}
+/* Japanese GNB labels still run wider than KO/EN/ZH even after the tighter
+   tracking/size above, so very narrow desktop windows can run out of room
+   before the normal 720px breakpoint. Switch JP pages to the mobile drawer
+   nav a bit earlier so it never wraps mid-word. */
+@media (max-width: 1180px) {
+  html[lang="ja"] .gnb { position: fixed; top: calc(var(--header-h) + 32px); left: 0; right: 0; background: var(--navy); flex-direction: column; gap: 0; max-height: 0; overflow: hidden; transition: max-height .25s; }
+  html[lang="ja"] .gnb.open { max-height: 420px; }
+  html[lang="ja"] .gnb a { color: rgba(255,255,255,.85); padding: 14px 24px; border-bottom: 1px solid rgba(255,255,255,.08); width: 100%; white-space: normal; }
+  html[lang="ja"] .nav-toggle { display: flex; }
 }
 
 /* ---------------- Resources / 기술자료실 ---------------- */
