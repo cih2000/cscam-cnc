@@ -184,7 +184,7 @@ h1, h2, h3, h4, h5, p { margin: 0; }
 }
 .hero-bg {
   position: absolute; inset: -3%; z-index: 0;
-  background-image: url("../img/hero-factory-new.jpg");
+  background-image: url("../img/hero-product-lineup.jpg");
   background-size: cover;
   background-position: center 35%;
   opacity: 1;
@@ -207,7 +207,7 @@ h1, h2, h3, h4, h5, p { margin: 0; }
   background: linear-gradient(100deg, rgba(13,30,61,.93) 0%, rgba(13,30,61,.68) 38%, rgba(13,30,61,.32) 65%, rgba(13,30,61,.06) 100%);
 }
 .hero .container { position: relative; z-index: 3; width: 100%; padding-top: 60px; padding-bottom: 60px; }
-.hero-row { display: grid; grid-template-columns: 640px 1fr; align-items: start; gap: 6px; }
+.hero-row { display: grid; grid-template-columns: 1fr; align-items: start; gap: 6px; }
 .hero-inner { max-width: 640px; }
 .hero-badge {
   display: inline-flex; align-items: center; gap: 12px;
