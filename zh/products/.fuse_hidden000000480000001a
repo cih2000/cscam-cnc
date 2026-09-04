@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GX-Series | 运动控制器 | CSCAM CNC</title>
+<meta name="description" content="GX-Series &mdash; Motion control meets PLC, redesigning automation.">
+<link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+<div class="family-bar">
+  <div class="family-bar-inner">
+    <span class="family-bar-label">CSCAM CNC事业部</span>
+    <nav class="family-bar-nav">
+      <a href="../index.html" class="active">CNC Controller</a>
+      <a href="../../../cscam-lms/en/index.html">LMS Solution</a>
+      <span class="disabled">Software</span>
+    </nav>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="logo"><small>CSCAM Co., Ltd.</small><div class="logo-title">CNC &amp; MOTION</div></a>
+    <nav class="gnb">
+      <a href="../index.html#cnc-controller">CNC控制器</a>
+      <a href="../index.html#motion-controller" class="active">运动控制器</a>
+      <a href="../index.html#servo-drive">伺服电机/驱动器</a>
+      <a href="../index.html#stepmotor-drive">步进电机/驱动器</a>
+      <a href="../index.html#ethercat-io">EtherCAT IO模块</a>
+      <a href="../resources.html">技术资料</a>
+    </nav>
+    <div class="lang-switch"><a href="../../../products/gx-series.html">KO</a><span class="lang-sep">/</span><a href="../en/products/.fuse_hidden000000480000001a">EN</a><span class="lang-sep">/</span><a href=".fuse_hidden000000480000001a" class="active">CH</a></div>
+    <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="detail-hero">
+  <div class="container grid">
+    <div class="photo-frame"><img src="../../assets/img/card-gx.jpg" alt="GX-Series"></div>
+    <div>
+      <span class="chip">运动控制器 &middot; 03</span>
+      <h1>GX-Series</h1>
+      <p class="lede">Motion control meets PLC &mdash; redesigning automation.</p>
+      <ul class="bullets">
+        <li>Combines high-precision motion control with high-performance sequence control in a single PAC controller, making even complex automation systems easy to program.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="breadcrumb">
+  <div class="container"><a href="../index.html">首页</a><span class="sep">/</span><a href="../index.html#motion-controller">运动控制器</a><span class="sep">/</span><span class="current">GX-Series</span></div>
+</div>
+
+<section class="detail-block alt">
+  <div class="container">
+    <div class="eyebrow">03-1 / GX-Series &mdash; Configuration &amp; Features</div>
+    <div class="split" style="margin-top:16px;">
+      <div class="split-media">
+        <div class="panel-head">GX-S200/S400 Configuration</div>
+        <div class="panel-body"><img src="../../assets/img/gx-config.jpg" alt="GX-S200/S400 Configuration"></div>
+      </div>
+      <div class="split-text">
+        <div class="panel-head-plain">FEATURES</div>
+        <h3>GX-S200/S400 Features</h3>
+        <ul class="feature-list">
+          <li><span class="li-num">01</span><span>High-precision motion control technology</span></li>
+          <li><span class="li-num">02</span><span>High-performance PLC (sequence control) technology</span></li>
+          <li><span class="li-num">03</span><span>Supports up to 4 control systems</span></li>
+          <li><span class="li-num">04</span><span>Simultaneous support for motion commands and G-code</span></li>
+          <li><span class="li-num">05</span><span>Positioning, linear, circular, and helical interpolation</span></li>
+          <li><span class="li-num">06</span><span>Position control, speed control, synchronous control</span></li>
+          <li><span class="li-num">07</span><span>Supports MASTER-K and MELSEC upper-level communication protocols</span></li>
+          <li><span class="li-num">08</span><span>Supports powerful ladder-style PLC programming</span></li>
+          <li><span class="li-num">09</span><span>Supports analog/pulse interface</span></li>
+          <li><span class="li-num">10</span><span>USB, Ethernet, RS-232C communication</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="detail-block">
+  <div class="container">
+    <div class="eyebrow">03-2 / GX-Series &mdash; Specifications</div>
+    <div class="spec-table-wrap" style="margin-top:16px;">
+      <div class="stw-title"><span class="ico">&#9638;</span>GX-S200, GX-S400 Specifications</div>
+      <div class="spec-table-grid">
+        <div class="spec-group">
+          <h4>GX-S200</h4>
+          <table class="spec-table">
+            <tbody>
+              <tr><th>Control Axes</th><td>2 Axis</td></tr>
+              <tr><th>I/O Points</th><td>IN16/OUT16</td></tr>
+              <tr><th>Control Type</th><td>Analog / Pulse</td></tr>
+              <tr><th>USB</th><td>1 Port</td></tr>
+              <tr><th>RS-232C</th><td>2 Port</td></tr>
+              <tr><th>ETHERNET</th><td>1 Port</td></tr>
+              <tr><th>MEMORY</th><td>4MB</td></tr>
+              <tr><th>I/O Expansion</th><td>Serial I/O IN32/OUT32</td></tr>
+              <tr><th>MPG</th><td>1 Port</td></tr>
+              <tr><th>Input Power</th><td>DC 24V (1.3A)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="spec-group">
+          <h4>GX-S400</h4>
+          <table class="spec-table">
+            <tbody>
+              <tr><th>Control Axes</th><td>4 Axis</td></tr>
+              <tr><th>I/O Points</th><td>IN48/OUT48</td></tr>
+              <tr><th>Control Type</th><td>Analog / Pulse</td></tr>
+              <tr><th>USB</th><td>1 Port</td></tr>
+              <tr><th>RS-232C</th><td>2 Port</td></tr>
+              <tr><th>ETHERNET</th><td>1 Port</td></tr>
+              <tr><th>MEMORY</th><td>4MB</td></tr>
+              <tr><th>I/O Expansion</th><td>Serial I/O IN32/OUT32</td></tr>
+              <tr><th>MPG</th><td>1 Port</td></tr>
+              <tr><th>Input Power</th><td>DC 24V (1.3A)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="detail-block alt">
+  <div class="container">
+    <div class="eyebrow">03-3 / GX-Series &mdash; Applications</div>
+    <h2 class="section-title" style="font-size:26px;margin-top:10px;">GX-S200/S400 Applications</h2>
+    <div class="equip-grid" style="margin-top:32px;">
+      <div class="equip-item">
+        <div class="thumb"><img src="../../assets/img/gx-app1.jpg" alt="Gantry Loader"></div>
+        <span>Gantry Loader</span>
+      </div>
+      <div class="equip-item">
+        <div class="thumb"><img src="../../assets/img/gx-app2.jpg" alt="Delta Robot"></div>
+        <span>Delta Robot</span>
+      </div>
+      <div class="equip-item">
+        <div class="thumb"><img src="../../assets/img/gx-app3.jpg" alt="Cartesian Robot"></div>
+        <span>Cartesian Robot</span>
+      </div>
+      <div class="equip-item">
+        <div class="thumb"><img src="../../assets/img/gx-app4.jpg" alt="Dispenser"></div>
+        <span>Dispenser</span>
+      </div>
+      <div class="equip-item">
+        <div class="thumb"><img src="../../assets/img/gx-app5.jpg" alt="SCARA Robot"></div>
+        <span>SCARA Robot</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="contact">
+  <div class="container">
+    <div class="detail-cta">
+      <div>
+        <h3>Inquire About GX-Series</h3>
+        <p>For configuration and quotes, browse the full motion controller lineup as well.</p>
+      </div>
+      <div class="detail-cta-actions">
+        <a href="../index.html#motion-controller" class="btn btn-ghost">Back to 运动控制器</a>
+        <a href="../resources.html?q=gx-series" class="btn btn-ghost">Related Downloads</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-top">
+      <div class="foot-logo">CS<span>CAM</span> CNC</div>
+      <nav class="foot-links">
+        <a href="../index.html#cnc-controller">CNC控制器</a>
+        <a href="../index.html#motion-controller">运动控制器</a>
+        <a href="../index.html#servo-drive">伺服电机/驱动器</a>
+        <a href="../index.html#stepmotor-drive">步进电机/驱动器</a>
+        <a href="../index.html#ethercat-io">EtherCAT IO模块</a>
+        <a href="../resources.html">技术资料</a>
+      </nav>
+    </div>
+    <div class="foot-contact">
+      <p><strong>Head Office</strong> 239-15, Pyeongdong-sandan-ro, Gwangsan-gu, Gwangju, Korea <span class="sep">&middot;</span> Tel : 062-946-1900 <span class="sep">&middot;</span> Fax : 062-946-1901 <span class="sep">&middot;</span> Email : info@cscam.co.kr</p>
+      <p><strong>CNC Division</strong> 509, Biz-dong, SKn Technopark, 124 Sagimakgol-ro, Jungwon-gu, Seongnam-si, Korea <span class="sep">&middot;</span> Tel : 031-737-7600 <span class="sep">&middot;</span> Fax : 031-737-2911 <span class="sep">&middot;</span> Email : info_CNC@cscam.co.kr</p>
+      <p class="foot-biz">营业执照编号 : 220-81-79319</p>
+    </div>
+    <div class="foot-copy">Copyright &copy; 2024 CSCAM Co., Ltd. All Rights Reserved. <span class="credit">Designed by WebSite.co.kr</span></div>
+  </div>
+</footer>
+
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portable MPG | EtherCAT IO模块 | CSCAM CNC</title>
+<meta name="description" content="Portable MPG &mdash; A compact, rugged handheld manual pulse generator, in a 3-model CSMPG-5SV-A/B/C lineup.">
+<link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+<div class="family-bar">
+  <div class="family-bar-inner">
+    <span class="family-bar-label">CSCAM CNC事业部</span>
+    <nav class="family-bar-nav">
+      <a href="../index.html" class="active">CNC Controller</a>
+      <a href="../../../cscam-lms/en/index.html">LMS Solution</a>
+      <span class="disabled">Software</span>
+    </nav>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="logo"><small>CSCAM Co., Ltd.</small><div class="logo-title">CNC &amp; MOTION</div></a>
+    <nav class="gnb">
+      <a href="../index.html#cnc-controller">CNC控制器</a>
+      <a href="../index.html#motion-controller">运动控制器</a>
+      <a href="../index.html#servo-drive">伺服电机/驱动器</a>
+      <a href="../index.html#stepmotor-drive">步进电机/驱动器</a>
+      <a href="../index.html#ethercat-io" class="active">EtherCAT IO模块</a>
+      <a href="../resources.html">技术资料</a>
+    </nav>
+    <div class="lang-switch"><a href="../../../products/portablempg.html">KO</a><span class="lang-sep">/</span><a href="../en/products/.fuse_hidden0000004a0000001b">EN</a><span class="lang-sep">/</span><a href=".fuse_hidden0000004a0000001b" class="active">CH</a></div>
+    <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="detail-hero">
+  <div class="container grid">
+    <div class="photo-frame"><img src="../../assets/img/card-portablempg.jpg" alt="Portable MPG"></div>
+    <div>
+      <span class="chip">EtherCAT IO模块 &middot; 06</span>
+      <h1>Portable MPG</h1>
+      <p class="lede">A compact, rugged handheld manual pulse generator.</p>
+      <ul class="bullets">
+        <li>Fully sealed against noise, with a standard EMG Switch and an optional JOG Switch.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="breadcrumb">
+  <div class="container"><a href="../index.html">首页</a><span class="sep">/</span><a href="../index.html#ethercat-io">EtherCAT IO模块</a><span class="sep">/</span><span class="current">Portable MPG</span></div>
+</div>
+
+<section class="detail-block alt">
+  <div class="container">
+    <div class="eyebrow">06-1 / Portable MPG &mdash; Details &amp; Specifications</div>
+    <div class="split" style="margin-top:16px;">
+      <div class="split-media">
+        <div class="panel-head">Portable MPG Details</div>
+        <div class="panel-body"><img src="../../assets/img/portablempg-diagram.jpg" alt="Portable MPG Details"></div>
+      </div>
+      <div class="split-text">
+        <div class="panel-head-plain">FEATURES</div>
+        <h3>Portable MPG Features</h3>
+        <ul class="feature-list">
+          <li><span class="li-num">01</span><span>Compact, highly durable, and lightweight for comfortable operation</span></li>
+          <li><span class="li-num">02</span><span>Fully sealed construction, with a choice of cable lengths</span></li>
+          <li><span class="li-num">03</span><span>A dedicated holder improves usability, and its noise-resistant design delivers high operability and quality in any environment</span></li>
+          <li><span class="li-num">04</span><span>An EMG Switch is included as standard, with a JOG Switch available as an option</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="detail-block">
+  <div class="container">
+    <div class="eyebrow">06-2 / Portable MPG &mdash; Specifications &amp; Comparison</div>
+    <div class="spec-table-wrap" style="margin-top:16px;">
+      <div class="spec-table-grid">
+        <div class="spec-group">
+          <h4>Portable MPG Specifications</h4>
+          <table class="spec-table narrow-th">
+            <tbody>
+              <tr><th>I/O Power</th><td>24V</td></tr>
+              <tr><th>Weight</th><td>380g</td></tr>
+              <tr><th>Cable Length</th><td>1.5m</td></tr>
+              <tr><th>Dimensions</th><td>W : 46mm &nbsp; H : 212mm &nbsp; D : 144.4mm</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="spec-group">
+          <h4>Portable MPG Comparison</h4>
+          <table class="spec-table narrow-th">
+            <thead>
+              <tr><th>Item</th><th>CSMPG-5SV-A</th><th>CSMPG-5SV-B</th><th>CSMPG-5SV-C</th></tr>
+            </thead>
+            <tbody>
+              <tr style="background:var(--bg-alt);"><th>AXIS</th><td>OFF, X, Y, Z, 4th, 5th<br>(Max. 5 axes)</td><td>OFF, X, Y, Z, 4th, 5th, 6th<br>(Max. 6 axes)</td><td>OFF, X, Y, Z, 4th, 5th, 6th<br>(Max. 6 axes)</td></tr>
+              <tr style="background:var(--bg-alt);"><th>Multiple</th><td>&times;1, &times;10, &times;100</td><td>&times;1, &times;10, &times;100</td><td>&times;1, &times;10, &times;100</td></tr>
+              <tr><th>Pulse Signal Type</th><td>A, A/, B, B/</td><td>A, A/, B, B/</td><td>A, A/, B, B/</td></tr>
+              <tr><th>Signal Type</th><td>BCD Type</td><td>Direct Type</td><td>Direct Type</td></tr>
+              <tr style="background:var(--bg-alt);"><th>EMG Switch</th><td style="text-align:center;">O</td><td style="text-align:center;">O</td><td style="text-align:center;">O</td></tr>
+              <tr style="background:var(--bg-alt);"><th>JOG Switch</th><td style="text-align:center;">X</td><td style="text-align:center;">O</td><td style="text-align:center;">X</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="contact">
+  <div class="container">
+    <div class="detail-cta">
+      <div>
+        <h3>Inquire About Portable MPG</h3>
+        <p>For configuration and quotes, browse the full EtherCAT IO module lineup as well.</p>
+      </div>
+      <div class="detail-cta-actions">
+        <a href="../index.html#ethercat-io" class="btn btn-ghost">Back to EtherCAT IO模块</a>
+        <a href="../resources.html?q=portablempg" class="btn btn-ghost">Related Downloads</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-top">
+      <div class="foot-logo">CS<span>CAM</span> CNC</div>
+      <nav class="foot-links">
+        <a href="../index.html#cnc-controller">CNC控制器</a>
+        <a href="../index.html#motion-controller">运动控制器</a>
+        <a href="../index.html#servo-drive">伺服电机/驱动器</a>
+        <a href="../index.html#stepmotor-drive">步进电机/驱动器</a>
+        <a href="../index.html#ethercat-io">EtherCAT IO模块</a>
+        <a href="../resources.html">技术资料</a>
+      </nav>
+    </div>
+    <div class="foot-contact">
+      <p><strong>Head Office</strong> 239-15, Pyeongdong-sandan-ro, Gwangsan-gu, Gwangju, Korea <span class="sep">&middot;</span> Tel : 062-946-1900 <span class="sep">&middot;</span> Fax : 062-946-1901 <span class="sep">&middot;</span> Email : info@cscam.co.kr</p>
+      <p><strong>CNC Division</strong> 509, Biz-dong, SKn Technopark, 124 Sagimakgol-ro, Jungwon-gu, Seongnam-si, Korea <span class="sep">&middot;</span> Tel : 031-737-7600 <span class="sep">&middot;</span> Fax : 031-737-2911 <span class="sep">&middot;</span> Email : info_CNC@cscam.co.kr</p>
+      <p class="foot-biz">营业执照编号 : 220-81-79319</p>
+    </div>
+    <div class="foot-copy">Copyright &copy; 2024 CSCAM Co., Ltd. All Rights Reserved. <span class="credit">Designed by WebSite.co.kr</span></div>
+  </div>
+</footer>
+
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>

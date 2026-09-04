@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SD Series | 伺服电机/驱动器 | CSCAM CNC</title>
+<meta name="description" content="SD Series &mdash; From 400W to 11kW, a full digital servo completed on a single platform.">
+<link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+<div class="family-bar">
+  <div class="family-bar-inner">
+    <span class="family-bar-label">CSCAM CNC事业部</span>
+    <nav class="family-bar-nav">
+      <a href="../index.html" class="active">CNC Controller</a>
+      <a href="../../../cscam-lms/en/index.html">LMS Solution</a>
+      <span class="disabled">Software</span>
+    </nav>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="logo"><small>CSCAM Co., Ltd.</small><div class="logo-title">CNC &amp; MOTION</div></a>
+    <nav class="gnb">
+      <a href="../index.html#cnc-controller">CNC控制器</a>
+      <a href="../index.html#motion-controller">运动控制器</a>
+      <a href="../index.html#servo-drive" class="active">伺服电机/驱动器</a>
+      <a href="../index.html#stepmotor-drive">步进电机/驱动器</a>
+      <a href="../index.html#ethercat-io">EtherCAT IO模块</a>
+      <a href="../resources.html">技术资料</a>
+    </nav>
+    <div class="lang-switch"><a href="../../../products/sd-series.html">KO</a><span class="lang-sep">/</span><a href="../en/products/.fuse_hidden0000004c0000001c">EN</a><span class="lang-sep">/</span><a href=".fuse_hidden0000004c0000001c" class="active">CH</a></div>
+    <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="detail-hero">
+  <div class="container grid">
+    <div class="photo-frame"><img src="../../assets/img/card-sdseries.jpg" alt="SD Series"></div>
+    <div>
+      <span class="chip">伺服电机/驱动器 &middot; 04</span>
+      <h1>SD Series</h1>
+      <p class="lede">From 400W to 11kW, a full digital servo completed on a single platform.</p>
+      <ul class="bullets">
+        <li>Integrates freely with any upper-level control environment, from EtherCAT to Analog, Pulse, I/O, and MODBUS.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="breadcrumb">
+  <div class="container"><a href="../index.html">首页</a><span class="sep">/</span><a href="../index.html#servo-drive">伺服电机/驱动器</a><span class="sep">/</span><span class="current">SD Series</span></div>
+</div>
+
+<section class="stub-block">
+  <div class="container">
+    <div class="stub-icon">&hellip;</div>
+    <h2>Detailed Content Coming Soon</h2>
+    <p>Detailed specifications, configuration diagrams, and application examples for the SD Series will be added in a future update.</p>
+    <a href="../index.html#servo-drive" class="btn btn-primary">Back to 伺服电机/驱动器</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-top">
+      <div class="foot-logo">CS<span>CAM</span> CNC</div>
+      <nav class="foot-links">
+        <a href="../index.html#cnc-controller">CNC控制器</a>
+        <a href="../index.html#motion-controller">运动控制器</a>
+        <a href="../index.html#servo-drive">伺服电机/驱动器</a>
+        <a href="../index.html#stepmotor-drive">步进电机/驱动器</a>
+        <a href="../index.html#ethercat-io">EtherCAT IO模块</a>
+        <a href="../resources.html">技术资料</a>
+      </nav>
+    </div>
+    <div class="foot-contact">
+      <p><strong>Head Office</strong> 239-15, Pyeongdong-sandan-ro, Gwangsan-gu, Gwangju, Korea <span class="sep">&middot;</span> Tel : 062-946-1900 <span class="sep">&middot;</span> Fax : 062-946-1901 <span class="sep">&middot;</span> Email : info@cscam.co.kr</p>
+      <p><strong>CNC Division</strong> 509, Biz-dong, SKn Technopark, 124 Sagimakgol-ro, Jungwon-gu, Seongnam-si, Korea <span class="sep">&middot;</span> Tel : 031-737-7600 <span class="sep">&middot;</span> Fax : 031-737-2911 <span class="sep">&middot;</span> Email : info_CNC@cscam.co.kr</p>
+      <p class="foot-biz">营业执照编号 : 220-81-79319</p>
+    </div>
+    <div class="foot-copy">Copyright &copy; 2024 CSCAM Co., Ltd. All Rights Reserved. <span class="credit">Designed by WebSite.co.kr</span></div>
+  </div>
+</footer>
+
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>

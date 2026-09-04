@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>900A | 运动控制器 | CSCAM CNC</title>
+<meta name="description" content="900A / 900A-T &mdash; Compact yet secure. A Linux-based pulse interface CNC.">
+<link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+<div class="family-bar">
+  <div class="family-bar-inner">
+    <span class="family-bar-label">CSCAM CNC事业部</span>
+    <nav class="family-bar-nav">
+      <a href="../index.html" class="active">CNC Controller</a>
+      <a href="../../../cscam-lms/en/index.html">LMS Solution</a>
+      <span class="disabled">Software</span>
+    </nav>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="logo"><small>CSCAM Co., Ltd.</small><div class="logo-title">CNC &amp; MOTION</div></a>
+    <nav class="gnb">
+      <a href="../index.html#cnc-controller">CNC控制器</a>
+      <a href="../index.html#motion-controller" class="active">运动控制器</a>
+      <a href="../index.html#servo-drive">伺服电机/驱动器</a>
+      <a href="../index.html#stepmotor-drive">步进电机/驱动器</a>
+      <a href="../index.html#ethercat-io">EtherCAT IO模块</a>
+      <a href="../resources.html">技术资料</a>
+    </nav>
+    <div class="lang-switch"><a href="../../../products/900a.html">KO</a><span class="lang-sep">/</span><a href="../en/products/.fuse_hidden0000003a00000013">EN</a><span class="lang-sep">/</span><a href=".fuse_hidden0000003a00000013" class="active">CH</a></div>
+    <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="detail-hero">
+  <div class="container grid">
+    <div class="photo-frame"><img src="../../assets/img/card-900a.jpg" alt="900A"></div>
+    <div>
+      <span class="chip">运动控制器 &middot; 03</span>
+      <h1>900A</h1>
+      <p class="lede">Compact yet secure &mdash; a Linux-based pulse interface CNC.</p>
+      <ul class="bullets">
+        <li>Compact dedicated hardware paired with Linux-based software minimizes installation space while eliminating virus threats at the source.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="breadcrumb">
+  <div class="container"><a href="../index.html">首页</a><span class="sep">/</span><a href="../index.html#motion-controller">运动控制器</a><span class="sep">/</span><span class="current">900A</span></div>
+</div>
+
+<section class="detail-block alt">
+  <div class="container">
+    <div class="eyebrow">03-1 / 900A &mdash; Configuration &amp; Features</div>
+    <div class="split" style="margin-top:16px;">
+      <div class="split-media">
+        <div class="panel-head">900A / 900A-T Configuration</div>
+        <div class="panel-body"><img src="../../assets/img/900a-config.jpg" alt="900A / 900A-T Configuration"></div>
+      </div>
+      <div class="split-text">
+        <div class="panel-head-plain">FEATURES</div>
+        <h3>900A Features: Pulse Interface CNC</h3>
+        <p style="font-size:13.5px;color:var(--body);line-height:1.7;margin-bottom:18px;">A virus-resistant controller built from compact dedicated hardware designed to minimize footprint, running software in a Linux environment.</p>
+        <ul class="feature-list">
+          <li><span class="li-num">01</span><span>Provides a motion API library for application development</span></li>
+          <li><span class="li-num">02</span><span>All-in-one 5-axis controller &mdash; build 5-axis equipment with minimal cost and effort</span></li>
+          <li><span class="li-num">03</span><span>Built-in 4-channel A/D and 4-channel D/A modules</span></li>
+          <li><span class="li-num">04</span><span>Implements analog voltage output for sensors, multi-inverters, and laser power control</span></li>
+        </ul>
+        <a class="video-link" href="https://youtu.be/QYUK9ya0VPc?t=15" target="_blank" rel="noopener">
+          <span class="play-ico">&#9654;</span>900A Wiring Video<span class="yt-badge"><svg viewBox="0 0 24 17" fill="currentColor"><path d="M23.5 2.5a3 3 0 0 0-2.1-2.1C19.5 0 12 0 12 0S4.5 0 2.6.4A3 3 0 0 0 .5 2.5 31 31 0 0 0 0 8.5a31 31 0 0 0 .5 6 3 3 0 0 0 2.1 2.1C4.5 17 12 17 12 17s7.5 0 9.4-.4a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-6 31 31 0 0 0-.5-6zM9.5 12V5l6.3 3.5z"/></svg>YouTube</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="detail-block">
+  <div class="container">
+    <div class="eyebrow">03-2 / 900A &mdash; Specifications</div>
+    <div class="spec-table-wrap" style="margin-top:16px;">
+      <div class="stw-title"><span class="ico">&#9638;</span>900A / 900A-T Specifications</div>
+      <div class="spec-table-grid">
+        <div class="spec-group">
+          <h4>MOTION CPU (Common)</h4>
+          <table class="spec-table">
+            <tbody>
+              <tr><th>CPU</th><td>Dual ARM Cortex-A15 1.5Ghz</td></tr>
+              <tr><th>DISPLAY</th><td>HDMI</td></tr>
+              <tr><th>USB 1</th><td>USB2.0 x 4 PORT</td></tr>
+              <tr><th>USB 2</th><td>Micro USB x 1 PORT</td></tr>
+              <tr><th>ETHERNET</th><td>10/100/1000 1-PORT</td></tr>
+              <tr><th>FLASH MEMORY</th><td>eMMC 8GB (Option 32GB)</td></tr>
+              <tr><th>MEMORY</th><td>2GB DDR3L (256M x 16)</td></tr>
+              <tr><th>MICRO SD CARD</th><td>SD Card x 1EA</td></tr>
+              <tr><th>INTERFACE</th><td>HSSPI (High Speed Serial Peripheral Interface)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="spec-group">
+          <h4>MOTION AXIS (Common)</h4>
+          <table class="spec-table">
+            <tbody>
+              <tr><th>Control Axes</th><td>1 ~ 5 AXIS</td></tr>
+              <tr><th>Pulse Output Type</th><td>1-pulse (STEP/DIR), 2-pulse (CW/CCW)</td></tr>
+              <tr><th>Control voltage</th><td>24VDC &plusmn;10%, 0.8A</td></tr>
+              <tr><th>Encoder</th><td>Line driver input</td></tr>
+              <tr><th>AXIS I/O</th><td>Servo drive ready, alarm / Servo drive s-on, alarm-reset</td></tr>
+              <tr><th>Spindle Speed</th><td>&plusmn;10V, 14bit Analog output</td></tr>
+              <tr><th>Analog Input *</th><td>14bit 4CH (&plusmn;10V)</td></tr>
+              <tr><th>Analog Output *</th><td>14bit 4CH (&plusmn;10V)</td></tr>
+              <tr><th>LED Display</th><td>Servo on LED, Servo ready LED / Servo alarm LED, FND state display</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="spec-group">
+          <h4>900A I/O</h4>
+          <table class="spec-table">
+            <tbody>
+              <tr><th>Digital Input</th><td>40 Point, 24V 7mA</td></tr>
+              <tr><th>Digital Output</th><td>32 Point, Transistor, 24V 0.5A</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="spec-group">
+          <h4>900A-T I/O</h4>
+          <table class="spec-table">
+            <tbody>
+              <tr><th>Digital Input</th><td>32 Point, 24V 7mA</td></tr>
+              <tr><th>Digital Output</th><td>18 Point (Tr3/Relay15), 24V 0.5A</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="detail-block alt">
+  <div class="container">
+    <div class="eyebrow">03-3 / 900A &mdash; Applications</div>
+    <h2 class="section-title" style="font-size:26px;margin-top:10px;">900A Applications</h2>
+    <div class="equip-grid" style="margin-top:32px;">
+      <div class="equip-item">
+        <div class="thumb"><img src="../../assets/img/900a-app1.jpg" alt="Desktop Robot"></div>
+        <span>Desktop Robot</span>
+      </div>
+      <div class="equip-item">
+        <div class="thumb"><img src="../../assets/img/900a-app2.jpg" alt="Dental Milling Machine"></div>
+        <span>Dental Milling Machine</span>
+      </div>
+      <div class="equip-item">
+        <div class="thumb"><img src="../../assets/img/900a-app3.jpg" alt="Pick and Place"></div>
+        <span>Pick and Place</span>
+      </div>
+      <div class="equip-item">
+        <div class="thumb"><img src="../../assets/img/900a-app4.jpg" alt="Glass Scribing Machine"></div>
+        <span>Glass Scribing Machine</span>
+      </div>
+      <div class="equip-item">
+        <div class="thumb"><img src="../../assets/img/900a-app5.jpg" alt="VR Glasses Lens Sealing"></div>
+        <span>VR Glasses Lens Sealing</span>
+      </div>
+      <div class="equip-item">
+        <div class="thumb"><img src="../../assets/img/900a-app6.jpg" alt="Phone Glass Sealing"></div>
+        <span>Phone Glass Sealing</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="contact">
+  <div class="container">
+    <div class="detail-cta">
+      <div>
+        <h3>Inquire About 900A</h3>
+        <p>For configuration and quotes, browse the full motion controller lineup as well.</p>
+      </div>
+      <div class="detail-cta-actions">
+        <a href="../index.html#motion-controller" class="btn btn-ghost">Back to 运动控制器</a>
+        <a href="../resources.html?q=900a" class="btn btn-ghost">Related Downloads</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-top">
+      <div class="foot-logo">CS<span>CAM</span> CNC</div>
+      <nav class="foot-links">
+        <a href="../index.html#cnc-controller">CNC控制器</a>
+        <a href="../index.html#motion-controller">运动控制器</a>
+        <a href="../index.html#servo-drive">伺服电机/驱动器</a>
+        <a href="../index.html#stepmotor-drive">步进电机/驱动器</a>
+        <a href="../index.html#ethercat-io">EtherCAT IO模块</a>
+        <a href="../resources.html">技术资料</a>
+      </nav>
+    </div>
+    <div class="foot-contact">
+      <p><strong>Head Office</strong> 239-15, Pyeongdong-sandan-ro, Gwangsan-gu, Gwangju, Korea <span class="sep">&middot;</span> Tel : 062-946-1900 <span class="sep">&middot;</span> Fax : 062-946-1901 <span class="sep">&middot;</span> Email : info@cscam.co.kr</p>
+      <p><strong>CNC Division</strong> 509, Biz-dong, SKn Technopark, 124 Sagimakgol-ro, Jungwon-gu, Seongnam-si, Korea <span class="sep">&middot;</span> Tel : 031-737-7600 <span class="sep">&middot;</span> Fax : 031-737-2911 <span class="sep">&middot;</span> Email : info_CNC@cscam.co.kr</p>
+      <p class="foot-biz">营业执照编号 : 220-81-79319</p>
+    </div>
+    <div class="foot-copy">Copyright &copy; 2024 CSCAM Co., Ltd. All Rights Reserved. <span class="credit">Designed by WebSite.co.kr</span></div>
+  </div>
+</footer>
+
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>
