@@ -118,5 +118,39 @@
   });
 })();
 </script>
+<script>
+(function(){
+  if (window.cscamProdNavFixInstalled) return;
+  window.cscamProdNavFixInstalled = true;
+  function cscamProdNavFixApply(){
+    var host = location.hostname;
+    var isProdRoot = (host === "www.cscam.co.kr" || host === "cscam.co.kr");
+    if (!isProdRoot) return;
+    var domainMap = {
+      "cscam.co.kr": "",
+      "www.cscam.co.kr": "",
+      "cnc.cscam.co.kr": "/cnc",
+      "lms.cscam.co.kr": "/lms",
+      "3dp.cscam.co.kr": "/3dp",
+      "laser.cscam.co.kr": "/laser",
+      "marking.cscam.co.kr": "/marking",
+      "sw.cscam.co.kr": "/sw"
+    };
+    document.querySelectorAll("a[href]").forEach(function(a){
+      var href = a.getAttribute("href");
+      if (!href || !/^https?:\/\//i.test(href)) return;
+      var u;
+      try { u = new URL(href); } catch(e) { return; }
+      if (!Object.prototype.hasOwnProperty.call(domainMap, u.hostname)) return;
+      var prefix = domainMap[u.hostname];
+      var newHref = prefix + u.pathname + u.search + u.hash;
+      if (newHref === "") newHref = "/";
+      a.setAttribute("href", newHref);
+    });
+  }
+  cscamProdNavFixApply();
+  window.addEventListener("load", cscamProdNavFixApply);
+})();
+</script>
 </body>
 </html>
