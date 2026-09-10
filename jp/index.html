@@ -2360,5 +2360,64 @@
   window.addEventListener("load", cscamProdNavFixApply);
 })();
 </script>
+<script>
+// 모바일망 안정화: CNC/LMS/3DP/레이저/마킹/SW/허브 간 서브도메인 이동 링크는
+// 일부 모바일 통신사 환경에서 캐시된 오류 응답이나 순간적인 DNS/프록시 문제로
+// 첫 클릭에 깨진 화면이 뜨는 경우가 있음. 실제 이동 전에 캐시를 무시한 확인
+// 요청을 한 번 보내고, 진짜 네트워크 오류일 때만 한 번 더 재시도한 뒤,
+// 캐시 우회용 파라미터를 붙여 이동시켜 오래된 캐시 응답을 다시 받지 않도록 함.
+(function(){
+  if (window.cscamSafeCrossNavInstalled) return;
+  window.cscamSafeCrossNavInstalled = true;
+  var CSCAM_DOMAINS = {
+    "cscam.co.kr":1, "www.cscam.co.kr":1, "cnc.cscam.co.kr":1, "lms.cscam.co.kr":1,
+    "3dp.cscam.co.kr":1, "laser.cscam.co.kr":1, "marking.cscam.co.kr":1, "sw.cscam.co.kr":1
+  };
+  function isCrossSiteLink(a){
+    if (!a) return false;
+    var raw = a.getAttribute("href") || "";
+    if (!/^https?:\/\//i.test(raw)) return false;
+    var u;
+    try { u = new URL(a.href); } catch(e) { return false; }
+    return !!CSCAM_DOMAINS[u.hostname] && u.hostname !== location.hostname;
+  }
+  function bustUrl(href){
+    var sep = href.indexOf("?") === -1 ? "?" : "&";
+    return href + sep + "_r=" + Date.now();
+  }
+  function handleClick(e){
+    var a = e.currentTarget;
+    if (!isCrossSiteLink(a)) return;
+    e.preventDefault();
+    var href = a.href;
+    var target = a.target;
+    function go(){
+      var dest = bustUrl(href);
+      if (target === "_blank") { window.open(dest, "_blank"); } else { location.href = dest; }
+    }
+    try {
+      fetch(href, { mode: "no-cors", cache: "no-store" }).then(go).catch(function(){
+        setTimeout(function(){
+          fetch(href, { mode: "no-cors", cache: "no-store" }).then(go).catch(go);
+        }, 600);
+      });
+    } catch(err) { go(); }
+  }
+  function install(){
+    document.querySelectorAll("a[href]").forEach(function(a){
+      if (a.__cscamSafeNavBound) return;
+      if (!isCrossSiteLink(a)) return;
+      a.__cscamSafeNavBound = true;
+      a.addEventListener("click", handleClick);
+    });
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", install);
+  } else {
+    install();
+  }
+  window.addEventListener("load", install);
+})();
+</script>
 </body>
 </html>
