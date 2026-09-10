@@ -14,11 +14,11 @@
     <span class="family-bar-label">CSCAM CNC 사업부</span>
     <nav class="family-bar-nav">
       <a href="../index.html" class="active">CNC Controller</a>
-      <a href="https://lms.cscam.co.kr/">LMS Solution</a>
-      <a href="https://3dp.cscam.co.kr/">3D Printer</a>
-      <a href="https://laser.cscam.co.kr/">Laser Patterning</a>
-      <a href="https://marking.cscam.co.kr/">Marking Machine</a>
-      <a href="https://sw.cscam.co.kr/">SW Solution</a>
+      <a href="https://cscam.co.kr/lms/">LMS Solution</a>
+      <a href="https://cscam.co.kr/3dp/">3D Printer</a>
+      <a href="https://cscam.co.kr/laser/">Laser Patterning</a>
+      <a href="https://cscam.co.kr/marking/">Marking Machine</a>
+      <a href="https://cscam.co.kr/sw/">SW Solution</a>
     </nav>
   </div>
 </div>
@@ -498,10 +498,10 @@
   var isGhPages = location.hostname === "cih2000.github.io";
   if (!isLocal && !isGhPages) return;
   var map = {
-    "https://lms.cscam.co.kr/": { local: "../../cscam-lms/index.html", gh: "https://cih2000.github.io/cscam-lms/index.html" },
-    "https://3dp.cscam.co.kr/": { local: "../../cscam-3dp/index.html", gh: "https://cih2000.github.io/cscam-3dp/index.html" },
-    "https://laser.cscam.co.kr/": { local: "../../cscam-engraving/index.html", gh: "https://cih2000.github.io/cscam-engraving/index.html" },
-    "https://marking.cscam.co.kr/": { local: "../../cscam-marking/index.html", gh: "https://cih2000.github.io/cscam-marking/index.html" }
+    "https://cscam.co.kr/lms/": { local: "../../cscam-lms/index.html", gh: "https://cih2000.github.io/cscam-lms/index.html" },
+    "https://cscam.co.kr/3dp/": { local: "../../cscam-3dp/index.html", gh: "https://cih2000.github.io/cscam-3dp/index.html" },
+    "https://cscam.co.kr/laser/": { local: "../../cscam-engraving/index.html", gh: "https://cih2000.github.io/cscam-engraving/index.html" },
+    "https://cscam.co.kr/marking/": { local: "../../cscam-marking/index.html", gh: "https://cih2000.github.io/cscam-marking/index.html" }
   };
   document.querySelectorAll(".family-bar-nav a, .drawer a").forEach(function(a){
     var href = a.getAttribute("href");
