@@ -212,8 +212,8 @@ html[lang="ja"] .gnb a { font-size: 13px; letter-spacing: -.03em; }
   background: linear-gradient(100deg, rgba(13,30,61,.93) 0%, rgba(13,30,61,.68) 38%, rgba(13,30,61,.32) 65%, rgba(13,30,61,.06) 100%);
 }
 .hero .container { position: relative; z-index: 3; width: 100%; padding-top: 60px; padding-bottom: 60px; }
-.hero-row { display: grid; grid-template-columns: 1fr; align-items: start; gap: 6px; }
-.hero-inner { max-width: 640px; }
+.hero-row { display: flex; align-items: flex-start; gap: 40px; }
+.hero-inner { max-width: 640px; flex: 1 1 auto; }
 .hero-badge {
   display: inline-flex; align-items: center; gap: 12px;
   font-family: "JetBrains Mono", monospace; font-size: 11px; letter-spacing: .2em; text-transform: uppercase;
@@ -250,16 +250,24 @@ html[lang="ja"] .gnb a { font-size: 13px; letter-spacing: -.03em; }
 
 .hero-video {
   position: relative; z-index: 3; flex: 0 0 auto;
-  width: 436px; max-width: 37vw;
+  width: 520px; max-width: 48vw; /* LMS 히어로 영상과 동일한 크기 */
   aspect-ratio: 16/9;
   border-radius: var(--radius-md);
   overflow: hidden;
   border: 1px solid rgba(127,196,255,.35);
   box-shadow: 0 24px 60px rgba(0,0,0,.5);
+  margin-top: 95px;
 }
-.hero-video video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hero-video video {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  /* 배경 사진과 톤을 맞추기 위해 채도/명도를 살짝 눌러줌(영상만 튀어 보이지 않도록) */
+  filter: saturate(1.05) contrast(1.05) brightness(.92);
+}
 .hero-video::after {
   content: ""; position: absolute; inset: 0; pointer-events: none;
+  /* 배경과 동일한 네이비 톤을 살짝 얹어(멀티플라이) 영상 색감을 주변과 자연스럽게 융화시킴 */
+  background: linear-gradient(165deg, rgba(13,30,61,.34) 0%, rgba(10,23,48,.1) 45%, rgba(13,30,61,.32) 100%);
+  mix-blend-mode: multiply;
   box-shadow: inset 0 0 0 1px rgba(255,255,255,.08);
 }
 .hero-video .hero-video-cap {
@@ -278,7 +286,7 @@ html[lang="ja"] .gnb a { font-size: 13px; letter-spacing: -.03em; }
 }
 .hero-visual-inner img { width: 100%; display: block; opacity: .4; }
 @media (max-width: 1100px) {
-  .hero-row { grid-template-columns: 1fr; }
+  .hero-row { flex-direction: column; align-items: stretch; gap: 0; }
   .hero-video {
     align-self: center;
     margin: 32px auto 48px;
