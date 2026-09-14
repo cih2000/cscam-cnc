@@ -803,6 +803,14 @@ body.modal-open { overflow: hidden; }
 }
 
 /* ---------------- Resources / 기술자료실 ---------------- */
+.resources-products { display: flex; flex-wrap: wrap; gap: 8px; margin: 2px 0 22px; padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+.resources-products button {
+  font-family: "JetBrains Mono", monospace; font-size: 11.5px; font-weight: 700; letter-spacing: .02em;
+  padding: 7px 14px; border-radius: 999px; border: 1px solid var(--border); background: var(--bg-alt);
+  color: var(--ink); cursor: pointer; transition: all .15s ease;
+}
+.resources-products button:hover { border-color: var(--ink); }
+.resources-products button.active { background: var(--ink); border-color: var(--ink); color: #fff; }
 .resources-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 30px; }
 .resources-tabs { display: flex; flex-wrap: wrap; gap: 8px; }
 .resources-tabs button {

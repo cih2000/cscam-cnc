@@ -17,12 +17,17 @@ document.addEventListener("DOMContentLoaded", () => {
     : { all: "전체", catalog: "카탈로그", manual: "매뉴얼", drawing: "도면", video: "동영상", software: "운전소프트웨어" };
 
   const tabsEl = root.querySelector("[data-tabs]");
+  const productsEl = root.querySelector("[data-products]");
   const searchEl = root.querySelector("[data-search]");
   const countEl = root.querySelector("[data-count]");
   const listEl = root.querySelector("[data-list]");
 
+  const ALL_LABEL = isEn ? "All" : isZh ? "全部" : isJa ? "全て" : "전체";
+  const PRODUCT_ALL_LABEL = isEn ? "All Products" : isZh ? "全部产品" : isJa ? "すべての製品" : "모든 제품";
+
   const CATS = ["all", "catalog", "manual", "drawing", "video", "software"];
   let activeCat = "all";
+  let activeSlug = "all";
 
   CATS.forEach((cat) => {
     const btn = document.createElement("button");
@@ -37,6 +42,99 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     tabsEl.appendChild(btn);
   });
+
+  // 제품별 필터 칩: 자료가 실제로 있는 제품만 슬러그 기준으로 자동 수집한다.
+  // 800S package / 800S-5AX는 하나의 "800S" 칩으로 합쳐서 보여준다.
+  const PRODUCT_GROUPS = {
+    "800s": { slugs: ["800s-package", "800s-5ax"], label_ko: "800S", label_en: "800S" }
+  };
+  const SLUG_TO_GROUP = {};
+  Object.keys(PRODUCT_GROUPS).forEach((gid) => {
+    PRODUCT_GROUPS[gid].slugs.forEach((s) => { SLUG_TO_GROUP[s] = gid; });
+  });
+
+  // 칩에 표시할 이름이 너무 길어(제품 설명 포함) 축약해서 보여줄 슬러그별 짧은 이름
+  const CHIP_LABEL_OVERRIDES = {
+    "cpack": { ko: "CPACK", en: "CPACK" },
+    "900d": { ko: "900d", en: "900d" },
+    "edio7246": { ko: "EDIO 72/46", en: "EDIO 72/46" },
+    "edio6432": { ko: "EDIO 64/64, 32/32", en: "EDIO 64/64, 32/32" },
+    "edio-inout": { ko: "EDIO IN32, OUT32, IN16/OUT16", en: "EDIO IN32, OUT32, IN16/OUT16" },
+    "aib30": { ko: "AIB 3.0", en: "AIB 3.0" },
+    "hx20": { ko: "HX2.0", en: "HX2.0" },
+    "servo-drive-motor": { ko: "Servo Motor/Drive", en: "Servo Motor/Drive" },
+    "stepservo": { ko: "StepServo", en: "StepServo" },
+    "hexa": { ko: "HEXA", en: "HEXA" }
+  };
+
+  const PRODUCT_ORDER = [
+    "cpack", "800s", "hx20", "hx-lite", "gx-series",
+    "900d", "900a", "servo-drive-motor", "sdc", "smg-sma", "sd-series",
+    "stepservo", "actimo", "edio7246", "edio6432", "edio-inout", "aib30",
+    "portablempg", "hexa", "spack"
+  ];
+
+  function chipLabelFor(slug) {
+    const item = window.CS_RESOURCES.find((r) => r.slug === slug);
+    if (!item) return slug;
+    const override = CHIP_LABEL_OVERRIDES[slug];
+    if (override) return (isEn || isZh || isJa) ? override.en : override.ko;
+    return (isEn || isZh || isJa) ? item.product_en : item.product_ko;
+  }
+
+  const presentSlugs = new Set();
+  window.CS_RESOURCES.forEach((item) => { if (item.slug) presentSlugs.add(item.slug); });
+
+  // chipId -> { label, slugs: [실제 slug 목록] }
+  const chipMap = new Map();
+  presentSlugs.forEach((slug) => {
+    const gid = SLUG_TO_GROUP[slug];
+    if (gid) {
+      if (!chipMap.has(gid)) {
+        chipMap.set(gid, { label: (isEn || isZh || isJa) ? PRODUCT_GROUPS[gid].label_en : PRODUCT_GROUPS[gid].label_ko, slugs: [] });
+      }
+      chipMap.get(gid).slugs.push(slug);
+    } else {
+      chipMap.set(slug, { label: chipLabelFor(slug), slugs: [slug] });
+    }
+  });
+
+  const orderedChipIds = PRODUCT_ORDER.filter((id) => chipMap.has(id));
+  chipMap.forEach((_, id) => { if (!orderedChipIds.includes(id)) orderedChipIds.push(id); });
+
+  if (productsEl) {
+    const allBtn = document.createElement("button");
+    allBtn.type = "button";
+    allBtn.dataset.slug = "all";
+    allBtn.textContent = PRODUCT_ALL_LABEL;
+    allBtn.classList.add("active");
+    allBtn.addEventListener("click", () => {
+      activeSlug = "all";
+      productsEl.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b === allBtn));
+      render();
+    });
+    productsEl.appendChild(allBtn);
+
+    orderedChipIds.forEach((chipId) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.dataset.slug = chipId;
+      btn.textContent = chipMap.get(chipId).label;
+      btn.addEventListener("click", () => {
+        activeSlug = chipId;
+        productsEl.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b === btn));
+        render();
+      });
+      productsEl.appendChild(btn);
+    });
+  }
+
+  function matchesProduct(item) {
+    if (activeSlug === "all") return true;
+    const chip = chipMap.get(activeSlug);
+    if (!chip) return true;
+    return chip.slugs.includes(item.slug);
+  }
 
   function resolveHref(item) {
     if (item.ext === "YouTube") return item.href;
@@ -58,7 +156,10 @@ document.addEventListener("DOMContentLoaded", () => {
   function render() {
     const q = (searchEl.value || "").trim();
     const items = window.CS_RESOURCES.filter(
-      (item) => (activeCat === "all" || item.category === activeCat) && matchesSearch(item, q)
+      (item) =>
+        (activeCat === "all" || item.category === activeCat) &&
+        matchesProduct(item) &&
+        matchesSearch(item, q)
     );
 
     countEl.textContent = isEn
@@ -92,7 +193,10 @@ document.addEventListener("DOMContentLoaded", () => {
       main.className = "r-main";
       const title = document.createElement("div");
       title.className = "r-title";
-      title.textContent = (isEn || isZh || isJa) ? item.title_en : item.title_ko;
+      const baseTitle = (isEn || isZh || isJa) ? item.title_en : item.title_ko;
+      // 도면은 같은 자료가 PDF/DWG 두 가지 파일로 존재하는 경우가 많아 제목 뒤에 형식을 표시한다.
+      const showExtSuffix = item.category === "drawing" && (item.ext === "PDF" || item.ext === "DWG");
+      title.textContent = showExtSuffix ? `${baseTitle} (${item.ext})` : baseTitle;
       main.appendChild(title);
 
       const meta = document.createElement("div");
@@ -138,6 +242,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (catParam && CATS.includes(catParam)) {
     activeCat = catParam;
     tabsEl.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b.dataset.cat === catParam));
+  }
+  const productParam = params.get("product");
+  if (productParam && productsEl && chipMap.has(productParam)) {
+    activeSlug = productParam;
+    productsEl.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b.dataset.slug === productParam));
   }
 
   render();
