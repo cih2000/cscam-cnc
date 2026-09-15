@@ -266,7 +266,6 @@ html[lang="ja"] .gnb a { font-size: 13px; letter-spacing: -.03em; }
   aspect-ratio: 4/3;
   border-radius: var(--radius-md);
   overflow: hidden;
-  border: 1px solid rgba(127,196,255,.35);
   box-shadow: 0 24px 60px rgba(0,0,0,.5);
   margin-top: 90px;
 }
@@ -275,6 +274,11 @@ html[lang="ja"] .gnb a { font-size: 13px; letter-spacing: -.03em; }
   /* 배경 사진과 톤을 맞추기 위해 채도/명도를 살짝 눌러줌(영상만 튀어 보이지 않도록) */
   filter: saturate(1.05) contrast(1.05) brightness(.92);
 }
+/* Laser(engraving) 히어로와 동일한 방식: 영상 박스 자체가 페이지 로드 시
+   투명(opacity:0)한 상태로 살짝 아래에 있다가, 0.8초에 걸쳐 위로 슬라이드하며
+   서서히 나타난다. 영상 재생 자체는 native autoplay+poster에 맡긴다. */
+.hero-fadein { opacity: 0; transform: translateY(14px); animation: heroIn .8s ease .05s forwards; }
+@keyframes heroIn { to { opacity: 1; transform: translateY(0); } }
 .hero-video::after {
   content: ""; position: absolute; inset: 0; pointer-events: none;
   /* 배경과 동일한 네이비 톤을 살짝 얹어(멀티플라이) 영상 색감을 주변과 자연스럽게 융화시킴 */
@@ -283,7 +287,7 @@ html[lang="ja"] .gnb a { font-size: 13px; letter-spacing: -.03em; }
   box-shadow: inset 0 0 0 1px rgba(255,255,255,.08);
 }
 .hero-video .hero-video-cap {
-  position: absolute; left: 0; right: 0; bottom: 0; z-index: 1;
+  position: absolute; left: 0; right: 0; bottom: 0; z-index: 6;
   padding: 8px 12px;
   font-family: "JetBrains Mono", monospace; font-size: 10.5px; letter-spacing: .05em; color: #cfe8ff;
   background: linear-gradient(0deg, rgba(13,30,61,.85), transparent);

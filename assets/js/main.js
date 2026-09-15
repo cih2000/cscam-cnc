@@ -67,27 +67,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // 히어로 영상: Laser(engraving) 사이트처럼 poster 이미지를 잠깐 보여준 뒤 재생을 시작한다.
-  // (HTML의 autoplay 속성은 제거하고 여기서 지연 후 직접 play()를 호출한다)
-  const heroVideo = document.querySelector(".hero-video video");
-  if (heroVideo) {
-    heroVideo.muted = true;
-    heroVideo.defaultMuted = true;
-    heroVideo.playsInline = true;
-    let started = false;
-    const tryPlay = () => {
-      if (!started) return;
-      const p = heroVideo.play();
-      if (p && typeof p.catch === "function") p.catch(() => { /* 실패 시 아래 재시도들이 다시 시도한다 */ });
-    };
-    // preload="auto"로 정지 프레임만 표시된 채 재생이 안 걸리는 경우를 대비해
-    // 데이터 준비 이벤트 + 시간차로 여러 번 재시도한다.
-    ["loadeddata", "canplay", "canplaythrough", "playing"].forEach((ev) => {
-      heroVideo.addEventListener(ev, tryPlay);
-    });
-    setTimeout(() => { started = true; tryPlay(); }, 600);
-    [900, 1500, 2500, 4000].forEach((delay) => {
-      setTimeout(() => { if (started && heroVideo.paused) tryPlay(); }, delay);
-    });
-  }
 });
