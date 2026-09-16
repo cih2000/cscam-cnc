@@ -469,6 +469,19 @@ window.CS_RESOURCES = [
     "size": "57 KB"
   },
   {
+    "id": "dwg-900a-allcable",
+    "category": "drawing",
+    "slug": "900a",
+    "product_ko": "900A",
+    "product_en": "900A",
+    "title_ko": "(900A-SV-Pulse) 모터 메이커 인터페이스 케이블 모음 9종 (ZIP)",
+    "title_en": "(900A-SV-Pulse) Motor Maker Interface Cable Set — 9 Types (ZIP)",
+    "date": "2026-09-17",
+    "href": "assets/docs/900a/%28900A-SV-Pulse%29_Motor_Maker_Interface_Cable_9%EC%A2%85.zip",
+    "ext": "ZIP",
+    "size": "625 KB"
+  },
+  {
     "id": "dwg-900a-10",
     "category": "drawing",
     "slug": "900a",
@@ -976,6 +989,19 @@ window.CS_RESOURCES = [
     "size": "110 KB"
   },
   {
+    "id": "dwg-hx20-allcable-a",
+    "category": "drawing",
+    "slug": "hx20",
+    "product_ko": "HX2.0 series",
+    "product_en": "HX2.0 series",
+    "title_ko": "(HX20-SV-A) 모터 메이커 서보 인터페이스(ANALOG) 케이블 모음 16종 (ZIP)",
+    "title_en": "(HX20-SV-A) Motor Maker Servo Interface (ANALOG) Cable Set — 16 Types (ZIP)",
+    "date": "2026-09-17",
+    "href": "assets/docs/hx20/%28HX20-SV-A%29Motor_Maker_SERVO_INTERFACE_ANALOG_Cable_16%EC%A2%85.zip",
+    "ext": "ZIP",
+    "size": "1.05 MB"
+  },
+  {
     "id": "dwg-hx20-17",
     "category": "drawing",
     "slug": "hx20",
@@ -1208,6 +1234,19 @@ window.CS_RESOURCES = [
     "href": "assets/docs/shared/CNC_800S_CPACK_HX2.0_HX-LITE_900d_900A%20Maintanence%20Manual_2026-02%28Kor%29.pdf",
     "ext": "PDF",
     "size": "12.3 MB"
+  },
+  {
+    "id": "dwg-hx20-allcable-p",
+    "category": "drawing",
+    "slug": "hx20",
+    "product_ko": "HX2.0 series",
+    "product_en": "HX2.0 series",
+    "title_ko": "(HX20-SV-P) 모터 메이커 서보 인터페이스(Pulse) 케이블 모음 14종 (ZIP)",
+    "title_en": "(HX20-SV-P) Motor Maker Servo Interface (Pulse) Cable Set — 14 Types (ZIP)",
+    "date": "2026-09-17",
+    "href": "assets/docs/hx20/%28HX20-SV-P%29Motor_Maker_Servo_Interface%28Pulse%29_Cable_14%EC%A2%85.zip",
+    "ext": "ZIP",
+    "size": "991 KB"
   },
   {
     "id": "dwg-hx20-31",
@@ -2807,6 +2846,32 @@ window.CS_RESOURCES = [
     "href": "assets/docs/servo-drive-motor/ServoDriveManual-V02%28Kor%29.pdf",
     "ext": "PDF",
     "size": "7.0 MB"
+  },
+  {
+    "id": "dwg-servo-drive-motor-allcable-enc",
+    "category": "drawing",
+    "slug": "servo-drive-motor",
+    "product_ko": "서보 모터 & 드라이브",
+    "product_en": "Servo Motor & Drive",
+    "title_ko": "엔코더 케이블 도면 모음 (ZIP)",
+    "title_en": "Encoder Cable Drawing Set (ZIP)",
+    "date": "2026-09-17",
+    "href": "assets/docs/servo-drive-motor/Motor_Encoder_Cable_All%28PDF%29.zip",
+    "ext": "ZIP",
+    "size": "60 KB"
+  },
+  {
+    "id": "dwg-servo-drive-motor-allcable-pwr",
+    "category": "drawing",
+    "slug": "servo-drive-motor",
+    "product_ko": "서보 모터 & 드라이브",
+    "product_en": "Servo Motor & Drive",
+    "title_ko": "파워 케이블 도면 모음 (ZIP)",
+    "title_en": "Power Cable Drawing Set (ZIP)",
+    "date": "2026-09-17",
+    "href": "assets/docs/servo-drive-motor/Motor_Power_Cable_All%28PDF%29.zip",
+    "ext": "ZIP",
+    "size": "168 KB"
   },
   {
     "id": "dwg-edio-inout-1",
