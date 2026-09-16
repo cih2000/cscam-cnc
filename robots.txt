@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /products/
+Disallow: /en/products/
+Disallow: /zh/products/
+Disallow: /jp/products/
+Allow: /
+
+Sitemap: https://cnc.cscam.co.kr/sitemap.xml
