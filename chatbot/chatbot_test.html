@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CSCAM AI 챗봇</title>
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: transparent; margin: 0; height: 100vh; overflow: hidden; }
+
+        #chat-launcher {
+            position: fixed;
+            bottom: 7px;
+            right: 7px;
+            width: 40px; height: 40px;
+            background: #0078d4;
+            border-radius: 50%; cursor: pointer;
+            display: flex; justify-content: center; align-items: center;
+            color: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 1001;
+            font-size: 16px;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        #chat-container {
+            display: none; position: fixed;
+            bottom: 53px; right: 7px;
+            width: calc(100% - 14px); height: calc(100% - 60px);
+            background: white; border-radius: 16px;
+            box-shadow: 0 12px 50px rgba(0,0,0,0.25);
+            flex-direction: column; overflow: hidden;
+            z-index: 1000;
+            border: 1px solid #e1e1e1;
+        }
+
+        @media (max-width: 768px) {
+            #chat-container {
+                bottom: 0; right: 0;
+                width: 100%; height: 100%;
+                max-height: 100vh; border-radius: 0;
+            }
+        }
+
+        .header {
+            background: #0078d4; color: white; padding: 18px 20px;
+            font-weight: bold; display: flex; justify-content: space-between;
+            flex-shrink: 0; font-size: 16px;
+        }
+
+        #webchat { flex: 1; width: 100%; overflow: hidden; background: #ffffff; }
+
+        .bottom-panel { width: 100%; flex-shrink: 0; background: white; }
+        #status-bar {
+            display: none; background: #f0f7ff; color: #0078d4;
+            padding: 12px 18px; font-size: 13px; border-top: 1px solid #e1e1e1;
+        }
+
+        #auth-screen { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; }
+        .dot-flashing { position: relative; width: 4px; height: 4px; border-radius: 5px; background-color: #0078d4; animation: dot-flashing 1s infinite alternate; display: inline-block; margin-left: 6px; }
+        @keyframes dot-flashing { 0% { opacity: 0.3; } 100% { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+    <div id="chat-launcher" onclick="toggleChat()">💬</div>
+
+    <div id="chat-container">
+        <div class="header">
+            <span>CSCAM AI 챗봇</span>
+            <span onclick="toggleChat()" style="cursor:pointer; font-size: 20px;">✕</span>
+        </div>
+
+        <div id="auth-screen">
+            <p style="color:#444; font-size:15px; font-weight: 500; margin-bottom: 20px;">안전한 연결을 위해 인증이 필요합니다.</p>
+            <div class="g-recaptcha" data-sitekey="6LfoAGEsAAAAALwWeK318DV0B1yOVOvgbPipwT5c" data-callback="onAuthSuccess"></div>
+        </div>
+
+        <div id="webchat" style="display:none;"></div>
+        <div class="bottom-panel">
+            <div id="status-bar"></div>
+        </div>
+    </div>
+
+    <script>
+        function toggleChat() {
+            const container = document.getElementById('chat-container');
+            const launcher = document.getElementById('chat-launcher');
+            const isVisible = (container.style.display === 'flex');
+
+            if (isVisible) {
+                container.style.display = 'none';
+                launcher.style.display = 'flex';
+                window.parent.postMessage('collapse', '*');
+            } else {
+                container.style.display = 'flex';
+                if (window.innerWidth <= 768) {
+                    launcher.style.display = 'none';
+                }
+                window.parent.postMessage('expand', '*');
+            }
+        }
+
+        function onAuthSuccess(token) {
+            document.getElementById('auth-screen').style.display = 'none';
+            document.getElementById('webchat').style.display = 'block';
+            startBot();
+        }
+
+        async function startBot() {
+            const statusBar = document.getElementById('status-bar');
+            let statusTimer;
+
+            try {
+                const res = await fetch('/chatbot/get_token.php');
+                const data = await res.json();
+                const token = data.token;
+
+                if (!token) throw new Error("Token generation failed");
+
+                const directLine = window.WebChat.createDirectLine({ token: token });
+
+                directLine.postActivity({ from: { id: 'user' }, name: 'startConversation', type: 'event' }).subscribe();
+
+                const store = window.WebChat.createStore({}, ({ dispatch }) => next => action => {
+                    if (action.type === 'DIRECT_LINE/POST_ACTIVITY_PENDING') {
+                        statusBar.innerHTML = '🔍 관련 데이터를 검색하고 있습니다.<span class="dot-flashing"></span>';
+                        statusBar.style.display = 'block';
+                        clearTimeout(statusTimer);
+                        statusTimer = setTimeout(() => {
+                            statusBar.innerHTML = '📑 대용량 지식 베이스에서 최적의 답변을 추출 중입니다.';
+                        }, 5000);
+                    } else if (action.type === 'DIRECT_LINE/INCOMING_ACTIVITY') {
+                        if (action.payload.activity.from.role === 'bot' && action.payload.activity.type === 'message') {
+                            clearTimeout(statusTimer);
+                            statusBar.style.display = 'none';
+                        }
+                    }
+                    return next(action);
+                });
+
+                window.WebChat.renderWebChat({
+                    directLine: directLine,
+                    store: store,
+                    locale: 'ko-KR',
+                    styleOptions: {
+                        bubbleBackground: '#f1f1f1',
+                        bubbleFromUserBackground: '#0078d4',
+                        bubbleFromUserTextColor: 'white',
+                        hideUploadButton: true,
+                        botAvatarInitials: 'CS',
+                        userAvatarInitials: 'ME',
+                        fontSize: '14px',
+                        bubbleBorderRadius: 12,
+                        bubbleFromUserBorderRadius: 12
+                    }
+                }, document.getElementById('webchat'));
+
+            } catch (err) {
+                console.error("Chatbot Error:", err);
+                statusBar.innerHTML = '❌ 챗봇 연결에 실패했습니다. 다시 시도해 주세요.';
+                statusBar.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
