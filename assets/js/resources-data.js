@@ -1766,5 +1766,31 @@ window.CS_RESOURCES = [
     "href": "assets/docs/stepservo/STEP_MOTOR_60%EA%B0%81_%EC%99%B8%ED%98%95%EB%8F%84%EB%A9%B4%28PDF%29.zip",
     "ext": "ZIP",
     "size": "236 KB"
+  },
+  {
+    "id": "dwg-servo-drive-motor-drive-outline-dwg",
+    "category": "drawing",
+    "slug": "servo-drive-motor",
+    "product_ko": "서보 모터 & 드라이브",
+    "product_en": "Servo Motor & Drive",
+    "title_ko": "서보드라이브 외형도면 모음 6종 (DWG)",
+    "title_en": "Servo Drive Outline Drawing Set — 6 Types (DWG)",
+    "date": "2026-09-17",
+    "href": "assets/docs/servo-drive-motor/SERVO_DRIVE_%EC%99%B8%ED%98%95%EB%8F%84%EB%A9%B4_6%EC%A2%85%28DWG%29.zip",
+    "ext": "ZIP",
+    "size": "5.57 MB"
+  },
+  {
+    "id": "dwg-servo-drive-motor-drive-outline-pdf",
+    "category": "drawing",
+    "slug": "servo-drive-motor",
+    "product_ko": "서보 모터 & 드라이브",
+    "product_en": "Servo Motor & Drive",
+    "title_ko": "서보드라이브 외형도면 모음 6종 (PDF)",
+    "title_en": "Servo Drive Outline Drawing Set — 6 Types (PDF)",
+    "date": "2026-09-17",
+    "href": "assets/docs/servo-drive-motor/SERVO_DRIVE_%EC%99%B8%ED%98%95%EB%8F%84%EB%A9%B4_6%EC%A2%85%28PDF%29.zip",
+    "ext": "ZIP",
+    "size": "493 KB"
   }
 ];
