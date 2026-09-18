@@ -155,12 +155,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function render() {
     const q = (searchEl.value || "").trim();
+    const seenHref = new Set();
     const items = window.CS_RESOURCES.filter(
       (item) =>
         (activeCat === "all" || item.category === activeCat) &&
         matchesProduct(item) &&
         matchesSearch(item, q)
-    );
+    ).filter((item) => {
+      // 같은 제품군(칩) 내에서 서로 다른 slug가 동일한 파일을 공유하는 경우
+      // (예: 800s-package / 800s-5ax) 목록에 중복으로 나타나지 않도록 href 기준으로 한 번만 표시
+      if (seenHref.has(item.href)) return false;
+      seenHref.add(item.href);
+      return true;
+    });
 
     countEl.textContent = isEn
       ? `${items.length} of ${window.CS_RESOURCES.length} resources`

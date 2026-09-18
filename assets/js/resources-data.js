@@ -13,19 +13,6 @@ window.CS_RESOURCES = [
     "size": "12.8 MB"
   },
   {
-    "id": "man-800s-5ax-1",
-    "category": "manual",
-    "slug": "800s-5ax",
-    "product_ko": "800S-5AX",
-    "product_en": "800S-5AX",
-    "title_ko": "800S-MC CNC 전기배선 따라하기 매뉴얼(Kor)",
-    "title_en": "800S-MC CNC Electrical Wiring Step-by-Step Guide Manual(Kor)",
-    "date": "2026-09-14",
-    "href": "assets/docs/800s/800S-MC%20CNC%20%EC%A0%84%EA%B8%B0%EB%B0%B0%EC%84%A0%20%EB%94%B0%EB%9D%BC%ED%95%98%EA%B8%B0%20%EB%A7%A4%EB%89%B4%EC%96%BC%28Kor%29.pdf",
-    "ext": "PDF",
-    "size": "18.1 MB"
-  },
-  {
     "id": "man-800s-package-1",
     "category": "manual",
     "slug": "800s-package",
@@ -37,19 +24,6 @@ window.CS_RESOURCES = [
     "href": "assets/docs/800s/800S-MC%20CNC%20%EC%A0%84%EA%B8%B0%EB%B0%B0%EC%84%A0%20%EB%94%B0%EB%9D%BC%ED%95%98%EA%B8%B0%20%EB%A7%A4%EB%89%B4%EC%96%BC%28Kor%29.pdf",
     "ext": "PDF",
     "size": "18.1 MB"
-  },
-  {
-    "id": "man-800s-5ax-2",
-    "category": "manual",
-    "slug": "800s-5ax",
-    "product_ko": "800S-5AX",
-    "product_en": "800S-5AX",
-    "title_ko": "800S HX MC Program Manual Eng CSCAM",
-    "title_en": "800S HX MC Program Manual Eng CSCAM",
-    "date": "2026-09-14",
-    "href": "assets/docs/shared/800S_HX_MC_Program%20Manual_Eng_CSCAM.pdf",
-    "ext": "PDF",
-    "size": "2.4 MB"
   },
   {
     "id": "man-800s-package-2",
@@ -65,19 +39,6 @@ window.CS_RESOURCES = [
     "size": "2.4 MB"
   },
   {
-    "id": "man-800s-5ax-3",
-    "category": "manual",
-    "slug": "800s-5ax",
-    "product_ko": "800S-5AX",
-    "product_en": "800S-5AX",
-    "title_ko": "800S HX Operation Manual Eng CSCAM",
-    "title_en": "800S HX Operation Manual Eng CSCAM",
-    "date": "2026-09-14",
-    "href": "assets/docs/shared/800S_HX_Operation%20Manual_Eng%20_CSCAM.pdf",
-    "ext": "PDF",
-    "size": "3.6 MB"
-  },
-  {
     "id": "man-800s-package-3",
     "category": "manual",
     "slug": "800s-package",
@@ -89,19 +50,6 @@ window.CS_RESOURCES = [
     "href": "assets/docs/shared/800S_HX_Operation%20Manual_Eng%20_CSCAM.pdf",
     "ext": "PDF",
     "size": "3.6 MB"
-  },
-  {
-    "id": "dwg-800s-5ax-1",
-    "category": "drawing",
-    "slug": "800s-5ax",
-    "product_ko": "800S-5AX",
-    "product_en": "800S-5AX",
-    "title_ko": "800S 외형도면",
-    "title_en": "800S Outline Drawing",
-    "date": "2026-09-14",
-    "href": "assets/docs/800s/800S_%EC%99%B8%ED%98%95%EB%8F%84%EB%A9%B4.dwg",
-    "ext": "DWG",
-    "size": "595 KB"
   },
   {
     "id": "dwg-800s-package-1",
@@ -117,19 +65,6 @@ window.CS_RESOURCES = [
     "size": "595 KB"
   },
   {
-    "id": "dwg-800s-5ax-2",
-    "category": "drawing",
-    "slug": "800s-5ax",
-    "product_ko": "800S-5AX",
-    "product_en": "800S-5AX",
-    "title_ko": "800S 외형도면",
-    "title_en": "800S Outline Drawing",
-    "date": "2026-09-14",
-    "href": "assets/docs/800s/800S_%EC%99%B8%ED%98%95%EB%8F%84%EB%A9%B4.pdf",
-    "ext": "PDF",
-    "size": "91 KB"
-  },
-  {
     "id": "dwg-800s-package-2",
     "category": "drawing",
     "slug": "800s-package",
@@ -141,19 +76,6 @@ window.CS_RESOURCES = [
     "href": "assets/docs/800s/800S_%EC%99%B8%ED%98%95%EB%8F%84%EB%A9%B4.pdf",
     "ext": "PDF",
     "size": "91 KB"
-  },
-  {
-    "id": "dwg-800s-5ax-3",
-    "category": "drawing",
-    "slug": "800s-5ax",
-    "product_ko": "800S-5AX",
-    "product_en": "800S-5AX",
-    "title_ko": "800S 키보드",
-    "title_en": "800S Keyboard",
-    "date": "2026-09-14",
-    "href": "assets/docs/800s/800S_%ED%82%A4%EB%B3%B4%EB%93%9C.dwg",
-    "ext": "DWG",
-    "size": "942 KB"
   },
   {
     "id": "dwg-800s-package-3",
@@ -169,19 +91,6 @@ window.CS_RESOURCES = [
     "size": "942 KB"
   },
   {
-    "id": "dwg-800s-5ax-4",
-    "category": "drawing",
-    "slug": "800s-5ax",
-    "product_ko": "800S-5AX",
-    "product_en": "800S-5AX",
-    "title_ko": "800S 키보드",
-    "title_en": "800S Keyboard",
-    "date": "2026-09-14",
-    "href": "assets/docs/800s/800S_%ED%82%A4%EB%B3%B4%EB%93%9C.pdf",
-    "ext": "PDF",
-    "size": "109 KB"
-  },
-  {
     "id": "dwg-800s-package-4",
     "category": "drawing",
     "slug": "800s-package",
@@ -193,19 +102,6 @@ window.CS_RESOURCES = [
     "href": "assets/docs/800s/800S_%ED%82%A4%EB%B3%B4%EB%93%9C.pdf",
     "ext": "PDF",
     "size": "109 KB"
-  },
-  {
-    "id": "man-800s-5ax-4",
-    "category": "manual",
-    "slug": "800s-5ax",
-    "product_ko": "800S-5AX",
-    "product_en": "800S-5AX",
-    "title_ko": "CNC 800S CPACK HX2.0 HX-LITE 900d 900A -PLC Editor Manual 2023(Kor)",
-    "title_en": "CNC 800S CPACK HX2.0 HX-LITE 900d 900A -PLC Editor Manual 2023(Kor)",
-    "date": "2023-01-01",
-    "href": "assets/docs/shared/CNC_800S_CPACK_HX2.0_HX-LITE_900d_900A%20-PLC%20Editor%20Manual_2023%28Kor%29.pdf",
-    "ext": "PDF",
-    "size": "2.2 MB"
   },
   {
     "id": "man-800s-package-4",
@@ -221,19 +117,6 @@ window.CS_RESOURCES = [
     "size": "2.2 MB"
   },
   {
-    "id": "man-800s-5ax-5",
-    "category": "manual",
-    "slug": "800s-5ax",
-    "product_ko": "800S-5AX",
-    "product_en": "800S-5AX",
-    "title_ko": "CNC 800S CPACK HX2.0 HX-LITE 900d 900A Maintanence Manual 2026-02(Kor)",
-    "title_en": "CNC 800S CPACK HX2.0 HX-LITE 900d 900A Maintanence Manual 2026-02(Kor)",
-    "date": "2026-02-01",
-    "href": "assets/docs/shared/CNC_800S_CPACK_HX2.0_HX-LITE_900d_900A%20Maintanence%20Manual_2026-02%28Kor%29.pdf",
-    "ext": "PDF",
-    "size": "12.3 MB"
-  },
-  {
     "id": "man-800s-package-5",
     "category": "manual",
     "slug": "800s-package",
@@ -245,19 +128,6 @@ window.CS_RESOURCES = [
     "href": "assets/docs/shared/CNC_800S_CPACK_HX2.0_HX-LITE_900d_900A%20Maintanence%20Manual_2026-02%28Kor%29.pdf",
     "ext": "PDF",
     "size": "12.3 MB"
-  },
-  {
-    "id": "man-800s-5ax-6",
-    "category": "manual",
-    "slug": "800s-5ax",
-    "product_ko": "800S-5AX",
-    "product_en": "800S-5AX",
-    "title_ko": "HX2.0-HMI 편집기 매뉴얼 2020-10-01(Kor)",
-    "title_en": "HX2.0-HMI Editor Manual 2020-10-01(Kor)",
-    "date": "2020-10-01",
-    "href": "assets/docs/shared/HX2.0-HMI%20%ED%8E%B8%EC%A7%91%EA%B8%B0%20%EB%A7%A4%EB%89%B4%EC%96%BC_2020-10-01%28Kor%29%20.pdf",
-    "ext": "PDF",
-    "size": "2.8 MB"
   },
   {
     "id": "man-800s-package-6",
@@ -273,19 +143,6 @@ window.CS_RESOURCES = [
     "size": "2.8 MB"
   },
   {
-    "id": "man-800s-5ax-7",
-    "category": "manual",
-    "slug": "800s-5ax",
-    "product_ko": "800S-5AX",
-    "product_en": "800S-5AX",
-    "title_ko": "HX2.0-MC 프로그램메뉴얼 2020-10-01(Kor)",
-    "title_en": "HX2.0-MC ProgramManual 2020-10-01(Kor)",
-    "date": "2020-10-01",
-    "href": "assets/docs/shared/HX2.0-MC%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%EB%A9%94%EB%89%B4%EC%96%BC_2020-10-01%28Kor%29.pdf",
-    "ext": "PDF",
-    "size": "4.2 MB"
-  },
-  {
     "id": "man-800s-package-7",
     "category": "manual",
     "slug": "800s-package",
@@ -299,19 +156,6 @@ window.CS_RESOURCES = [
     "size": "4.2 MB"
   },
   {
-    "id": "man-800s-5ax-8",
-    "category": "manual",
-    "slug": "800s-5ax",
-    "product_ko": "800S-5AX",
-    "product_en": "800S-5AX",
-    "title_ko": "HX2.0-TC 프로그램메뉴얼 2020-10-01(Kor)",
-    "title_en": "HX2.0-TC ProgramManual 2020-10-01(Kor)",
-    "date": "2020-10-01",
-    "href": "assets/docs/shared/HX2.0-TC%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%EB%A9%94%EB%89%B4%EC%96%BC_2020-10-01%28Kor%29.pdf",
-    "ext": "PDF",
-    "size": "4.7 MB"
-  },
-  {
     "id": "man-800s-package-8",
     "category": "manual",
     "slug": "800s-package",
@@ -321,19 +165,6 @@ window.CS_RESOURCES = [
     "title_en": "HX2.0-TC ProgramManual 2020-10-01(Kor)",
     "date": "2020-10-01",
     "href": "assets/docs/shared/HX2.0-TC%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%EB%A9%94%EB%89%B4%EC%96%BC_2020-10-01%28Kor%29.pdf",
-    "ext": "PDF",
-    "size": "4.7 MB"
-  },
-  {
-    "id": "man-800s-5ax-9",
-    "category": "manual",
-    "slug": "800s-5ax",
-    "product_ko": "800S-5AX",
-    "product_en": "800S-5AX",
-    "title_ko": "HX2.0-조작메뉴얼 2020.10-01(Kor)",
-    "title_en": "HX2.0-OperationManual 2020.10-01(Kor)",
-    "date": "2020-10-01",
-    "href": "assets/docs/shared/HX2.0-%EC%A1%B0%EC%9E%91%EB%A9%94%EB%89%B4%EC%96%BC%20_2020.10-01%28Kor%29.pdf",
     "ext": "PDF",
     "size": "4.7 MB"
   },
